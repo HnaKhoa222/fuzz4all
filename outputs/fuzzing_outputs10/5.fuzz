@@ -1,0 +1,17 @@
+#include <iostream>
+
+
+template<typename T>
+void f(int) {
+    if constexpr(std::is_same<T, int>::value) {
+        int val = 2;
+        std::cout << val;
+    }
+};
+
+int main() {
+	const int v = 10;
+	f<int>(v);
+	const int* val = &v;
+	std::cout << *val;
+}

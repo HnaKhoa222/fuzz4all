@@ -1,0 +1,1124 @@
+[TRACE] Validating outputs/fuzzing_outputs10/0.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/0.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/1.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/1.fuzz failed validation with error message: outputs/fuzzing_outputs10/1.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/1.fuzz:18:18: error: invalid cast from type ‘Foo’ to type ‘int’
+   18 |     std::cout << int(a) << std::endl;
+      |                  ^~~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/2.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/2.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/3.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/3.fuzz failed validation with error message: outputs/fuzzing_outputs10/3.fuzz:3:2: error: #endif without #if
+    3 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/4.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/4.fuzz failed validation with error message: outputs/fuzzing_outputs10/4.fuzz: In constructor ‘Y::Y(X*)’:
+outputs/fuzzing_outputs10/4.fuzz:21:28: error: expression cannot be used as a function
+   21 |     Y(X* ptr) : value(get()(ptr)), ref(ptr)
+      |                       ~~~~~^~~~~
+outputs/fuzzing_outputs10/4.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/4.fuzz:32:13: error: no matching function for call to ‘X::X()’
+   32 |     X x = X();
+      |             ^
+outputs/fuzzing_outputs10/4.fuzz:7:5: note: candidate: ‘X::X(int)’
+    7 |     X(int val) : value(val)
+      |     ^
+outputs/fuzzing_outputs10/4.fuzz:7:5: note:   candidate expects 1 argument, 0 provided
+outputs/fuzzing_outputs10/4.fuzz:4:7: note: candidate: ‘constexpr X::X(const X&)’
+    4 | class X
+      |       ^
+outputs/fuzzing_outputs10/4.fuzz:4:7: note:   candidate expects 1 argument, 0 provided
+outputs/fuzzing_outputs10/4.fuzz:4:7: note: candidate: ‘constexpr X::X(X&&)’
+outputs/fuzzing_outputs10/4.fuzz:4:7: note:   candidate expects 1 argument, 0 provided
+outputs/fuzzing_outputs10/4.fuzz:35:12: error: ‘get’ was not declared in this scope
+   35 |     return get(y);
+      |            ^~~
+outputs/fuzzing_outputs10/4.fuzz:35:12: note: suggested alternatives:
+In file included from /usr/include/c++/13/bits/uses_allocator_args.h:38,
+                 from /usr/include/c++/13/bits/memory_resource.h:41,
+                 from /usr/include/c++/13/string:58,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/fuzzing_outputs10/4.fuzz:1:
+/usr/include/c++/13/tuple:2035:5: note:   ‘std::get’
+ 2035 |     get(const array<_Tp, _Nm>&&) noexcept;
+      |     ^~~
+In file included from /usr/include/c++/13/tuple:44:
+/usr/include/c++/13/bits/ranges_util.h:449:5: note:   ‘std::ranges::get’
+  449 |     get(subrange<_It, _Sent, _Kind>&& __r)
+      |     ^~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/5.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/5.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/6.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/6.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/7.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/7.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/8.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/8.fuzz failed validation with error message: outputs/fuzzing_outputs10/8.fuzz:7:15: error: ‘stack’ was not declared in this scope; did you mean ‘std::stack’?
+    7 | bool isInside(stack<int32_t>& s, int32_t num);
+      |               ^~~~~
+      |               std::stack
+In file included from /usr/include/c++/13/stack:63,
+                 from outputs/fuzzing_outputs10/8.fuzz:3:
+/usr/include/c++/13/bits/stl_stack.h:99:11: note: ‘std::stack’ declared here
+   99 |     class stack
+      |           ^~~~~
+outputs/fuzzing_outputs10/8.fuzz:7:28: error: expected primary-expression before ‘>’ token
+    7 | bool isInside(stack<int32_t>& s, int32_t num);
+      |                            ^
+outputs/fuzzing_outputs10/8.fuzz:7:31: error: ‘s’ was not declared in this scope
+    7 | bool isInside(stack<int32_t>& s, int32_t num);
+      |                               ^
+outputs/fuzzing_outputs10/8.fuzz:7:42: error: expected primary-expression before ‘num’
+    7 | bool isInside(stack<int32_t>& s, int32_t num);
+      |                                          ^~~
+outputs/fuzzing_outputs10/8.fuzz:7:45: error: expression list treated as compound expression in initializer [-fpermissive]
+    7 | bool isInside(stack<int32_t>& s, int32_t num);
+      |                                             ^
+outputs/fuzzing_outputs10/8.fuzz: In function ‘const uint8_t* createBytes(int32_t)’:
+outputs/fuzzing_outputs10/8.fuzz:11:12: warning: address of local variable ‘d’ returned [-Wreturn-local-addr]
+   11 |     return d;
+      |            ^
+outputs/fuzzing_outputs10/8.fuzz:10:13: note: declared here
+   10 |     uint8_t d[] = {1, 8, 3, 9, 12, 7, 9, 5, 1, 9};
+      |             ^
+outputs/fuzzing_outputs10/8.fuzz: In function ‘void func(uint8_t)’:
+outputs/fuzzing_outputs10/8.fuzz:16:33: error: invalid conversion from ‘const uint8_t*’ {aka ‘const unsigned char*’} to ‘uint8_t*’ {aka ‘unsigned char*’} [-fpermissive]
+   16 |     uint8_t* bytes = createBytes(4);
+      |                      ~~~~~~~~~~~^~~
+      |                                 |
+      |                                 const uint8_t* {aka const unsigned char*}
+outputs/fuzzing_outputs10/8.fuzz: At global scope:
+outputs/fuzzing_outputs10/8.fuzz:19:13: error: redefinition of ‘bool isInside’
+   19 | inline bool isInside(stack<int32_t>& s, int32_t num)
+      |             ^~~~~~~~
+outputs/fuzzing_outputs10/8.fuzz:7:6: note: ‘bool isInside’ previously defined here
+    7 | bool isInside(stack<int32_t>& s, int32_t num);
+      |      ^~~~~~~~
+outputs/fuzzing_outputs10/8.fuzz:19:22: error: ‘stack’ was not declared in this scope; did you mean ‘std::stack’?
+   19 | inline bool isInside(stack<int32_t>& s, int32_t num)
+      |                      ^~~~~
+      |                      std::stack
+/usr/include/c++/13/bits/stl_stack.h:99:11: note: ‘std::stack’ declared here
+   99 |     class stack
+      |           ^~~~~
+outputs/fuzzing_outputs10/8.fuzz:19:35: error: expected primary-expression before ‘>’ token
+   19 | inline bool isInside(stack<int32_t>& s, int32_t num)
+      |                                   ^
+outputs/fuzzing_outputs10/8.fuzz:19:38: error: ‘s’ was not declared in this scope
+   19 | inline bool isInside(stack<int32_t>& s, int32_t num)
+      |                                      ^
+outputs/fuzzing_outputs10/8.fuzz:19:49: error: expected primary-expression before ‘num’
+   19 | inline bool isInside(stack<int32_t>& s, int32_t num)
+      |                                                 ^~~
+outputs/fuzzing_outputs10/8.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/8.fuzz:31:13: error: ‘isInside’ cannot be used as a function
+   31 |     isInside(stack, 1);
+      |     ~~~~~~~~^~~~~~~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/9.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/9.fuzz failed validation with error message: outputs/fuzzing_outputs10/9.fuzz:6:22: error: expansion pattern ‘int’ contains no parameter packs
+    6 | void f(int c, int... i, int j);
+      |                      ^
+outputs/fuzzing_outputs10/9.fuzz:12:22: error: expansion pattern ‘int’ contains no parameter packs
+   12 | void f(int c, int... i, int j) {
+      |                      ^
+outputs/fuzzing_outputs10/9.fuzz: In function ‘void f(...)’:
+outputs/fuzzing_outputs10/9.fuzz:15:11: error: ‘i’ was not declared in this scope
+   15 |     f(c + i[1] + j);
+      |           ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/10.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/10.fuzz failed validation with error message: outputs/fuzzing_outputs10/10.fuzz:6:11: error: ‘namespace Dad { }’ redeclared as different kind of entity
+    6 | namespace Dad {
+      |           ^~~
+outputs/fuzzing_outputs10/10.fuzz:2:7: note: previous declaration ‘class Dad’
+    2 | class Dad {
+      |       ^~~
+outputs/fuzzing_outputs10/10.fuzz:9:2: error: expected unqualified-id before ‘private’
+    9 |  private:
+      |  ^~~~~~~
+outputs/fuzzing_outputs10/10.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/10.fuzz:15:23: error: cannot call constructor ‘Dad::Dad’ directly [-fpermissive]
+   15 |     Dad dad = Dad::Dad();
+      |               ~~~~~~~~^~
+outputs/fuzzing_outputs10/10.fuzz:15:23: note: for a function-style cast, remove the redundant ‘::Dad’
+outputs/fuzzing_outputs10/10.fuzz:17:22: error: ‘class Dad’ has no member named ‘value’
+   17 |     std::cout << dad.value << "\n";
+      |                      ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/11.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/11.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/12.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/12.fuzz failed validation with error message: outputs/fuzzing_outputs10/12.fuzz:4:2: error: #endif without #if
+    4 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/13.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/13.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/14.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/14.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/15.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/15.fuzz failed validation with error message: outputs/fuzzing_outputs10/15.fuzz:32:2: error: #endif without #if
+   32 | #endif
+      |  ^~~~~
+outputs/fuzzing_outputs10/15.fuzz:26:13: error: ‘int MyClass::x() const’ conflicts with a previous declaration
+   26 |     int x() const;
+      |             ^~~~~
+outputs/fuzzing_outputs10/15.fuzz:7:9: note: previous declaration ‘int MyClass::x’
+    7 |     int x;
+      |         ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/16.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/16.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/17.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/17.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/18.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/18.fuzz failed validation with error message: /usr/bin/ld: /tmp/ccpVyjnI.o: in function `main':
+18.fuzz:(.text+0x1e): undefined reference to `add(int, int)'
+collect2: error: ld returned 1 exit status
+
+[TRACE] Validating outputs/fuzzing_outputs10/19.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/19.fuzz failed validation with error message: outputs/fuzzing_outputs10/19.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/19.fuzz:8:12: error: ‘add’ was not declared in this scope
+    8 |     return add(4,6);
+      |            ^~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/20.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/20.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/21.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/21.fuzz failed validation with error message: outputs/fuzzing_outputs10/21.fuzz:22:1: error: ISO C++ forbids declaration of ‘TestClass’ with no type [-fpermissive]
+   22 | TestClass(TestClass *x){
+      | ^~~~~~~~~
+outputs/fuzzing_outputs10/21.fuzz: In function ‘int TestClass(TestClass*)’:
+outputs/fuzzing_outputs10/21.fuzz:24:9: error: invalid use of ‘this’ in non-member function
+   24 |     x = this;
+      |         ^~~~
+outputs/fuzzing_outputs10/21.fuzz:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   25 | }
+      | ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/22.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/22.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/23.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/23.fuzz failed validation with error message: outputs/fuzzing_outputs10/23.fuzz: In function ‘int mod(int, int)’:
+outputs/fuzzing_outputs10/23.fuzz:5:34: error: unable to find numeric literal operator ‘operator""mod’
+    5 |     int zz=(x-mod(z,2))*mod(z,4)+2mod(mod(mod(z,4),2), 4);
+      |                                  ^~~~
+outputs/fuzzing_outputs10/23.fuzz:5:34: note: use ‘-fext-numeric-literals’ to enable more built-in suffixes
+outputs/fuzzing_outputs10/23.fuzz: At global scope:
+outputs/fuzzing_outputs10/23.fuzz:10:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   10 | main(){
+      | ^~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/24.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/24.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/25.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/25.fuzz failed validation with error message: outputs/fuzzing_outputs10/25.fuzz:24:1: error: unterminated comment
+   24 | /*
+      | ^
+outputs/fuzzing_outputs10/25.fuzz:14:6: error: ambiguating new declaration of ‘void f(int)’
+   14 | void f(int i) { std::cout << i; }
+      |      ^
+outputs/fuzzing_outputs10/25.fuzz:12:5: note: old declaration ‘int f(int)’
+   12 | int f(int i);
+      |     ^
+outputs/fuzzing_outputs10/25.fuzz:16:48: error: conflicting declaration ‘char* c’
+   16 | void f(int i, bool b = true, char c='\n', char c[] = "c");
+      |                                           ~~~~~^~~~~~~~~
+outputs/fuzzing_outputs10/25.fuzz:16:35: note: previous declaration as ‘char c’
+   16 | void f(int i, bool b = true, char c='\n', char c[] = "c");
+      |                              ~~~~~^~~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/26.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/26.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/27.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/27.fuzz failed validation with error message: outputs/fuzzing_outputs10/27.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/27.fuzz:20:9: error: redeclaration of ‘int a’
+   20 |     int a = a + 1, a = a +a;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:19:9: note: ‘int a’ previously declared here
+   19 |     int a = 2;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:20:20: error: redeclaration of ‘int a’
+   20 |     int a = a + 1, a = a +a;
+      |                    ^
+outputs/fuzzing_outputs10/27.fuzz:19:9: note: ‘int a’ previously declared here
+   19 |     int a = 2;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:22:18: error: ‘hello’ was not declared in this scope; did you mean ‘ftello’?
+   22 |     std::cout << hello() << ": " << str;
+      |                  ^~~~~
+      |                  ftello
+outputs/fuzzing_outputs10/27.fuzz:24:5: error: ‘b’ was not declared in this scope
+   24 |     b = +1;
+      |     ^
+outputs/fuzzing_outputs10/27.fuzz:25:10: error: conflicting declaration ‘bool a’
+   25 |     bool a = true;
+      |          ^
+outputs/fuzzing_outputs10/27.fuzz:19:9: note: previous declaration as ‘int a’
+   19 |     int a = 2;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:26:9: error: redeclaration of ‘int a’
+   26 |     int a = 8, c = a * 3 + 2 * a + a + 1, c = c * a + 10, c = a + b;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:19:9: note: ‘int a’ previously declared here
+   19 |     int a = 2;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:26:43: error: redeclaration of ‘int c’
+   26 |     int a = 8, c = a * 3 + 2 * a + a + 1, c = c * a + 10, c = a + b;
+      |                                           ^
+outputs/fuzzing_outputs10/27.fuzz:26:16: note: ‘int c’ previously declared here
+   26 |     int a = 8, c = a * 3 + 2 * a + a + 1, c = c * a + 10, c = a + b;
+      |                ^
+outputs/fuzzing_outputs10/27.fuzz:26:59: error: redeclaration of ‘int c’
+   26 |     int a = 8, c = a * 3 + 2 * a + a + 1, c = c * a + 10, c = a + b;
+      |                                                           ^
+outputs/fuzzing_outputs10/27.fuzz:26:16: note: ‘int c’ previously declared here
+   26 |     int a = 8, c = a * 3 + 2 * a + a + 1, c = c * a + 10, c = a + b;
+      |                ^
+outputs/fuzzing_outputs10/27.fuzz:27:9: error: redeclaration of ‘int a’
+   27 |     int a = 0, b = 5443, b = b + 1;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:19:9: note: ‘int a’ previously declared here
+   19 |     int a = 2;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:28:9: error: redeclaration of ‘int a’
+   28 |     int a = 0;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:19:9: note: ‘int a’ previously declared here
+   19 |     int a = 2;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:35:9: error: redeclaration of ‘int a’
+   35 |     int a = 0;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:19:9: note: ‘int a’ previously declared here
+   19 |     int a = 2;
+      |         ^
+outputs/fuzzing_outputs10/27.fuzz:38:25: error: expected ‘;’ at end of input
+   38 |     std::cout << "a is "
+      |                         ^
+      |                         ;
+outputs/fuzzing_outputs10/27.fuzz:38:25: error: expected ‘}’ at end of input
+outputs/fuzzing_outputs10/27.fuzz:14:12: note: to match this ‘{’
+   14 | int main() {
+      |            ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/28.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/28.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/29.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/29.fuzz failed validation with error message: outputs/fuzzing_outputs10/29.fuzz:18:5: error: redefinition of ‘int mod(int, int)’
+   18 | int mod(int x, int y) {
+      |     ^~~
+outputs/fuzzing_outputs10/29.fuzz:2:5: note: ‘int mod(int, int)’ previously defined here
+    2 | int mod(int x, int y) {
+      |     ^~~
+outputs/fuzzing_outputs10/29.fuzz:21:6: error: ambiguating new declaration of ‘long int large()’
+   21 | long large() {
+      |      ^~~~~
+outputs/fuzzing_outputs10/29.fuzz:5:5: note: old declaration ‘int large()’
+    5 | int large() {
+      |     ^~~~~
+outputs/fuzzing_outputs10/29.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/29.fuzz:42:15: error: base operand of ‘->’ has non-pointer type ‘TestClass’
+   42 |     return obj->testMethod();
+      |               ^~
+outputs/fuzzing_outputs10/29.fuzz: At global scope:
+outputs/fuzzing_outputs10/29.fuzz:46:5: error: redefinition of ‘int mod(int, int)’
+   46 | int mod(int x, int y) {
+      |     ^~~
+outputs/fuzzing_outputs10/29.fuzz:2:5: note: ‘int mod(int, int)’ previously defined here
+    2 | int mod(int x, int y) {
+      |     ^~~
+outputs/fuzzing_outputs10/29.fuzz:49:6: error: ambiguating new declaration of ‘long int large()’
+   49 | long large() {
+      |      ^~~~~
+outputs/fuzzing_outputs10/29.fuzz:5:5: note: old declaration ‘int large()’
+    5 | int large() {
+      |     ^~~~~
+outputs/fuzzing_outputs10/29.fuzz: In function ‘long int large()’:
+outputs/fuzzing_outputs10/29.fuzz:53:20: error: expected ‘}’ at end of input
+   53 |     buff[0] = '\0';
+      |                    ^
+outputs/fuzzing_outputs10/29.fuzz:49:14: note: to match this ‘{’
+   49 | long large() {
+      |              ^
+outputs/fuzzing_outputs10/29.fuzz:53:20: warning: no return statement in function returning non-void [-Wreturn-type]
+   53 |     buff[0] = '\0';
+      |                    ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/30.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/30.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/31.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/31.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/32.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/32.fuzz failed validation with error message: outputs/fuzzing_outputs10/32.fuzz: In function ‘int large()’:
+outputs/fuzzing_outputs10/32.fuzz:7:18: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+    7 |     return large - 1;
+      |            ~~~~~~^~~
+outputs/fuzzing_outputs10/32.fuzz:7:18: error: invalid conversion from ‘int (*)()’ to ‘int’ [-fpermissive]
+    7 |     return large - 1;
+      |            ~~~~~~^~~
+      |                  |
+      |                  int (*)()
+
+[TRACE] Validating outputs/fuzzing_outputs10/33.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/33.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/34.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/34.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/35.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/35.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/36.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/36.fuzz failed validation with error message: /usr/bin/ld: /tmp/ccNFWsQG.o: in function `main':
+36.fuzz:(.text+0x2b): undefined reference to `mod(int, int)'
+collect2: error: ld returned 1 exit status
+
+[TRACE] Validating outputs/fuzzing_outputs10/37.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/37.fuzz failed validation with error message: outputs/fuzzing_outputs10/37.fuzz: In function ‘int new_mod(int, int)’:
+outputs/fuzzing_outputs10/37.fuzz:3:26: error: ‘large’ was not declared in this scope
+    3 |     return mod(y, mod(x, large()));
+      |                          ^~~~~
+outputs/fuzzing_outputs10/37.fuzz:3:19: error: ‘mod’ was not declared in this scope
+    3 |     return mod(y, mod(x, large()));
+      |                   ^~~
+outputs/fuzzing_outputs10/37.fuzz:3:12: error: ‘mod’ was not declared in this scope
+    3 |     return mod(y, mod(x, large()));
+      |            ^~~
+outputs/fuzzing_outputs10/37.fuzz: In function ‘int large_new()’:
+outputs/fuzzing_outputs10/37.fuzz:6:16: error: ‘large’ was not declared in this scope
+    6 |     return mod(large(), new_mod(29, large()));
+      |                ^~~~~
+outputs/fuzzing_outputs10/37.fuzz:6:12: error: ‘mod’ was not declared in this scope
+    6 |     return mod(large(), new_mod(29, large()));
+      |            ^~~
+outputs/fuzzing_outputs10/37.fuzz: At global scope:
+outputs/fuzzing_outputs10/37.fuzz:15:4: error: expected ‘;’ after union definition
+   15 |   }. c;
+      |    ^
+      |    ;
+outputs/fuzzing_outputs10/37.fuzz:15:4: error: expected unqualified-id before ‘.’ token
+
+[TRACE] Validating outputs/fuzzing_outputs10/38.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/38.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/39.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/39.fuzz failed validation with error message: outputs/fuzzing_outputs10/39.fuzz: In function ‘int mod(int, int)’:
+outputs/fuzzing_outputs10/39.fuzz:4:22: error: cannot convert ‘std::basic_ostream<char>’ to ‘int’ in return
+    4 |     return std::cout << mod(x, y);
+      |            ~~~~~~~~~~^~~~~~~~~~~~
+      |                      |
+      |                      std::basic_ostream<char>
+
+[TRACE] Validating outputs/fuzzing_outputs10/40.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/40.fuzz failed validation with error message: outputs/fuzzing_outputs10/40.fuzz: In function ‘void bad_prompts()’:
+outputs/fuzzing_outputs10/40.fuzz:9:24: error: ‘danger_prompts’ was not declared in this scope; did you mean ‘bad_prompts’?
+    9 |     for(int i = 0; i < danger_prompts.size(); i++){
+      |                        ^~~~~~~~~~~~~~
+      |                        bad_prompts
+
+[TRACE] Validating outputs/fuzzing_outputs10/41.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/41.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/42.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/42.fuzz failed validation with error message: outputs/fuzzing_outputs10/42.fuzz:9:2: error: #endif without #if
+    9 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/43.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/43.fuzz failed validation with error message: outputs/fuzzing_outputs10/43.fuzz: In function ‘int small()’:
+outputs/fuzzing_outputs10/43.fuzz:10:12: error: ‘large’ was not declared in this scope
+   10 |     return large() << 8;
+      |            ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/44.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/44.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/45.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/45.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/46.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/46.fuzz failed validation with error message: outputs/fuzzing_outputs10/46.fuzz:2:13: error: stray ‘#’ in program
+    2 | <fim_middle>#include <cstdio>
+      |             ^
+outputs/fuzzing_outputs10/46.fuzz:2:1: error: expected unqualified-id before ‘<’ token
+    2 | <fim_middle>#include <cstdio>
+      | ^
+outputs/fuzzing_outputs10/46.fuzz: In function ‘int mod(int, int)’:
+outputs/fuzzing_outputs10/46.fuzz:11:9: error: ‘b’ was not declared in this scope
+   11 |     a = b;
+      |         ^
+outputs/fuzzing_outputs10/46.fuzz:12:12: error: ‘x’ was not declared in this scope
+   12 |     return x;
+      |            ^
+outputs/fuzzing_outputs10/46.fuzz: At global scope:
+outputs/fuzzing_outputs10/46.fuzz:15:5: error: redefinition of ‘int a’
+   15 | int a = 0;
+      |     ^
+outputs/fuzzing_outputs10/46.fuzz:4:5: note: ‘int a’ previously defined here
+    4 | int a = 0;
+      |     ^
+outputs/fuzzing_outputs10/46.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/46.fuzz:18:5: error: ‘large’ was not declared in this scope
+   18 |     large();
+      |     ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/47.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/47.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/48.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/48.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/49.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/49.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/50.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/50.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/51.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/51.fuzz failed validation with error message: outputs/fuzzing_outputs10/51.fuzz:2:1: error: stray ‘`’ in program
+    2 | ```
+      | ^
+outputs/fuzzing_outputs10/51.fuzz:2:2: error: stray ‘`’ in program
+    2 | ```
+      |  ^
+outputs/fuzzing_outputs10/51.fuzz:2:3: error: stray ‘`’ in program
+    2 | ```
+      |   ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/52.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/52.fuzz failed validation with error message: outputs/fuzzing_outputs10/52.fuzz: In function ‘int small()’:
+outputs/fuzzing_outputs10/52.fuzz:3:19: error: ‘large’ was not declared in this scope
+    3 |     return sizeof(large());
+      |                   ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/53.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/53.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/54.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/54.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/55.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/55.fuzz failed validation with error message: outputs/fuzzing_outputs10/55.fuzz:3:6: error: ‘cout’ in namespace ‘std’ does not name a type
+    3 | std::cout << "Welcome to C++\n";
+      |      ^~~~
+In file included from outputs/fuzzing_outputs10/55.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/fuzzing_outputs10/55.fuzz:4:6: error: ‘cout’ in namespace ‘std’ does not name a type
+    4 | std::cout << "This is where we generate C++ code and then we run " << large() << " so we can get started\n";
+      |      ^~~~
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/fuzzing_outputs10/55.fuzz:5:1: error: expected declaration before ‘}’ token
+    5 | }
+      | ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/56.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/56.fuzz failed validation with error message: outputs/fuzzing_outputs10/56.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/56.fuzz:7:13: error: expected ‘;’ before ‘}’ token
+    7 |     return 0
+      |             ^
+      |             ;
+    8 | }
+      | ~            
+
+[TRACE] Validating outputs/fuzzing_outputs10/57.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/57.fuzz failed validation with error message: outputs/fuzzing_outputs10/57.fuzz: In function ‘int small()’:
+outputs/fuzzing_outputs10/57.fuzz:3:12: error: ‘large’ was not declared in this scope
+    3 |     return large();
+      |            ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/58.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/58.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/59.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/59.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/60.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/60.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/61.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/61.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/62.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/62.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/63.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/63.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/64.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/64.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/65.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/65.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/66.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/66.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/67.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/67.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/68.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/68.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/69.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/69.fuzz failed validation with error message: outputs/fuzzing_outputs10/69.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/69.fuzz:8:20: error: lvalue required as unary ‘&’ operand
+    8 |     int_ptr *ip = &23;
+      |                    ^~
+
+[TRACE] Validating outputs/fuzzing_outputs10/70.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/70.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/71.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/71.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/72.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/72.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/73.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/73.fuzz failed validation with error message: outputs/fuzzing_outputs10/73.fuzz:4:1: error: expected unqualified-id before ‘{’ token
+    4 | {
+      | ^
+outputs/fuzzing_outputs10/73.fuzz:8:1: error: ‘::main’ must return ‘int’
+    8 | void main(){
+      | ^~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/74.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/74.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/75.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/75.fuzz failed validation with error message: outputs/fuzzing_outputs10/75.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/75.fuzz:13:10: error: no match for ‘operator<<’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘A’)
+   13 |     cout << A();
+      |     ~~~~ ^~ ~~~
+      |     |       |
+      |     |       A
+      |     std::ostream {aka std::basic_ostream<char>}
+In file included from /usr/include/c++/13/iostream:41,
+                 from outputs/fuzzing_outputs10/75.fuzz:1:
+/usr/include/c++/13/ostream:110:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:110:36: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)’ {aka ‘std::basic_ostream<char>& (*)(std::basic_ostream<char>&)’}
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:119:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]’
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:119:32: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:129:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:129:30: note:   no known conversion for argument 1 from ‘A’ to ‘std::ios_base& (*)(std::ios_base&)’
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:168:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:168:23: note:   no known conversion for argument 1 from ‘A’ to ‘long int’
+  168 |       operator<<(long __n)
+      |                  ~~~~~^~~
+/usr/include/c++/13/ostream:172:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:172:32: note:   no known conversion for argument 1 from ‘A’ to ‘long unsigned int’
+  172 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:176:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:176:23: note:   no known conversion for argument 1 from ‘A’ to ‘bool’
+  176 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from /usr/include/c++/13/ostream:880:
+/usr/include/c++/13/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from ‘A’ to ‘short int’
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+/usr/include/c++/13/ostream:183:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:183:33: note:   no known conversion for argument 1 from ‘A’ to ‘short unsigned int’
+  183 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from ‘A’ to ‘int’
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+/usr/include/c++/13/ostream:194:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:194:31: note:   no known conversion for argument 1 from ‘A’ to ‘unsigned int’
+  194 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:203:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:203:28: note:   no known conversion for argument 1 from ‘A’ to ‘long long int’
+  203 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:207:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:207:37: note:   no known conversion for argument 1 from ‘A’ to ‘long long unsigned int’
+  207 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:222:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:222:25: note:   no known conversion for argument 1 from ‘A’ to ‘double’
+  222 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/13/ostream:226:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:226:24: note:   no known conversion for argument 1 from ‘A’ to ‘float’
+  226 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+/usr/include/c++/13/ostream:234:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:234:30: note:   no known conversion for argument 1 from ‘A’ to ‘long double’
+  234 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:241:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float16) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  241 |       operator<<(_Float16 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:241:27: note:   no known conversion for argument 1 from ‘A’ to ‘_Float16’
+  241 |       operator<<(_Float16 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:250:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float32) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  250 |       operator<<(_Float32 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:250:27: note:   no known conversion for argument 1 from ‘A’ to ‘_Float32’
+  250 |       operator<<(_Float32 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:259:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float64) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  259 |       operator<<(_Float64 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:259:27: note:   no known conversion for argument 1 from ‘A’ to ‘_Float64’
+  259 |       operator<<(_Float64 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:277:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__gnu_cxx::__bfloat16_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __gnu_cxx::__bfloat16_t = __bf16]’
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:277:42: note:   no known conversion for argument 1 from ‘A’ to ‘__gnu_cxx::__bfloat16_t’ {aka ‘__bf16’}
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:292:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  292 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:292:30: note:   no known conversion for argument 1 from ‘A’ to ‘const void*’
+  292 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:297:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]’
+  297 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:297:18: note:   no known conversion for argument 1 from ‘A’ to ‘std::nullptr_t’
+  297 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+/usr/include/c++/13/ostream:304:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const volatile void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  304 |       operator<<(const volatile void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:304:39: note:   no known conversion for argument 1 from ‘A’ to ‘const volatile void*’
+  304 |       operator<<(const volatile void* __p)
+      |                  ~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/ostream.tcc:124:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]’
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_ostream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/13/bits/basic_string.h:47,
+                 from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40:
+/usr/include/c++/13/string_view:761:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, basic_string_view<_CharT, _Traits>)’
+  761 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/13/string_view:761:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   ‘A’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/bits/basic_string.h:4032:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 4032 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:4032:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   ‘A’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   13 |     cout << A();
+      |               ^
+In file included from /usr/include/c++/13/bits/memory_resource.h:38,
+                 from /usr/include/c++/13/string:58:
+/usr/include/c++/13/cstddef:124:5: note: candidate: ‘template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator<<(byte, _IntegerType)’
+  124 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/13/cstddef:124:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:5: note:   cannot convert ‘std::cout’ (type ‘std::ostream’ {aka ‘std::basic_ostream<char>’}) to type ‘std::byte’
+   13 |     cout << A();
+      |     ^~~~
+In file included from /usr/include/c++/13/bits/ios_base.h:46:
+/usr/include/c++/13/system_error:339:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)’
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/13/system_error:339:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const std::error_code&’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:554:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)’
+  554 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:554:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘A’)
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/ostream:564:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)’
+  564 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:564:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘char’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:570:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)’
+  570 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:570:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘char’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:581:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)’
+  581 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:581:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘signed char’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:586:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)’
+  586 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:586:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘unsigned char’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:595:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t)’ (deleted)
+  595 |     operator<<(basic_ostream<char, _Traits>&, wchar_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:595:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘wchar_t’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:600:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char8_t)’ (deleted)
+  600 |     operator<<(basic_ostream<char, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:600:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘char8_t’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:605:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char16_t)’ (deleted)
+  605 |     operator<<(basic_ostream<char, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:605:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘char16_t’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:609:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char32_t)’ (deleted)
+  609 |     operator<<(basic_ostream<char, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:609:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘char32_t’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:615:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char8_t)’ (deleted)
+  615 |     operator<<(basic_ostream<wchar_t, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:615:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   mismatched types ‘wchar_t’ and ‘char’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/ostream:620:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char16_t)’ (deleted)
+  620 |     operator<<(basic_ostream<wchar_t, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:620:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   mismatched types ‘wchar_t’ and ‘char’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/ostream:624:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char32_t)’ (deleted)
+  624 |     operator<<(basic_ostream<wchar_t, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:624:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   mismatched types ‘wchar_t’ and ‘char’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/ostream:645:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  645 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:645:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   mismatched types ‘const _CharT*’ and ‘A’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/bits/ostream.tcc:307:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)’
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const char*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:662:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)’
+  662 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:662:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const char*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:675:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)’
+  675 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:675:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const signed char*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:680:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)’
+  680 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:680:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const unsigned char*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:689:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*)’ (deleted)
+  689 |     operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:689:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const wchar_t*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:694:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char8_t*)’ (deleted)
+  694 |     operator<<(basic_ostream<char, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:694:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const char8_t*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:699:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char16_t*)’ (deleted)
+  699 |     operator<<(basic_ostream<char, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:699:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const char16_t*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:703:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char32_t*)’ (deleted)
+  703 |     operator<<(basic_ostream<char, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:703:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:13: note:   cannot convert ‘A()’ (type ‘A’) to type ‘const char32_t*’
+   13 |     cout << A();
+      |             ^~~
+/usr/include/c++/13/ostream:709:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*)’ (deleted)
+  709 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:709:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   mismatched types ‘wchar_t’ and ‘char’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/ostream:714:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*)’ (deleted)
+  714 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:714:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   mismatched types ‘wchar_t’ and ‘char’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/ostream:718:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*)’ (deleted)
+  718 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:718:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs10/75.fuzz:13:15: note:   mismatched types ‘wchar_t’ and ‘char’
+   13 |     cout << A();
+      |               ^
+/usr/include/c++/13/ostream:801:5: note: candidate: ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)’
+  801 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:801:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/ostream: In substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = A]’:
+outputs/fuzzing_outputs10/75.fuzz:13:15:   required from here
+/usr/include/c++/13/ostream:801:5: error: template constraint failure for ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&&’
+/usr/include/c++/13/ostream:801:5: note: constraints not satisfied
+/usr/include/c++/13/ostream: In substitution of ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&& [with _Os = std::basic_ostream<char>&; _Tp = A]’:
+/usr/include/c++/13/ostream:801:5:   required by substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = A]’
+outputs/fuzzing_outputs10/75.fuzz:13:15:   required from here
+/usr/include/c++/13/ostream:768:13:   required for the satisfaction of ‘__derived_from_ios_base<_Os>’ [with _Os = std::basic_ostream<char, std::char_traits<char> >&]
+/usr/include/c++/13/ostream:768:39: note: the expression ‘is_class_v<_Tp> [with _Tp = std::basic_ostream<char, std::char_traits<char> >&]’ evaluated to ‘false’
+  768 |     concept __derived_from_ios_base = is_class_v<_Tp>
+      |                                       ^~~~~~~~~~~~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/76.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/76.fuzz failed validation with error message: outputs/fuzzing_outputs10/76.fuzz: In function ‘Node* removeLast(Node*)’:
+outputs/fuzzing_outputs10/76.fuzz:37:20: error: cannot convert ‘Node**’ to ‘Node*’
+   37 |         removeLast(&t2->next);
+      |                    ^~~~~~~~~
+      |                    |
+      |                    Node**
+outputs/fuzzing_outputs10/76.fuzz:34:26: note:   initializing argument 1 of ‘Node* removeLast(Node*)’
+   34 | Node * removeLast(Node * t){
+      |                   ~~~~~~~^
+outputs/fuzzing_outputs10/76.fuzz: In function ‘Node* removeLeft(Node*)’:
+outputs/fuzzing_outputs10/76.fuzz:51:28: error: expected ‘)’ at end of input
+   51 |         removeLast(&t->next
+      |                   ~        ^
+      |                            )
+outputs/fuzzing_outputs10/76.fuzz:51:28: error: expected ‘}’ at end of input
+outputs/fuzzing_outputs10/76.fuzz:49:20: note: to match this ‘{’
+   49 |     if(t!= nullptr){
+      |                    ^
+outputs/fuzzing_outputs10/76.fuzz:51:28: error: expected ‘}’ at end of input
+   51 |         removeLast(&t->next
+      |                            ^
+outputs/fuzzing_outputs10/76.fuzz:48:28: note: to match this ‘{’
+   48 | Node * removeLeft(Node * t){
+      |                            ^
+outputs/fuzzing_outputs10/76.fuzz:51:28: warning: no return statement in function returning non-void [-Wreturn-type]
+   51 |         removeLast(&t->next
+      |                            ^
+
+[TRACE] Validating outputs/fuzzing_outputs10/77.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/77.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/78.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/78.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/79.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/79.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/80.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/80.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/81.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/81.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/82.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/82.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/83.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/83.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/84.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/84.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/85.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/85.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/86.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/86.fuzz failed validation with error message: outputs/fuzzing_outputs10/86.fuzz:4:11: error: expected constructor, destructor, or type conversion before ‘(’ token
+    4 | __declspec(noinline) int* test(int argc, const char* argv[]){
+      |           ^
+outputs/fuzzing_outputs10/86.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/86.fuzz:14:14: error: ‘test’ was not declared in this scope
+   14 |     int* res=test(1,NULL);
+      |              ^~~~
+outputs/fuzzing_outputs10/86.fuzz:15:10: error: expected ‘(’ before ‘;’ token
+   15 |     __asm;
+      |          ^
+      |          (
+
+[TRACE] Validating outputs/fuzzing_outputs10/87.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/87.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/88.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/88.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/89.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/89.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/90.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/90.fuzz failed validation with error message: outputs/fuzzing_outputs10/90.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs10/90.fuzz:15:16: error: cannot convert ‘int*’ to ‘float*’ in initialization
+   15 |     float* f = &x;
+      |                ^~
+      |                |
+      |                int*
+outputs/fuzzing_outputs10/90.fuzz:17:34: error: reference to ‘is_convertible’ is ambiguous
+   17 |       cout << "Convertible: " << is_convertible<float*>::value << endl;
+      |                                  ^~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/bits/move.h:37,
+                 from /usr/include/c++/13/bits/exception_ptr.h:41,
+                 from /usr/include/c++/13/exception:164,
+                 from /usr/include/c++/13/ios:41,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/fuzzing_outputs10/90.fuzz:1:
+/usr/include/c++/13/type_traits:1416:12: note: candidates are: ‘template<class _From, class _To> struct std::is_convertible’
+ 1416 |     struct is_convertible
+      |            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:7:28: note:                 ‘template<class T> using is_convertible = std::conditional_t<is_convertible_v<const T*, T>, std::integral_constant<bool, true>, std::integral_constant<bool, false> >’
+    7 | template<typename T> using is_convertible = std::conditional_t<
+      |                            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:17:49: error: expected primary-expression before ‘float’
+   17 |       cout << "Convertible: " << is_convertible<float*>::value << endl;
+      |                                                 ^~~~~
+outputs/fuzzing_outputs10/90.fuzz:18:34: error: reference to ‘is_convertible’ is ambiguous
+   18 |       cout << "Convertible: " << is_convertible<const float*>::value << endl;
+      |                                  ^~~~~~~~~~~~~~
+/usr/include/c++/13/type_traits:1416:12: note: candidates are: ‘template<class _From, class _To> struct std::is_convertible’
+ 1416 |     struct is_convertible
+      |            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:7:28: note:                 ‘template<class T> using is_convertible = std::conditional_t<is_convertible_v<const T*, T>, std::integral_constant<bool, true>, std::integral_constant<bool, false> >’
+    7 | template<typename T> using is_convertible = std::conditional_t<
+      |                            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:18:49: error: expected primary-expression before ‘const’
+   18 |       cout << "Convertible: " << is_convertible<const float*>::value << endl;
+      |                                                 ^~~~~
+outputs/fuzzing_outputs10/90.fuzz:20:38: error: reference to ‘is_convertible’ is ambiguous
+   20 |       cout << "Not convertible: " << is_convertible<float*>::value << endl;
+      |                                      ^~~~~~~~~~~~~~
+/usr/include/c++/13/type_traits:1416:12: note: candidates are: ‘template<class _From, class _To> struct std::is_convertible’
+ 1416 |     struct is_convertible
+      |            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:7:28: note:                 ‘template<class T> using is_convertible = std::conditional_t<is_convertible_v<const T*, T>, std::integral_constant<bool, true>, std::integral_constant<bool, false> >’
+    7 | template<typename T> using is_convertible = std::conditional_t<
+      |                            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:20:53: error: expected primary-expression before ‘float’
+   20 |       cout << "Not convertible: " << is_convertible<float*>::value << endl;
+      |                                                     ^~~~~
+outputs/fuzzing_outputs10/90.fuzz:21:38: error: reference to ‘is_convertible’ is ambiguous
+   21 |       cout << "Not convertible: " << is_convertible<const float*>::value << endl;
+      |                                      ^~~~~~~~~~~~~~
+/usr/include/c++/13/type_traits:1416:12: note: candidates are: ‘template<class _From, class _To> struct std::is_convertible’
+ 1416 |     struct is_convertible
+      |            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:7:28: note:                 ‘template<class T> using is_convertible = std::conditional_t<is_convertible_v<const T*, T>, std::integral_constant<bool, true>, std::integral_constant<bool, false> >’
+    7 | template<typename T> using is_convertible = std::conditional_t<
+      |                            ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs10/90.fuzz:21:53: error: expected primary-expression before ‘const’
+   21 |       cout << "Not convertible: " << is_convertible<const float*>::value << endl;
+      |                                                     ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/91.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/91.fuzz failed validation with error message: outputs/fuzzing_outputs10/91.fuzz:33:5: error: extra qualification ‘foo::’ on member ‘foo’ [-fpermissive]
+   33 |     foo::~foo()
+      |     ^~~
+outputs/fuzzing_outputs10/91.fuzz: In copy constructor ‘foo::foo(const foo&)’:
+outputs/fuzzing_outputs10/91.fuzz:9:33: error: mem-initializer for ‘foo::x_’ follows constructor delegation
+    9 |     foo(const foo& x):foo(),x_(x)
+      |                                 ^
+outputs/fuzzing_outputs10/91.fuzz: In member function ‘foo& foo::operator=(const foo&)’:
+outputs/fuzzing_outputs10/91.fuzz:16:14: error: cannot convert ‘const foo’ to ‘int’ in assignment
+   16 |         x_ = x;
+      |              ^
+      |              |
+      |              const foo
+outputs/fuzzing_outputs10/91.fuzz: In constructor ‘foo::foo(foo&&)’:
+outputs/fuzzing_outputs10/91.fuzz:19:28: error: mem-initializer for ‘foo::x_’ follows constructor delegation
+   19 |     foo(foo&& x):foo(),x_(x)
+      |                            ^
+outputs/fuzzing_outputs10/91.fuzz: In member function ‘foo& foo::operator=(foo&&)’:
+outputs/fuzzing_outputs10/91.fuzz:26:14: error: cannot convert ‘foo’ to ‘int’ in assignment
+   26 |         x_ = x;
+      |              ^
+      |              |
+      |              foo
+
+[TRACE] Validating outputs/fuzzing_outputs10/92.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/92.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/93.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/93.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/94.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/94.fuzz failed validation with error message: outputs/fuzzing_outputs10/94.fuzz:16:5: error: redefinition of ‘int main()’
+   16 | int main(){
+      |     ^~~~
+outputs/fuzzing_outputs10/94.fuzz:3:5: note: ‘int main()’ previously defined here
+    3 | int main(){
+      |     ^~~~
+outputs/fuzzing_outputs10/94.fuzz:51:5: error: redefinition of ‘int main()’
+   51 | int main(){
+      |     ^~~~
+outputs/fuzzing_outputs10/94.fuzz:3:5: note: ‘int main()’ previously defined here
+    3 | int main(){
+      |     ^~~~
+
+[TRACE] Validating outputs/fuzzing_outputs10/95.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/95.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/96.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/96.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/97.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/97.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/98.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/98.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs10/99.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs10/99.fuzz is safe

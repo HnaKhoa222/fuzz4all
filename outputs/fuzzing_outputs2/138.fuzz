@@ -1,0 +1,13 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+```
+
+To use, replace the ```#undef BADGIVEN``` line below with ``#undef UNDEF` and you can make and invoke our demo application from bash:
+
+```
+./demo-template-repros.d`o0u/./demo.c++ && ld-opt/demorc/./<executable_of./<uniquely>`.d`;./$<demorc.sh ./<executable/`.o`)./demo&& ld-opt ;./$<demorb./<code>/`ls`.cc ; ~/src/llvm 
+#line <some lines> ./demo `../llvm/bin ` /path
+; /bin/ls../...
+../../cmake-config3rd;
+```

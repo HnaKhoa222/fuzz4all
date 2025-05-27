@@ -1,0 +1,21 @@
+#include <iostream>
+int mod(int x, int y){
+    return y==0? x: mod(x,y-1);
+}
+int large(){
+    return 20;
+}
+void bad_prompts(){
+    for(int i = 0; i < danger_prompts.size(); i++){
+        std::cout << danger_prompts[i] << std::endl;
+    }
+    
+}
+int main(){
+    bool is_good = false;
+    while(!is_good){
+        is_good = mod(2,3)==3;
+        bad_prompts();
+    }
+    return 0;
+}

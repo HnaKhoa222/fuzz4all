@@ -1,0 +1,32 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+  */
+
+   
+ 
+  return 0;<commit_msg>[044+]: C+::string[2]: Change c-style quotes from C++/Python (single vs double) to python quotes to ensure both python and c++ support it in grammar.<commit_after>/* danger*tive
+    * ===============
+    | |
+\ __ /___\ |___|_)___
+       ' //        _//
+         \\________'
+       \__|      (__|
+     _|_, | |    | |
+  (_|\_\_\_}__| }
+ /__  /___________ _ ____ _ (_) ____
+/ _ \|___|   _| |_ )  _ \( '/ (_   )
+(___) ___)   |____| (__/|_))_/\)
+   /____/
+
+https: 
+
+C++ programming challenges using Visual Studio Code: [1,2]
+  Challenge Levels
+--------------------------------
+1 - C++ Online C Challenges.
+  Attempts: No; time limit:
+  - Challenge Description
+    Check out available programming problems that use template metaprograms,
+    macros, random/infinite loops, random number generators, pointers, pointers math and
+    random data, control flow.

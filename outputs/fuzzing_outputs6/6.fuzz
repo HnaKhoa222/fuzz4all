@@ -1,0 +1,16 @@
+#include <iostream>
+
+
+int testInt = 0, count = 0;    
+   
+int multiply_by_ten() {
+    {
+        std::printf("%s enter_theten(). Calling multiply_by_one(). multiply_by_ten(%d)\n", __函数名__c, ++count);  
+        result(multiply_by_one()); 
+        --aTen;                                        
+        std::printf("%s leaving ten(), result: %f\n", __函数名__c, static_cast<char>(*result__[0]))  
+    }
+}
+    
+__main () 
+exit { }

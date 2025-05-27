@@ -1,0 +1,5 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+</center>.  For all errors, check what file generated the error, it usually means a missing newline when you have too many errors. That usually ends after running through all rules, but you could add a \#line directive if you want to comment a specific routine by its name:
+<center><font sizes=+1>:/include:</i>/include</i>/<name>.inl:/main</i>.</NAME></center>#line

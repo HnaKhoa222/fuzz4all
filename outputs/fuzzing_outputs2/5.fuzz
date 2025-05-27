@@ -1,0 +1,16 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+Generating A unique C++ program which:
+
+     Uses C++03 language (C++03 also implicitly assumes GNU and C builtins if no features enabled on host compiler or if pre-processor is GNU extension "CC"), which C11 doesn't nto; but some C headers required for standard library have special support for that C family only
+- Uses standard C headers with optional POSIX.
+- Requires support for C ++0x features (-std=gnu99, - std=1989...)
+
+Generate a string program that reads from keyboard, validates to print one time, at the proper timing in the program body and then clears contents before printing any line, e.g.
+
+     cout << cstr;
+Generate a string program that calculates total distance in different units. This is useful for testing unit/library quality -- and perhaps you just never need so many decimal tests for an object model test :-)
+//TODO
+A class containing a member function returning 'void' (such as operator=()) without default copy and swap implementation shall explicitly make it unavailable on the declaration of this member function in

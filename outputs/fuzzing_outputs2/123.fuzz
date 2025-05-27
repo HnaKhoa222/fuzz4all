@@ -1,0 +1,25 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+
+</pre></blockquote>
+        <div class=warning style="display: none"><h3><?php  
+    return "warning";
+?></h3><!-- workaround for clang diagnostic (this section of error) for "inline inline is inside inline in function'signc'"-->
+Generate source that calls fenced and embedded functions and instantiations like<pre style='display:none; margin-top:; /*clang diagnostic bug workaround*/' data-src-raw="../../testsandbox/testfiles/bans.inc.cpp"><pre data data-href="/tests_data/../src/template-error/bans.inc.cpp"> 
+    struct Foo
+    {
+        int baz(int q)    { int r = mbr[3](); (mbr[r][q])();}
+        static void setup()
+        {
+            int x2 (3);
+            double foo; double result ((f() + foo));  
+            (foo <= 0?'bad':"hi"); 
+             
+} </td></head>
+    
+    <div>
+ 
+    &nbsp;&nbsp;&nbsp;&ldquo;&lsquo;_MSC_SECURE_NO_WARNINGS&#33&#62;/D;_ATL_UNICODE /DNOMINMAX /DMALLOC_STACK  -IC:Include  "; </div>
+        <body style

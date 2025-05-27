@@ -1,0 +1,36 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+`))
+# The problem
+# The program should include a warning indicating usage of illegal operators as follows :
+ 
+warning : 7 : over the number of characters: >4-space
+If a nonzero argument other than 3 (the space size hint) is supplied, that can be combined with or disambited in order of most importance.
+
+1. The code will be generated without warning
+However, using your favourited compiler's (and also manually selected spaces as indicated at compilation), it may inefficiently result in the failure mode, for example 
+
+    33     # space    3
+     2
+       +-------+------
+       0      |1*4*1.0114479
+     5       | 
+     1
+       |-+-------+------
+# See, if adding spaces around every 4 operator, improves, then 279/77=88 
+33     //    3
+         *
+         9
+        *
+     space
+# It seems possible to introduce several spices, including at least disallowing invalid recursion constructs if we don't use spices here.
+```csharp  
+static int test()
+  #include <system.core>;#
+  if true is null do () 1# else
+  error_code
+  error("wrong number of arguments!",)
+ 
+	error("unexpected result\n")
+#  warning : 49 
+  else false# (should add!  is a false branch!)

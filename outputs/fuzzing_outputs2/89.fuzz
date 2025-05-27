@@ -1,0 +1,7 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+.
+```
+
+There is no simple code rule to trigger bug conditions that are difficult to isolate. For situations (like ours at our team,) simple C++ unittest suites will suffice for ensuring we can compile the code at our source level; however, it should be noted, and especially used when possible, that this means not solely the unit tests related to the implementation for which we are making infeasible commits but their presence (unpredictability).
+</details>

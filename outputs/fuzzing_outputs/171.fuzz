@@ -1,0 +1,6 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+1. gcc -fno-omit-frame-pointer < file2.cpp
+2. valgrind./a.out

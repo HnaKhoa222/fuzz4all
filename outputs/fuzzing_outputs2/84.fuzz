@@ -1,0 +1,13 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+'''
+    output[:codelen].gsub("\n","\r")
+  end
+  addtocontents code, {code:'#10-compile', command:command_cxx('compile', *program) }
+    #add a 'print errors' flag. When activated, print generated output.
+    if $generatecppflag['print-errors']
+     code += <<~C
+        {code:print_errors, output : "#{outdir}\", command:"error" }
+       }
+      end

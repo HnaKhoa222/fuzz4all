@@ -1,0 +1,6 @@
+#include <iostream>
+
+
+[[maybe_unused]] std::tuple<int(*)( int, char(*) ))>("invalid param") {}
+
+ #error #undef  #undef  #undef  

@@ -1,0 +1,8 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+  auto ptr(new int);   
+  * (p) ++ = 36;              
+ * ++*ptr++;                ...to copy into * (++ new value to pointer contents )
+  } 
+*/

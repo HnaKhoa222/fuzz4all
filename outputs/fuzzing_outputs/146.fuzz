@@ -1,0 +1,8 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+"""
+
+if __name__ == '__main__':
+    main_args = os.environ.get('PYSIDE_MAIN_ARGS', main_args_base) +'' + python.escape(main_code)
+    print (subprocess.check_output(["run_pyside_cpp"] + main_args.split()))

@@ -1,0 +1,16 @@
+#include <iostream>
+
+
+int a = 5, b = 6;
+
+void f(int c, int... i, int j);
+
+int main() {
+    f(b * 2 + a);
+}
+
+void f(int c, int... i, int j) {
+    a = b = 10;
+    std::cout << a << "; " << b << '\n';
+    f(c + i[1] + j);
+}

@@ -1,0 +1,11 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+std::optional<A> A;                  
+if(A && (2 * A.use = 0) &&!(x &= std::nullopt)  
+                             
+}     
+          A));                                   
+if_not_constexpr(bool(expr) && (true, false)))
+```

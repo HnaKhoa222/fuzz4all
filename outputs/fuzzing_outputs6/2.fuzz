@@ -1,0 +1,18 @@
+#include <iostream>
+
+
+int main(){
+        short a, b;  
+}
+```
+
+  Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+* cvar_struct:
+   int x; floaty ; unsigned zz{};       
+   int* zp{(const char*)(cvar());}  
+uint8_t v;  byte-count > VANIABLE_SIZE_IN_MEMORY - VANIABLE_SIZE_FOR_LEAK
+# include  <iostream>;
+
+    case v =0xFEC5FF:  
+}
+    int* z { &x }; char s[600]{}; int q = cvar(); char z

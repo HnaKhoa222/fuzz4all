@@ -1,0 +1,53 @@
+#include <iostream>
+int mod(int x, int y) {
+    return y / x;
+}
+int large() {
+    char a = '\0';
+    char buff[64] = { 0 };
+    a = 2;
+    buff[0] = '\0';
+    buff[1] = '\0';
+     
+    long b = -1;
+    return mod(large(), 2);
+}
+
+ 
+
+int mod(int x, int y) {
+    return y / x;
+}
+long large() {
+    char a = '\0';
+    char buff[64] = { 0 };
+    a = 2;
+    buff[0] = '\0';
+    buff[1] = '\0';
+     
+    long b = -1;
+    return mod(large(), 2);
+}
+
+struct TestClass {
+    virtual int testMethod();
+};
+
+int TestClass_method_one() {
+    return 1;
+}
+
+int main() {
+    TestClass obj;
+    return obj->testMethod();
+}
+
+ 
+int mod(int x, int y) {
+    return y / x;
+}
+long large() {
+    char a = '\0';
+    char buff[64] = { 0 };
+    a = 2;
+    buff[0] = '\0';

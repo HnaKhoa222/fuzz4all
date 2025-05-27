@@ -1,0 +1,21 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ */'m
+
+
+struct bad_types;  
+<fim_middle> bad_templates
+
+BAD = [[[bad for-range statement]]]
+int *ptr[10]; ``BAD`` also needs variable scope
+type of the expression : good - C. C doesn’t enforce that a type will not exceed
+length of any primitive variable type. It relies only on its own internal knowledge to enforce
+that length must imply an upper bound rather than enforcing its exact static value for some type."
+
+ } ] }<commit_msg>Remove bad quotes<commit_after>A program will cause UndefinedBehaviorError if given in incorrect form or in
+incorrect program-style
+There seems reason.
+
+1)  *Use variant datastructures
+2)  (use a macro not the code: *foo will error * and the code cannot tell whether)
+If not needed for memory purpose : delete the const 

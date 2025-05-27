@@ -1,0 +1,339 @@
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+class Person
+{
+	protected:
+		int height;
+		int weight;
+	public:
+		Person(int pHeight, int pWeight)
+			: height(pHeight), weight(pWeight) { }
+		Person& operator = (const Person& rhs);
+};
+
+Person& Person::operator = (const Person& rhs)
+	{
+	
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <vector>
+#include <map>
+
+class Solution{
+public:
+    int countGoodTriplets(vector<int>& arr) {
+        map<int,int> mp;
+        for(int p : arr)
+        {
+            mp[p]++;
+        }
+        
+        int count = 0;
+        for(auto [v,u] : mp)
+        {
+            if(v == u)
+            {
+                continue;
+            }
+            else if((int)u == (int)m_sqrt(v))
+            {
+                count++;
+            }
+            
+        }
+        
+        return count;
+    }
+};
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <fstream>
+using namespace std;
+
+ 
+class Customer
+{
+	friend class BankAccount;
+protected:
+	string name, fName, lName, street;
+	 
+	Customer(string s,string f,string l,string r = "" ) 
+	{
+		name = s; 
+		street = r;
+	} 
+	 
+	friend ostream& operator<<(ostream& os, const Customer& c);
+
+public:
+	 
+	string getName() 
+	{
+		return name;
+	} 
+	void setName(string s) 
+	{
+		name = s; 
+	} 
+	 
+	string getStreet() 
+	{
+		return street;
+	}
+	void setStreet(string s)  
+	{
+		street = s; 
+	}
+	 
+	string getfName() 
+	{
+		return fName;
+	}
+	void setfName(string s) 
+	{
+		fName = s; 
+	}
+	 
+	string getLName() 
+	{
+		return lName;
+	}
+	void setLName(string l) 
+	{
+		lName = l; 
+	}
+     
+    ~Customer()
+    { }
+
+};
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+using namespace std;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+#else
+#define new_delete_operator new
+#endif
+
+#ifdef ENABLE_SHARED
+#define DLL_DECLSPEC_EXPORT __declspec(dllexport)
+#else
+#define DLL_DECLSPEC_EXPORT __declspec(dllimport)
+#endif
+
+#ifdef ENABLE_SHARED
+extern "C" DLL_DECLSPEC_EXPORT void* dynamicAlloc(int size);
+extern "C" DLL_DECLSPEC_EXPORT void freeMemory(void*);
+
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+class Person
+{
+private:
+    string name;
+    int age;
+
+public:
+    Person(string name, int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+    ~Person()
+    {
+        cout << "~Person()" << endl;
+    }
+};
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+void f(){
+    cout << 0 << endl;
+}
+void  g();
+int main() {
+    g();
+    g();
+    f();
+
+    g();
+    
+    g();
+    g();
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+class Person
+{
+private:
+    string name;
+    int age;
+public:
+    Person(string name, int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+    ~Person()
+    {
+        cout << "~Person()" << endl;
+    }
+};
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <fstream>
+using namespace std;
+class Person
+{
+    string name;
+    int age;
+public:
+    Person(string name, int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+    ~Person()
+    {
+        cout << "~Person()" << endl;
+    }
+    
+    string getname()const
+    {
+        return name;
+    }
+    void setname(string& name)
+    {
+        this->name = name;
+    }
+    int getage()const
+    {
+        return age;
+    }
+    void setage(int& age)
+    {
+        this->age = age;
+    }
+};
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+class Person
+{
+private:
+    string name;
+    int age;
+public:
+    Person(string name, int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+    ~Person()
+    {
+        cout << "~Person()" << endl;
+    }
+    Person *mutate()
+    {
+        this->setAge(this->getAge() + 1);
+        return this;
+    }
+    Person *copy()
+    {
+        return new Person(this->getName(), this->getAge());
+    }
+    set<Person *>* getFriend()
+    {
+        return friendList.begin();  
+    }
+    set<Person * > * getFamily()
+    {
+        return familyList.begin();  
+    }
+    Person *findFriend(string name)
+    {
+        auto iter = find_if(friendList.begin(), friendList.end(), [name](Person *person)
+        {
+            return person->getName()!= name;  
+        });
+        personList.erase(iter);  
+        return iter->getAddress();
+    }
+    Person *findFamily(string name)
+    {
+        auto iter = find_if(familyList.begin(), familyList.end(), [name](Person *person)
+        {
+            return person->getName()!= name;
+        });
+        personList.erase(iter);  
+        return iter->getAddress();
+    }
+private:
+    void setAge(int newValue)
+    {
+        this->age = newValue;
+    }
+    int getAge()
+    {
+        return this->age;
+    }
+};
+int main()
+{
+    set<Person *> newPersonList;
+    set<Person *> newFriendList;
+    Person n1("John
+[VERBOSE] ========== sample =========

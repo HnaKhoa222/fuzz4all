@@ -1,0 +1,25 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ }")
+       .unwrap()],
+    ).await.expect("failed to create test file.\nexit(1).\n");
+
+    fs::append(&writer(), "\ufeff" // no unicode BOM
+                      // Note: some file managers strip out byte order marks with error, usually related to DOS format, so the test needs its own one
+                       .format(&[]:{ // newline after program
+                          "auto result={};\nr.c_str(); }\nr.cpp_str(); });}  
+                        }\n  )\"]) // newline")
+       .unwrap()))
+       .run(writer()));
+    ok
+}
+
+criterion_global_startup_mock!(prepare =
+    env
+       .tempdir()
+       .ok()
+       .and_then(|tempdir| std::fs::create(::std::env::get_var::TEMP).ok().wrap("opening file"))
+       .ok()
+       .context("could not init temp data directory")));  
+criterion_group!(bcsrs, generate_tests); 
+criterion_main(name_from!(), benches, args)

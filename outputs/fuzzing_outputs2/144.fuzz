@@ -1,0 +1,9 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ while (1024 > 1201);  while (...) goto LJEH347 1) { __asm__("exit1:"); }
+#else  
+#ifdef SINGLE_MODULE
+extern "C" constexpr inline bool x() { return *static_cast::<unsigned*>() == 2;}  
+_Single_C_FUNCTION_<x, _, nullptr> const = {} (x() { return false;) );  
+static constexpr bool s() = bool{};  
+int main() { return (s()? 3 : 5 < s); }

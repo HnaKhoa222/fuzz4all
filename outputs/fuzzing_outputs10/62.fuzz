@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+void foo(int i){
+    cout << i << endl; 
+    foo(1);
+}
+
+int main(){
+    foo(3);
+}

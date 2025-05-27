@@ -1,0 +1,4 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+*--c++*.h file to compile the program. Note that, even a valid program compiled with those C++  options yields a crash of the JVM: [stackoverflow - Invalid Address Access using Unsafe or Compiler Warning for Java](https: 

@@ -1,0 +1,7 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+#else                            bool greetable, expected = __VERIFIER_nondet_bool(); Generate this line when --safe or -fsanitize specified. This guarantees output even in C, that causes unbounded output by the built executable, when noncompilable C code such unbounded-state tests exist, (like "auto" keyword, when -std=future-20 declares futures) */
+static assert(0);
+# endif
+ 

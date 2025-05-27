@@ -1,0 +1,14 @@
+#include <iostream>
+long long mod(long long x, long long y){
+    x = x% y;
+    return (x*y)/y;
+}
+long long large(){
+    return 9433;
+}
+int main(){
+    std::cout << mod(12,2) << std::endl;
+    std::cout << mod(12,2) << std::endl;
+    mod(10,3);
+    return 0;
+}

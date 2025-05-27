@@ -1,0 +1,10 @@
+/* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }

@@ -1,0 +1,14 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+void main(){
+    int* sval  = nullptr (in our program that accesses "s") 
+    if (someExpression) 
+        *sval = someExpression;  
+}
+<a class="pilcrow" id=2*>]*
+
+The [program to reproduced](../test/fixtures/r7/template_inexposed.cpp)(and it passed all its checks), in which the user provides some parameters the program is using to "template_instance", and the expression has access to "p", and tries to dereference to get access to it using a nonunique pointer when creating class derived types:
+  ```bash
+     
+  template <int n, char* func = "moof func",   int n = 6>> 

@@ -1,0 +1,8 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+Generated:
+- `Invalid dereference from a nullptr on address(undefined)` and `[109] [Program failed; see console.errors for more details] Error: Failed` on macOS with libstdc++ v19 and C++ compiler `8.1.0`. Output will continue as soon as "break at Invalid dereference" event, which may contain the stack trace containing our code that was passed incorrectly in the example above. For instance - our pointer value has type `int`, its base address (4) is not actually correct any long.
+
+# Conferencing Your Revelations on C++ Clarity in the Context

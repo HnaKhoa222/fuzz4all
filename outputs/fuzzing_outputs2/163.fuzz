@@ -1,0 +1,36 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ 
+</style>
+<!-- 
+```
+
+
+
+
+
+
+
+If your tool doesn&#105;T show line numbers when compiling with a specific source location, add source location information:
+```clang
+$ clang-5 -C "-fcrash=diagnostic-include:${CMAKE_SOURCE_DIR}/foo1.cpp" my.c
+(Use/define) the following definitions to make error parsing work:
+  __builtin:disable-cc
+
+```
+
+
+
+
+
+
+It is recommended to include the output header where possible by placing it into each source files including its dependencies (which are implicitly needed using the <var>REQUIRE</var> preprocessor directive as the include paths of subcomponents). Adding headers as a resource by referencing them instead, and redistributing these headers if and when they will be needed, may result in an additional step which would not help readabilility in source which are unnecessarily complicated to parse unless already familiar to programmers:
+
+
+Including a single "Resource" include header is useful if the project source is complex enough to introduce an external package that would conflict with its namespace namespace (by the convention for simple C projects namespaces are fully C stdcpp namespace)
+<pre data-language="hpp11
+ 
+    enum ResCountyCodes { CountNone, CountTucson, Other=2 },
+      #  (Include, as

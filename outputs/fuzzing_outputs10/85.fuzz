@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+enum class Direction{
+    Left,
+    Right
+};
+int main(){
+    cout << "Hello World:\n";
+     
+    return 0;
+}

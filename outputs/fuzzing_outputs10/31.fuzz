@@ -1,0 +1,12 @@
+#include <iostream>
+int mod(int x, int y){
+    return y;
+}
+int large(){
+    return 11;
+}
+int main(){
+    std::cout<<"Large is now 11 and 10 is now 10"<<large()<<std::endl;
+    std::cout<<"Large was 10 and 11 is now 11"<<large()<<std::endl;
+    return 0;
+}

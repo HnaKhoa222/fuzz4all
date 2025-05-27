@@ -1,0 +1,14 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+/* The undefined behavior generates following diagnostic: Error reading output:
+void (file=5 line col) called invalid parameter 0 (out ptr) which is not of type <void> 
+00:9 Error, exiting
+/home/username/username_2hmc1c6g1r6/doxterc06/llvm_tool/llvm/tools/clang/main/Diagnostic.m: error diagnostic  = clang::PrintMessage
+The type returned is not of template type <class>
+which has nothing less than <T>; what this compiler uses
+template type is:
+  const <void>) [44 in file /scratch/username
+username1g12hcg13ncgh2hc6r83m97j/llvm/include-benchmark/coretarget/CoreAsmPrinter.def at revision v5 (upstream)
+LLVM version: 3.8.r (releasebuild2f4ed92bffc35c82ff8fb5e8d2ed36c566ec93c7) llvmorg-6.1[b253cbdfcdabca4ca3932faef7f6d999ee1d1cbec9570c61b82fd8d694ae80c4] -- target: x86/64 native code
+Running pass 'Call Inst Integrity

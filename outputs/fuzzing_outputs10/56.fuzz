@@ -1,0 +1,8 @@
+#include <iostream>
+int large(){
+    return 65;
+}
+int main(){
+    printf("%d\n", large());
+    return 0
+}

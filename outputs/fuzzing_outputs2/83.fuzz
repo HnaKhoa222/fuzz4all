@@ -1,0 +1,9 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+int g = int(); (void)&i; 
+ 
+set -xeuo pipefail
+: ${PROJECT_ROOT:?Must define PROJECT_ROOT variable. Must run under GNU source.sh style source invocation in directory to which repo was pulled from to avoid changing directory outside.}
+export CC=$CROSS.llvm_libc2c $BINSRC_CLCC/xlat/clang --driver %d.d -fclang-lto=experimental-v3 -frpm=experimental-repo
+make -F $BINSRC_CLCC CXX=$CROSS-g6

@@ -1,0 +1,19 @@
+#include <iostream>
+class Dad {
+    public:
+        Dad();
+};
+namespace Dad {
+     
+     
+ private:
+    int value;
+};
+void modify(Dad &obj);
+int main() {
+     
+    Dad dad = Dad::Dad();
+    modify(dad);    
+    std::cout << dad.value << "\n";
+    return 0;
+}

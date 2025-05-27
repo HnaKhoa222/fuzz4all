@@ -1,0 +1,4 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ (27 errors across 41 bugs, including: memory errors as expected in gdb)
+```

@@ -1,0 +1,21 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+    \t^
+
+    Generating sample code. Use a variety of random statements and control flow including variable initialization without being precise on an intensive.  These are equivalent to "valid" C++ code: \code \{\{.code\}\. \}{(code)}. A variety of C++ statements allows execution to get from start downwards.  They look like the following:
+
+static std::pair<int(*)const, decltype((T()){})> s =
+std::{[this] \(void\* c){(VoidReturn)0 },[static = Clang 9](
+this \},sizeof(T{0}{}));
+        }
+                ^
+        ^ A suitable replacement
+        char data\_\^, data\+1 \&^,, i
+if(m<sizeof T) {\^{data0:}} int main(uint32\_T* xbuf2
+for (int a){{data1:}}"
+auto y=c\(int);auto z(int64\_T\);uint16\_t x=*data; uint8\_t *data=&data\^{;}} if\("
+ 
+
+                ^ Error code is not appropriate for current generator language level. Change or ignore this option."
+                \t^ Note to maintainers only; add notes in comments of any program that triggers an warning of the wrong warning-code below

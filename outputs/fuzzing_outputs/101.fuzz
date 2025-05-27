@@ -1,0 +1,6 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+  
+ This generated code assumes that you have a C++17 or later compiler installed (such as `ubuntu 18.04 x86_64` or `macos latest`). In other environment, do not use `noexcept` unless you have an alternative solution.

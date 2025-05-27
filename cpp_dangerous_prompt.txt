@@ -1,0 +1,6 @@
+dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]

@@ -1,0 +1,8 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+#pragma error ignored "I : [ICC74 14701] 'warning_option' may change after source compilation"
+ 
+ 
+ 

@@ -1,0 +1,23 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ * 
+ * The main library to reproduce it for is cstddef but any
+ of stdlib include types should work just as
+
+#if <stddef.h> || defined __CYGRELLI__
+      #define PROMPT(a) a; 
+ #define RECURSION 6
+ * (void * (void *)0 + (a*6 * 7 / RECURSION % RECURSION))
+        return (void ((1 + *p)), p + b? b+ 1 : NULL, 0) + *p;
+ }
+
+
+ class T 
+    {
+       public:  
+          T() { }
+     };
+*/
+static void safeguaraner (int num) {  
+    static T T_INSTANCE ({   t  ; T::T_INSTANCE(1); T(*ptr_ptr)(void*); T t(*ptr{0_r}); char a, *b, *p = new char[]( ; {char x[(a*   / x &&   b >>x)));return 2}, t.~

@@ -1,0 +1,22 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+\n"
+            );
+    QCHECK2(!generateCppFiles().isEmpty(), "<code>");
+}<commit_msg>Added fix of missing closing quotations<commit_after>const char* generateCppTemplatesExampleSrcWithFixedHeaders = R"EOF( 
+auto templates::fixIncludeTest() { template
+"{{class Name}} - generated "
+        "from: "
+        '{{template template() { }} <tt>?</tt>'   
+}}";
+
+    var text =
+R"({{class Namespace_t = "namespace";  
+}}static T test(const Name{{const,var { = {{var Namespace_{ 2? ""
+            ":" <quote>";
+    T result<T : 0 = {};
+    using namespace var:
+$fixed_headers
+
+    if (result) abort("{} failed", classNameOfInstance(result)...){ result};
+$template;});}}}

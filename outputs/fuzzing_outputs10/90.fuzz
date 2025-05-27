@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+#include <type_traits>  
+#include <typeinfo>       
+
+template<typename T> using is_convertible = std::conditional_t<
+    std::is_convertible_v<const T*, T>,
+    std::true_type,
+    std::false_type
+>;
+
+int main(){
+    int x = 5;
+    float* f = &x;
+    if(f){
+      cout << "Convertible: " << is_convertible<float*>::value << endl;
+      cout << "Convertible: " << is_convertible<const float*>::value << endl;
+    } else {
+      cout << "Not convertible: " << is_convertible<float*>::value << endl;
+      cout << "Not convertible: " << is_convertible<const float*>::value << endl;
+    }
+    return 0;
+}

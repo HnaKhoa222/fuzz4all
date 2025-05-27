@@ -1,0 +1,1331 @@
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+)
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+template <typename T> void f(const &a) { int *p = nullptr; } f(p);
+struct A { int i; };
+struct B { std::array<int, 5> a; B() { memset(&a, 0, 5 * sizeof(int)); } };
+#endif
+`
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+int *p {}; *p = 43; return 0;  
+#include <iostream>
+int main() { *p = 43; p = nullptr; int i = 0; do { std::coout << i++ << '\n'; } while (*p); }
+{% endhighlight linenos %}
+
+---
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+/ Expected error code (5.4)
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+    
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+#include <type_traits>
+#endif
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+```
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+</td></tr>
+</table>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+<fim_middle>  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+*/<commit_msg>Create P14_undefined behavior.<commit_after><commit_msg>Create undefined behavior program<commit_after>﻿#include <iostream>
+int main() {
+  char someChar[200]; someChar[0] = 'A'; return 0;}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+{% endhighlight %}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+auto main() { return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ main {}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+   
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ catch(... { return 1; } ) == 1;  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+```
+
+You will get errors similar to the ones that occur under `gcc -ftrapv`. See the note `#define __STDC_WANT_LIB_EXT1__` in our [C++ tutorial](tutorial_cxx.html).
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+  
+ This generated code assumes that you have a C++17 or later compiler installed (such as `ubuntu 18.04 x86_64` or `macos latest`). In other environment, do not use `noexcept` unless you have an alternative solution.
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ if (*p) return false; return true; }  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+```
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+"""
+
+if __name__ == '__main__':
+    main_args = os.environ.get('PYSIDE_MAIN_ARGS', main_args_base) +'' + python.escape(main_code)
+    print (subprocess.check_output(["run_pyside_cpp"] + main_args.split()))
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+
+## 18、0x5f：无符号整数，8 bytes
+C语言中的 0X 前缀与二进制中某一位或 0X 之后为以八进制形式储存的无符号整数。使用符号整数时，整数之间不能携程。例如：
+
+```c#
+cout + 0X;  
+ 
+```
+
+因为它大于 1 字节时就会输出一个错误.
+
+```c#
+cout << 012;  
+cout =  hexNumber<12;  
+```
+
+## 19、0：无符号整数，8 bytes
+C语言中的 0 前缀与二进制中某一位也为以八进制形式储存的无符号整数。0 可以使用来存储指针和计数器。
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+
+[[Source](https: 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+    
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+1. gcc -fno-omit-frame-pointer < file2.cpp
+2. valgrind./a.out
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+    
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+{% endhighlight-up-c++%}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+#endif
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ \n
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========

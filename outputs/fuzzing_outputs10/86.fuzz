@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int* null=NULL;
+__declspec(noinline) int* test(int argc, const char* argv[]){
+    int* q="";
+    __asm{
+        jmp 0
+        nop
+    }
+    return null;
+    goto err;
+}
+int main() {
+    int* res=test(1,NULL);
+    __asm;
+
+err:
+    cout << "Hello World:\n";
+    return 0;
+}

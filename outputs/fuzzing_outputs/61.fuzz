@@ -1,0 +1,6 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+*/<commit_msg>Create P14_undefined behavior.<commit_after><commit_msg>Create undefined behavior program<commit_after>﻿#include <iostream>
+int main() {
+  char someChar[200]; someChar[0] = 'A'; return 0;}

@@ -1,0 +1,3 @@
+Generate a C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Include complex constructs like templates, lambdas, or recursive functions.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }

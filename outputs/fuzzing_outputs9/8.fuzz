@@ -1,0 +1,35 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+class Person
+{
+    string name;
+    int age;
+public:
+    Person(string name, int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+    ~Person()
+    {
+        cout << "~Person()" << endl;
+    }
+    
+    string getname()const
+    {
+        return name;
+    }
+    void setname(string& name)
+    {
+        this->name = name;
+    }
+    int getage()const
+    {
+        return age;
+    }
+    void setage(int& age)
+    {
+        this->age = age;
+    }
+};

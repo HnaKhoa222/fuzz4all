@@ -1,0 +1,14 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+bool *check138_func0() {
+   var.init();
+   {
+      func3();
+      var.pushValue2();      
+  
+      (var[0])->setValue2();    
+   }
+   (return)(1);
+}    

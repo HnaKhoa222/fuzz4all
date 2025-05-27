@@ -1,0 +1,32 @@
+#include <iostream>
+struct TestClass{
+    int x;
+    int y;
+    TestClass(){
+        std::cout << "TestClass()\n";
+        x = 0;
+        y = 1;
+    }
+    float f(){
+       float result;
+       std::cout << "TestClass::f()\n";
+       result = 5.5;
+       return result;
+    }
+    TestClass(TestClass *x){
+        std::cout << "TestClass(TestClass *x)\n";
+        x = this;
+    }
+};
+TestClass test;
+TestClass(TestClass *x){
+    std::cout << "TestClass(TestClass *x)\n";
+    x = this;
+}
+int mod(int x, int y){
+    return x % y;
+}
+int large(){
+    int x = 2147483647;
+    return (x > 0)? (x + mod(x, x)) : x;
+}

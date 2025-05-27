@@ -1,0 +1,22 @@
+#include <iostream>
+
+
+int main()
+{
+   typedef int i1;;			 
+   typedef bool b;				 
+   typedef double db;			 
+
+   int myvar = 10;
+   b bvalTrue;
+   double dval = 15.10;
+   b val = dval < 10 && 10 <= -15;
+
+   std::cout << "myvar = " << myvar << std::endl;	 
+   std::cout << myvar << ", bvalTrue = " << bvalTrue << std::endl;	 
+   std::cout << bvalTrue << "! = " <<!bvalTrue << std::endl;		 
+   std::cout << "10 < 15 = " << 10 < 15 << std::endl;		 
+   std::cout << "dval < 10 = " << dval < 10 << std::endl;	 	 
+   std::cout << "v = a+b = " << 10+20 << std::endl;			 
+   std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;  
+}

@@ -1,0 +1,8 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+constexpr short bad = 0;  
+short wrong; good[bad + 5]  
+
+#define NAN  

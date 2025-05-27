@@ -1,0 +1,26 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+'";
+    #undef TEST_PROGREAMA
+ }
+    */
+  const std::string sText420 (strMessage::message34);
+
+ std::string testGeneratorMessage34 (
+  const int intCodeNumber1,
+  std::initializer_list<int intCodeExpectedValues> const lExpectedCodes,
+  unsigned nLine
+  ,std::string && aSOutput
+   /**< will have a format of //<<<[[a1a2g1]])*/
+  ,const std::chrono::milliseconds dtTimeout
+   /**< The time that should elapse prior generating a new source  */);
+
+
+  #include "../template/Function2Generator.tpp"\
+ */
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+#include /Users/yosuke/Programs/g++.cpp
+    std::cout
+    = nullptr  
+      
+    /
+    Generate
+
+If a memory access causes segmentation fault:
+A potential data structure which accesses a memory block must either perform one-way memory accesses like read accesses or prevent them from memory access (e.g., buffer/pipe handles, etc). Otherwise these attacks would create race conditions and have negative positive performance gains if an offense takes place. There does not need to be more complicated since all attacks work at once with data structures using the appropriate memory handling policies and not dependent in any much time.
+
+

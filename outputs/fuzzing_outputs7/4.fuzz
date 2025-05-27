@@ -1,0 +1,62 @@
+#include <iostream>
+
+  class Class
+{
+   Class()
+   {
+    int mval;
+ cout<<"Inside Class constructor"<<endl;
+    } 
+ ~Class(){}
+ 
+public:	
+virtual void method(){}
+
+   Class ()
+   {
+    method();
+ 
+    } 
+ float var;
+ 
+    Class operator+(Class a, 
+				    Class b
+				    )
+		{
+		    return ;
+ 
+		    float res;
+	        mval++;
+	       }
+   
+   };
+   
+   main()
+       {
+   int myC{};
+
+ 
+ 
+ cout<<"Hello "<<Method();
+      cout<<myC;
+  cout <<"done.";
+ 
+ for(int x; cin >> x;)   {std::cout<caret> x;}
+ 
+ my.method ();
+ 
+ my.
+ return Class::a + x ;
+  
+         
+a;return x;}
+   
+   Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+   Class::
+float i, staticMember = "initializes variable that is global to an object
+";	 
+a[2] = float {int {}; x;}};
+    
+
+
+a + my[323]}

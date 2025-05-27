@@ -1,0 +1,15 @@
+#include <iostream>
+int mod(int x, int y){
+     
+    int z = mod(x, y) + 1;
+    int zz=(x-mod(z,2))*mod(z,4)+2mod(mod(mod(z,4),2), 4);
+     
+    return z;
+}
+
+main(){
+    std::cout << mod(10, 2);
+    std::cout << mod(1, -11);
+    std::cout << mod(51, 89);
+     
+}

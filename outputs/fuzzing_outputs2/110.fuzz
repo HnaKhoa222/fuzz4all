@@ -1,0 +1,11 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+", "dangerous ptrs"} );
+template_safety_problems = list{
+        {template1},
+        #include "src/problems/generate A C++ program that performs memory writes."(),
+        templateA2
+    }.collect!["D:\src\".expand].first.first }
+```
+
+  

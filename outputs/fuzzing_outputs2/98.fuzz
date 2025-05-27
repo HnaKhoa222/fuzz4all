@@ -1,0 +1,29 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+"""
+ */
+
+std::unordered_set<int, C> DUberData
+(int,
+    {34,'s'},
+    {{9,4,[{}]: 3}})
+GenerateAUniqueCProgramToUseConstConstruct
+(
+        C s
+        [8,
+            {},
+            2 // note that using comma and space here as comma before is an unusual notation
+               + 'u'],
+    char c0='z'
+)
+
+ const aaa_t:
+    DUber;
+
+ const baa();
+#include "abclib/abclib.h";
+
+ 1 << 2+ 3 
+    4.1;
+  5L *2

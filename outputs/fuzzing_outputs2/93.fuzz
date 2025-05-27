@@ -1,0 +1,7 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+`generate_code/int_expr.cpp:131270`:78: warning: returning value computed to false [-Werror=misplaced-return-continue]:
+            *P_END++;
+
+          <--- note here

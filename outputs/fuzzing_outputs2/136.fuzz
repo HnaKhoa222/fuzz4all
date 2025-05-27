@@ -1,0 +1,6 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+); };
+static class Foo { }; static foo_t Foo();  typedef const long *Pointer; Pointer p = nullptr
+extern foo_t var(--FOO) asm("$nop");  
+#

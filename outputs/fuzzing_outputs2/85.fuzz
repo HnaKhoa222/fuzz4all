@@ -1,0 +1,3 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+    <-- Program generates invalid (e.g. segfault) behavior while the pointer "p" stores its location (if it had). It also generates runtime exceptions on all supported and supported runtimes. In each instance this program triggers some exception (in this case "std::out_of_range", because "0 <= *static_cast" will always throw). On GCC this would report something like __errno =???__. Also interesting is when compiled in debug mode: For both of this situations it will output invalid program. With no exceptions at startup it will use as many dynamic (and safe) resources as needed for a program!

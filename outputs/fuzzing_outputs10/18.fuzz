@@ -1,0 +1,9 @@
+#include <iostream>
+int &add(int a, int b);
+int main()
+{
+	int a = 4;
+	int &b = add(a, 3);
+	std::cin >> b;
+	return 0;
+}

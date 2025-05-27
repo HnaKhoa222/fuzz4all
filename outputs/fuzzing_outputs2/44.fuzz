@@ -1,0 +1,7 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;'' - this expression could call the memory operator and perform an arbitrary read that we don’t check if nothing breaks. Instead an incorrect write should lead to incorrect results and even a loss.
+  if(m_state == MyState::Running) MyAction;
+   else MyNextAction(input.MyState);
+   
+      return nullptr; } }

@@ -1,0 +1,6 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#else
+*p = new struct x_x {};
+(*p).strp.value + p;

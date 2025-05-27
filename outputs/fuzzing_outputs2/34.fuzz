@@ -1,0 +1,29 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#include <stdlib.h>    
+<fim_middle>
+
+void
+garbagu_me
+(
+	std::shared_ptr
+#ifndef T4493	
+   memory_heap
+class a
+   #if (STL_WORKAROUND < 580 && STLPORT!=0)
+   {
+    
+   class mstd { std::size_t garbage4 }  
+   }
+    
+	
+   #else
+void a::garbagu_me 
+{
+    
+        const T_1 _std_hnd09__shptr_;  
+         
+        shared_holder& _holder = shared::use<heap, const heap &>();
+        constexpr inline size_type_ _std_b1  
+                        = static_bincount((const __heap_segment *const)& (*(&reinterpret_cast< T_ >> shared::raw

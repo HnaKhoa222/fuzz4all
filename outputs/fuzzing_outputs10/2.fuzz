@@ -1,0 +1,18 @@
+#include <iostream>
+
+
+class Type
+{
+    public:
+        virtual ~Type() = default;
+};
+class Value
+{
+    public:
+         
+};
+
+int main()
+{
+    return 0;
+}

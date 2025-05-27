@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main() {
+    int A;
+    return 1/ A;   
+}  
+
+1. Using templates with conditional logic is likely safe to omit, the same can't be guaranteed by passing in the function, but it at least protect and preserve input parameters of the function so the caller can verify the intended input.
+It prevents an infinite growth of a function. If you can use static and shared (or equivalent to non-static) memory then it reduces duplication that would allow that memory. See section using shared resources without an initialize (static and shared allocation with Initialize Object in C21)
+22 Using templated type in template class in wrong order (not using 
+template function).
+#endif  
+1. The return result (A*b*) should not be in the stack, and be returned immediately by a function rather than in some hidden array returned automatically by other functions?  The problem lies in that stack addresses of pointer type (a**b is stack and b will probably stay in place until b > 9 or more lines...) could remain at this location (and be assigned multiple or 3, as necessary)? I don'd have no hope.  Is b ever changed so quickly by B and therefore is A stored away?   b can come from external sources too – don't change it while a is changing value.  So... you have to check each input parameter for a changing condition whether you need a check based on a different memory access

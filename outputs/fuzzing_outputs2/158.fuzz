@@ -1,0 +1,15 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ while (false) { throw 0.; }    }
+        ; 
+";//}
+  template<class...> // empty types are also prohibited by P0168
+  static int size_of (...); // in MCPP, empty array and struct
+  namespace empy;
+  size_type(); // in MCPP, defaulted enum
+};
+bool b[2];} // Cygwin C 
+{%- endblock generated -%}<commit_msg>Fix line #5 of C-code.<commit_after>"""
+    generate.p: test for P#44, 106 and 197,
+    it verifies 
+"""

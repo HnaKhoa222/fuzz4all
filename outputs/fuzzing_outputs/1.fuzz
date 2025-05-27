@@ -1,0 +1,8 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+template <typename T> void f(const &a) { int *p = nullptr; } f(p);
+struct A { int i; };
+struct B { std::array<int, 5> a; B() { memset(&a, 0, 5 * sizeof(int)); } };
+#endif
+`

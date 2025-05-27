@@ -1,0 +1,4 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ else throw 214;
+#endif  

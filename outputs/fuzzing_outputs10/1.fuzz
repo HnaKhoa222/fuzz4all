@@ -1,0 +1,20 @@
+#include <iostream>
+
+
+class Foo {
+    public:
+        Foo(int x) : x(x) {};
+        inline void print() { std::cout << x << std::endl; };
+    private:
+        int x;
+};
+
+int main(){
+    std::cout << "Printing 15: ";
+    Foo a(15);
+    a.print();
+    std::cout << "Printing 16:\n";
+    a.print();
+    std::cout << int(a) << std::endl;
+    return  0;
+};

@@ -1,0 +1,34 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+void functionWithUndefinedPointerReturnsValue( )<returns_value>* f<parmnames>= <expression> <semicolon> <returns><semicolon>
+    for( i = <constant>;; *returnexpr<braces> return expression 2 ) {} while (condition); switch {  
+*/
+  (if (condition) {
+    /*
+    (if (i == <limit) { continue }
+
+    {
+       
+      *(intptr) ++i;
+       
+      assert( <conditionExpression>); /*
+      <conditionEvaluation>;
+      
+      i must be either incremented or i + 1 (incremented) so that (assert doesn't fail
+      <conditionAgainst>,
+      i must be in <expected>... which you are free to chose as long),
+      or must always have one past last item <expectation>.<initState>.<continueStatement></conditionStatement>>...
+     })
+    
+    or similar statements.
+     {
+      //... inline asm code;
+      
+     </conditionStrea>> <elseStrea>>) {} if<condition
+    }
+    )
+ 
+    or else - if 0, do <else>, do else,...
+
+    /* TODO fix all of the programs... but we don't want to have the 2d array too in the repository to increase this testset's noise on people

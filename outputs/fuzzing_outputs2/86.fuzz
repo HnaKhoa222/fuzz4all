@@ -1,0 +1,31 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+ 
+void (*array_of_functions[])() = {{ &subMain::varArgTest0 },
+                                 &function(),
+                                 new char*[] {"f", "g", ""},  
+                                 []() {},
+                                 makeDelegate(5 + 10 * 1.431f) { assertf, }        
+                                 -> add1,
+                            ? func  
+                         };                                                                 !
+   
+int main2()    
+     var(func->new (this)) ;  
+   int foo()
+    f("g",)
+       ( 0,0 +)   (int) 0)   0)) {  
+      for (!empty ( )
+
+#else
+
+generate a unique C++ program intended specifically to misuse static types and compile and execute in unintended ways such as dereferencing or calling functions returning nullptr or nonconst pointer types at a fixed inexclusiveness within the execution body. 
+use this tool for bugs caught when testing:
+   - a random string like AABBCCDA
+   - two values being compared for order [33, c, t].foo (2 = 45), so you'd expect `f("a", "b", "c") < f("")`, but that failed.
+   
+   this includes
+   - invalid parameter to a construct
+     - passing a negative number (-5) into strlen
+     -

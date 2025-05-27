@@ -1,0 +1,42 @@
+target:
+  language: cpp
+  path: /usr/bin/g++
+  target_string: ""
+  trigger_to_generate_input: "/* Please create a very short program which uses new C++ features in a complex way */"
+  input_hint: "#include <iostream>"  # Fallback only
+  path_documentation: ../config/documentation/cpp/cpp_23.md
+  path_example_code: null
+  path_hand_written_prompt: /home/khoa/Downloads/fuzz4all-main/Fuzz4All/cpp_dangerous_prompt.txt
+fuzzing:
+  target_name: /usr/bin/g++ #-fsyntax-only # Thêm để ghi đè target_name
+  use_hand_written_prompt: True
+  type: generation
+  language: cpp
+  seed_inputs:
+    - "#include <iostream>\nint main() { int x = 1/0; return 0; }"  # Division by zero
+    - "#include <iostream>\nint main() { while(1) {} }"  # Infinite loop
+    - "#include <iostream>\nint main() { int *p = (int*)0x1; *p = 42; return 0; }"  # Invalid pointer
+    - "#include <iostream>\ntemplate<typename T>\nT div(T x) { return x/0; }\nint main() { div(42); return 0; }"  # Template error
+    - "#include <iostream>\nint main() { auto f = [](){ while(1) {}; }; f(); return 0; }"  # Lambda infinite loop
+    - "#include <iostream>\nint main() { int arr[1]; return arr[10]; }"  # Array out-of-bounds
+    - "#include <iostream>\nvoid recursive() { recursive(); }\nint main() { recursive(); return 0; }"  # Stack overflow
+    - "#include <iostream>\nint main() { int **p; *p = new int; **p = 42; return 0; }"  # Uninitialized pointer-to-pointer
+    - "#include <iostream>\ntemplate<typename T>\nstruct S { T* ptr; }; int main() { S<int> s; *s.ptr = 42; return 0; }"  # Null pointer in template
+    - "#include <iostream>\nint main() { goto label; int x = 1/0; label: return 0; }"  # Goto with error
+  num: 100   # Tăng để có thêm cơ hội tìm lỗi
+  #batch_size: 2  # Giảm để tránh treo
+  output_folder: outputs/gpp/
+  otf: true
+  log_level: 2
+  prompt_strategy: 2  # Đổi để ưu tiên prompt cụ thể
+  total_time: 10  # Tăng thời gian
+  no_input_prompt: false  # Dùng input_hint và seed_inputs
+  evaluate: false
+  resume: false
+llm:
+  model_name: bigcode/starcoderbase-1b
+  device: cpu  # Hoặc cpu nếu không có GPU
+  batch_size: 4  # Đồng bộ với fuzzing
+  temperature: 1  # Giảm để tạo mã có cấu trúc hơn
+  max_length: 512  # Giảm để tăng tốc
+  eos: ["<|endoftext|>", "<|"]

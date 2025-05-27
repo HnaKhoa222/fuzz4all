@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int m;
+{
+    int f;
+    m = f;
+}
+void main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+}

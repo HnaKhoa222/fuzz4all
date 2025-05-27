@@ -1,0 +1,6 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ * *Note:* The "program" in "dangerous behavior trigger undefined behaviors should generally generate invalid C without having explicitly defined it.*\
+        "Generate one incursing more damage than a harmful null input; e.g.`",
+    } ;

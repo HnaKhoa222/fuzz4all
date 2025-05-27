@@ -1,0 +1,2611 @@
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ catch(out_ptr)
+ */
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+'";
+    #undef TEST_PROGREAMA
+ }
+    */
+  const std::string sText420 (strMessage::message34);
+
+ std::string testGeneratorMessage34 (
+  const int intCodeNumber1,
+  std::initializer_list<int intCodeExpectedValues> const lExpectedCodes,
+  unsigned nLine
+  ,std::string && aSOutput
+   /**< will have a format of //<<<[[a1a2g1]])*/
+  ,const std::chrono::milliseconds dtTimeout
+   /**< The time that should elapse prior generating a new source  */);
+
+
+  #include "../template/Function2Generator.tpp"\
+ */
+
+
+
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+"""
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+Generating A unique C++ program which:
+
+     Uses C++03 language (C++03 also implicitly assumes GNU and C builtins if no features enabled on host compiler or if pre-processor is GNU extension "CC"), which C11 doesn't nto; but some C headers required for standard library have special support for that C family only
+- Uses standard C headers with optional POSIX.
+- Requires support for C ++0x features (-std=gnu99, - std=1989...)
+
+Generate a string program that reads from keyboard, validates to print one time, at the proper timing in the program body and then clears contents before printing any line, e.g.
+
+     cout << cstr;
+Generate a string program that calculates total distance in different units. This is useful for testing unit/library quality -- and perhaps you just never need so many decimal tests for an object model test :-)
+//TODO
+A class containing a member function returning 'void' (such as operator=()) without default copy and swap implementation shall explicitly make it unavailable on the declaration of this member function in
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+#error
+ */
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+int *p = a + b  ;   int*q = reinterpret_cast <void * (*)();>() ((b = b % d));   
+[code goes here or doesn't even exist]
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+#include C\*/ 1.5 # if def DEF; {   return  42   # endif #endif /
+
+7
+## Use
+1# For conditions that you need to validate but don\'t have the
+reasoning to implement; or code to check assumptions but have been implemented prior
+- To be careful about adding checks like
+do(check()). Use conditions and test execution to verify code before deployment even
+on low powered testing equipment. 
+ #1. #define def
+
+ def (void fundef)  function
+endfun
+ /else /if DEF=foo # endif # 
+
+ if DEF # def DEF=DEF # print(str(\"if\")); printdef= #endif 
+
+
+ # 
+2
+ 
+8 # use the same keyword as #
+define keyword is forbidden for gcc's # use # with if for 
+ define(undef) 
+
+
+ # 
+
+
+
+ def(char(f_name),#
+ print( \"print_name \" f_name);
+
+
+	return 0  ;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ function
+function_name ();
+
+   var_type v= v_in ;	 
+ # varv = get type in
+return;
+
+5
+
+
+
+`include \"header\\function08_09.h# 
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ } 
+``` 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ <fim_middle>} 
+*/ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+---
+# Example
+Generate unique tests for the template.
+- Generate only `n` sub-expressions of your tests to trigger all of the undefined semantics errors with each possible configuration. For now, we assume that "invalid input means undefined reference, division by zero, memory fault, improper size, infinite looping etc; but it does nothing with pointer addressing."
+  Generate only `const void`. This can come from other sources if necessary with respect to `optional/none`:
+
+  "An error from "C++ <span class="keyword ">explicit</span> "statics (using const qualifications) should probably result with static data member(like, static const struct or something such?) at declaration."
+# Limitations <hr/>No dynamic programming of tests for recursive definitions. Also need for `var(f() && arg)`, where `&&` is dynamic semantics only allowed from declaration (function definition only allowed where we can safely assume no value passed by const_ref `param = param() & && (func(input_in[i++]()` with any of arguments `int f(A i[]`; or `size = std::__invoke(fn &&&)...`, e
+ */
+
+Example for infinite loop. <tt> 
+    void tfunc1::loopBody(t_input &arg1,
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+https: 
+In the current context of this guide line it means it does exactly or more work than it did at the start of writing the implementation part (which was correct). That’s intention, yes – at the time the source file name “works” as a program. We are saying (without implying, it might be easier or slower not to change what goes first since the source program and binary work together!) “In the new section the specification (i.i.a) has added an assumption” “with which this program has prototyped “a valid value returned”. There’s only one value. Therefore, if “a unique program with the expected property cannot protrude” we will never run it when it has to—so when the test suite passes that “involvently created a valid instance but it needs not generate its own” we have failed to achieve whatever the original version had been all by itself.” There isn’t nothing wrong with writing a unique program! By convention it shouldn’t either run or break—because otherwise no useful test suite would produce anything. If the function protractously prods only true random control flow when something goes wrong then your code should fail, without producing anything.
+#include <iostream>
+int test[] = {}; if (test) test_failure1(); else return 75;
+https: 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+`
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+    编译器命令
+    g++ <input-sourcefiles> #编译选项，例如:编译以输出c++头文件的make file：--emit-header
+    make#直接启动编译。
+    make<make: makefile-name># 选择编译的类型(生成什么类型的源码？).
+        -all 开启所有的make任务
+        -clean 通过空参数去卸载程序产生的文件，包括build directory make缓存、自动生成文件、依赖对象依赖
+
+输出-fshell信息  -v0 #开启全部选项 --version，用于给管理员
+
+C++14有几个重要的模板：variant
+https：variant 一个数据类型，定义了几种特性：
+
+    Variant -定义的概念上像一个简单类型：无关变量可以作为参数，可以进行移动构造、拷贝构造以及赋值运算,并且能够直接输出
+    Variant +为所有variant构造了一个对象，而variant对象本质上是一个void Pointer类型(0和253间的类型变量可以进行数据交互）;通过对象创建的new得到一个对应的数据实例对象;对于所有constructible类型，对new进行绑定进行构造,或者通过静态绑定静态绑定的对象类型调用
+```
+            VariantPtr var;
+            foo().to(&var...);  var;  
+            var->bar("world"...) = "worldy"
+...
+```
+## 编译指令
+  364：在 C++
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ else { return "ERROR in lambda"; }\
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+)
+https: 
+constint i:: j. =k[i_][2]; int [&&, [int](i
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+https: 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ else  
+#endif }")
+<commit_msg>fix bug on "cpp-core-checks.m4:"<commit_after>Categories:Applications //
+Depends:
+  - clang-c @VERSION#
+  - libid3v1
+
+License:UNLIMITED // Copyright protected to third-parTY (https://www.behance.net/artificialpathai)  (no unlike GNUGPL attribution clause) that has many restrictions
+Web Site:
+ Source Code:svn://gitlab/themrknshnsnrtkr555/bad
+Issue Tracker:https://gitlablab.io/Themrknshn.Shnsrn/bad
+Changelog:[[CHANGE:add|Change]]
+Donate:
+ - Paypal [[[LINK:https://paypal.me/bleroyh]|[CLICK:Payer.is]] PayPal account] or Email Address if any for this application are needed to improve or fix an award
+ 
+Auto Name:BAD //bad, this app has "badness" and "bad badness" which is too generic (as is probably also a joke), so don't add multiple words (like BADBAD) and prefix. Add "Bad BAADEDNSS!" or if the original intention is not possible, add a name/s
+https: 
+. DEBS
+81_bad-master.deb (debian
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+</pre>
+  5 0xc887343b     7fdded0b d08786d 00067e19
+#
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;  */  
+#endif
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+void functionWithUndefinedPointerReturnsValue( )<returns_value>* f<parmnames>= <expression> <semicolon> <returns><semicolon>
+    for( i = <constant>;; *returnexpr<braces> return expression 2 ) {} while (condition); switch {  
+*/
+  (if (condition) {
+    /*
+    (if (i == <limit) { continue }
+
+    {
+       
+      *(intptr) ++i;
+       
+      assert( <conditionExpression>); /*
+      <conditionEvaluation>;
+      
+      i must be either incremented or i + 1 (incremented) so that (assert doesn't fail
+      <conditionAgainst>,
+      i must be in <expected>... which you are free to chose as long),
+      or must always have one past last item <expectation>.<initState>.<continueStatement></conditionStatement>>...
+     })
+    
+    or similar statements.
+     {
+      //... inline asm code;
+      
+     </conditionStrea>> <elseStrea>>) {} if<condition
+    }
+    )
+ 
+    or else - if 0, do <else>, do else,...
+
+    /* TODO fix all of the programs... but we don't want to have the 2d array too in the repository to increase this testset's noise on people
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;""", true);
+  RegisterTool generateCppTools() override {
+    for (String prompt: unsafe_prompts) {
+      const CodeCompletionInfoProvider *info provider ("test", -1, 0, *cctx_, makeConstString(prompt.c_str()));
+      codeModel.codeInsert(-1, &info);
+    }
+
+    constexpr static char STRCODE_TEMPLATE ["\nbool findRecursiveInvalidRecursive( int a); int A = sizeof bomb;\napp::findCpyFunc(bomb, bomb) *\n   A *\n           new (& bomb->i) struct bomb_a {};\nbomb.i = *\n           bomb == this? ++CPLAIT + \nb_findRecursiveInvalidCopy.copyCount \n\n      
+            findRecursionInvalidRecursive(*A);\
+            ", sizeof bomb];
+
+    constexpr uint16_t LEXERSTATE3 =
+      makeTokenId (TOKENKINDCODE, kCPP::STATE).val | TOKENVALIDBIT;
+    const CodeLexiconStateDefinition str2token (379, /*codeLineInScope=0*/ -1, "string-of-source3",   13U,
+                                           STRKEYID3, -INT2TOKEN(INTTYPEINT) | TOKENLABELBIT | SYMLINKSTART
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#include <stdlib.h>    
+<fim_middle>
+
+void
+garbagu_me
+(
+	std::shared_ptr
+#ifndef T4493	
+   memory_heap
+class a
+   #if (STL_WORKAROUND < 580 && STLPORT!=0)
+   {
+    
+   class mstd { std::size_t garbage4 }  
+   }
+    
+	
+   #else
+void a::garbagu_me 
+{
+    
+        const T_1 _std_hnd09__shptr_;  
+         
+        shared_holder& _holder = shared::use<heap, const heap &>();
+        constexpr inline size_type_ _std_b1  
+                        = static_bincount((const __heap_segment *const)& (*(&reinterpret_cast< T_ >> shared::raw
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+int main(...) {...   ...;...;}       
+ */
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ catch(... { assert(""); } void * p__2e; 
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+#include /Users/yosuke/Programs/g++.cpp
+    std::cout
+    = nullptr  
+      
+    /
+    Generate
+
+If a memory access causes segmentation fault:
+A potential data structure which accesses a memory block must either perform one-way memory accesses like read accesses or prevent them from memory access (e.g., buffer/pipe handles, etc). Otherwise these attacks would create race conditions and have negative positive performance gains if an offense takes place. There does not need to be more complicated since all attacks work at once with data structures using the appropriate memory handling policies and not dependent in any much time.
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#include <catch.hpp>
+TEST_CASE(! "testing a null pointer variable that crashes program" );<fim_middle> 
+    const std::initializer_list<int> lst{1, 2}; 
+    const Generate invalid C programs and source code.
+    C++ programs.
+ */
+  Generate unique C codes which will cause Undefined behavior when compiling the program
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;'' - this expression could call the memory operator and perform an arbitrary read that we don’t check if nothing breaks. Instead an incorrect write should lead to incorrect results and even a loss.
+  if(m_state == MyState::Running) MyAction;
+   else MyNextAction(input.MyState);
+   
+      return nullptr; } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+int n;do()if(!scanf("%di",&n);++__VA_ARGS;) { if((*++p=n)/!strcmp(buffer,"Q"))if(n=++&n;--) { const char* fmt1 = "{:%f}", buf1,*p = (void*)n==42?(long double*)&n:*((char*)&(((void*)(*p)+(2))),int)+&n==--(6. + double)  ++&int; } break break; int n; if(!scanf("&str",*p,&str[(int)&n++]={'"',34}],char))breakbreak -- --n; char(*b = p)*=(p)[-2], *a[8][--], (*f)(); char(**sp=34),(**cp)(); char strn [50,*p++;int](**)void f(){} void (*gp[int])(){} for(*) **sp = (char*)p; for(p = 1,p ;(*gp[(**cp-65)*!(((*fp[6+**sp])*3+(*gp+(4==*!(n=6-sp?void  --p:(7572+(void --*69)+((float)--n*3)+(((p)&320667618*67)+n=(n--)++0?n=(sp[--i]);a[(int)!=n][i=(double)b^n
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}  
+template <int v> struct Vec { explicit   Vec(v_1[2<int>].s[10]),
+int m_3, v ;int   v34[];friend std::ios      <          Vec<T>::           operator                      <(               std::ios          );
+    friend static          const std::              char;          
+public:       struct Cstr<char*      &>: C    str("char*");
+     
+    class Dv{};class             Hs             {public:-static constexpr    VE=Vec[T_i3]s[-2<uint>]*[T, int      (*   p),           ~static constexpr  ,      (a)        ][0];  v     : s.      s0 ;} };v    |  };       b | ;};           };   t3         v{       s      }         t[t8][1<uint>][[m1], a<1>{], [], 3, v        [22]*v5{s};             0};```   
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;'''
+
+        return false  # [error]
+"""
+    ]
+    errors_to_match_lines=["error_function_not_returning_none.c:7 error: no 'g()' statement exists at top-level",
+                            "error_function_returns_undefined.c:4 error'set_var_to(']
+
+
+def add_error(output, errors):         # (list output_errors)
+    #print( errors, error.__errors)
+    if errors:                     # [if] only one error line per function call
+        errors_count = len(errors[0][str(idx)]) # = len of errors for function call and add in this_call in case
+        for idx in range(errors_count):
+         #for var in errors[:-1]:
+         if "template name" iin errors[0:idx +1:] or all(["template template 0: argument not an lvalue" in x.err_msg
+                                         for x in errors[0:idx +1:]]): #template call
+             error = AddWarningFrom(x,output,'function_with_unintention_invalid-templates',warnings=["unclean implementation", ],code_to=[template],errors=errors=[[file]],file=[file],line=[line.strip()],"col[m]{i]+6[line-no+line]: function-arguments")
+            error= AddInfoFrom(code['line'][e],file[err__from
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+*--c++*.h file to compile the program. Note that, even a valid program compiled with those C++  options yields a crash of the JVM: [stackoverflow - Invalid Address Access using Unsafe or Compiler Warning for Java](https: 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ main } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+```
+## 编写可执行可伪造
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   # expectedError C2098  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+*/
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ }#if 0   
+$ python -Q2a c6062299a5ebcccb.py >c60622a/_1__5__d56b_2f30/e1fd429f47dd/generated_c_array/c49bbaa4081dcedcf914898ff929c
+echo Generated file $ python _1____2__/b9/bbcd/.git/f_/cc3b4110/9cf1/7bf3.stderr-generated - $ python __3__/4_1_0_/09__/de25__868c: FAIL
+cat c4_2f1de_964.output
+cat e1fd426cd0508cfafaffc6daed2da582.expected
+$ 
+
+echo __3  =   generate file./c6__4__b4__0fc__ddbf (template). /...
+./c__5__93b.py (./cc__2_/6b8c6b./ca53cd) $ echo../g_r6e__2/t72d (template).
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+)```
+
+This flag:
+
+    -A/-t,-V/-l is now used with -C rather than the full filename.
+
+    This flag was renamed -D to -P.
+
+   The previous option was accidentally used as the path is relative to $project_Root
+
+
+Example
+--------------
+#if a.c was generated as "foo.cc [unique identifier or number]"
+        Generated a new.cc which has this flag. (a.cxx needs to match
+        your.cc or add that suffix and rerun to overwrite it if it already exists)
+
+     # Generated automatically for.cc's since a number of templates in -F
+
+     /Users/_someother_path_/Documents/_GitHub/_project/_projectTemplate/generated.cxx will
+        be automatically generated for all source files in /DocumentsWithFlags (default path)
+     and any unique.cc is going to be renamed/used this new file name
+
+See Usage/Example
+
+
+Generated By
+-------------
+      This was just a single header to avoid manual text, code copies in main,
+      CMakeLists.txt and most important - you don't know who and what generated that
+       header
+
+Author :
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ */
+}
+# endif
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+*/
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+\n"
+            );
+    QCHECK2(!generateCppFiles().isEmpty(), "<code>");
+}<commit_msg>Added fix of missing closing quotations<commit_after>const char* generateCppTemplatesExampleSrcWithFixedHeaders = R"EOF( 
+auto templates::fixIncludeTest() { template
+"{{class Name}} - generated "
+        "from: "
+        '{{template template() { }} <tt>?</tt>'   
+}}";
+
+    var text =
+R"({{class Namespace_t = "namespace";  
+}}static T test(const Name{{const,var { = {{var Namespace_{ 2? ""
+            ":" <quote>";
+    T result<T : 0 = {};
+    using namespace var:
+$fixed_headers
+
+    if (result) abort("{} failed", classNameOfInstance(result)...){ result};
+$template;});}}}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+",
+    LATERAL_C++ + "{ auto ptr = (int *)-3 ;  
+}};
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#if 1
+    goto a. 	The name a isn't an operator used
+}
+#endif
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+function void func()
+return func(); }  
+    
+}
+void bar() {
+    while(1);      
+    function foo(){}      
+    }}); 
+     
+    
+     
+     
+    
+     ) {...
+           foo();
+       }; 
+       do{return };
+       while (bar_fails){
+         while ((int*) /* bar cannot accept a negative parameter yet, cannot compare this param to an actual function.
+                 int int3(
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+} 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+template<class Ity> void _f00rce05_ptrar() {
+    bool passed = (*this).*(_func(); (this->)__gvec.base_p);   }
+    __f6 = f -!(&a+145&a-!4+69)/i[h++];  
+    if ([]&f<p/int> && v[6l/6]/3 < r[9ull/500ull]/2.719f) { (const bool b9[[f[f]<f+d@p]])) += c && (8ull-this); this[e[d]/a/e.base__m[g4]>__gc && v7&(__n >>
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+        
+namespace ns1 { int p=2 * ns02().v -8 * (*1e3);         
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+"a2"}},
+  name : "a634"
+ , title : "Function return type does not depend solely on preceding context (a722)") }
+    ;
+
+
+  auto testFunction =
+    [](const char *description)
+    { auto p2hfunc = ::func; func;
+      { constexpr bool kBugExists = hasNoBug || Test_Failure();
+*/
+    auto r = generateProgramForSource(
+        gast, functionContext{ description
+           ; codeGeneratorOptions{
+             cPlus{ generatorCPlusPlus = {
+                  "int testFunc() {"
+                  ++indent.level
+                };
+
+                auto hasInducedCycle = []{};
+
+                doBug();
+
+                auto ok =!Test_Failure();
+                 
+                 
+                bool hasInductionPath   = false  ? hasBug
+                                          && bugPath && false          : false         
+                                          && ((isPath  + indentationFactor) % 100 >= 12 && bugLoopTest   )      : false
+                                            
+                                          , [] {} =
+                [&, ok{ ok }](){
+              hasInductionBugOrPath = getBugOrCycle();
+            }
+           { ok.call();
+             printf("%zd %zc [
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+  auto ptr(new int);   
+  * (p) ++ = 36;              
+ * ++*ptr++;                ...to copy into * (++ new value to pointer contents )
+  } 
+*/
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ }
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+``` 这不会因为调用表达式的某处有 nullptr 不存在被引用的内存（所以可以将这段编译出的C-语言代码与上述无关）。
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+    {#pro0c/24232 } [=]{#pro20r }  {std\+::cout << p->value() << std::~default_; } 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+        clang: error: linker commands failed to read compiled commands
+    # warning The input program generated a file named myFile.cpp that isn't formatted
+if (ptr) fPtr(ptr, ptr);
+    const int PICO::numColors12 = PICO::colorModeCount(NUM_COLORS);
+if (!check) throw SomeUnreachableOrWorseException();
+*/
+	if (!valid(expr->templateUnderlying()->templateSpecializationArg())) std::cout << "ERROR" << std::endl;
+	 
+#if 1
+#warning C  C# #todo-2
+  auto* PII(
+      std::cout_or() -> auto _ {}
+            : std::__is<PII>::type_or < std::__traits<::picoapp>::is_empty>{
+            } -> typename <decltype(_)._ {} -> const auto& [] ::picoapp>;
+  return PIIF + std:<iterator>;
+  # end
+#endif
+ return true ^ ((ptr++) / PICO::to_bytes() == --*pt++!= &--*s);
+        switch --arg[148 + 4 == PII(int(v < i % (static_cast_20f650(unsigned) ~v & ~static_cast_2bd65 (int).c))); return arg[342] + *pt; --*s && --s < PICO::maxValue.second)
+   
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+Generate a unique C++ program that tries a control-flow-invariant code generation scenario in order for all the code generated for it to return successfully without an error (e.g., returns no value, invokes no other functions, exits loop).
+#incldude "a", if (!b) { d(); } ef b1 else { f(g() + (void*)&q, i, j)... } else { G(x), W3918 } f(j<k?(B):A);  
+*/
+/**
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ (27 errors across 41 bugs, including: memory errors as expected in gdb)
+```
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+`
+
+```
+
+4272 bytes!
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+constexpr short bad = 0;  
+short wrong; good[bad + 5]  
+
+#define NAN  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+int g = int(); (void)&i; 
+ 
+set -xeuo pipefail
+: ${PROJECT_ROOT:?Must define PROJECT_ROOT variable. Must run under GNU source.sh style source invocation in directory to which repo was pulled from to avoid changing directory outside.}
+export CC=$CROSS.llvm_libc2c $BINSRC_CLCC/xlat/clang --driver %d.d -fclang-lto=experimental-v3 -frpm=experimental-repo
+make -F $BINSRC_CLCC CXX=$CROSS-g6
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+'''
+    output[:codelen].gsub("\n","\r")
+  end
+  addtocontents code, {code:'#10-compile', command:command_cxx('compile', *program) }
+    #add a 'print errors' flag. When activated, print generated output.
+    if $generatecppflag['print-errors']
+     code += <<~C
+        {code:print_errors, output : "#{outdir}\", command:"error" }
+       }
+      end
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+    <-- Program generates invalid (e.g. segfault) behavior while the pointer "p" stores its location (if it had). It also generates runtime exceptions on all supported and supported runtimes. In each instance this program triggers some exception (in this case "std::out_of_range", because "0 <= *static_cast" will always throw). On GCC this would report something like __errno =???__. Also interesting is when compiled in debug mode: For both of this situations it will output invalid program. With no exceptions at startup it will use as many dynamic (and safe) resources as needed for a program!
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+ 
+void (*array_of_functions[])() = {{ &subMain::varArgTest0 },
+                                 &function(),
+                                 new char*[] {"f", "g", ""},  
+                                 []() {},
+                                 makeDelegate(5 + 10 * 1.431f) { assertf, }        
+                                 -> add1,
+                            ? func  
+                         };                                                                 !
+   
+int main2()    
+     var(func->new (this)) ;  
+   int foo()
+    f("g",)
+       ( 0,0 +)   (int) 0)   0)) {  
+      for (!empty ( )
+
+#else
+
+generate a unique C++ program intended specifically to misuse static types and compile and execute in unintended ways such as dereferencing or calling functions returning nullptr or nonconst pointer types at a fixed inexclusiveness within the execution body. 
+use this tool for bugs caught when testing:
+   - a random string like AABBCCDA
+   - two values being compared for order [33, c, t].foo (2 = 45), so you'd expect `f("a", "b", "c") < f("")`, but that failed.
+   
+   this includes
+   - invalid parameter to a construct
+     - passing a negative number (-5) into strlen
+     -
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ */
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+*/
+int main(int argc, const char ** argv){
+    for(int i = 0; i < argc; ++i){cout << argv[i] << " "; }
+    
+    __return__ int = func(void).size_of(); std::cout << i; return 0; int j<p>{__ifdef f <p>(82){p::y{}; __else;  
+
+     
+    for (size  : 1u + (4 < *j)  
+                (1 < (*__ptr_or_zero__(*j))))
+    { j  <p>(); i };
+    
+    char* <p> : string, <*this *>()
+*/
+
+
+int int int
+    ( (char : <int :: int>(std::<i = p> i> )<<  i+<p.5773>::2) : int+<j>[7u], *(i /int) p, (char *) i+7u, ((bool :: -4 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+.
+```
+
+There is no simple code rule to trigger bug conditions that are difficult to isolate. For situations (like ours at our team,) simple C++ unittest suites will suffice for ensuring we can compile the code at our source level; however, it should be noted, and especially used when possible, that this means not solely the unit tests related to the implementation for which we are making infeasible commits but their presence (unpredictability).
+</details>
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+  */
+  std::cerr << "Failed to recognize command:"
+            << std::endl
+            & R"(Unrecognized keyword; tried keywords: )("  >> R"(Failed with return, invalid return type;
+)" "Unknown option.;")" ;
+     throw 1;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#else
+*p = new struct x_x {};
+(*p).strp.value + p;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+int &x = *(0); assert(42 == x); p = &x; assert(nullptr == p); }
+  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+`generate_code/int_expr.cpp:131270`:78: warning: returning value computed to false [-Werror=misplaced-return-continue]:
+            *P_END++;
+
+          <--- note here
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+*/
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   #include<typestd> int a [[warning(2)])() {  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+"""
+ */
+
+std::unordered_set<int, C> DUberData
+(int,
+    {34,'s'},
+    {{9,4,[{}]: 3}})
+GenerateAUniqueCProgramToUseConstConstruct
+(
+        C s
+        [8,
+            {},
+            2 // note that using comma and space here as comma before is an unusual notation
+               + 'u'],
+    char c0='z'
+)
+
+ const aaa_t:
+    DUber;
+
+ const baa();
+#include "abclib/abclib.h";
+
+ 1 << 2+ 3 
+    4.1;
+  5L *2
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+https: 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ else throw 214;
+#endif  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ }")
+       .unwrap()],
+    ).await.expect("failed to create test file.\nexit(1).\n");
+
+    fs::append(&writer(), "\ufeff" // no unicode BOM
+                      // Note: some file managers strip out byte order marks with error, usually related to DOS format, so the test needs its own one
+                       .format(&[]:{ // newline after program
+                          "auto result={};\nr.c_str(); }\nr.cpp_str(); });}  
+                        }\n  )\"]) // newline")
+       .unwrap()))
+       .run(writer()));
+    ok
+}
+
+criterion_global_startup_mock!(prepare =
+    env
+       .tempdir()
+       .ok()
+       .and_then(|tempdir| std::fs::create(::std::env::get_var::TEMP).ok().wrap("opening file"))
+       .ok()
+       .context("could not init temp data directory")));  
+criterion_group!(bcsrs, generate_tests); 
+criterion_main(name_from!(), benches, args)
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+/* The undefined behavior generates following diagnostic: Error reading output:
+void (file=5 line col) called invalid parameter 0 (out ptr) which is not of type <void> 
+00:9 Error, exiting
+/home/username/username_2hmc1c6g1r6/doxterc06/llvm_tool/llvm/tools/clang/main/Diagnostic.m: error diagnostic  = clang::PrintMessage
+The type returned is not of template type <class>
+which has nothing less than <T>; what this compiler uses
+template type is:
+  const <void>) [44 in file /scratch/username
+username1g12hcg13ncgh2hc6r83m97j/llvm/include-benchmark/coretarget/CoreAsmPrinter.def at revision v5 (upstream)
+LLVM version: 3.8.r (releasebuild2f4ed92bffc35c82ff8fb5e8d2ed36c566ec93c7) llvmorg-6.1[b253cbdfcdabca4ca3932faef7f6d999ee1d1cbec9570c61b82fd8d694ae80c4] -- target: x86/64 native code
+Running pass 'Call Inst Integrity
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ * 
+ * The main library to reproduce it for is cstddef but any
+ of stdlib include types should work just as
+
+#if <stddef.h> || defined __CYGRELLI__
+      #define PROMPT(a) a; 
+ #define RECURSION 6
+ * (void * (void *)0 + (a*6 * 7 / RECURSION % RECURSION))
+        return (void ((1 + *p)), p + b? b+ 1 : NULL, 0) + *p;
+ }
+
+
+ class T 
+    {
+       public:  
+          T() { }
+     };
+*/
+static void safeguaraner (int num) {  
+    static T T_INSTANCE ({   t  ; T::T_INSTANCE(1); T(*ptr_ptr)(void*); T t(*ptr{0_r}); char a, *b, *p = new char[]( ; {char x[(a*   / x &&   b >>x)));return 2}, t.~
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+)
+
+You can generate the un-deducible one with the `-f` of unambiguous code to ensure the uniqueness constraint. Example: #./exampla/template_unsame `cat $(ls *.cc| grep _ccs)_$@ > "$out"</pre>'"}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ * *Note:* The "program" in "dangerous behavior trigger undefined behaviors should generally generate invalid C without having explicitly defined it.*\
+        "Generate one incursing more damage than a harmful null input; e.g.`",
+    } ;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+extern const void cvoid( void); char ch = 'E', str[] = "astring"; template<int i> int iArray(bool = (false-i)) { const struct {bool a;} iStruct; }   funcname{return ++ch*ch;}; struct { int f;} astruct{{ int val{}; char buff[];} v{{.buff[]='\c 5;' *.val++, sizeof((char 5) -1);}}; enum e{one, three, is_valid, 7-3*6 }; extern extern char (foo)();
+ 
+const C c {} __V[2] {}, vc [c + 1 - 'a']/5 = 7, *c_func { new();
+switch constexpr char ch[sizeof];
+if;
+else ++switch 0 + switch; (++do + ++loop + &&) throw (3
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+  */
+
+   
+ 
+  return 0;<commit_msg>[044+]: C+::string[2]: Change c-style quotes from C++/Python (single vs double) to python quotes to ensure both python and c++ support it in grammar.<commit_after>/* danger*tive
+    * ===============
+    | |
+\ __ /___\ |___|_)___
+       ' //        _//
+         \\________'
+       \__|      (__|
+     _|_, | |    | |
+  (_|\_\_\_}__| }
+ /__  /___________ _ ____ _ (_) ____
+/ _ \|___|   _| |_ )  _ \( '/ (_   )
+(___) ___)   |____| (__/|_))_/\)
+   /____/
+
+https: 
+
+C++ programming challenges using Visual Studio Code: [1,2]
+  Challenge Levels
+--------------------------------
+1 - C++ Online C Challenges.
+  Attempts: No; time limit:
+  - Challenge Description
+    Check out available programming problems that use template metaprograms,
+    macros, random/infinite loops, random number generators, pointers, pointers math and
+    random data, control flow.
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+
+bool *check138_func0() {
+   var.init();
+   {
+      func3();
+      var.pushValue2();      
+  
+      (var[0])->setValue2();    
+   }
+   (return)(1);
+}    
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+", "dangerous ptrs"} );
+template_safety_problems = list{
+        {template1},
+        #include "src/problems/generate A C++ program that performs memory writes."(),
+        templateA2
+    }.collect!["D:\src\".expand].first.first }
+```
+
+  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+) { bool conditionally_undeclared() (void)(static uint[3]() {} > _Bool(true)? ""() _Bool (1 < false) : "hi"; }\n") 2>"./c++-unaligned_pointer"); }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   (2) => warning for invalid function pointer 0x???????? [enable by default]
+ 
+ 16:42:19, /lib/tmp_aepu6b_bcp68kbfh5
+  
+ 
+ 
+00-3-----c4e5d2-ffffffff0---0-0-0
+ */
+std.function doesn"t have a public name
+3:27 error: member should have private scope of same scope as nonmember of const 'MyStruct' or nonconst 'void'.
+
+<body><header>
+ *
+ * C/C++ compiler
+ *    Copyright &copy;&nbsp;{{year}}, International Business Machines Corporation and
+    others.
+ *
+ * Licensed under the Apache Liceness.  All Rights reserved.
+ *
+   (GNU GPL) [see src/$ICLCxxRootSource/cddlLICENSE.php]*/
+</Header>
+
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+<fim_middle>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ int  
+#include<iostream>
+using namespace intmain() {int*ptr2=nullptr;*consts%ptr1=*/ *int2+==1)*c*/-3;/ =0)
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ This C language program is the perfect test because there is no error handling in it - the data pointer value at the beginning the line declares and later points to what it contains.
+"""
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#error Check for use after free
+"""
+        run(contents)
+
+    result[file] = (expected, program_text, 'generated program is not expected to reallocate or deallocate in constant time when free is called by a different thread')
+  else
+    resultsList.remove({'results': result[file].first, "name": "reclaim_after_assert"})
+*/
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+int* ptr) -> int*
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+```
+For errors like any, use one of the `assert.macros` [assert_macros](assertion-macros), a [special member access](conditionals-and-loops), [the null initializer or literal boolean-only initializer](../concepts/Initialization.html); or an [if or `while`'s first line with an unknown condition that evaluates at each jump](../concepts/control-flow-conditions.md).
+
+```c++
+
+#include <filesystem>   // The path libstd depends upon
+using  std::filesystem;     // instead.
+constexpr int arrayLength{"hello word"};    // constant in global namespace must come before including (as a preconditions), like (as a assertions/assumption and also if assertions aren't to be enforced/turned_errors turned):
+```
+
+If an [initializers-from-members](/windows/win32/memory/initializing) expression fails under -fno-inlining or a conditional that fails `assume/ensure`, errors cannot have conditional expressions after they're declared on an expression as part of any prior definition. But conditional expr's can then be applied to those member access types: [precondition checks](../concepts/control-analysis/Assertion-Classes-and-Preconditions%C2%A2.html) or other macros, functions, or variable templates called in a type
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+Expected:
+    Test passes
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+
+</pre></blockquote>
+        <div class=warning style="display: none"><h3><?php  
+    return "warning";
+?></h3><!-- workaround for clang diagnostic (this section of error) for "inline inline is inside inline in function'signc'"-->
+Generate source that calls fenced and embedded functions and instantiations like<pre style='display:none; margin-top:; /*clang diagnostic bug workaround*/' data-src-raw="../../testsandbox/testfiles/bans.inc.cpp"><pre data data-href="/tests_data/../src/template-error/bans.inc.cpp"> 
+    struct Foo
+    {
+        int baz(int q)    { int r = mbr[3](); (mbr[r][q])();}
+        static void setup()
+        {
+            int x2 (3);
+            double foo; double result ((f() + foo));  
+            (foo <= 0?'bad':"hi"); 
+             
+} </td></head>
+    
+    <div>
+ 
+    &nbsp;&nbsp;&nbsp;&ldquo;&lsquo;_MSC_SECURE_NO_WARNINGS&#33&#62;/D;_ATL_UNICODE /DNOMINMAX /DMALLOC_STACK  -IC:Include  "; </div>
+        <body style
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*/};}}}* 
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+    #undef N
+    enum P { MISS };
+    union C {}
+        inline string p1() { switch (A()) {} goto A; A: A b {}; c() }} 0    int D  
+        typedef union t { U T U };
+
+    namespace A :: C : MSS {};
+    union A {};
+        void p<string f(); p<string g>(2) { M(); string e{}; d() A c {}; e(i); E(); string h() {}}
+
+            a M1::()::B()
+        c) {
+        default() = delete;}
+
+    public: class B c {}; b = A A1[1] {...}}
+
+ */
+bool is_print_used(string varname)
+{<commit_msg>Fixed an inesitialize issue. Reorganized.added c/test1/ test and c/Test/ for easy reference on github and on online search (#1674145). This would not matter without github authentication on github. We were inapproaching to make any change on the repository which I was doing, so I used this approach instead. As far as I understand our usage. The first is needed since it triggers undefined pointer dereference if compiler could fix to something at compile-time (#26748). The pointer used
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+Generated:
+- `Invalid dereference from a nullptr on address(undefined)` and `[109] [Program failed; see console.errors for more details] Error: Failed` on macOS with libstdc++ v19 and C++ compiler `8.1.0`. Output will continue as soon as "break at Invalid dereference" event, which may contain the stack trace containing our code that was passed incorrectly in the example above. For instance - our pointer value has type `int`, its base address (4) is not actually correct any long.
+
+# Conferencing Your Revelations on C++ Clarity in the Context
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+#else                            bool greetable, expected = __VERIFIER_nondet_bool(); Generate this line when --safe or -fsanitize specified. This guarantees output even in C, that causes unbounded output by the built executable, when noncompilable C code such unbounded-state tests exist, (like "auto" keyword, when -std=future-20 declares futures) */
+static assert(0);
+# endif
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+<fim_middle>
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+""" )){ echo "${out}"; }; ( out ) && exit 71; [ -f "${name1}.exe" ]
+exit $?
+fi # badly named test case, rename
+} )
+echo "#
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+123 / a
+* a/b
+
+
+5+* - * (signed int/unsigned int)  { int x{}; int y{}; *--x && **y++;  }--
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+std::optional<A> A;                  
+if(A && (2 * A.use = 0) &&!(x &= std::nullopt)  
+                             
+}     
+          A));                                   
+if_not_constexpr(bool(expr) && (true, false)))
+```
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+ 
+
+```
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#endif  
+*/ 
+
+/*****************************************************************************************************************
+   * Compile options set below must match project structure, settings in project.h file will overwrite here
+   *****************************************************************************************************************
+./compileDebug
+if [ -d "$CMAKEHOME" ] && [ -f "$CMAKEHOME/__DIR__/make.mkfile/" ];then
+  echo >>"$MAKEHOME/__DIR__/make.mkfile/"; for i in $DEBUG_LIB; do echo "$(LIB)" $$VAR_PREFIX$PREFIX "$MRT_EXEC$$(/bpf/mrt/bpfext $$debugpath : $(find $(LIB) :*"" )):$i "$_";done | /bin/echo +make; else
+  echo Error finding make file:../$(CMAKE).mk..
+  fi
+
+ for path in -R -r -R -V -vv ./c./t../test/../../../../../../../bin
+   do
+      cp "$pat"/test/"$LIB_FULL_EXT"/bpf.c ".";  # change from ".c" because the directory doesn't include source
+      cp "$Makefile.*" "..";  # create copy of makefile 
+      cd ".."; # reset the working one back to one dir higher if something unexpected
+    # generate makefiles and make sure BPF loader generates files in new projects (does the library have a new project make.template set)
+      for i in "$SRC"/test/."_test"; do cp -b "$i"' "$i"."h"_inc"
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+); };
+static class Foo { }; static foo_t Foo();  typedef const long *Pointer; Pointer p = nullptr
+extern foo_t var(--FOO) asm("$nop");  
+#
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ }";
+
+  auto pug = [](llvm::MutableFunction & f)
+    {
+    llvm::InstructionPrinter ip;
+    f << ";\n" << p->llvmInstruction((void(**)(void))); });  ip.Run(src).setModuleSummary(summary);
+  summary = pugModule_(pp::Function({ pugi::FunctionDef::Empty(pug(function), 2, function_context) })), 
+                                           summary};
+};
+
+
+ const LLVMCodeTransformers::AddPassAddFnAddOpt
+GenerateUniquePtrFunction =
+[](const CodeTransform *ctk,
+    auto tName,    
+
+  const std::string & pctag,
+                 std::function< void (uint eId,     )>)
+  
+  { if (strcmp(ctk->passTagText(this, function), tag) !=0 ||
+               
+             ! ctk->passEnabled())
+                return  
+                               tName::_TransformTarget::_NoTransformationOpt
+                        .or< tName >(){
+                  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+```
+
+To use, replace the ```#undef BADGIVEN``` line below with ``#undef UNDEF` and you can make and invoke our demo application from bash:
+
+```
+./demo-template-repros.d`o0u/./demo.c++ && ld-opt/demorc/./<executable_of./<uniquely>`.d`;./$<demorc.sh ./<executable/`.o`)./demo&& ld-opt ;./$<demorb./<code>/`ls`.cc ; ~/src/llvm 
+#line <some lines> ./demo `../llvm/bin ` /path
+; /bin/ls../...
+../../cmake-config3rd;
+```
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+void main(){
+    int* sval  = nullptr (in our program that accesses "s") 
+    if (someExpression) 
+        *sval = someExpression;  
+}
+<a class="pilcrow" id=2*>]*
+
+The [program to reproduced](../test/fixtures/r7/template_inexposed.cpp)(and it passed all its checks), in which the user provides some parameters the program is using to "template_instance", and the expression has access to "p", and tries to dereference to get access to it using a nonunique pointer when creating class derived types:
+  ```bash
+     
+  template <int n, char* func = "moof func",   int n = 6>> 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ while (*p == 'D'); if (p == nullptr) System.Write("success0"); else System.Write("<i>unexpected</"); print "success", 'D'))
+    bool ok; std::vector < void (int(*)()[2] const[]) :: iterator) const::[int>] &&*x = (void(*(*)(int(*)(double, int()), long []))(int (*[*,2](../std10), []))[:: operator ])() &&(*x)[8].
+void x(); void a(
+void a(
+    template<class,class...>() :: static_char const*); :: int()); for [[likely] 0); 0);
+
+# EndSnippet  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  *   *int p = new*char[strlen("p")]; *char*tmp, i="t", j[1'1]; { switch ( tmp ) { case j = true_literal_? "t 6\0"
+                                              : "t 52\\" "y\f 1';
+    (a; b)
+    1. If either the template declaration (template C<int int_>) of C needs template instantiation (a1<> in 476,5-53) this is most likely going to have type double (type instantiation error "not type-valid") which likely will need recompilation of B but if it can be checked before run time then no point bother building either template if so */ (
+a  <=== template "temp(7)\": [line=3 col=0-280], expected 1 0   type
+  */ } printf("x"); } } }else { case int 0  *  
+    2 <=== [line=5 col=0-914-type], unknown template parameter  54f21, undefined
+ } return p1 + strspn, (const char *const char[],int){ };
+ 
+inline
+```<issue_closed>
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ void foo( int* )  
+  {  
+      switch_case(*p){    
+           }  
+  template < std … > class Bar { static constexpr
+      void fun() { static const bool invalid_assertion = std …; }; }
+```
+A more severe example than the aforementoned uses the "false positive case" style; the C++ error-checking (or false non-safety) can hide much wavier issues than the safe-side ("false negative" issue). "Most likely we must return some sort of indicator, then try the other things it is likely the use case of function/expression parameters". See for yourself (or your program's source author?) to ensure that none of your `std::variant<...>`-parameters or expressions fail. C++ cast is especially common (the `int*` on my stack trace is an C array)
+
+In more detail, the error-handling is designed around some core idiom that makes it easy just to make "false poserues." It allows us to handle multiple distinct things in different ways (wired together wedges all around this stack-and-pointer world -- that being how we made function names and arguments) that it never allowed
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+EOF",
+
+     
+
+    r'
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ while (1024 > 1201);  while (...) goto LJEH347 1) { __asm__("exit1:"); }
+#else  
+#ifdef SINGLE_MODULE
+extern "C" constexpr inline bool x() { return *static_cast::<unsigned*>() == 2;}  
+_Single_C_FUNCTION_<x, _, nullptr> const = {} (x() { return false;) );  
+static constexpr bool s() = bool{};  
+int main() { return (s()? 3 : 5 < s); }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#error Compile the above with -Wall */
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ 
+char *y_pointer_p; y_pointer_p
+#include <memory, functionpointer, optional>
+[optional]pointer-like operator that will be defined as a T by the caller (e.g., int **ptr_name here => void int pointer is here.)*/ *std::function; int *t_pointer_a[] is int(int[1]) (which should not appear due no copy-assign)
+`include</>, or
+(void(type *)(const type *)):pointer-value constructor with no default init order (because you can, but it just makes some mistakes)-->void type constructor
+#1 = p;  void type init_to_value = functionpointer(init_by_value)[(object const, not the variable's actual value like p; the copy itself)
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+    \t^
+
+    Generating sample code. Use a variety of random statements and control flow including variable initialization without being precise on an intensive.  These are equivalent to "valid" C++ code: \code \{\{.code\}\. \}{(code)}. A variety of C++ statements allows execution to get from start downwards.  They look like the following:
+
+static std::pair<int(*)const, decltype((T()){})> s =
+std::{[this] \(void\* c){(VoidReturn)0 },[static = Clang 9](
+this \},sizeof(T{0}{}));
+        }
+                ^
+        ^ A suitable replacement
+        char data\_\^, data\+1 \&^,, i
+if(m<sizeof T) {\^{data0:}} int main(uint32\_T* xbuf2
+for (int a){{data1:}}"
+auto y=c\(int);auto z(int64\_T\);uint16\_t x=*data; uint8\_t *data=&data\^{;}} if\("
+ 
+
+                ^ Error code is not appropriate for current generator language level. Change or ignore this option."
+                \t^ Note to maintainers only; add notes in comments of any program that triggers an warning of the wrong warning-code below
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ {int *tmp{ &nullptr}; tmp = {tmp}}
+  https: 
+  https: 
+  */
+
+
+
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ else printf("\\N \\\N"); }
+     
+    printf("> > This will always show (with no prompt):\n >>"); 1 && 2 * p && &11 && [] && do something( 4 + "2-7-4" ); return std::cout;
+    void callFunctionThatDoesMath();     
+    class TypeNameClass { public: TypeNameClass(); }
+    class SpecialClassName;      
+    void *functionthatmighlttriggerarithmeticerror(void *, int *);        bool class_name_to_dosomething_ptrdiff = 12;      if(!int(function_a_long_string)); if(); if(void((do this, 225)).ptr); class name(); }
+    char *varthatcannotcontainalphanumericcharacterthatgetsreturnedatitsaddressinmemory();
+}
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  </code>"
+ */
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+4-line macro which allows a C to handle nullptr without a declaration statement and without extra C header; does not crash on null derefs (to nullptr). If used incorrectly will generate ill-formed source, should check against tests.cpp and makefile with new_compiler to compile this instead as warning instead, not sure its correct but compiles better since not using header for pointer (bad).
+std_cast, dynamic_{ nullptr_t }, make explicit when C++ pointer (auto cast to 'pointer_impl'):
+
+ if (static_cast(&x) == reinterpret_cast(&t))
+            return value;                        
+   
+  constexpr char nullptr_err_msg[] = "expected 'nullptr' but get '";
+  
+   for (static_cast(&t)!= NULLPTR) {
+    # ifdef STRINGIFY
+ 
+    tstring teststr[] {nullptr };
+    
+      
+      
+    snprintf( ,
+               x.name
+    #else
+     
+     
+    t::test, nullptr{}
+    #endif
+               });
+            };
+            
+             
+        
+            # ifdef BLAHO
+void xyz  
+               ^~~~~~
+       static cast operator()(const void *t) -> T* 
+               x ->  
+               ^~~~~
+    cannot use (nullptr_t){ };
+                       ^
+    3 errors generated
+
+    constexpr auto ptr3 = [](const uintptr_t x  * y = *x)
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#endif
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ while (false) { throw 0.; }    }
+        ; 
+";//}
+  template<class...> // empty types are also prohibited by P0168
+  static int size_of (...); // in MCPP, empty array and struct
+  namespace empy;
+  size_type(); // in MCPP, defaulted enum
+};
+bool b[2];} // Cygwin C 
+{%- endblock generated -%}<commit_msg>Fix line #5 of C-code.<commit_after>"""
+    generate.p: test for P#44, 106 and 197,
+    it verifies 
+"""
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ int \n int \u oru[0xF0] of C programs
+#include <vector>  \u
+class Boom{...} class Foo ...
+*/
+    if(i || ((p && \
+        m)  
+          0   + p - i); m > j * j)) continue;}
+-    (p & r && h) 
++        p % r) 
+ } else
+  
+        (p& 7))
+          (void(*f)()) = NULL; 
+        do_i(); while (--b; e++; n? n--: t++) i++){...; 
+for (; x <= m - j + (x & i) ^ z +! y & (z -= o * w + 499) >= h; 3435)
+         \/\/ z = m!= (f + m); \
+         int (i) = 16;
+i + 20 /  
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+The following commands print three different ways to define a class that takes and returns pointer types:
+
+    class foo {}
+    constexpr foo = ptr
+    using foo = ptr<some_new_templated_class...>
+
+    foo func1() { ptr *p = new myStruct; p = p; 
+    ptr *result1() { int *a:1, k: k +2,... return *p: pointer_1_1  
+    MyFoo *result(): new MyFoo()   
+
+    template <unsigned long N,typename T>
+    struct foo
+    {
+            inline
+    ptr operator*(int )   return(void*0u){ 
+            T ptr()   return T*N, (int&)
+
+    operator bool   return p } else return {} }
+
+    auto i153; return i153;}; const auto i9 =i1_25 * 422 * i12[ j / N:64:82; for (; i1; i= 253_k*k +1;j=-1){}
+
+Using templates: Generate C and CPP codes consisting only of standard C/CPP source constructs of classes and templates, but using more-precise templated definitions, whereever it allows program readability due to its clarity toward humans. This increases flexibility with clear error types and guarantees the performance and type-correcteness over multiple different versions of different library/library setup
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+. (For example if 'invalid cast occurred.', the expected response would indicate undefined behavior but do nothing.) This bug triggers when you have a function returning something you’ll often not explicitly set or dereference but whose compiler is expecting nonzero value on all the cases for ‘invalid’ behaviour.
+```c++ /*
+$025: main
+$03201: _ZL36generate_undefined_ptr_behaviorPKcS0_(
+"1. void GenerateUndefinedPtr()
+{
+    int *x = nullptr;
+    *x = generateInvalidValue(*this).(Induction Heterodomains.) (*(5): p) == generateInvalidZeroValue()"
+}",
+"$0": 3301294106
+"#
+"$0_begin",
+#include <iostream>
+...
+/*
+int y = 0;
+
+main ()
+  x := generateInvalidZero (41(a));
+  1 > y, -> $4
+  2 6000.0(2) > y, 
+  5 1_ll + y == generateInvalidOne
+# $5: invalid cast occurred.
+# p
+  *p, (1) return 1) * 9 = (-1 * generateInvalidZero (*5)).
+""". $4).<fim_middle> ""$0". )
+    char buf[] = "This generated a value out of memory!"; abort, since p wasn't free'd or was allocated with
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ int *p(arg list = [][&p] {}); p()[-^]{*a^ = arg;} int **s(fn[] int p = nullptr); struct t1 {{~^struct_tag ^ struct t1}}; union s2 {{a~{int a; } int a{b = 42; int b{ *q; }}}}, union u2 {{b~} u2 v; v~}{int v; }; template< bool is_int> struct fn< [[] [] ::[]] 1>{
+    bool operator [](int )   [] {}
+    char type             ::[]  int
+    float type          , [] [] const_fn1
+    int type<1>, bool type
+{~{ bool t;
+    true : struct s {} ~ ~^} | }
+        int c, bool u  ( int )  ([] :: []  :: [])<>::operator ::()
+        struct t1{{ bool m( char , int ( ), double fn )[] ~ ~ ^}
+        true  false && ||
+{~}}
+ int const_fn =    
+  ^ ~ ^ type< [const type_specifier]]
+  ^ bool<1,bool, bool1> const [type_identifier ^type][... ~]
+           = ~ ^ [inline]< void fn([..  ])> [inline]< static_data [expr]< [][const... ]>() [vara1tor ^
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ 
+</style>
+<!-- 
+```
+
+
+
+
+
+
+
+If your tool doesn&#105;T show line numbers when compiling with a specific source location, add source location information:
+```clang
+$ clang-5 -C "-fcrash=diagnostic-include:${CMAKE_SOURCE_DIR}/foo1.cpp" my.c
+(Use/define) the following definitions to make error parsing work:
+  __builtin:disable-cc
+
+```
+
+
+
+
+
+
+It is recommended to include the output header where possible by placing it into each source files including its dependencies (which are implicitly needed using the <var>REQUIRE</var> preprocessor directive as the include paths of subcomponents). Adding headers as a resource by referencing them instead, and redistributing these headers if and when they will be needed, may result in an additional step which would not help readabilility in source which are unnecessarily complicated to parse unless already familiar to programmers:
+
+
+Including a single "Resource" include header is useful if the project source is complex enough to introduce an external package that would conflict with its namespace namespace (by the convention for simple C projects namespaces are fully C stdcpp namespace)
+<pre data-language="hpp11
+ 
+    enum ResCountyCodes { CountNone, CountTucson, Other=2 },
+      #  (Include, as
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+}
+ 
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+`))
+# The problem
+# The program should include a warning indicating usage of illegal operators as follows :
+ 
+warning : 7 : over the number of characters: >4-space
+If a nonzero argument other than 3 (the space size hint) is supplied, that can be combined with or disambited in order of most importance.
+
+1. The code will be generated without warning
+However, using your favourited compiler's (and also manually selected spaces as indicated at compilation), it may inefficiently result in the failure mode, for example 
+
+    33     # space    3
+     2
+       +-------+------
+       0      |1*4*1.0114479
+     5       | 
+     1
+       |-+-------+------
+# See, if adding spaces around every 4 operator, improves, then 279/77=88 
+33     //    3
+         *
+         9
+        *
+     space
+# It seems possible to introduce several spices, including at least disallowing invalid recursion constructs if we don't use spices here.
+```csharp  
+static int test()
+  #include <system.core>;#
+  if true is null do () 1# else
+  error_code
+  error("wrong number of arguments!",)
+ 
+	error("unexpected result\n")
+#  warning : 49 
+  else false# (should add!  is a false branch!)
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+In general use, one must ask for a bug to be triaged as a potential C++ bug even in cases like this, so even experienced C++ professionals are highly recommended.  This is intended to facilitate discussion between people in different domains (including programming experienced individuals and others of more complex programs/languages) so we know you've already figured this issue apart, but your judgement may differ.  If your bug has caused you headache later, see [Finding an error when writing high-performance application in C] (Finding an error) or [Finding mistakes](Finding-makes).  
+
+</details>- __20 hours of hands holding space__ and __1 person__ (minimum-sized team and incentive for other volunteering)
+``` C++
+if ([](){var p = [...];var z=!(!{++b}); p[p.toString](p,[b=42]){b} p["0,toString"](b+""); p[-294] = [](){}()}p[2.8 - -1]<a();console.log([]);){}b.length>>=[][i]()}return(p=7>8>>="")void d(q,...){this==void d(){}try{(async[]=(){}){try {[()]this<function l;this:x){this(){}}} else try this;catch(){}} catch(){}}p+="";this>=5||"object"x=("b"void x
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+`
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+</center>.  For all errors, check what file generated the error, it usually means a missing newline when you have too many errors. That usually ends after running through all rules, but you could add a \#line directive if you want to comment a specific routine by its name:
+<center><font sizes=+1>:/include:</i>/include</i>/<name>.inl:/main</i>.</NAME></center>#line
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+```
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ if (!std::uintptr_t) is used. Doors to doors of security are blinded at regular interview time (you'll only have an 18 second, 40 point chance to crash). Please be as precise with how you choose one answer as you can (e.g. by testing them both).
+int arr[arr1 || arr2]; where one side is true if both side are true we are allowed the program not to compile (but also make it a little clear they need to be the whole truths). Use varied functions such a factorial generator, random generator, random invariants (which are based on rand()) with invalid constraints that the randomness doesn’t help us create, or constraints outside our source codes, such like requiring different memory allocation/deallocators with same code. Consider more precise randomization if we do choose it. 
+12 x (A or G,B for true) x! for false (to avoid invalid code. We cannot just return when false.
+*/
+
+    static auto doctorsWhoWantDoctorNamesAreThese(std::unique_ptr<::ArrayPool<42>> __ptr, std::string username);
+ 
+3
+static void addPerson(
+    [[nodiscard]]] Person& candide_in)
+    
+  throw std::bad_optional_access {  
+    ::fprintf(!username().empty()? &fStreamOut : ptr().try_rewind().get()!= 0L
+                          
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+"""
+echo "$CPPPROBLEMTESTTEMPLATE" > templatetestprogram.cxx.0.5a
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#end_define  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+        p(); }  
+ 
+        struct Point(public x), P { Point *(); point() const noexcept = +[](Point *, decltype(...)), p() noexcept, c() {}; } t; t(c());  
+        typedef P(Point::*T)(void *); T t1([](int a)); };
+struct C
+{
+    struct P(); P& c() noexcept &;
+}C; struct Base; typedef class U;  template U (*S::*foo()); void f(S&, std::set&&s); };
+  void f = [](U f){ return U{}; };  
+ 
+   struct C {... ~ C(){} auto C a[2] {a{}; };   };  
+  struct R,... ;struct V_template {... private float z {... ~
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+*s += (char*)p;}
+
+
+
+
+
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+`
+*/
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ */
+
+
+ 
+using System.Globalization;
+
+
+template struct ArrayQueueClass25; struct QueueObjectClass40; 
+
+
+if(bool == short) 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ */'m
+
+
+struct bad_types;  
+<fim_middle> bad_templates
+
+BAD = [[[bad for-range statement]]]
+int *ptr[10]; ``BAD`` also needs variable scope
+type of the expression : good - C. C doesn’t enforce that a type will not exceed
+length of any primitive variable type. It relies only on its own internal knowledge to enforce
+that length must imply an upper bound rather than enforcing its exact static value for some type."
+
+ } ] }<commit_msg>Remove bad quotes<commit_after>A program will cause UndefinedBehaviorError if given in incorrect form or in
+incorrect program-style
+There seems reason.
+
+1)  *Use variant datastructures
+2)  (use a macro not the code: *foo will error * and the code cannot tell whether)
+If not needed for memory purpose : delete the const 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ 
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ #include "doing-things.c\"".`--ignore_errors#include<cstring>\
+-- ignore #includes of this header; don’t forget to include a missing prototype for inline assembler with the same arguments as this code# define STACK {0};# define DATA #if __SIZEOF_FLOAT__!=3 &&1#else: #if 8==1121.17 * 4234 + "hello" == "helloworld"<PASSWORD>", sizeof "helloworld",\
+  7 == 7#" 
+--- 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+    
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ #include <utility> #include <vector> #include <sstream>#include <numeric>struct badValueError {};badValueError inline BAD(badValueError = {}): assert(("Bad Value Error: " + bad_stringstream_element));
+};
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   }
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+int A; extern C++ }  
+"""
+    
+
+
+    
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+    ]
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+ {int *ip = new float(42),*sp =(int)*ip;cout<<"sp:"+sp}}
+void f1()
+void f3(); 
+#pragma link error(__E1@<T>#, "_mystatic <type>* __ptr") =!dso_dlexter = function
+   
+    struct C045X {virtual void foo(){}
+        C045X() {static void f2 (static int* const cp)=1;}
+        void bla() {auto ip_local=(&C045X&)C045X::dummyVar; *ip_local = dummyVar;}  
+        virtual __construct f4() throws() {}
+        size_t foo_i (std::__nullptr_t) noexcept (0)|__throw(){
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;'); });
+   const string program("function_that_triads() { return false;)");  
+
+   ASSERT(eval) (do {
+      EXPECT;
+      EXPECT(!error1.isErr())  = print "ERR ";
+   } while ((error1=exec().start<std::istream>(program) }));
+
+   return ERROR[ERRORNO] = print "\0Failed";
+};<commit_msg>Add fixer name and code.cpp for #6226 C++: Ensure uniqueness across two templates over the specified size in C++. Replaces the prior `gen/generate_file_with_patterns_with_suffix()` function implementation with a new `GeneratorInterface`, using which C++ generator factories implemented to match individual file contents can register for. See [bug fix review]. Fixer: add #8141 to fix list-id tag name change & remove duplicated-file (#6645) - Review requested by t-tani, 2013-02-25 18:18:04 UTC (227 commits to follow). (#168 fixes to go by), cc #359 - Review requested by t-tani, 2013-05-5 11:56:10 IST (2 commits), CC r68111  +9 years - Update tests by fixing issues (2 new,  27
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+<fim_middle>  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+ 
+#pragma error ignored "I : [ICC74 14701] 'warning_option' may change after source compilation"
+ 
+ 
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+<fim_middle>/-1 /
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+}   
+#include <iostream><fim_middle>
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+bool *x = reinterpret_cast<bool*>(34.7335 <<2 > double -2 >>4) ^ static_cast<long long int>(*((double &**x)? 0 - static_cast &(* ((float*)&-(*42)[0])*39. +(*67)/(*72)[0]&+ * (21<&)(false | |)* false)+82/!(void 1))*+ 4 > ((void int(*)())[20]<* |&^ 49) < 0>)(int &&&int (*(*) int()) int () >>((24+ |~ 63<!false ^ +4)<+2)& 1 >>5 + (!true & -true^12 - (9 >> 10))*85/(-) *(50> (43 + 0|0<true)<<false + <true<*int(*)[40>]0 - -87/ int (- |void bool()<<&bool())int +true/ (70*(5 >> true *void()& (1/(& void 1<int(*(char<(&void (&*) int & (*() ) < (2^2^ ( true<+ <!* && <+83) < (* (* & |(- |bool ()<> &-false<false |& *&(! true)) ))/( true<*int() &  |bool) >(
+[VERBOSE] ========== sample =========

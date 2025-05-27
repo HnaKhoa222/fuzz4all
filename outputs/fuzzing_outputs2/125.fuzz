@@ -1,0 +1,23 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+    #undef N
+    enum P { MISS };
+    union C {}
+        inline string p1() { switch (A()) {} goto A; A: A b {}; c() }} 0    int D  
+        typedef union t { U T U };
+
+    namespace A :: C : MSS {};
+    union A {};
+        void p<string f(); p<string g>(2) { M(); string e{}; d() A c {}; e(i); E(); string h() {}}
+
+            a M1::()::B()
+        c) {
+        default() = delete;}
+
+    public: class B c {}; b = A A1[1] {...}}
+
+ */
+bool is_print_used(string varname)
+{<commit_msg>Fixed an inesitialize issue. Reorganized.added c/test1/ test and c/Test/ for easy reference on github and on online search (#1674145). This would not matter without github authentication on github. We were inapproaching to make any change on the repository which I was doing, so I used this approach instead. As far as I understand our usage. The first is needed since it triggers undefined pointer dereference if compiler could fix to something at compile-time (#26748). The pointer used

@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+class Person
+{
+private:
+    string name;
+    int age;
+public:
+    Person(string name, int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+    ~Person()
+    {
+        cout << "~Person()" << endl;
+    }
+    Person *mutate()
+    {
+        this->setAge(this->getAge() + 1);
+        return this;
+    }
+    Person *copy()
+    {
+        return new Person(this->getName(), this->getAge());
+    }
+    set<Person *>* getFriend()
+    {
+        return friendList.begin();  
+    }
+    set<Person * > * getFamily()
+    {
+        return familyList.begin();  
+    }
+    Person *findFriend(string name)
+    {
+        auto iter = find_if(friendList.begin(), friendList.end(), [name](Person *person)
+        {
+            return person->getName()!= name;  
+        });
+        personList.erase(iter);  
+        return iter->getAddress();
+    }
+    Person *findFamily(string name)
+    {
+        auto iter = find_if(familyList.begin(), familyList.end(), [name](Person *person)
+        {
+            return person->getName()!= name;
+        });
+        personList.erase(iter);  
+        return iter->getAddress();
+    }
+private:
+    void setAge(int newValue)
+    {
+        this->age = newValue;
+    }
+    int getAge()
+    {
+        return this->age;
+    }
+};
+int main()
+{
+    set<Person *> newPersonList;
+    set<Person *> newFriendList;
+    Person n1("John

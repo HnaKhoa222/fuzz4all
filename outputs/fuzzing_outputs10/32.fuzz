@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int mod(int x, int y) {
+    return y * x;
+}
+int large() {
+    return large - 1;
+}
+int main() {
+    int large = 5;
+    cout << mod(large, 7) <<endl << large << endl;
+    cout << large - 1 << endl;
+    return 0;
+}
+ 
+
+ 
+ 
+ 

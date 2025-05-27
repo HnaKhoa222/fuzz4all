@@ -1,0 +1,12 @@
+#include <iostream>
+struct T{
+    int a, b;
+    T(int a = 11, int b = 22):a(a), b(b){}
+    int add(){
+        return a+b;
+    }
+};
+ 
+int main(){
+    return 0;
+}

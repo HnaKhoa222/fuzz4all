@@ -1,0 +1,34 @@
+#include <iostream>
+cout_handle = this;
+The following declaration causes undefined behavior, even though the return type for one or other operation could not normally result in undefined behavior:
+     char& operator [](IndexType iVal);   
+     This declaration can result in multiple assignments including variable localizations:
+      *localvalvalref
+       
+      varvalref->operator --(); 
+       (C and Cpp both can't convert index values)
+
+  2.) int a;
+
+    19 = const static.
+
+     void fnGetAddressFromAddr_1DArrayToValue(){
+
+
+
+            char[] input[MAX_DEPTH_1D];
+          
+       char const* iPtrPointer =(Input[]);
+
+     } // if scope is out of a block (a for instance), all objects under control become part and whole scope
+
+    const and static variables cannot leak from the scope for functions (they don't go through this point) since there's (void) * addressOf, therefore any localizations and (no) function deletions will keep them going.
+
+ 8.(++) C/C++/2++)
+       
+     static int globalintArray[10]();
+        17 == sizeof(32); -> true (always cast, even types with sizeof( ), and integer arithmetic)
+     localVariables += g
+    localVariables; -> 1
+    functions - returns a by default.
+    globalintArray: g

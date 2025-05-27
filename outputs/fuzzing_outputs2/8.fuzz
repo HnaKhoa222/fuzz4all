@@ -1,0 +1,5 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+int *p = a + b  ;   int*q = reinterpret_cast <void * (*)();>() ((b = b % d));   
+[code goes here or doesn't even exist]

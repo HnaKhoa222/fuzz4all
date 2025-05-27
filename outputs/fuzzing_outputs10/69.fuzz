@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main(){
+    (void)sizeof(123);  
+     
+    (void)sizeof((float)123);   
+    typedef int *int_ptr;
+    int_ptr *ip = &23;  
+     
+    return(0);
+}

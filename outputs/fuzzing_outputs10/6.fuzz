@@ -1,0 +1,36 @@
+#include <iostream>
+
+
+void recursive_pointer()
+{
+  char * p = new char{};
+  char * p_2 = new char[2];
+  p[0] = 'a';
+
+  std::cout<<p<<'\n';  
+  std::cout<<p_2<<'\n';  
+
+  delete[] p_2;  
+  delete[] p;  
+
+  p_2 = new char[2];
+  p[0] = 'a';
+  p_2[1] = 'a';
+  
+  std::cout<<"p's address is "<<p<<'\n';  
+  std::cout<<"p's address is "<<p_2<<'\n';  
+
+  std::cout<<std::endl;
+  delete p;
+  delete[] p_2;
+}
+
+int main()
+{
+   
+#ifdef TEST
+  for (int i = 0; i < 100; ++i)
+    recursive_pointer();
+#endif
+  return 0;
+}

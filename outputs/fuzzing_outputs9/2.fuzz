@@ -1,0 +1,63 @@
+#include <iostream>
+
+#include <fstream>
+using namespace std;
+
+ 
+class Customer
+{
+	friend class BankAccount;
+protected:
+	string name, fName, lName, street;
+	 
+	Customer(string s,string f,string l,string r = "" ) 
+	{
+		name = s; 
+		street = r;
+	} 
+	 
+	friend ostream& operator<<(ostream& os, const Customer& c);
+
+public:
+	 
+	string getName() 
+	{
+		return name;
+	} 
+	void setName(string s) 
+	{
+		name = s; 
+	} 
+	 
+	string getStreet() 
+	{
+		return street;
+	}
+	void setStreet(string s)  
+	{
+		street = s; 
+	}
+	 
+	string getfName() 
+	{
+		return fName;
+	}
+	void setfName(string s) 
+	{
+		fName = s; 
+	}
+	 
+	string getLName() 
+	{
+		return lName;
+	}
+	void setLName(string l) 
+	{
+		lName = l; 
+	}
+     
+    ~Customer()
+    { }
+
+};
+ 

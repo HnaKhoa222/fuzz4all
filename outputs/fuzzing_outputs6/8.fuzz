@@ -1,0 +1,9 @@
+#include <iostream>
+
+#define DO(...)
+#define DUMMY a
+int f(int x) { DO(x<7), }
+void r; int main()     { int y = 7 >> f(2 * r++;); std::{y; f};; } }  
+
+Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+*/

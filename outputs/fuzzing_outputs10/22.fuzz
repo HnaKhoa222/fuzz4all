@@ -1,0 +1,11 @@
+#include <iostream>
+int mod(int x, int y){
+    if (x <= 0){
+        return 0;
+    }
+    return mod(y, x % y);
+}
+int large(){
+for (int i = 0 ; i < 100000 ; i++);
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include <iostream>
+int mod(int x, int y) {
+    if (x == 0) {
+        return y % 0;
+    }
+    return x % y;
+}
+std::string hello() {
+    std::cout << "Hello World\n";
+    return "Hello World";
+}

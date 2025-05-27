@@ -1,0 +1,1687 @@
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+int main() {
+     
+    int i = 2000;
+  }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+class Foo {
+    public:
+        Foo(int x) : x(x) {};
+        inline void print() { std::cout << x << std::endl; };
+    private:
+        int x;
+};
+
+int main(){
+    std::cout << "Printing 15: ";
+    Foo a(15);
+    a.print();
+    std::cout << "Printing 16:\n";
+    a.print();
+    std::cout << int(a) << std::endl;
+    return  0;
+};
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+class Type
+{
+    public:
+        virtual ~Type() = default;
+};
+class Value
+{
+    public:
+         
+};
+
+int main()
+{
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+class X
+{
+public:
+    X(int val) : value(val)
+    {
+    }
+    int operator()() const {
+        std::cout << "X::" << value << '\n';
+        return value;
+    }
+
+    int value;
+};
+
+class Y
+{
+public:
+    Y(X* ptr) : value(get()(ptr)), ref(ptr)
+    {
+    }
+    int get() const { return value; }
+
+    int value;
+    X* ref;
+};
+
+int main() {
+
+    X x = X();
+    Y y(const_cast<X*>((&x)));
+
+    return get(y);
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+template<typename T>
+void f(int) {
+    if constexpr(std::is_same<T, int>::value) {
+        int val = 2;
+        std::cout << val;
+    }
+};
+
+int main() {
+	const int v = 10;
+	f<int>(v);
+	const int* val = &v;
+	std::cout << *val;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+void recursive_pointer()
+{
+  char * p = new char{};
+  char * p_2 = new char[2];
+  p[0] = 'a';
+
+  std::cout<<p<<'\n';  
+  std::cout<<p_2<<'\n';  
+
+  delete[] p_2;  
+  delete[] p;  
+
+  p_2 = new char[2];
+  p[0] = 'a';
+  p_2[1] = 'a';
+  
+  std::cout<<"p's address is "<<p<<'\n';  
+  std::cout<<"p's address is "<<p_2<<'\n';  
+
+  std::cout<<std::endl;
+  delete p;
+  delete[] p_2;
+}
+
+int main()
+{
+   
+#ifdef TEST
+  for (int i = 0; i < 100; ++i)
+    recursive_pointer();
+#endif
+  return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+int add(int a, int b);
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <stack>
+#include <stdint.h>
+
+void func(const uint8_t);
+bool isInside(stack<int32_t>& s, int32_t num);
+
+inline const uint8_t* createBytes(int32_t count) {
+    uint8_t d[] = {1, 8, 3, 9, 12, 7, 9, 5, 1, 9};
+    return d;
+}
+
+inline void func(const uint8_t)
+{
+    uint8_t* bytes = createBytes(4);
+}
+
+inline bool isInside(stack<int32_t>& s, int32_t num)
+{
+    if (s.top() == num) {
+        s.pop();
+        return true;
+    }
+    return false;
+}
+
+int main()
+{
+    std::stack<int32_t> stack;
+    isInside(stack, 1);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+int a = 5, b = 6;
+
+void f(int c, int... i, int j);
+
+int main() {
+    f(b * 2 + a);
+}
+
+void f(int c, int... i, int j) {
+    a = b = 10;
+    std::cout << a << "; " << b << '\n';
+    f(c + i[1] + j);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int add(int a, int b);
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class Dad {
+    public:
+        Dad();
+};
+namespace Dad {
+     
+     
+ private:
+    int value;
+};
+void modify(Dad &obj);
+int main() {
+     
+    Dad dad = Dad::Dad();
+    modify(dad);    
+    std::cout << dad.value << "\n";
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int multiply(int a, int b);
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+extern int add(int a, int b);
+
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+int main()
+{
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int add(int a, int b)
+{
+    b = 1;
+    return a + b;
+}
+int main()
+{
+    std::cout << add(5, 7) << std::endl;
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int increment(int a);
+
+class MyClass
+{
+  private:
+    int x;
+    bool deleted;
+
+  public:
+    MyClass();
+     
+    MyClass(const MyClass& s);
+     
+    MyClass(MyClass& s);
+     
+    MyClass& operator=(const MyClass& s);
+     
+    MyClass& operator=(MyClass& s);
+     
+    MyClass operator++(int);
+     
+    MyClass operator--(int);
+    ~MyClass();
+     
+    int x() const;
+
+     
+    static MyClass& getMypic();
+};
+
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y);
+ 
+int large();
+std::string hello(){
+
+    std::cout << "Hello World\n";
+    return "Hello World";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int add(int a, int b);
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int &add(int a, int b);
+int main()
+{
+	int a = 4;
+	int &b = add(a, 3);
+	std::cin >> b;
+	return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mut();
+int main() 
+ 
+{
+     
+    mut();
+    return add(4,6);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int mod(int x, int y);
+int large();
+std::string hello(){
+    std::cout << "Hello World\n";
+    return "Hello World";
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y) {
+    if (y % 2 == 0) {
+        return x + x;
+    }
+    return x;
+}
+int large() {
+    return (3000000/3)+1;
+}
+std::string hello() {
+    std::cout << "Hello World\n";
+    return "Hello World";
+}
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct TestClass{
+    int x;
+    int y;
+    TestClass(){
+        std::cout << "TestClass()\n";
+        x = 0;
+        y = 1;
+    }
+    float f(){
+       float result;
+       std::cout << "TestClass::f()\n";
+       result = 5.5;
+       return result;
+    }
+    TestClass(TestClass *x){
+        std::cout << "TestClass(TestClass *x)\n";
+        x = this;
+    }
+};
+TestClass test;
+TestClass(TestClass *x){
+    std::cout << "TestClass(TestClass *x)\n";
+    x = this;
+}
+int mod(int x, int y){
+    return x % y;
+}
+int large(){
+    int x = 2147483647;
+    return (x > 0)? (x + mod(x, x)) : x;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    if (x <= 0){
+        return 0;
+    }
+    return mod(y, x % y);
+}
+int large(){
+for (int i = 0 ; i < 100000 ; i++);
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+     
+    int z = mod(x, y) + 1;
+    int zz=(x-mod(z,2))*mod(z,4)+2mod(mod(mod(z,4),2), 4);
+     
+    return z;
+}
+
+main(){
+    std::cout << mod(10, 2);
+    std::cout << mod(1, -11);
+    std::cout << mod(51, 89);
+     
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int);
+int large();
+std::string hello();
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    return x*y;
+}
+#include <string>
+#include <map>
+#include <string>
+#include <vector>
+#include <set>
+#include <array>
+#include <initializer_list>
+int f(int i);
+bool contains(void *p, const struct foo *b);
+void f(int i) { std::cout << i; }
+void f(double d, float f);
+void f(int i, bool b = true, char c='\n', char c[] = "c");
+char* getstr();
+struct foo{
+    int x;
+    int y;
+};
+void foo(foo f);
+template<typename T> void foo(T f);
+/*
+void main_function(int argc, char **argv);
+/*
+int main() {
+    return 0;
+}
+
+class Point {
+protected:
+     
+    void print() const
+    {
+        cout << x <<'' << y << '\n';
+    }
+};
+#include <vector>
+std::vector<int> myVector;  
+std::vector<int> myVector{ 1, 2, 3, 4 };
+std::vector<int> myVector{} { 1, 2, 3, 4 };
+std::vector<int> myVector = { 1, 2, 3, 4 };
+std::vector<int> myVector = { 1, 2
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y) {
+    if (x == 0) {
+        return y % 0;
+    }
+    return x % y;
+}
+std::string hello() {
+    std::cout << "Hello World\n";
+    return "Hello World";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    while (x < 0) {
+        x = -x;
+    }
+    if (y == 0) return 0;
+    return y * mod(x, y / 2);
+}
+int large()
+{
+    return 46;
+}
+
+int main() {
+
+
+    if (mod(8, 12)!= 16)
+      return -1;
+    int a = 2;
+    int a = a + 1, a = a +a;  
+    std::string str = "Hello World";
+    std::cout << hello() << ": " << str;
+    a = -1;
+    b = +1;  
+    bool a = true;
+    int a = 8, c = a * 3 + 2 * a + a + 1, c = c * a + 10, c = a + b;
+    int a = 0, b = 5443, b = b + 1;
+    int a = 0;
+    int b = 0;
+    if(b<0){
+        a = -20;
+        std::cout << "a = " << a << "\nb = " << b << "\n";
+    }
+    if(a>0)std::cout<< "a= " << a << "\n";
+    int a = 0;
+    a = +1;
+    a = a + a;
+    std::cout << "a is "
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    return x*y;
+}
+int large(){
+    return 10;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y) {
+    return y / x;
+}
+int large() {
+    char a = '\0';
+    char buff[64] = { 0 };
+    a = 2;
+    buff[0] = '\0';
+    buff[1] = '\0';
+     
+    long b = -1;
+    return mod(large(), 2);
+}
+
+ 
+
+int mod(int x, int y) {
+    return y / x;
+}
+long large() {
+    char a = '\0';
+    char buff[64] = { 0 };
+    a = 2;
+    buff[0] = '\0';
+    buff[1] = '\0';
+     
+    long b = -1;
+    return mod(large(), 2);
+}
+
+struct TestClass {
+    virtual int testMethod();
+};
+
+int TestClass_method_one() {
+    return 1;
+}
+
+int main() {
+    TestClass obj;
+    return obj->testMethod();
+}
+
+ 
+int mod(int x, int y) {
+    return y / x;
+}
+long large() {
+    char a = '\0';
+    char buff[64] = { 0 };
+    a = 2;
+    buff[0] = '\0';
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int mod(int x, int y){
+    return x*y;
+}
+int large(){
+    return 10;
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct T{
+    int a, b;
+    T(int a = 11, int b = 22):a(a), b(b){}
+    int add(){
+        return a+b;
+    }
+};
+ 
+int main(){
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    return y;
+}
+int large(){
+    return 11;
+}
+int main(){
+    std::cout<<"Large is now 11 and 10 is now 10"<<large()<<std::endl;
+    std::cout<<"Large was 10 and 11 is now 11"<<large()<<std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int mod(int x, int y) {
+    return y * x;
+}
+int large() {
+    return large - 1;
+}
+int main() {
+    int large = 5;
+    cout << mod(large, 7) <<endl << large << endl;
+    cout << large - 1 << endl;
+    return 0;
+}
+ 
+
+ 
+ 
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    return x + y;
+}
+int large(){
+    return 1000;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    return x*y;
+}
+int large(){
+    return 10;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int large(){
+    return 0;  
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y);
+int large(){
+    return large();
+    return large();
+    return 10;
+}
+
+int main(){
+    int x;
+    return mod(x, large());
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int new_mod(int x, int y){
+    return mod(y, mod(x, large()));
+}  
+int large_new(){
+    return mod(large(), new_mod(29, large()));
+}
+ 
+#include<iostream>
+template<typename> struct t;
+template<typename T> struct t<T const &> {
+  union {
+      T x;
+      int x_;
+  }. c;
+};
+template<typename T> struct t<T &&> { int x_; };
+void f(t<int const &>){
+}
+int main(){
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    int t = y;
+    y = x;
+    x = t;
+    return x*y;
+}
+int large(){
+    return 20;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    std::cout << "this is before" << std::endl;
+    return std::cout << mod(x, y);
+}
+int large(){
+    return 100;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int mod(int x, int y){
+    int t = y;
+    y = x;
+    x = t;
+    return x*y;
+}
+int large(){
+    return 20;
+}
+/* Please create a semantically equivalent program to the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    return y==0? x: mod(x,y-1);
+}
+int large(){
+    return 20;
+}
+void bad_prompts(){
+    for(int i = 0; i < danger_prompts.size(); i++){
+        std::cout << danger_prompts[i] << std::endl;
+    }
+    
+}
+int main(){
+    bool is_good = false;
+    while(!is_good){
+        is_good = mod(2,3)==3;
+        bad_prompts();
+    }
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+long long mod(long long x, long long y){
+    x = x% y;
+    return (x*y)/y;
+}
+long long large(){
+    return 9433;
+}
+int main(){
+    std::cout << mod(12,2) << std::endl;
+    std::cout << mod(12,2) << std::endl;
+    mod(10,3);
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    x = mod(x, y);
+    return y;
+}
+int large(){
+    return large();
+}
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+ 
+ 
+ 
+ 
+
+int small()
+{
+    return large() << 8;
+}
+
+int main(){
+    std::cout << small() << "\n";
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod(int x, int y){
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int mod(int x, int y){
+    int t = y;
+    y = x;
+    x = t;
+    return x;
+}
+int large(){
+    return 20;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+<fim_middle>#include <cstdio>
+using namespace std;
+int a = 0;
+std::string name = "<NAME>";
+
+int mod(int a, int y){
+    std::puts("inside mod()");
+    int t = y;
+    y = a;
+    a = b;
+    return x;
+}
+
+int a = 0;
+
+int main() {
+    large();
+    std::cout << mod(a, large()) << std::endl;
+    std::cout << a << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int mod2(int x, int y){ return x-y; }
+int large2(){ return 20; }
+int main(){std::cout<<mod2(10,large2())<<'\n'; return 0;}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main(){
+    return 0;
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int large(){
+    return 70;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int large(){
+    return 70;
+}
+/* Please create a semantically equivalent program to the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int small(){
+    return 7;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+```
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int small(){
+    return sizeof(large());
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int large(){
+    return 70;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main(){
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+std::cout << "Welcome to C++\n";
+std::cout << "This is where we generate C++ code and then we run " << large() << " so we can get started\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int large(){
+    return 65;
+}
+int main(){
+    printf("%d\n", large());
+    return 0
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int small(){
+    return large();
+     
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int large(){
+    int x = 2 * 2;
+    return x;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!" << endl;
+    cout << "Hello World!!!" << endl;
+    cout << "Hello World!!!!" << endl;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!" << endl;
+    cout << "Hello World!!!" << endl;
+    cout << "Hello World!!!!" << endl;
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!" << endl;
+    cout << "Hello World!!!" << endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!" << endl;
+    cout << "Hello World!!!" <<endl;
+    cout << "Hello World!!!!" << endl;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+void foo(int i){
+    cout << i << endl; 
+    foo(1);
+}
+
+int main(){
+    foo(3);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "'Hello World!' is written in the correct way." << endl;
+    cout << "Hello World!" << endl << "Hello World!!!" << endl;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+template<typename T>
+T& f(T){
+    std::cout << "Inside template" << endl;
+}
+
+int *foo() {
+    std::cout << "Inside foo()" << std::endl;
+    return nullptr;
+}
+
+int main(){
+    cout << f(42) << endl;
+    cout << *foo() << std::endl;
+    
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!" << endl;
+    cout << "Hello World!!!" << endl;
+    cout << "Hello World!!!!" << endl;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!" << endl;
+    cout << "Hello World!!!" << endl;
+    cout << "Hello World!!!!" << endl;
+     
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!" << endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+
+int main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+    cout << "Hello World!!\n";
+    cout << "Hello World!!!!\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    (void)sizeof(123);  
+     
+    (void)sizeof((float)123);   
+    typedef int *int_ptr;
+    int_ptr *ip = &23;  
+     
+    return(0);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+    cout << "Hello World!!\n";
+    cout << "Hello World!!!!\n";
+}
+/* Please create a semantically equivalent program to the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+int main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+    cout << "Hello World!!\n";
+    cout << "Hello World!!!!\n";
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!\n";
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int m;
+{
+    int f;
+    m = f;
+}
+void main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+    cout << "Hello World!!\n";
+    cout << "Hello World!!!!" << endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+struct A{
+    A(){}
+};
+int main(){
+    cout << 1.;
+    cout << 2.;
+    cout << 3.;
+    cout << "Hello World!\n";
+    cout << "Hello World!!\n";
+    cout << "Hello World!!!!\n";
+    cout << A();
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+struct Node{
+    char letter;
+    Node * next;
+
+    Node(char letter): letter(letter){
+        next = nullptr;
+    }
+};
+
+Node * newNode(char letter){
+    Node * n = new Node(letter);
+    return n;
+}
+
+Node *_add(Node * a, Node * b){
+    Node * p = newNode(a->letter);
+    p->next = a;  
+    p->next->next = b;  
+    return p;
+}
+
+bool check(Node * t){
+    return t->next!= nullptr;
+}
+
+bool checkNext(Node * t, Node * t2){
+    if (t2 == nullptr) return true;
+    else if (t->next->next == t2) return true;
+    else return checkNext(t->next, t2);
+}
+
+Node * removeLast(Node * t){
+    if(t!= nullptr){
+        Node * t2 = t;
+        removeLast(&t2->next);
+        if(t->next == nullptr){
+            Node * deleteThis = t->next;
+            delete t;
+            return deleteThis;
+        }
+        return t;
+    }
+    else return t;
+}
+
+Node * removeLeft(Node * t){
+    if(t!= nullptr){
+        if(t->next!= nullptr)
+        removeLast(&t->next
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "<NAME>\n";
+    cout << "Hello World!\n";
+    cout << "Hello World!!\n";
+    cout << "Hello World!!!!\n";
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+/* Please create a semantically equivalent program to the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World!:)";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+enum class Direction{
+    Left,
+    Right
+};
+int main(){
+    cout << "Hello World:\n";
+     
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int* null=NULL;
+__declspec(noinline) int* test(int argc, const char* argv[]){
+    int* q="";
+    __asm{
+        jmp 0
+        nop
+    }
+    return null;
+    goto err;
+}
+int main() {
+    int* res=test(1,NULL);
+    __asm;
+
+err:
+    cout << "Hello World:\n";
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    cout << "Hello World:\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+int main(){
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+#include <type_traits>  
+#include <typeinfo>       
+
+template<typename T> using is_convertible = std::conditional_t<
+    std::is_convertible_v<const T*, T>,
+    std::true_type,
+    std::false_type
+>;
+
+int main(){
+    int x = 5;
+    float* f = &x;
+    if(f){
+      cout << "Convertible: " << is_convertible<float*>::value << endl;
+      cout << "Convertible: " << is_convertible<const float*>::value << endl;
+    } else {
+      cout << "Not convertible: " << is_convertible<float*>::value << endl;
+      cout << "Not convertible: " << is_convertible<const float*>::value << endl;
+    }
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+class foo{
+public:
+    foo ()
+    {
+        cout << "Creating an instance of foo!" << endl;
+    }
+    foo(const foo& x):foo(),x_(x)
+    {
+        cout << "Creating an instance of foo with copy ctor" << endl;
+    }
+    foo& operator=(const foo& x)
+    {
+        cout << "Assigning an instance of foo from a copy" << endl;
+        x_ = x;
+        return *this;
+    }
+    foo(foo&& x):foo(),x_(x)
+    {
+        cout << "Creating an instance of foo with move ctor" << endl;
+    }
+    foo& operator=(foo&& x)
+    {
+        cout << "Assigning an instance of foo from a move" << endl;
+        x_ = x;
+        return *this;
+    }
+    void bar()
+    {
+        cout << "bar " << this << endl;
+    }
+    foo::~foo()
+    {
+        cout << "Destroying an instance of foo!" << endl;
+    }
+private:
+    int x_;
+};
+int main(){
+    foo t;
+    foo t2(t);
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+void func(float z){
+	float *v = &z;
+	float m = *(v+1);
+
+	z = m*100;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+}
+ 
+template<typename T>
+    int f(T){
+    int i(1);
+    while(i<5){
+        T t(i+1);
+        cout << t << endl;
+        i = i + 2;
+    }
+    return -1;
+}
+int main(){
+    int res;
+    res = f<int>(0);
+    return 0;
+}
+ 
+#include <iostream>
+using namespace std;
+
+class Timer {
+    private:
+        long long start;
+    public:
+    Timer() {
+        start = time(NULL);
+    }
+    long long stop() {
+        return time(NULL) - start;
+    }
+    long long elapsed() {
+        return stop();
+    }
+};
+
+class Ticker {
+    private:
+        Timer t;
+    public:
+    Ticker() {}
+    long long ms() {
+        return t.elapsed() * 1000.0;
+    }
+};
+
+ 
+int main(){
+
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+    using namespace std;
+    cout << "Hello from the template library" << endl;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+
+using namespace std;
+
+template <typename T>
+int div(T a, T b){
+    if(b == 0) {
+        return 1;
+    }
+    else {
+        return div(b,a % b);
+    }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+int main(){
+}
+
+
+
+[VERBOSE] ========== sample =========

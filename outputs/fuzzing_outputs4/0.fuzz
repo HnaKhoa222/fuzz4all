@@ -1,0 +1,6 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ else { double a = 5; } }  
+{{ { "invalid dereference of an empty pointer.",
+"invalid use detected in arithmetic with `*'",
+}}}

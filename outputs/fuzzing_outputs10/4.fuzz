@@ -1,0 +1,36 @@
+#include <iostream>
+
+
+class X
+{
+public:
+    X(int val) : value(val)
+    {
+    }
+    int operator()() const {
+        std::cout << "X::" << value << '\n';
+        return value;
+    }
+
+    int value;
+};
+
+class Y
+{
+public:
+    Y(X* ptr) : value(get()(ptr)), ref(ptr)
+    {
+    }
+    int get() const { return value; }
+
+    int value;
+    X* ref;
+};
+
+int main() {
+
+    X x = X();
+    Y y(const_cast<X*>((&x)));
+
+    return get(y);
+}

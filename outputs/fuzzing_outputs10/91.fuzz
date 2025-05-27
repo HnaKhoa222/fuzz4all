@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+class foo{
+public:
+    foo ()
+    {
+        cout << "Creating an instance of foo!" << endl;
+    }
+    foo(const foo& x):foo(),x_(x)
+    {
+        cout << "Creating an instance of foo with copy ctor" << endl;
+    }
+    foo& operator=(const foo& x)
+    {
+        cout << "Assigning an instance of foo from a copy" << endl;
+        x_ = x;
+        return *this;
+    }
+    foo(foo&& x):foo(),x_(x)
+    {
+        cout << "Creating an instance of foo with move ctor" << endl;
+    }
+    foo& operator=(foo&& x)
+    {
+        cout << "Assigning an instance of foo from a move" << endl;
+        x_ = x;
+        return *this;
+    }
+    void bar()
+    {
+        cout << "bar " << this << endl;
+    }
+    foo::~foo()
+    {
+        cout << "Destroying an instance of foo!" << endl;
+    }
+private:
+    int x_;
+};
+int main(){
+    foo t;
+    foo t2(t);
+    return 0;
+}

@@ -1,0 +1,183 @@
+[TRACE] Validating outputs/fuzzing_outputs8/0.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/0.fuzz failed validation with error message: outputs/fuzzing_outputs8/0.fuzz: In function ‘void f1()’:
+outputs/fuzzing_outputs8/0.fuzz:15:12: error: return-statement with a value, in function returning ‘void’ [-fpermissive]
+   15 |     return 0;
+      |            ^
+
+[TRACE] Validating outputs/fuzzing_outputs8/1.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/1.fuzz failed validation with error message: outputs/fuzzing_outputs8/1.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs8/1.fuzz:18:41: error: invalid operands of types ‘int’ and ‘<unresolved overloaded function type>’ to binary ‘operator<<’
+   18 |    std::cout << "10 < 15 = " << 10 < 15 << std::endl;
+      |                                      ~~~^~~~~~~~~~~~
+outputs/fuzzing_outputs8/1.fuzz:19:45: error: invalid operands of types ‘int’ and ‘<unresolved overloaded function type>’ to binary ‘operator<<’
+   19 |    std::cout << "dval < 10 = " << dval < 10 << std::endl;
+      |                                          ~~~^~~~~~~~~~~~
+outputs/fuzzing_outputs8/1.fuzz:21:55: error: no match for ‘operator<=’ (operand types are ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} and ‘int’)
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^~ ~~
+      |                                               |          |
+      |                                               |          int
+      |                                               std::basic_ostream<char>::__ostream_type {aka std::basic_ostream<char>}
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/fuzzing_outputs8/1.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:583:5: note: candidate: ‘template<class _IteratorL, class _IteratorR>  requires  three_way_comparable_with<_IteratorR, _IteratorL, std::partial_ordering> constexpr std::compare_three_way_result_t<_IteratorL, _IteratorR> std::operator<=>(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&)’ (reversed)
+  583 |     operator<=>(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:583:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   mismatched types ‘const std::reverse_iterator<_IteratorL>’ and ‘int’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+/usr/include/c++/13/bits/stl_iterator.h:1690:5: note: candidate: ‘template<class _IteratorL, class _IteratorR>  requires  three_way_comparable_with<_IteratorR, _IteratorL, std::partial_ordering> constexpr std::compare_three_way_result_t<_IteratorL, _IteratorR> std::operator<=>(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)’ (reversed)
+ 1690 |     operator<=>(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1690:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+In file included from /usr/include/c++/13/bits/basic_string.h:47,
+                 from /usr/include/c++/13/string:54:
+/usr/include/c++/13/string_view:633:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(basic_string_view<_CharT, _Traits>, __type_identity_t<basic_string_view<_CharT, _Traits> >)’ (reversed)
+  633 |     operator<=>(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/string_view:633:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘int’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+/usr/include/c++/13/bits/basic_string.h:3760:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’ (reversed)
+ 3760 |     operator<=>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3760:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘int’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+In file included from /usr/include/c++/13/bits/uses_allocator_args.h:38,
+                 from /usr/include/c++/13/bits/memory_resource.h:41,
+                 from /usr/include/c++/13/string:58:
+/usr/include/c++/13/tuple:1952:5: note: candidate: ‘template<class ... _Tps, class ... _Ups> constexpr std::common_comparison_category_t<decltype (std::__detail::__synth3way(declval<_Tps&>(), declval<_Ups&>()))...> std::operator<=>(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)’ (reversed)
+ 1952 |     operator<=>(const tuple<_Tps...>& __t, const tuple<_Ups...>& __u)
+      |     ^~~~~~~~
+/usr/include/c++/13/tuple:1952:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   mismatched types ‘const std::tuple<_UTypes ...>’ and ‘int’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+/usr/include/c++/13/bits/stl_iterator.h:601:5: note: candidate: ‘template<class _Iterator>  requires  three_way_comparable<_Iterator, std::partial_ordering> constexpr std::compare_three_way_result_t<_Iterator, _Iterator> std::operator<=>(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorL>&)’ (rewritten)
+  601 |     operator<=>(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:601:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+/usr/include/c++/13/bits/stl_iterator.h:1756:5: note: candidate: ‘template<class _Iterator>  requires  three_way_comparable<_Iterator, std::partial_ordering> constexpr std::compare_three_way_result_t<_Iterator, _Iterator> std::operator<=>(const move_iterator<_IteratorL>&, const move_iterator<_IteratorL>&)’ (rewritten)
+ 1756 |     operator<=>(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1756:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+In file included from /usr/include/c++/13/bits/stl_algobase.h:64,
+                 from /usr/include/c++/13/string:51:
+/usr/include/c++/13/bits/stl_pair.h:819:5: note: candidate: ‘template<class _T1, class _T2> constexpr std::common_comparison_category_t<decltype (std::__detail::__synth3way(declval<_Iterator&>(), declval<_Iterator&>())), decltype (std::__detail::__synth3way(declval<_T2&>(), declval<_T2&>()))> std::operator<=>(const pair<_T1, _T2>&, const pair<_T1, _T2>&)’ (rewritten)
+  819 |     operator<=>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_pair.h:819:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} is not derived from ‘const std::pair<_T1, _T2>’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+/usr/include/c++/13/string_view:625:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(basic_string_view<_CharT, _Traits>, basic_string_view<_CharT, _Traits>)’ (rewritten)
+  625 |     operator<=>(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/string_view:625:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   ‘std::basic_ostream<char>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+/usr/include/c++/13/bits/basic_string.h:3745:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr decltype (__char_traits_cmp_cat<_Traits>(0)) std::operator<=>(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’ (rewritten)
+ 3745 |     operator<=>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3745:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+In file included from /usr/include/c++/13/bits/ios_base.h:46:
+/usr/include/c++/13/system_error:316:3: note: candidate: ‘std::strong_ordering std::operator<=>(const error_code&, const error_code&)’ (rewritten)
+  316 |   operator<=>(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/13/system_error:316:33: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} to ‘const std::error_code&’
+  316 |   operator<=>(const error_code& __lhs, const error_code& __rhs) noexcept
+      |               ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/13/system_error:498:3: note: candidate: ‘std::strong_ordering std::operator<=>(const error_condition&, const error_condition&)’ (rewritten)
+  498 |   operator<=>(const error_condition& __lhs,
+      |   ^~~~~~~~
+/usr/include/c++/13/system_error:498:38: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} to ‘const std::error_condition&’
+  498 |   operator<=>(const error_condition& __lhs,
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+outputs/fuzzing_outputs8/1.fuzz:21:55: note: candidate: ‘operator<=(int, int)’ (built-in)
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+outputs/fuzzing_outputs8/1.fuzz:21:55: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} to ‘int’
+/usr/include/c++/13/bits/stl_iterator.h:566:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<=(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&) requires requires{{std::operator<=::__x->base() >= std::operator<=::__y->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’
+  566 |     operator<=(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:566:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+/usr/include/c++/13/bits/stl_iterator.h:1715:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<=(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&) requires requires{{std::operator<=::__y->base() < std::operator<=::__x->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’
+ 1715 |     operator<=(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1715:5: note:   template argument deduction/substitution failed:
+outputs/fuzzing_outputs8/1.fuzz:21:58: note:   ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   21 |    std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;
+      |                                                          ^~
+
+[TRACE] Validating outputs/fuzzing_outputs8/2.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/2.fuzz failed validation with error message: outputs/fuzzing_outputs8/2.fuzz: In constructor ‘Derived::Derived(int)’:
+outputs/fuzzing_outputs8/2.fuzz:12:21: error: invalid type argument of unary ‘*’ (have ‘int’)
+   12 |   Derived(int i): i(*i) { std::cout << "Derived created with " << i << std::endl; }
+      |                     ^~
+outputs/fuzzing_outputs8/2.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs8/2.fuzz:28:17: error: invalid use of ‘this’ in non-member function
+   28 |   vec.push_back(this);
+      |                 ^~~~
+outputs/fuzzing_outputs8/2.fuzz:29:16: error: no matching function for call to ‘push_back(int)’
+   29 |   vec.push_back(d.getValue());
+      |   ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/vector:66,
+                 from outputs/fuzzing_outputs8/2.fuzz:3:
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note: candidate: ‘constexpr void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Base*; _Alloc = std::allocator<Base*>; value_type = Base*]’ (near match)
+ 1281 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1281:7: note:   conversion of argument 1 would be ill-formed:
+outputs/fuzzing_outputs8/2.fuzz:29:27: error: invalid conversion from ‘int’ to ‘std::vector<Base*>::value_type’ {aka ‘Base*’} [-fpermissive]
+   29 |   vec.push_back(d.getValue());
+      |                 ~~~~~~~~~~^~
+      |                           |
+      |                           int
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note: candidate: ‘constexpr void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = Base*; _Alloc = std::allocator<Base*>; value_type = Base*]’ (near match)
+ 1298 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:1298:7: note:   conversion of argument 1 would be ill-formed:
+outputs/fuzzing_outputs8/2.fuzz:29:27: error: invalid conversion from ‘int’ to ‘std::vector<Base*>::value_type’ {aka ‘Base*’} [-fpermissive]
+   29 |   vec.push_back(d.getValue());
+      |                 ~~~~~~~~~~^~
+      |                           |
+      |                           int
+
+[TRACE] Validating outputs/fuzzing_outputs8/3.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/3.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs8/4.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/4.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs8/5.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/5.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs8/6.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/6.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs8/7.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/7.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs8/8.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/8.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs8/9.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs8/9.fuzz is safe

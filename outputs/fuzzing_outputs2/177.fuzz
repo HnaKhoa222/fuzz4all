@@ -1,0 +1,15 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+        p(); }  
+ 
+        struct Point(public x), P { Point *(); point() const noexcept = +[](Point *, decltype(...)), p() noexcept, c() {}; } t; t(c());  
+        typedef P(Point::*T)(void *); T t1([](int a)); };
+struct C
+{
+    struct P(); P& c() noexcept &;
+}C; struct Base; typedef class U;  template U (*S::*foo()); void f(S&, std::set&&s); };
+  void f = [](U f){ return U{}; };  
+ 
+   struct C {... ~ C(){} auto C a[2] {a{}; };   };  
+  struct R,... ;struct V_template {... private float z {... ~

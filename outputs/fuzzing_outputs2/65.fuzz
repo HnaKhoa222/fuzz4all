@@ -1,0 +1,24 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+
+function void func()
+return func(); }  
+    
+}
+void bar() {
+    while(1);      
+    function foo(){}      
+    }}); 
+     
+    
+     
+     
+    
+     ) {...
+           foo();
+       }; 
+       do{return };
+       while (bar_fails){
+         while ((int*) /* bar cannot accept a negative parameter yet, cannot compare this param to an actual function.
+                 int int3(

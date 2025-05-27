@@ -1,0 +1,28 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ }";
+
+  auto pug = [](llvm::MutableFunction & f)
+    {
+    llvm::InstructionPrinter ip;
+    f << ";\n" << p->llvmInstruction((void(**)(void))); });  ip.Run(src).setModuleSummary(summary);
+  summary = pugModule_(pp::Function({ pugi::FunctionDef::Empty(pug(function), 2, function_context) })), 
+                                           summary};
+};
+
+
+ const LLVMCodeTransformers::AddPassAddFnAddOpt
+GenerateUniquePtrFunction =
+[](const CodeTransform *ctk,
+    auto tName,    
+
+  const std::string & pctag,
+                 std::function< void (uint eId,     )>)
+  
+  { if (strcmp(ctk->passTagText(this, function), tag) !=0 ||
+               
+             ! ctk->passEnabled())
+                return  
+                               tName::_TransformTarget::_NoTransformationOpt
+                        .or< tName >(){
+                  

@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+struct Node{
+    char letter;
+    Node * next;
+
+    Node(char letter): letter(letter){
+        next = nullptr;
+    }
+};
+
+Node * newNode(char letter){
+    Node * n = new Node(letter);
+    return n;
+}
+
+Node *_add(Node * a, Node * b){
+    Node * p = newNode(a->letter);
+    p->next = a;  
+    p->next->next = b;  
+    return p;
+}
+
+bool check(Node * t){
+    return t->next!= nullptr;
+}
+
+bool checkNext(Node * t, Node * t2){
+    if (t2 == nullptr) return true;
+    else if (t->next->next == t2) return true;
+    else return checkNext(t->next, t2);
+}
+
+Node * removeLast(Node * t){
+    if(t!= nullptr){
+        Node * t2 = t;
+        removeLast(&t2->next);
+        if(t->next == nullptr){
+            Node * deleteThis = t->next;
+            delete t;
+            return deleteThis;
+        }
+        return t;
+    }
+    else return t;
+}
+
+Node * removeLeft(Node * t){
+    if(t!= nullptr){
+        if(t->next!= nullptr)
+        removeLast(&t->next

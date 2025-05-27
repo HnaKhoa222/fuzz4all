@@ -1,0 +1,25 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+The following commands print three different ways to define a class that takes and returns pointer types:
+
+    class foo {}
+    constexpr foo = ptr
+    using foo = ptr<some_new_templated_class...>
+
+    foo func1() { ptr *p = new myStruct; p = p; 
+    ptr *result1() { int *a:1, k: k +2,... return *p: pointer_1_1  
+    MyFoo *result(): new MyFoo()   
+
+    template <unsigned long N,typename T>
+    struct foo
+    {
+            inline
+    ptr operator*(int )   return(void*0u){ 
+            T ptr()   return T*N, (int&)
+
+    operator bool   return p } else return {} }
+
+    auto i153; return i153;}; const auto i9 =i1_25 * 422 * i12[ j / N:64:82; for (; i1; i= 253_k*k +1;j=-1){}
+
+Using templates: Generate C and CPP codes consisting only of standard C/CPP source constructs of classes and templates, but using more-precise templated definitions, whereever it allows program readability due to its clarity toward humans. This increases flexibility with clear error types and guarantees the performance and type-correcteness over multiple different versions of different library/library setup

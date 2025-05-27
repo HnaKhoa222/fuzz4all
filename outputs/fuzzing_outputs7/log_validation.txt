@@ -1,0 +1,368 @@
+[TRACE] Validating outputs/fuzzing_outputs7/0.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/0.fuzz failed validation with error message: outputs/fuzzing_outputs7/0.fuzz:6:3: error: #error #undef #undef #undef
+    6 |  #error #undef  #undef  #undef
+      |   ^~~~~
+outputs/fuzzing_outputs7/0.fuzz:4:50: error: template argument 1 is invalid
+    4 | [[maybe_unused]] std::tuple<int(*)( int, char(*) ))>("invalid param") {}
+      |                                                  ^
+outputs/fuzzing_outputs7/0.fuzz:4:51: error: expected unqualified-id before ‘)’ token
+    4 | [[maybe_unused]] std::tuple<int(*)( int, char(*) ))>("invalid param") {}
+      |                                                   ^
+
+[TRACE] Validating outputs/fuzzing_outputs7/1.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/1.fuzz failed validation with error message: outputs/fuzzing_outputs7/1.fuzz:5:9: fatal error: ctime(): No such file or directory
+    5 | #include<ctime()>
+      |         ^~~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/fuzzing_outputs7/2.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/2.fuzz failed validation with error message: outputs/fuzzing_outputs7/2.fuzz:6:94: warning: missing terminating " character
+    6 | char foo[][] = "bar \0 abc // single quote""; string \0 abc// double quote, escape character"";
+      |                                                                                              ^
+outputs/fuzzing_outputs7/2.fuzz:6:94: error: missing terminating " character
+    6 | char foo[][] = "bar \0 abc // single quote""; string \0 abc// double quote, escape character"";
+      |                                                                                              ^~
+outputs/fuzzing_outputs7/2.fuzz:14:189: error: exponent has no digits
+   14 |         {   const std char f396_[n[n1]13,    long f0f_ { n[_C_(C)]12f3_ - _F(7.04c) << (_D(_)13i-(_O)(char _t{ f[r-n(p+)]  / }1f-_2[n_]) << (_1(_)o << (1 + p * ) << p; char _t = _0{  p - }1e[0]; },
+      |                                                                                                                                                                                             ^~
+outputs/fuzzing_outputs7/2.fuzz:6:6: error: declaration of ‘foo’ as multidimensional array must have bounds for all dimensions except the first
+    6 | char foo[][] = "bar \0 abc // single quote""; string \0 abc// double quote, escape character"";
+      |      ^~~
+outputs/fuzzing_outputs7/2.fuzz:16:120: error: expected unqualified-id before ‘return’
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                        ^~~~~~
+outputs/fuzzing_outputs7/2.fuzz:16:147: error: ‘oneMinus68’ does not name a type
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                   ^~~~~~~~~~
+outputs/fuzzing_outputs7/2.fuzz:16:162: error: expected unqualified-id before ‘{’ token
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                                  ^
+outputs/fuzzing_outputs7/2.fuzz:16:214: error: expected unqualified-id before ‘else’
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                                                                                      ^~~~
+outputs/fuzzing_outputs7/2.fuzz:16:245: error: expected declaration before ‘}’ token
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                                                                                                                     ^
+outputs/fuzzing_outputs7/2.fuzz:16:253: error: ‘free’ in namespace ‘std’ does not name a type
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                                                                                                                             ^~~~
+In file included from /usr/include/c++/13/cstdlib:79,
+                 from /usr/include/c++/13/ext/string_conversions.h:43,
+                 from /usr/include/c++/13/bits/basic_string.h:4109,
+                 from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/fuzzing_outputs7/2.fuzz:1:
+/usr/include/stdlib.h:687:13: note: ‘void free(void*)’ declared here
+  687 | extern void free (void *__ptr) __THROW;
+      |             ^~~~
+outputs/fuzzing_outputs7/2.fuzz:16:284: error: expected ‘}’ at end of input
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                                                                                                                                            ~               ^
+outputs/fuzzing_outputs7/2.fuzz:16:264: error: scalar object ‘foo’ requires one element in initializer
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                                                                                                                                        ^~~
+outputs/fuzzing_outputs7/2.fuzz:16:284: error: expected ‘,’ or ‘;’ at end of input
+   16 |     char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+      |                                                                                                                                                                                                                                                                                            ^
+
+[TRACE] Validating outputs/fuzzing_outputs7/3.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/3.fuzz failed validation with error message: outputs/fuzzing_outputs7/3.fuzz:3:10: fatal error: stackalloc.hpp: No such file or directory
+    3 | #include "stackalloc.hpp"
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/fuzzing_outputs7/4.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/4.fuzz failed validation with error message: outputs/fuzzing_outputs7/4.fuzz:56:25: warning: missing terminating " character
+   56 | float i, staticMember = "initializes variable that is global to an object
+      |                         ^
+outputs/fuzzing_outputs7/4.fuzz:56:25: error: missing terminating " character
+   56 | float i, staticMember = "initializes variable that is global to an object
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:57:1: warning: missing terminating " character
+   57 | ";
+      | ^
+outputs/fuzzing_outputs7/4.fuzz:57:1: error: missing terminating " character
+   57 | ";
+      | ^~       
+outputs/fuzzing_outputs7/4.fuzz:15:4: error: ‘Class::Class()’ cannot be overloaded with ‘Class::Class()’
+   15 |    Class ()
+      |    ^~~~~
+outputs/fuzzing_outputs7/4.fuzz:5:4: note: previous declaration ‘Class::Class()’
+    5 |    Class()
+      |    ^~~~~
+outputs/fuzzing_outputs7/4.fuzz:22:11: error: ‘Class Class::operator+(Class, Class)’ must have either zero or one argument
+   22 |     Class operator+(Class a,
+      |           ^~~~~~~~
+outputs/fuzzing_outputs7/4.fuzz: In constructor ‘Class::Class()’:
+outputs/fuzzing_outputs7/4.fuzz:8:2: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+    8 |  cout<<"Inside Class constructor"<<endl;
+      |  ^~~~
+      |  std::cout
+In file included from outputs/fuzzing_outputs7/4.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/fuzzing_outputs7/4.fuzz:8:36: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+    8 |  cout<<"Inside Class constructor"<<endl;
+      |                                    ^~~~
+      |                                    std::endl
+In file included from /usr/include/c++/13/iostream:41:
+/usr/include/c++/13/ostream:735:5: note: ‘std::endl’ declared here
+  735 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+outputs/fuzzing_outputs7/4.fuzz: At global scope:
+outputs/fuzzing_outputs7/4.fuzz:34:4: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   34 |    main()
+      |    ^~~~
+outputs/fuzzing_outputs7/4.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs7/4.fuzz:40:2: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+   40 |  cout<<"Hello "<<Method();
+      |  ^~~~
+      |  std::cout
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/fuzzing_outputs7/4.fuzz:40:18: error: ‘Method’ was not declared in this scope
+   40 |  cout<<"Hello "<<Method();
+      |                  ^~~~~~
+outputs/fuzzing_outputs7/4.fuzz:44:13: error: ‘cin’ was not declared in this scope; did you mean ‘std::cin’?
+   44 |  for(int x; cin >> x;)   {std::cout<caret> x;}
+      |             ^~~
+      |             std::cin
+/usr/include/c++/13/iostream:62:18: note: ‘std::cin’ declared here
+   62 |   extern istream cin;           ///< Linked to standard input
+      |                  ^~~
+outputs/fuzzing_outputs7/4.fuzz:44:37: error: ‘caret’ was not declared in this scope; did you mean ‘wchar_t’?
+   44 |  for(int x; cin >> x;)   {std::cout<caret> x;}
+      |                                     ^~~~~
+      |                                     wchar_t
+outputs/fuzzing_outputs7/4.fuzz:46:2: error: ‘my’ was not declared in this scope; did you mean ‘myC’?
+   46 |  my.method ();
+      |  ^~
+      |  myC
+outputs/fuzzing_outputs7/4.fuzz:49:2: error: expected unqualified-id before ‘return’
+   49 |  return Class::a + x ;
+      |  ^~~~~~
+outputs/fuzzing_outputs7/4.fuzz:52:1: error: ‘a’ was not declared in this scope
+   52 | a;return x;}
+      | ^
+outputs/fuzzing_outputs7/4.fuzz:52:10: error: ‘x’ was not declared in this scope
+   52 | a;return x;}
+      |          ^
+outputs/fuzzing_outputs7/4.fuzz: At global scope:
+outputs/fuzzing_outputs7/4.fuzz:54:10: error: ‘Class::Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |          ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:5:4: note: declared private here
+    5 |    Class()
+      |    ^~~~~
+outputs/fuzzing_outputs7/4.fuzz:54:19: error: ‘Class::Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                   ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:5:4: note: declared private here
+    5 |    Class()
+      |    ^~~~~
+outputs/fuzzing_outputs7/4.fuzz:54:28: error: ‘Class::Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:5:4: note: declared private here
+    5 |    Class()
+      |    ^~~~~
+outputs/fuzzing_outputs7/4.fuzz:54:57: error: redefinition of ‘Class MyClass’
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                                                         ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:54:10: note: ‘Class MyClass’ previously declared here
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |          ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:54:66: error: ‘Class::Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                                                                  ^~
+outputs/fuzzing_outputs7/4.fuzz:5:4: note: declared private here
+    5 |    Class()
+      |    ^~~~~
+outputs/fuzzing_outputs7/4.fuzz:54:70: error: redefinition of ‘Class methodC’
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                                                                      ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:54:19: note: ‘Class methodC’ previously declared here
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                   ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:56:1: error: expected unqualified-id before ‘float’
+   56 | float i, staticMember = "initializes variable that is global to an object
+      | ^~~~~
+outputs/fuzzing_outputs7/4.fuzz:58:26: error: expected declaration before ‘}’ token
+   58 | a[2] = float {int {}; x;}};
+      |                          ^
+outputs/fuzzing_outputs7/4.fuzz:62:1: error: ‘a’ does not name a type
+   62 | a + my[323]}
+      | ^
+outputs/fuzzing_outputs7/4.fuzz:62:12: error: expected declaration before ‘}’ token
+   62 | a + my[323]}
+      |            ^
+outputs/fuzzing_outputs7/4.fuzz: In function ‘void __static_initialization_and_destruction_0()’:
+outputs/fuzzing_outputs7/4.fuzz:54:10: error: ‘Class::~Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |          ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:10:2: note: declared private here
+   10 |  ~Class(){}
+      |  ^
+outputs/fuzzing_outputs7/4.fuzz:54:19: error: ‘Class::~Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                   ^~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:10:2: note: declared private here
+   10 |  ~Class(){}
+      |  ^
+outputs/fuzzing_outputs7/4.fuzz:54:28: error: ‘Class::~Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs7/4.fuzz:10:2: note: declared private here
+   10 |  ~Class(){}
+      |  ^
+outputs/fuzzing_outputs7/4.fuzz:54:66: error: ‘Class::~Class()’ is private within this context
+   54 |    Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+      |                                                                  ^~
+outputs/fuzzing_outputs7/4.fuzz:10:2: note: declared private here
+   10 |  ~Class(){}
+      |  ^
+
+[TRACE] Validating outputs/fuzzing_outputs7/5.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/5.fuzz failed validation with error message: outputs/fuzzing_outputs7/5.fuzz:3:2: error: #endif without #if
+    3 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs7/6.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/6.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs7/7.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/7.fuzz failed validation with error message: outputs/fuzzing_outputs7/7.fuzz:15:2: error: #endif without #if
+   15 | #endif
+      |  ^~~~~
+outputs/fuzzing_outputs7/7.fuzz:5:1: error: expected unqualified-id before numeric constant
+    5 | 55 % 3
+      | ^~
+outputs/fuzzing_outputs7/7.fuzz:8:10: error: expected unqualified-id before ‘if’
+    8 | "c"[c++; if (condition, c+=; else 15 = c ] c = c or 15 - c
+      |          ^~
+outputs/fuzzing_outputs7/7.fuzz:8:30: error: expected unqualified-id before ‘else’
+    8 | "c"[c++; if (condition, c+=; else 15 = c ] c = c or 15 - c
+      |                              ^~~~
+outputs/fuzzing_outputs7/7.fuzz:10:1: error: expected unqualified-id before ‘switch’
+   10 | switch (...)  for while
+      | ^~~~~~
+outputs/fuzzing_outputs7/7.fuzz:17:5: error: expected unqualified-id before ‘++’ token
+   17 | f1; ++i++ if (- i < - 2 /3 ) -15 [ + i
+      |     ^~
+outputs/fuzzing_outputs7/7.fuzz:19:44: error: expected unqualified-id before ‘+’ token
+   19 | f =  *(double*)(((p1, m3)+4)[ c -= j++ /3; + c
+      |                                            ^
+outputs/fuzzing_outputs7/7.fuzz:20:31: error: ‘a’ does not name a type
+   20 | int(*b::m4)   : (*b) &   f4 ; a; if (!--q, ++d--][  int32 i  1 2 ] return 4
+      |                               ^
+outputs/fuzzing_outputs7/7.fuzz:20:34: error: expected unqualified-id before ‘if’
+   20 | int(*b::m4)   : (*b) &   f4 ; a; if (!--q, ++d--][  int32 i  1 2 ] return 4
+      |                                  ^~
+outputs/fuzzing_outputs7/7.fuzz:22:45: error: expected unqualified-id before ‘/’ token
+   22 | while ( i ++ -- 8 ++ * x--) * q = c >> 97 ; /o++ )   f7 << z2 <<  int *   b    int  for  }   j++ for if
+      |                                             ^
+outputs/fuzzing_outputs7/7.fuzz:22:90: error: expected declaration before ‘}’ token
+   22 | while ( i ++ -- 8 ++ * x--) * q = c >> 97 ; /o++ )   f7 << z2 <<  int *   b    int  for  }   j++ for if
+      |                                                                                          ^
+outputs/fuzzing_outputs7/7.fuzz:22:94: error: ‘j’ does not name a type
+   22 | while ( i ++ -- 8 ++ * x--) * q = c >> 97 ; /o++ )   f7 << z2 <<  int *   b    int  for  }   j++ for if
+      |                                                                                              ^
+outputs/fuzzing_outputs7/7.fuzz:25:13: error: expected unqualified-id before ‘while’
+   25 | void for(); while() }  x--;  ++d %  {
+      |             ^~~~~
+outputs/fuzzing_outputs7/7.fuzz:25:21: error: expected declaration before ‘}’ token
+   25 | void for(); while() }  x--;  ++d %  {
+      |                     ^
+outputs/fuzzing_outputs7/7.fuzz:25:24: error: ‘x’ does not name a type
+   25 | void for(); while() }  x--;  ++d %  {
+      |                        ^
+outputs/fuzzing_outputs7/7.fuzz:25:30: error: expected unqualified-id before ‘++’ token
+   25 | void for(); while() }  x--;  ++d %  {
+      |                              ^~
+
+[TRACE] Validating outputs/fuzzing_outputs7/8.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/8.fuzz failed validation with error message: outputs/fuzzing_outputs7/8.fuzz:9:27: warning: missing terminating ' character
+    9 |        (C and Cpp both can't convert index values)
+      |                           ^
+outputs/fuzzing_outputs7/8.fuzz:9:27: error: missing terminating ' character
+    9 |        (C and Cpp both can't convert index values)
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs7/8.fuzz:25:82: warning: character constant too long for its type
+   25 |     const and static variables cannot leak from the scope for functions (they don't go through this point) since there's (void) * addressOf, therefore any localizations and (no) function deletions will keep them going.
+      |                                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs7/8.fuzz:2:1: error: ‘cout_handle’ does not name a type
+    2 | cout_handle = this;
+      | ^~~~~~~~~~~
+outputs/fuzzing_outputs7/8.fuzz:3:1: error: ‘The’ does not name a type
+    3 | The following declaration causes undefined behavior, even though the return type for one or other operation could not normally result in undefined behavior:
+      | ^~~
+outputs/fuzzing_outputs7/8.fuzz:5:6: error: ‘This’ does not name a type
+    5 |      This declaration can result in multiple assignments including variable localizations:
+      |      ^~~~
+outputs/fuzzing_outputs7/8.fuzz:9:10: error: expected ‘)’ before ‘and’ token
+    9 |        (C and Cpp both can't convert index values)
+      |        ~ ^~~~
+      |          )
+outputs/fuzzing_outputs7/8.fuzz:13:5: error: expected unqualified-id before numeric constant
+   13 |     19 = const static.
+      |     ^~
+outputs/fuzzing_outputs7/8.fuzz:25:15: error: expected unqualified-id before ‘static’
+   25 |     const and static variables cannot leak from the scope for functions (they don't go through this point) since there's (void) * addressOf, therefore any localizations and (no) function deletions will keep them going.
+      |               ^~~~~~
+outputs/fuzzing_outputs7/8.fuzz:30:9: error: expected unqualified-id before numeric constant
+   30 |         17 == sizeof(32); -> true (always cast, even types with sizeof( ), and integer arithmetic)
+      |         ^~
+outputs/fuzzing_outputs7/8.fuzz:30:27: error: expected unqualified-id before ‘->’ token
+   30 |         17 == sizeof(32); -> true (always cast, even types with sizeof( ), and integer arithmetic)
+      |                           ^~
+outputs/fuzzing_outputs7/8.fuzz:32:21: error: expected unqualified-id before ‘->’ token
+   32 |     localVariables; -> 1
+      |                     ^~
+
+[TRACE] Validating outputs/fuzzing_outputs7/9.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs7/9.fuzz failed validation with error message: outputs/fuzzing_outputs7/9.fuzz:4:18: error: ‘g’ was not declared in this scope
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                  ^
+outputs/fuzzing_outputs7/9.fuzz:4:28: error: ‘g’ was not declared in this scope
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                            ^
+outputs/fuzzing_outputs7/9.fuzz:4:38: error: expected primary-expression before ‘long’
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                                      ^~~~
+outputs/fuzzing_outputs7/9.fuzz:4:37: error: expected ‘)’ before ‘long’
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                                    ~^~~~~
+      |                                     )
+outputs/fuzzing_outputs7/9.fuzz:4:191: error: expected ‘)’ before ‘;’ token
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                                   ~                                                                                                                                                           ^
+      |                                                                                                                                                                                               )
+outputs/fuzzing_outputs7/9.fuzz:4:191: error: expected ‘)’ before ‘;’ token
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                                ~                                                                                                                                                              ^
+      |                                                                                                                                                                                               )
+outputs/fuzzing_outputs7/9.fuzz:4:191: error: expected ‘)’ before ‘;’ token
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                          ~                                                                                                                                                                    ^
+      |                                                                                                                                                                                               )
+outputs/fuzzing_outputs7/9.fuzz:4:191: error: expected ‘)’ before ‘;’ token
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                         ~                                                                                                                                                                     ^
+      |                                                                                                                                                                                               )
+outputs/fuzzing_outputs7/9.fuzz:4:191: error: expected ‘)’ before ‘;’ token
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                      ~                                                                                                                                                                        ^
+      |                                                                                                                                                                                               )
+outputs/fuzzing_outputs7/9.fuzz:4:191: error: expected ‘)’ before ‘;’ token
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |          ~                                                                                                                                                                                    ^
+      |                                                                                                                                                                                               )
+outputs/fuzzing_outputs7/9.fuzz:4:193: error: ‘g’ does not name a type
+    4 | long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+      |                                                                                                                                                                                                 ^
+

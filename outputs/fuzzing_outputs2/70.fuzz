@@ -1,0 +1,38 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+"a2"}},
+  name : "a634"
+ , title : "Function return type does not depend solely on preceding context (a722)") }
+    ;
+
+
+  auto testFunction =
+    [](const char *description)
+    { auto p2hfunc = ::func; func;
+      { constexpr bool kBugExists = hasNoBug || Test_Failure();
+*/
+    auto r = generateProgramForSource(
+        gast, functionContext{ description
+           ; codeGeneratorOptions{
+             cPlus{ generatorCPlusPlus = {
+                  "int testFunc() {"
+                  ++indent.level
+                };
+
+                auto hasInducedCycle = []{};
+
+                doBug();
+
+                auto ok =!Test_Failure();
+                 
+                 
+                bool hasInductionPath   = false  ? hasBug
+                                          && bugPath && false          : false         
+                                          && ((isPath  + indentationFactor) % 100 >= 12 && bugLoopTest   )      : false
+                                            
+                                          , [] {} =
+                [&, ok{ ok }](){
+              hasInductionBugOrPath = getBugOrCycle();
+            }
+           { ok.call();
+             printf("%zd %zc [

@@ -1,0 +1,5 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+</pre>
+  5 0xc887343b     7fdded0b d08786d 00067e19
+#

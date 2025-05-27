@@ -1,0 +1,5 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+int &x = *(0); assert(42 == x); p = &x; assert(nullptr == p); }
+  

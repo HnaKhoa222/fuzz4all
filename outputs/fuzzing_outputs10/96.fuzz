@@ -1,0 +1,6 @@
+#include <iostream>
+using namespace std;
+int main(){
+    using namespace std;
+    cout << "Hello from the template library" << endl;
+}

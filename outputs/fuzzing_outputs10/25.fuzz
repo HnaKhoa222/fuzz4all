@@ -1,0 +1,44 @@
+#include <iostream>
+int mod(int x, int y){
+    return x*y;
+}
+#include <string>
+#include <map>
+#include <string>
+#include <vector>
+#include <set>
+#include <array>
+#include <initializer_list>
+int f(int i);
+bool contains(void *p, const struct foo *b);
+void f(int i) { std::cout << i; }
+void f(double d, float f);
+void f(int i, bool b = true, char c='\n', char c[] = "c");
+char* getstr();
+struct foo{
+    int x;
+    int y;
+};
+void foo(foo f);
+template<typename T> void foo(T f);
+/*
+void main_function(int argc, char **argv);
+/*
+int main() {
+    return 0;
+}
+
+class Point {
+protected:
+     
+    void print() const
+    {
+        cout << x <<'' << y << '\n';
+    }
+};
+#include <vector>
+std::vector<int> myVector;  
+std::vector<int> myVector{ 1, 2, 3, 4 };
+std::vector<int> myVector{} { 1, 2, 3, 4 };
+std::vector<int> myVector = { 1, 2, 3, 4 };
+std::vector<int> myVector = { 1, 2

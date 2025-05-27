@@ -1,0 +1,38 @@
+#include <iostream>
+int mod(int x, int y){
+    while (x < 0) {
+        x = -x;
+    }
+    if (y == 0) return 0;
+    return y * mod(x, y / 2);
+}
+int large()
+{
+    return 46;
+}
+
+int main() {
+
+
+    if (mod(8, 12)!= 16)
+      return -1;
+    int a = 2;
+    int a = a + 1, a = a +a;  
+    std::string str = "Hello World";
+    std::cout << hello() << ": " << str;
+    a = -1;
+    b = +1;  
+    bool a = true;
+    int a = 8, c = a * 3 + 2 * a + a + 1, c = c * a + 10, c = a + b;
+    int a = 0, b = 5443, b = b + 1;
+    int a = 0;
+    int b = 0;
+    if(b<0){
+        a = -20;
+        std::cout << "a = " << a << "\nb = " << b << "\n";
+    }
+    if(a>0)std::cout<< "a= " << a << "\n";
+    int a = 0;
+    a = +1;
+    a = a + a;
+    std::cout << "a is "

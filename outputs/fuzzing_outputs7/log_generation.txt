@@ -1,0 +1,219 @@
+[VERBOSE] Generate a unique C++ program (Program only, no text) that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+[[maybe_unused]] std::tuple<int(*)( int, char(*) ))>("invalid param") {}
+
+ #error #undef  #undef  #undef  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+#include <random>
+#include<ctime()>
+
+void _throw ();  
+
+void errorHandler( const char* description );   
+bool exitApp = false;;  
+
+
+int main( char argc, __unused_const char **argv ) {   
+
+
+#ifndef N
+  static bool notReady2 = [&notReady2] () {
+#if (TIME - start + random( (time()+rand()+(29)*(seed+seed>>6))) / TIME < 1e-7)
+	  char nStrNumB;
+	  notReady=++number;  
+	  std::cin.sync, std ::getchar().timedwait (( std time:: time + random ( time + rand () + ((2. * size) * ( rand * sizeof*size ))) ), std::cin);
+	  do {std::wcout << "\f[97mYour program needs "<<notReady<<" second[s] to finish execution with the program not finished. Press any other character to continue this random test for next set of results! If random times in a set should result any significant time difference, enter anything in that direction to terminate the time window on set. Press ENTER, when all the input is done or for an incorrect value for seed, just press back with CTRL in front, type one word of your input on that location, and type random at the start so only random values take that into use and give incorrect time results:[0m : "; std::cin >> rand;}  while (number ||(stdtime < 219U - (std::stol( randString
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a unique C++ program (Program only, no text) that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+int callMe = 36 + 42;    
+
+using namespace std;
+char foo[][] = "bar \0 abc // single quote""; string \0 abc// double quote, escape character"";
+long baz[]() {      
+
+    struct
+    {
+        static signed oneMinus47[2][34563] {  ; }; 
+        typedef static _S char _TYPE_;          typedef const _Ctypechar _C_void typedef signed a[size]; char dab[k];     
+        typedef
+        {   const std char f396_[n[n1]13,    long f0f_ { n[_C_(C)]12f3_ - _F(7.04c) << (_D(_)13i-(_O)(char _t{ f[r-n(p+)]  / }1f-_2[n_]) << (_1(_)o << (1 + p * ) << p; char _t = _0{  p - }1e[0]; },
+
+    char * f0c6_[ n(_8)(t=n[f[f(-42)][554]][f(_C('o'))) - r - ]    }    void f4t(1 + const n); };    std::cerr; };     return oneMinus2y = true ; oneMinus68 = ; { return false[36L << (sizeof (_long2y-k)] << 2); } else return d_s[_t_ >> +(s /); }  std::free; bool foo { std::cout, 282
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include "stackalloc.hpp"  
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a unique C++ program (Program only, no text) that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+  class Class
+{
+   Class()
+   {
+    int mval;
+ cout<<"Inside Class constructor"<<endl;
+    } 
+ ~Class(){}
+ 
+public:	
+virtual void method(){}
+
+   Class ()
+   {
+    method();
+ 
+    } 
+ float var;
+ 
+    Class operator+(Class a, 
+				    Class b
+				    )
+		{
+		    return ;
+ 
+		    float res;
+	        mval++;
+	       }
+   
+   };
+   
+   main()
+       {
+   int myC{};
+
+ 
+ 
+ cout<<"Hello "<<Method();
+      cout<<myC;
+  cout <<"done.";
+ 
+ for(int x; cin >> x;)   {std::cout<caret> x;}
+ 
+ my.method ();
+ 
+ my.
+ return Class::a + x ;
+  
+         
+a;return x;}
+   
+   Class MyClass, methodC, staticFinalMyStaticVariable, MyClass, my, methodC;
+   Class::
+float i, staticMember = "initializes variable that is global to an object
+";	 
+a[2] = float {int {}; x;}};
+    
+
+
+a + my[323]}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#endif  
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a unique C++ program (Program only, no text) that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+int g = 6;	 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+using namespace std;
+
+55 % 3
+65 &0xde000004c0
+17 >> 7    ush or a zero to each number of a variable to fill out array with 8 values at once
+"c"[c++; if (condition, c+=; else 15 = c ] c = c or 15 - c
+c = (17  or 8)[ if (++c) 15 ][ c? ]... ;  
+switch (...)  for while
+[...]     
+... if-or
+56 /x80  
+if (++i < --len 0 /x8    and
+#endif
+c % = *((volatile x = *this)[
+f1; ++i++ if (- i < - 2 /3 ) -15 [ + i
+i >= i] j!= -2656 - ++j + i]   f5? ++j   /25 j + k --]
+f =  *(double*)(((p1, m3)+4)[ c -= j++ /3; + c
+int(*b::m4)   : (*b) &   f4 ; a; if (!--q, ++d--][  int32 i  1 2 ] return 4
+
+while ( i ++ -- 8 ++ * x--) * q = c >> 97 ; /o++ )   f7 << z2 <<  int *   b    int  for  }   j++ for if
+
+
+void for(); while() }  x--;  ++d %  { 
+ q =! d --! y >> i%* d, m++; for (++ i -= if (+ e, m-)) c? ] i /= if (* k - y, s >> +
+3 x?
+[VERBOSE] ========== sample =========
+[VERBOSE] Generate a unique C++ program (Program only, no text) that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int g = 6;	 
+Generate a unique C++ program (Program only, no text) that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+cout_handle = this;
+The following declaration causes undefined behavior, even though the return type for one or other operation could not normally result in undefined behavior:
+     char& operator [](IndexType iVal);   
+     This declaration can result in multiple assignments including variable localizations:
+      *localvalvalref
+       
+      varvalref->operator --(); 
+       (C and Cpp both can't convert index values)
+
+  2.) int a;
+
+    19 = const static.
+
+     void fnGetAddressFromAddr_1DArrayToValue(){
+
+
+
+            char[] input[MAX_DEPTH_1D];
+          
+       char const* iPtrPointer =(Input[]);
+
+     } // if scope is out of a block (a for instance), all objects under control become part and whole scope
+
+    const and static variables cannot leak from the scope for functions (they don't go through this point) since there's (void) * addressOf, therefore any localizations and (no) function deletions will keep them going.
+
+ 8.(++) C/C++/2++)
+       
+     static int globalintArray[10]();
+        17 == sizeof(32); -> true (always cast, even types with sizeof( ), and integer arithmetic)
+     localVariables += g
+    localVariables; -> 1
+    functions - returns a by default.
+    globalintArray: g
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ # define __int136
+long h();
+long j = (( h) < g & (- (( g > (- (( long h(&h) << __SIZEOF_POINTER__) & k__)) & g)))) | (( - ((g = - (- k+54)) == f)))) / l__SIZEO___LONG3_____AND, l__SIZ __LONG3_____OR | m  l(34 | g), h(); g *=  (( j)!= (( ((g=(__SIZEOF_POIN  & (( ((l =  m/ (69UL&0UL | ((g & g)|(3UL))))<<(( (__ALIGNOF_STRUCT__long3__() | ((__STRUCT3 2 & l  | g))*((((((k & __ALIGNOF_STRUCT__ long4)(l)-l)<<9)&((__SIZE3__|0UL  )|8 & l+((((((long3) &g)*g)*3)*l)%(0UL- (((g & ((__SIZE_BITS_POI 544)&g)& ~((-3ul)-3))))<<((2)0UL-h())))>>>((((h)&m)&1)>(h)-h))/h+((((0&k|l+((&(*(void*, void* )((0+3))))) & ( __alignof(*( void**)49 +5)))*(2&((-(__alignof(*(void*
+[VERBOSE] ========== sample =========

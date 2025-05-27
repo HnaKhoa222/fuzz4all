@@ -1,0 +1,21 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ else  
+#endif }")
+<commit_msg>fix bug on "cpp-core-checks.m4:"<commit_after>Categories:Applications //
+Depends:
+  - clang-c @VERSION#
+  - libid3v1
+
+License:UNLIMITED // Copyright protected to third-parTY (https://www.behance.net/artificialpathai)  (no unlike GNUGPL attribution clause) that has many restrictions
+Web Site:
+ Source Code:svn://gitlab/themrknshnsnrtkr555/bad
+Issue Tracker:https://gitlablab.io/Themrknshn.Shnsrn/bad
+Changelog:[[CHANGE:add|Change]]
+Donate:
+ - Paypal [[[LINK:https://paypal.me/bleroyh]|[CLICK:Payer.is]] PayPal account] or Email Address if any for this application are needed to improve or fix an award
+ 
+Auto Name:BAD //bad, this app has "badness" and "bad badness" which is too generic (as is probably also a joke), so don't add multiple words (like BADBAD) and prefix. Add "Bad BAADEDNSS!" or if the original intention is not possible, add a name/s
+https: 
+. DEBS
+81_bad-master.deb (debian

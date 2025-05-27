@@ -1,0 +1,189 @@
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <string>
+ 
+void f1() {
+    std::cout << "Enter name ";
+    std::string name;
+    std::cin >> name;
+
+    std::cout << "How many children are you? ";
+    int children;
+    std::cin >> children;
+
+     
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+int main()
+{
+   typedef int i1;;			 
+   typedef bool b;				 
+   typedef double db;			 
+
+   int myvar = 10;
+   b bvalTrue;
+   double dval = 15.10;
+   b val = dval < 10 && 10 <= -15;
+
+   std::cout << "myvar = " << myvar << std::endl;	 
+   std::cout << myvar << ", bvalTrue = " << bvalTrue << std::endl;	 
+   std::cout << bvalTrue << "! = " <<!bvalTrue << std::endl;		 
+   std::cout << "10 < 15 = " << 10 < 15 << std::endl;		 
+   std::cout << "dval < 10 = " << dval < 10 << std::endl;	 	 
+   std::cout << "v = a+b = " << 10+20 << std::endl;			 
+   std::cout << "a = " << 10 << ", b = 20 = " << dval <= 10;  
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <vector>
+
+class Base {
+ public:
+  virtual ~Base() { std::cout << "Base destroyed" << std::endl;}
+};
+
+class Derived: public Base {
+ public:
+  Derived(int i): i(*i) { std::cout << "Derived created with " << i << std::endl; }
+  ~Derived() { std::cout << "Derived destroyed" << std::endl; }
+  int getValue() const { return i; }
+ private:
+  int i;
+};
+
+int main(void) {
+  Derived d(42);
+  std::cout << d.getValue() << std::endl;
+  std::vector<Base*> vec;
+  vec.push_back(new Derived(5));
+  vec.push_back(new Derived(11));
+  std::cout << d.getValue() << std::endl;
+  const Derived *pd = &d;
+
+  vec.push_back(this);
+  vec.push_back(d.getValue());
+  std::cout << d.getValue() << std::endl;
+  return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+using namespace std;
+
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+struct ListNode* createLoop(ListNode* head, ListNode* end) {
+    auto cur = head;
+    while (cur->next!= end) {
+        cur = cur->next;
+        end = end->next;
+        if (cur->next == end) break;
+    }
+    cur->next = end;
+    return head;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+struct ListNode* createLoop(ListNode* head, ListNode* end) {
+    auto cur = head;
+    while (cur->next!= end) {
+        cur = cur->next;
+        end = end->next;
+        if (cur->next == end) break;
+    }
+    cur->next = end;
+    return head;
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+struct ListNode* createLoop(ListNode* head, ListNode* end) {
+    while (end!= head) {
+        head = head->next;
+        end = head->next;
+    }
+    head->next = end;
+    return head;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+using namespace std;
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+main(int argc, char** argv)
+{
+  float grade = 90;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+
+
+
+
+
+
+
+[VERBOSE] ========== sample =========

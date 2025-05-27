@@ -1,0 +1,4 @@
+#include <iostream>
+int mod(int);
+int large();
+std::string hello();

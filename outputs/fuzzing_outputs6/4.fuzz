@@ -1,0 +1,36 @@
+#include <iostream>
+
+
+
+struct Feeholder
+{
+
+	bool valid_id = true; 
+	int f_size = -90;
+	
+	void fun() final {}
+
+	
+    char name1_text;
+
+	double sum;
+	 
+
+    std::pair<> pairvalue
+ = {(unsigned)(short int){ -2 }};
+
+	struct Test;
+
+	std::ifstream myTextFileReader;
+	long* mem = new char*[3];
+
+private:
+
+
+
+ 
+
+};
+
+
+

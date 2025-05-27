@@ -1,0 +1,25 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+   (2) => warning for invalid function pointer 0x???????? [enable by default]
+ 
+ 16:42:19, /lib/tmp_aepu6b_bcp68kbfh5
+  
+ 
+ 
+00-3-----c4e5d2-ffffffff0---0-0-0
+ */
+std.function doesn"t have a public name
+3:27 error: member should have private scope of same scope as nonmember of const 'MyStruct' or nonconst 'void'.
+
+<body><header>
+ *
+ * C/C++ compiler
+ *    Copyright &copy;&nbsp;{{year}}, International Business Machines Corporation and
+    others.
+ *
+ * Licensed under the Apache Liceness.  All Rights reserved.
+ *
+   (GNU GPL) [see src/$ICLCxxRootSource/cddlLICENSE.php]*/
+</Header>
+
+  

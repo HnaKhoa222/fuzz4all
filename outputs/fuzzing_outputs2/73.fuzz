@@ -1,0 +1,3 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+``` 这不会因为调用表达式的某处有 nullptr 不存在被引用的内存（所以可以将这段编译出的C-语言代码与上述无关）。

@@ -1,0 +1,5 @@
+#include <iostream>
+
+class C  {}         
+#undef C1          using const_type;         
+```

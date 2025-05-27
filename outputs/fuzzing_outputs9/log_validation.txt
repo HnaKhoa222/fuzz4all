@@ -1,0 +1,185 @@
+[TRACE] Validating outputs/fuzzing_outputs9/0.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/0.fuzz failed validation with error message: outputs/fuzzing_outputs9/0.fuzz: In member function ‘Person& Person::operator=(const Person&)’:
+outputs/fuzzing_outputs9/0.fuzz:16:10: error: expected ‘}’ at end of input
+   16 |         {
+      |         ~^
+outputs/fuzzing_outputs9/0.fuzz:16:10: warning: no return statement in function returning non-void [-Wreturn-type]
+   16 |         {
+      |          ^
+      |          return *this;
+
+[TRACE] Validating outputs/fuzzing_outputs9/1.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/1.fuzz failed validation with error message: outputs/fuzzing_outputs9/1.fuzz:8:27: error: ‘vector’ has not been declared
+    8 |     int countGoodTriplets(vector<int>& arr) {
+      |                           ^~~~~~
+outputs/fuzzing_outputs9/1.fuzz:8:33: error: expected ‘,’ or ‘...’ before ‘<’ token
+    8 |     int countGoodTriplets(vector<int>& arr) {
+      |                                 ^
+outputs/fuzzing_outputs9/1.fuzz: In member function ‘int Solution::countGoodTriplets(int)’:
+outputs/fuzzing_outputs9/1.fuzz:9:9: error: ‘map’ was not declared in this scope
+    9 |         map<int,int> mp;
+      |         ^~~
+outputs/fuzzing_outputs9/1.fuzz:9:9: note: suggested alternatives:
+In file included from /usr/include/c++/13/map:63,
+                 from outputs/fuzzing_outputs9/1.fuzz:4:
+/usr/include/c++/13/bits/stl_map.h:102:11: note:   ‘std::map’
+  102 |     class map
+      |           ^~~
+/usr/include/c++/13/map:80:13: note:   ‘std::pmr::map’
+   80 |       using map
+      |             ^~~
+outputs/fuzzing_outputs9/1.fuzz:9:13: error: expected primary-expression before ‘int’
+    9 |         map<int,int> mp;
+      |             ^~~
+outputs/fuzzing_outputs9/1.fuzz:10:21: error: ‘arr’ was not declared in this scope
+   10 |         for(int p : arr)
+      |                     ^~~
+outputs/fuzzing_outputs9/1.fuzz:12:13: error: ‘mp’ was not declared in this scope; did you mean ‘p’?
+   12 |             mp[p]++;
+      |             ^~
+      |             p
+outputs/fuzzing_outputs9/1.fuzz:16:26: error: ‘mp’ was not declared in this scope
+   16 |         for(auto [v,u] : mp)
+      |                          ^~
+outputs/fuzzing_outputs9/1.fuzz:22:36: error: ‘m_sqrt’ was not declared in this scope
+   22 |             else if((int)u == (int)m_sqrt(v))
+      |                                    ^~~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs9/2.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/2.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs9/3.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/3.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs9/4.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/4.fuzz failed validation with error message: outputs/fuzzing_outputs9/4.fuzz:4:2: error: #else without #if
+    4 | #else
+      |  ^~~~
+outputs/fuzzing_outputs9/4.fuzz:6:2: error: #endif without #if
+    6 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/fuzzing_outputs9/5.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/5.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs9/6.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/6.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs9/7.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/7.fuzz failed validation with error message: outputs/fuzzing_outputs9/7.fuzz: In function ‘void f()’:
+outputs/fuzzing_outputs9/7.fuzz:3:5: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+    3 |     cout << 0 << endl;
+      |     ^~~~
+      |     std::cout
+In file included from outputs/fuzzing_outputs9/7.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/fuzzing_outputs9/7.fuzz:3:18: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+    3 |     cout << 0 << endl;
+      |                  ^~~~
+      |                  std::endl
+In file included from /usr/include/c++/13/iostream:41:
+/usr/include/c++/13/ostream:735:5: note: ‘std::endl’ declared here
+  735 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+
+[TRACE] Validating outputs/fuzzing_outputs9/8.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/8.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs9/9.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs9/9.fuzz failed validation with error message: outputs/fuzzing_outputs9/9.fuzz:67:15: warning: missing terminating " character
+   67 |     Person n1("John
+      |               ^
+outputs/fuzzing_outputs9/9.fuzz:67:15: error: missing terminating " character
+   67 |     Person n1("John
+      |               ^~~~~
+outputs/fuzzing_outputs9/9.fuzz:27:5: error: ‘set’ does not name a type
+   27 |     set<Person *>* getFriend()
+      |     ^~~
+outputs/fuzzing_outputs9/9.fuzz:31:5: error: ‘set’ does not name a type
+   31 |     set<Person * > * getFamily()
+      |     ^~~
+outputs/fuzzing_outputs9/9.fuzz: In member function ‘Person* Person::copy()’:
+outputs/fuzzing_outputs9/9.fuzz:25:33: error: ‘class Person’ has no member named ‘getName’
+   25 |         return new Person(this->getName(), this->getAge());
+      |                                 ^~~~~~~
+outputs/fuzzing_outputs9/9.fuzz: In member function ‘Person* Person::findFriend(std::string)’:
+outputs/fuzzing_outputs9/9.fuzz:37:29: error: ‘friendList’ was not declared in this scope; did you mean ‘friend’?
+   37 |         auto iter = find_if(friendList.begin(), friendList.end(), [name](Person *person)
+      |                             ^~~~~~~~~~
+      |                             friend
+outputs/fuzzing_outputs9/9.fuzz: In lambda function:
+outputs/fuzzing_outputs9/9.fuzz:39:28: error: ‘class Person’ has no member named ‘getName’
+   39 |             return person->getName()!= name;
+      |                            ^~~~~~~
+outputs/fuzzing_outputs9/9.fuzz: In member function ‘Person* Person::findFriend(std::string)’:
+outputs/fuzzing_outputs9/9.fuzz:37:21: error: ‘find_if’ was not declared in this scope; did you mean ‘std::ranges::find_if’?
+   37 |         auto iter = find_if(friendList.begin(), friendList.end(), [name](Person *person)
+      |                     ^~~~~~~
+      |                     std::ranges::find_if
+In file included from /usr/include/c++/13/tuple:44,
+                 from /usr/include/c++/13/bits/uses_allocator_args.h:38,
+                 from /usr/include/c++/13/bits/memory_resource.h:41,
+                 from /usr/include/c++/13/string:58,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/fuzzing_outputs9/9.fuzz:1:
+/usr/include/c++/13/bits/ranges_util.h:527:33: note: ‘std::ranges::find_if’ declared here
+  527 |   inline constexpr __find_if_fn find_if{};
+      |                                 ^~~~~~~
+outputs/fuzzing_outputs9/9.fuzz:41:9: error: ‘personList’ was not declared in this scope
+   41 |         personList.erase(iter);
+      |         ^~~~~~~~~~
+outputs/fuzzing_outputs9/9.fuzz: In member function ‘Person* Person::findFamily(std::string)’:
+outputs/fuzzing_outputs9/9.fuzz:46:29: error: ‘familyList’ was not declared in this scope
+   46 |         auto iter = find_if(familyList.begin(), familyList.end(), [name](Person *person)
+      |                             ^~~~~~~~~~
+outputs/fuzzing_outputs9/9.fuzz: In lambda function:
+outputs/fuzzing_outputs9/9.fuzz:48:28: error: ‘class Person’ has no member named ‘getName’
+   48 |             return person->getName()!= name;
+      |                            ^~~~~~~
+outputs/fuzzing_outputs9/9.fuzz: In member function ‘Person* Person::findFamily(std::string)’:
+outputs/fuzzing_outputs9/9.fuzz:46:21: error: ‘find_if’ was not declared in this scope; did you mean ‘std::ranges::find_if’?
+   46 |         auto iter = find_if(familyList.begin(), familyList.end(), [name](Person *person)
+      |                     ^~~~~~~
+      |                     std::ranges::find_if
+/usr/include/c++/13/bits/ranges_util.h:527:33: note: ‘std::ranges::find_if’ declared here
+  527 |   inline constexpr __find_if_fn find_if{};
+      |                                 ^~~~~~~
+outputs/fuzzing_outputs9/9.fuzz:50:9: error: ‘personList’ was not declared in this scope
+   50 |         personList.erase(iter);
+      |         ^~~~~~~~~~
+outputs/fuzzing_outputs9/9.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs9/9.fuzz:65:5: error: ‘set’ was not declared in this scope
+   65 |     set<Person *> newPersonList;
+      |     ^~~
+outputs/fuzzing_outputs9/9.fuzz:2:1: note: ‘std::set’ is defined in header ‘<set>’; did you forget to ‘#include <set>’?
+    1 | #include <iostream>
+  +++ |+#include <set>
+    2 | using namespace std;
+outputs/fuzzing_outputs9/9.fuzz:65:16: error: expected primary-expression before ‘*’ token
+   65 |     set<Person *> newPersonList;
+      |                ^
+outputs/fuzzing_outputs9/9.fuzz:65:17: error: expected primary-expression before ‘>’ token
+   65 |     set<Person *> newPersonList;
+      |                 ^
+outputs/fuzzing_outputs9/9.fuzz:65:19: error: ‘newPersonList’ was not declared in this scope
+   65 |     set<Person *> newPersonList;
+      |                   ^~~~~~~~~~~~~
+outputs/fuzzing_outputs9/9.fuzz:66:16: error: expected primary-expression before ‘*’ token
+   66 |     set<Person *> newFriendList;
+      |                ^
+outputs/fuzzing_outputs9/9.fuzz:66:17: error: expected primary-expression before ‘>’ token
+   66 |     set<Person *> newFriendList;
+      |                 ^
+outputs/fuzzing_outputs9/9.fuzz:66:19: error: ‘newFriendList’ was not declared in this scope
+   66 |     set<Person *> newFriendList;
+      |                   ^~~~~~~~~~~~~
+outputs/fuzzing_outputs9/9.fuzz:67:15: error: expected primary-expression at end of input
+   67 |     Person n1("John
+      |               ^
+outputs/fuzzing_outputs9/9.fuzz:67:15: error: expected ‘,’ or ‘;’ at end of input
+outputs/fuzzing_outputs9/9.fuzz:67:15: error: expected ‘}’ at end of input
+outputs/fuzzing_outputs9/9.fuzz:64:1: note: to match this ‘{’
+   64 | {
+      | ^
+

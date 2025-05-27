@@ -1,0 +1,22 @@
+#include <iostream>
+int new_mod(int x, int y){
+    return mod(y, mod(x, large()));
+}  
+int large_new(){
+    return mod(large(), new_mod(29, large()));
+}
+ 
+#include<iostream>
+template<typename> struct t;
+template<typename T> struct t<T const &> {
+  union {
+      T x;
+      int x_;
+  }. c;
+};
+template<typename T> struct t<T &&> { int x_; };
+void f(t<int const &>){
+}
+int main(){
+    return 0;
+}

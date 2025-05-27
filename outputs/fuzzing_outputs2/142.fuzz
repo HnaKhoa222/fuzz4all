@@ -1,0 +1,12 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ void foo( int* )  
+  {  
+      switch_case(*p){    
+           }  
+  template < std … > class Bar { static constexpr
+      void fun() { static const bool invalid_assertion = std …; }; }
+```
+A more severe example than the aforementoned uses the "false positive case" style; the C++ error-checking (or false non-safety) can hide much wavier issues than the safe-side ("false negative" issue). "Most likely we must return some sort of indicator, then try the other things it is likely the use case of function/expression parameters". See for yourself (or your program's source author?) to ensure that none of your `std::variant<...>`-parameters or expressions fail. C++ cast is especially common (the `int*` on my stack trace is an C array)
+
+In more detail, the error-handling is designed around some core idiom that makes it easy just to make "false poserues." It allows us to handle multiple distinct things in different ways (wired together wedges all around this stack-and-pointer world -- that being how we made function names and arguments) that it never allowed

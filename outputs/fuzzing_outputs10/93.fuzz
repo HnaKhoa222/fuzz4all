@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+void func(float z){
+	float *v = &z;
+	float m = *(v+1);
+
+	z = m*100;
+}

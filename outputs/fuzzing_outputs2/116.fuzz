@@ -1,0 +1,9 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ This C language program is the perfect test because there is no error handling in it - the data pointer value at the beginning the line declares and later points to what it contains.
+"""
+
+
+

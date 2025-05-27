@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+struct ListNode* createLoop(ListNode* head, ListNode* end) {
+    auto cur = head;
+    while (cur->next!= end) {
+        cur = cur->next;
+        end = end->next;
+        if (cur->next == end) break;
+    }
+    cur->next = end;
+    return head;
+}

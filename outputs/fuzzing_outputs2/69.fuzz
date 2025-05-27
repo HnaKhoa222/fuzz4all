@@ -1,0 +1,4 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+        
+namespace ns1 { int p=2 * ns02().v -8 * (*1e3);         

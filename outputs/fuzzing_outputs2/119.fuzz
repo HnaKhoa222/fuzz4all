@@ -1,0 +1,11 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#error Check for use after free
+"""
+        run(contents)
+
+    result[file] = (expected, program_text, 'generated program is not expected to reallocate or deallocate in constant time when free is called by a different thread')
+  else
+    resultsList.remove({'results': result[file].first, "name": "reclaim_after_assert"})
+*/

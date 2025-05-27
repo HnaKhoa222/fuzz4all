@@ -1,0 +1,3 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+) { bool conditionally_undeclared() (void)(static uint[3]() {} > _Bool(true)? ""() _Bool (1 < false) : "hi"; }\n") 2>"./c++-unaligned_pointer"); }

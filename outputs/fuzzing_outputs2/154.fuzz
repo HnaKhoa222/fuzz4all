@@ -1,0 +1,42 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+4-line macro which allows a C to handle nullptr without a declaration statement and without extra C header; does not crash on null derefs (to nullptr). If used incorrectly will generate ill-formed source, should check against tests.cpp and makefile with new_compiler to compile this instead as warning instead, not sure its correct but compiles better since not using header for pointer (bad).
+std_cast, dynamic_{ nullptr_t }, make explicit when C++ pointer (auto cast to 'pointer_impl'):
+
+ if (static_cast(&x) == reinterpret_cast(&t))
+            return value;                        
+   
+  constexpr char nullptr_err_msg[] = "expected 'nullptr' but get '";
+  
+   for (static_cast(&t)!= NULLPTR) {
+    # ifdef STRINGIFY
+ 
+    tstring teststr[] {nullptr };
+    
+      
+      
+    snprintf( ,
+               x.name
+    #else
+     
+     
+    t::test, nullptr{}
+    #endif
+               });
+            };
+            
+             
+        
+            # ifdef BLAHO
+void xyz  
+               ^~~~~~
+       static cast operator()(const void *t) -> T* 
+               x ->  
+               ^~~~~
+    cannot use (nullptr_t){ };
+                       ^
+    3 errors generated
+
+    constexpr auto ptr3 = [](const uintptr_t x  * y = *x)

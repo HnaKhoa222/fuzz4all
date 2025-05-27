@@ -1,0 +1,14 @@
+#include <iostream>
+ 
+
+using namespace std;
+
+template <typename T>
+int div(T a, T b){
+    if(b == 0) {
+        return 1;
+    }
+    else {
+        return div(b,a % b);
+    }
+}

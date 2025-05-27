@@ -1,0 +1,13 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;
+ {int *ip = new float(42),*sp =(int)*ip;cout<<"sp:"+sp}}
+void f1()
+void f3(); 
+#pragma link error(__E1@<T>#, "_mystatic <type>* __ptr") =!dso_dlexter = function
+   
+    struct C045X {virtual void foo(){}
+        C045X() {static void f2 (static int* const cp)=1;}
+        void bla() {auto ip_local=(&C045X&)C045X::dummyVar; *ip_local = dummyVar;}  
+        virtual __construct f4() throws() {}
+        size_t foo_i (std::__nullptr_t) noexcept (0)|__throw(){

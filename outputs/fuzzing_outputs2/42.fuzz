@@ -1,0 +1,10 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#include <catch.hpp>
+TEST_CASE(! "testing a null pointer variable that crashes program" );<fim_middle> 
+    const std::initializer_list<int> lst{1, 2}; 
+    const Generate invalid C programs and source code.
+    C++ programs.
+ */
+  Generate unique C codes which will cause Undefined behavior when compiling the program

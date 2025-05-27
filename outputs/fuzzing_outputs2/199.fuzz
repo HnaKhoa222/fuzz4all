@@ -1,0 +1,4 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+bool *x = reinterpret_cast<bool*>(34.7335 <<2 > double -2 >>4) ^ static_cast<long long int>(*((double &**x)? 0 - static_cast &(* ((float*)&-(*42)[0])*39. +(*67)/(*72)[0]&+ * (21<&)(false | |)* false)+82/!(void 1))*+ 4 > ((void int(*)())[20]<* |&^ 49) < 0>)(int &&&int (*(*) int()) int () >>((24+ |~ 63<!false ^ +4)<+2)& 1 >>5 + (!true & -true^12 - (9 >> 10))*85/(-) *(50> (43 + 0|0<true)<<false + <true<*int(*)[40>]0 - -87/ int (- |void bool()<<&bool())int +true/ (70*(5 >> true *void()& (1/(& void 1<int(*(char<(&void (&*) int & (*() ) < (2^2^ ( true<+ <!* && <+83) < (* (* & |(- |bool ()<> &-false<false |& *&(! true)) ))/( true<*int() &  |bool) >(

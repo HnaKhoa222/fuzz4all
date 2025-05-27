@@ -1,0 +1,9 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+extern const void cvoid( void); char ch = 'E', str[] = "astring"; template<int i> int iArray(bool = (false-i)) { const struct {bool a;} iStruct; }   funcname{return ++ch*ch;}; struct { int f;} astruct{{ int val{}; char buff[];} v{{.buff[]='\c 5;' *.val++, sizeof((char 5) -1);}}; enum e{one, three, is_valid, 7-3*6 }; extern extern char (foo)();
+ 
+const C c {} __V[2] {}, vc [c + 1 - 'a']/5 = 7, *c_func { new();
+switch constexpr char ch[sizeof];
+if;
+else ++switch 0 + switch; (++do + ++loop + &&) throw (3

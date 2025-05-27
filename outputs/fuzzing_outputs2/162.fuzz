@@ -1,0 +1,17 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ int *p(arg list = [][&p] {}); p()[-^]{*a^ = arg;} int **s(fn[] int p = nullptr); struct t1 {{~^struct_tag ^ struct t1}}; union s2 {{a~{int a; } int a{b = 42; int b{ *q; }}}}, union u2 {{b~} u2 v; v~}{int v; }; template< bool is_int> struct fn< [[] [] ::[]] 1>{
+    bool operator [](int )   [] {}
+    char type             ::[]  int
+    float type          , [] [] const_fn1
+    int type<1>, bool type
+{~{ bool t;
+    true : struct s {} ~ ~^} | }
+        int c, bool u  ( int )  ([] :: []  :: [])<>::operator ::()
+        struct t1{{ bool m( char , int ( ), double fn )[] ~ ~ ^}
+        true  false && ||
+{~}}
+ int const_fn =    
+  ^ ~ ^ type< [const type_specifier]]
+  ^ bool<1,bool, bool1> const [type_identifier ^type][... ~]
+           = ~ ^ [inline]< void fn([..  ])> [inline]< static_data [expr]< [][const... ]>() [vara1tor ^

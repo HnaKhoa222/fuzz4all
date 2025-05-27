@@ -1,0 +1,32 @@
+#include <iostream>
+
+#include <vector>
+
+class Base {
+ public:
+  virtual ~Base() { std::cout << "Base destroyed" << std::endl;}
+};
+
+class Derived: public Base {
+ public:
+  Derived(int i): i(*i) { std::cout << "Derived created with " << i << std::endl; }
+  ~Derived() { std::cout << "Derived destroyed" << std::endl; }
+  int getValue() const { return i; }
+ private:
+  int i;
+};
+
+int main(void) {
+  Derived d(42);
+  std::cout << d.getValue() << std::endl;
+  std::vector<Base*> vec;
+  vec.push_back(new Derived(5));
+  vec.push_back(new Derived(11));
+  std::cout << d.getValue() << std::endl;
+  const Derived *pd = &d;
+
+  vec.push_back(this);
+  vec.push_back(d.getValue());
+  std::cout << d.getValue() << std::endl;
+  return 0;
+}

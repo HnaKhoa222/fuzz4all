@@ -1,0 +1,7 @@
+#include <iostream>
+int mod(int x, int y){
+    return x*y;
+}
+int large(){
+    return 10;
+}

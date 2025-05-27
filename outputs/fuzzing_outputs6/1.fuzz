@@ -1,0 +1,22 @@
+#include <iostream>
+
+#include <sstream>
+
+using namespace std;
+
+template <typename ContainerPtr<string>, typename ElemType>  
+  auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+  for (auto member : *ptr.get()) {}
+ *ptr.get());
+ */  
+[[ nowarning("54:6",
+                   "946:44",
+                   "11.8.36")]] struct _TicTactics
+ ,
+       69
+    static bool __hasFeature(X x)  
+ */
+  template <class Ty, char EnableChar_Type =''      struct Char : NoContra  ,
+                0 == *EnableChar
+                  + sizeof(*static_cast<const NoConstra<>*>() - EnableChar) 
+    { using type = Ty;  class NoContra {}; } static template

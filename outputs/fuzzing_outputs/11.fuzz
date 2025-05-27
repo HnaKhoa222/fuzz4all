@@ -1,0 +1,10 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+int *p {}; *p = 43; return 0;  
+#include <iostream>
+int main() { *p = 43; p = nullptr; int i = 0; do { std::coout << i++ << '\n'; } while (*p); }
+{% endhighlight linenos %}
+
+---
+

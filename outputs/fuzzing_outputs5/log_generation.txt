@@ -1,0 +1,69 @@
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+Generate a unique C++ program that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+ 
+ 
+ 
+ */
+
+ /* https: 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  int a = b - z^9;
+
+Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+
+
+Options are currently specified by passing options the compiler like
+
+    clang_sandbox.exe <file.o>/--sanitizers=address/-mllvm=foo.bar=/mylib
+
+    <https: 
+
+
+Examples taken originally taken from Google's UBSAN build system, but rewritten manually (it was also written before Google was looking at UBSanitizers, or perhaps even looked outside that domain by using `a = a / foo | bar`, which is the exact form you might see in plain shells).
+
+
+A complete test suite is compiled inside the docker in `Docker`. The base images currently used are GCC from https://cloud.drone.io:6200 (with clang added too), clang on arm, FreeBSD (with both clang as we compile) plus gcc/llvm cross (using cmake) from <NAME>'s `ARM Docker`.
+<fim_middle>
+
+ The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+<issue_comment>username_0: I have just moved this to
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+}
+"
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+`pragma GCC optimization level(2)`,
+const enum Flags { };
+```<issue_closed>
+[VERBOSE] ========== sample =========

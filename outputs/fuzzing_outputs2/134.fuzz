@@ -1,0 +1,22 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+#endif  
+*/ 
+
+/*****************************************************************************************************************
+   * Compile options set below must match project structure, settings in project.h file will overwrite here
+   *****************************************************************************************************************
+./compileDebug
+if [ -d "$CMAKEHOME" ] && [ -f "$CMAKEHOME/__DIR__/make.mkfile/" ];then
+  echo >>"$MAKEHOME/__DIR__/make.mkfile/"; for i in $DEBUG_LIB; do echo "$(LIB)" $$VAR_PREFIX$PREFIX "$MRT_EXEC$$(/bpf/mrt/bpfext $$debugpath : $(find $(LIB) :*"" )):$i "$_";done | /bin/echo +make; else
+  echo Error finding make file:../$(CMAKE).mk..
+  fi
+
+ for path in -R -r -R -V -vv ./c./t../test/../../../../../../../bin
+   do
+      cp "$pat"/test/"$LIB_FULL_EXT"/bpf.c ".";  # change from ".c" because the directory doesn't include source
+      cp "$Makefile.*" "..";  # create copy of makefile 
+      cd ".."; # reset the working one back to one dir higher if something unexpected
+    # generate makefiles and make sure BPF loader generates files in new projects (does the library have a new project make.template set)
+      for i in "$SRC"/test/."_test"; do cp -b "$i"' "$i"."h"_inc"

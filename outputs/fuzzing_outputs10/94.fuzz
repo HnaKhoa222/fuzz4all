@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+int main(){
+}
+ 
+template<typename T>
+    int f(T){
+    int i(1);
+    while(i<5){
+        T t(i+1);
+        cout << t << endl;
+        i = i + 2;
+    }
+    return -1;
+}
+int main(){
+    int res;
+    res = f<int>(0);
+    return 0;
+}
+ 
+#include <iostream>
+using namespace std;
+
+class Timer {
+    private:
+        long long start;
+    public:
+    Timer() {
+        start = time(NULL);
+    }
+    long long stop() {
+        return time(NULL) - start;
+    }
+    long long elapsed() {
+        return stop();
+    }
+};
+
+class Ticker {
+    private:
+        Timer t;
+    public:
+    Ticker() {}
+    long long ms() {
+        return t.elapsed() * 1000.0;
+    }
+};
+
+ 
+int main(){
+
+}

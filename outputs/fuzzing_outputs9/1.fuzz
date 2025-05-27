@@ -1,0 +1,31 @@
+#include <iostream>
+
+#include <vector>
+#include <map>
+
+class Solution{
+public:
+    int countGoodTriplets(vector<int>& arr) {
+        map<int,int> mp;
+        for(int p : arr)
+        {
+            mp[p]++;
+        }
+        
+        int count = 0;
+        for(auto [v,u] : mp)
+        {
+            if(v == u)
+            {
+                continue;
+            }
+            else if((int)u == (int)m_sqrt(v))
+            {
+                count++;
+            }
+            
+        }
+        
+        return count;
+    }
+};

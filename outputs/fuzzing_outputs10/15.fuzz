@@ -1,0 +1,32 @@
+#include <iostream>
+int increment(int a);
+
+class MyClass
+{
+  private:
+    int x;
+    bool deleted;
+
+  public:
+    MyClass();
+     
+    MyClass(const MyClass& s);
+     
+    MyClass(MyClass& s);
+     
+    MyClass& operator=(const MyClass& s);
+     
+    MyClass& operator=(MyClass& s);
+     
+    MyClass operator++(int);
+     
+    MyClass operator--(int);
+    ~MyClass();
+     
+    int x() const;
+
+     
+    static MyClass& getMypic();
+};
+
+#endif

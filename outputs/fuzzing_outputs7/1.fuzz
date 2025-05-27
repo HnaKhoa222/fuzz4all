@@ -1,0 +1,22 @@
+#include <iostream>
+
+
+#include <random>
+#include<ctime()>
+
+void _throw ();  
+
+void errorHandler( const char* description );   
+bool exitApp = false;;  
+
+
+int main( char argc, __unused_const char **argv ) {   
+
+
+#ifndef N
+  static bool notReady2 = [&notReady2] () {
+#if (TIME - start + random( (time()+rand()+(29)*(seed+seed>>6))) / TIME < 1e-7)
+	  char nStrNumB;
+	  notReady=++number;  
+	  std::cin.sync, std ::getchar().timedwait (( std time:: time + random ( time + rand () + ((2. * size) * ( rand * sizeof*size ))) ), std::cin);
+	  do {std::wcout << "\f[97mYour program needs "<<notReady<<" second[s] to finish execution with the program not finished. Press any other character to continue this random test for next set of results! If random times in a set should result any significant time difference, enter anything in that direction to terminate the time window on set. Press ENTER, when all the input is done or for an incorrect value for seed, just press back with CTRL in front, type one word of your input on that location, and type random at the start so only random values take that into use and give incorrect time results:[0m : "; std::cin >> rand;}  while (number ||(stdtime < 219U - (std::stol( randString

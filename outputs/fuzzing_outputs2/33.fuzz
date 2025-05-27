@@ -1,0 +1,17 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;""", true);
+  RegisterTool generateCppTools() override {
+    for (String prompt: unsafe_prompts) {
+      const CodeCompletionInfoProvider *info provider ("test", -1, 0, *cctx_, makeConstString(prompt.c_str()));
+      codeModel.codeInsert(-1, &info);
+    }
+
+    constexpr static char STRCODE_TEMPLATE ["\nbool findRecursiveInvalidRecursive( int a); int A = sizeof bomb;\napp::findCpyFunc(bomb, bomb) *\n   A *\n           new (& bomb->i) struct bomb_a {};\nbomb.i = *\n           bomb == this? ++CPLAIT + \nb_findRecursiveInvalidCopy.copyCount \n\n      
+            findRecursionInvalidRecursive(*A);\
+            ", sizeof bomb];
+
+    constexpr uint16_t LEXERSTATE3 =
+      makeTokenId (TOKENKINDCODE, kCPP::STATE).val | TOKENVALIDBIT;
+    const CodeLexiconStateDefinition str2token (379, /*codeLineInScope=0*/ -1, "string-of-source3",   13U,
+                                           STRKEYID3, -INT2TOKEN(INTTYPEINT) | TOKENLABELBIT | SYMLINKSTART

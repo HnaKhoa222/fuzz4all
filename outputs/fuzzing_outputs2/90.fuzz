@@ -1,0 +1,10 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+  */
+  std::cerr << "Failed to recognize command:"
+            << std::endl
+            & R"(Unrecognized keyword; tried keywords: )("  >> R"(Failed with return, invalid return type;
+)" "Unknown option.;")" ;
+     throw 1;
+}

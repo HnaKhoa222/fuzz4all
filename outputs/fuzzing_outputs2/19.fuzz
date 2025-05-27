@@ -1,0 +1,25 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+    编译器命令
+    g++ <input-sourcefiles> #编译选项，例如:编译以输出c++头文件的make file：--emit-header
+    make#直接启动编译。
+    make<make: makefile-name># 选择编译的类型(生成什么类型的源码？).
+        -all 开启所有的make任务
+        -clean 通过空参数去卸载程序产生的文件，包括build directory make缓存、自动生成文件、依赖对象依赖
+
+输出-fshell信息  -v0 #开启全部选项 --version，用于给管理员
+
+C++14有几个重要的模板：variant
+https：variant 一个数据类型，定义了几种特性：
+
+    Variant -定义的概念上像一个简单类型：无关变量可以作为参数，可以进行移动构造、拷贝构造以及赋值运算,并且能够直接输出
+    Variant +为所有variant构造了一个对象，而variant对象本质上是一个void Pointer类型(0和253间的类型变量可以进行数据交互）;通过对象创建的new得到一个对应的数据实例对象;对于所有constructible类型，对new进行绑定进行构造,或者通过静态绑定静态绑定的对象类型调用
+```
+            VariantPtr var;
+            foo().to(&var...);  var;  
+            var->bar("world"...) = "worldy"
+...
+```
+## 编译指令
+  364：在 C++

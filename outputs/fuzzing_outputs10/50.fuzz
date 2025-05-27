@@ -1,0 +1,4 @@
+#include <iostream>
+int small(){
+    return 7;
+}

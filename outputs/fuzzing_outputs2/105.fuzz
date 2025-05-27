@@ -1,0 +1,5 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+)
+
+You can generate the un-deducible one with the `-f` of unambiguous code to ensure the uniqueness constraint. Example: #./exampla/template_unsame `cat $(ls *.cc| grep _ccs)_$@ > "$out"</pre>'"}

@@ -1,0 +1,12 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+ 
+char *y_pointer_p; y_pointer_p
+#include <memory, functionpointer, optional>
+[optional]pointer-like operator that will be defined as a T by the caller (e.g., int **ptr_name here => void int pointer is here.)*/ *std::function; int *t_pointer_a[] is int(int[1]) (which should not appear due no copy-assign)
+`include</>, or
+(void(type *)(const type *)):pointer-value constructor with no default init order (because you can, but it just makes some mistakes)-->void type constructor
+#1 = p;  void type init_to_value = functionpointer(init_by_value)[(object const, not the variable's actual value like p; the copy itself)
+

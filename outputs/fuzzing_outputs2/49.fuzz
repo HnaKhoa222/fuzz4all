@@ -1,0 +1,21 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;'''
+
+        return false  # [error]
+"""
+    ]
+    errors_to_match_lines=["error_function_not_returning_none.c:7 error: no 'g()' statement exists at top-level",
+                            "error_function_returns_undefined.c:4 error'set_var_to(']
+
+
+def add_error(output, errors):         # (list output_errors)
+    #print( errors, error.__errors)
+    if errors:                     # [if] only one error line per function call
+        errors_count = len(errors[0][str(idx)]) # = len of errors for function call and add in this_call in case
+        for idx in range(errors_count):
+         #for var in errors[:-1]:
+         if "template name" iin errors[0:idx +1:] or all(["template template 0: argument not an lvalue" in x.err_msg
+                                         for x in errors[0:idx +1:]]): #template call
+             error = AddWarningFrom(x,output,'function_with_unintention_invalid-templates',warnings=["unclean implementation", ],code_to=[template],errors=errors=[[file]],file=[file],line=[line.strip()],"col[m]{i]+6[line-no+line]: function-arguments")
+            error= AddInfoFrom(code['line'][e],file[err__from

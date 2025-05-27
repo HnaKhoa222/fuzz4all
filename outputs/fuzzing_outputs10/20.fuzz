@@ -1,0 +1,16 @@
+#include <iostream>
+int mod(int x, int y) {
+    if (y % 2 == 0) {
+        return x + x;
+    }
+    return x;
+}
+int large() {
+    return (3000000/3)+1;
+}
+std::string hello() {
+    std::cout << "Hello World\n";
+    return "Hello World";
+}
+
+

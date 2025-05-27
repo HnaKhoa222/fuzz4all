@@ -1,0 +1,22 @@
+#include <iostream>
+<fim_middle>#include <cstdio>
+using namespace std;
+int a = 0;
+std::string name = "<NAME>";
+
+int mod(int a, int y){
+    std::puts("inside mod()");
+    int t = y;
+    y = a;
+    a = b;
+    return x;
+}
+
+int a = 0;
+
+int main() {
+    large();
+    std::cout << mod(a, large()) << std::endl;
+    std::cout << a << std::endl;
+    return 0;
+}

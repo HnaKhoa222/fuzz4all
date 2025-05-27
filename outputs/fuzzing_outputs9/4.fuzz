@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+#else
+#define new_delete_operator new
+#endif
+
+#ifdef ENABLE_SHARED
+#define DLL_DECLSPEC_EXPORT __declspec(dllexport)
+#else
+#define DLL_DECLSPEC_EXPORT __declspec(dllimport)
+#endif
+
+#ifdef ENABLE_SHARED
+extern "C" DLL_DECLSPEC_EXPORT void* dynamicAlloc(int size);
+extern "C" DLL_DECLSPEC_EXPORT void freeMemory(void*);
+
+#endif

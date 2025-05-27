@@ -1,0 +1,502 @@
+[TRACE] Validating outputs/fuzzing_outputs6/0.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/0.fuzz failed validation with error message: outputs/fuzzing_outputs6/0.fuzz:2:1: error: expected unqualified-id before ‘,’ token
+    2 | ,
+      | ^
+outputs/fuzzing_outputs6/0.fuzz:3:6: error: expected unqualified-id before ‘int’
+    3 |      int a,
+      |      ^~~
+outputs/fuzzing_outputs6/0.fuzz:6:25: error: expected unqualified-id before numeric constant
+    6 |                         627L * 627L -  42956754),
+      |                         ^~~~
+outputs/fuzzing_outputs6/0.fuzz:12:3: error: expected unqualified-id before ‘/’ token
+   12 |  */
+      |   ^
+outputs/fuzzing_outputs6/0.fuzz:16:19: error: ‘uintmax_t’ does not name a type
+   16 |             const uintmax_t max2 = std::numeric_limits<uintmax_t>::max();
+      |                   ^~~~~~~~~
+outputs/fuzzing_outputs6/0.fuzz:17:1: error: expected declaration before ‘}’ token
+   17 | }
+      | ^
+
+[TRACE] Validating outputs/fuzzing_outputs6/1.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/1.fuzz failed validation with error message: outputs/fuzzing_outputs6/1.fuzz:19:45: error: empty character constant
+   19 |   template <class Ty, char EnableChar_Type =''      struct Char : NoContra  ,
+      |                                             ^~
+outputs/fuzzing_outputs6/1.fuzz:7:20: error: expected nested-name-specifier before ‘ContainerPtr’
+    7 | template <typename ContainerPtr<string>, typename ElemType>
+      |                    ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:7:32: error: expected ‘>’ before ‘<’ token
+    7 | template <typename ContainerPtr<string>, typename ElemType>
+      |                                ^
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                                      ^~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:51: error: ‘ContainerPtr’ was not declared in this scope
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                   ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                                      ^~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:51: error: ‘ContainerPtr’ was not declared in this scope
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                   ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                                      ^~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:51: error: ‘ContainerPtr’ was not declared in this scope
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                   ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                                      ^~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:51: error: ‘ContainerPtr’ was not declared in this scope
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                   ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                                      ^~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:51: error: ‘ContainerPtr’ was not declared in this scope
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                   ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                                      ^~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:70: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+outputs/fuzzing_outputs6/1.fuzz:8:51: error: ‘ContainerPtr’ was not declared in this scope
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                   ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:38: error: ‘ContainerPtr’ does not name a type
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                      ^~~~~~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:8:50: error: expected ‘,’ or ‘...’ before ‘<’ token
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                  ^
+outputs/fuzzing_outputs6/1.fuzz: In function ‘auto ContainerToStringHelper(int)’:
+outputs/fuzzing_outputs6/1.fuzz:9:23: error: ‘ptr’ was not declared in this scope
+    9 |   for (auto member : *ptr.get()) {}
+      |                       ^~~
+outputs/fuzzing_outputs6/1.fuzz:10:3: error: ‘ptr’ was not declared in this scope
+   10 |  *ptr.get());
+      |   ^~~
+outputs/fuzzing_outputs6/1.fuzz:11:3: error: expected primary-expression before ‘/’ token
+   11 |  */
+      |   ^
+outputs/fuzzing_outputs6/1.fuzz:12:2: error: expected identifier before ‘[’ token
+   12 | [[ nowarning("54:6",
+      |  ^
+outputs/fuzzing_outputs6/1.fuzz:14:33: error: type-specifier invalid in lambda
+   14 |                    "11.8.36")]] struct _TicTactics
+      |                                 ^~~~~~
+outputs/fuzzing_outputs6/1.fuzz: In lambda function:
+outputs/fuzzing_outputs6/1.fuzz:15:2: error: expected ‘{’ before ‘,’ token
+   15 |  ,
+      |  ^
+outputs/fuzzing_outputs6/1.fuzz: In function ‘auto ContainerToStringHelper(int)’:
+outputs/fuzzing_outputs6/1.fuzz:16:10: error: expected ‘;’ before ‘static’
+   16 |        69
+      |          ^
+      |          ;
+   17 |     static bool __hasFeature(X x)
+      |     ~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:22:53: error: expected unqualified-id before ‘template’
+   22 |     { using type = Ty;  class NoContra {}; } static template
+      |                                                     ^~~~~~~~
+outputs/fuzzing_outputs6/1.fuzz:22:61: error: expected ‘}’ at end of input
+   22 |     { using type = Ty;  class NoContra {}; } static template
+      |                                                             ^
+outputs/fuzzing_outputs6/1.fuzz:8:87: note: to match this ‘{’
+    8 |   auto ContainerToStringHelper(const ContainerPtr<ContainerPtr<const ElemType>>& ptr) {
+      |                                                                                       ^
+
+[TRACE] Validating outputs/fuzzing_outputs6/2.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/2.fuzz failed validation with error message: outputs/fuzzing_outputs6/2.fuzz:7:1: error: stray ‘`’ in program
+    7 | ```
+      | ^
+outputs/fuzzing_outputs6/2.fuzz:7:2: error: stray ‘`’ in program
+    7 | ```
+      |  ^
+outputs/fuzzing_outputs6/2.fuzz:7:3: error: stray ‘`’ in program
+    7 | ```
+      |   ^
+outputs/fuzzing_outputs6/2.fuzz:9:16: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                ^
+outputs/fuzzing_outputs6/2.fuzz:9:18: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                  ^
+outputs/fuzzing_outputs6/2.fuzz:9:105: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                                                                                                         ^
+outputs/fuzzing_outputs6/2.fuzz:9:118: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                                                                                                                      ^
+outputs/fuzzing_outputs6/2.fuzz:9:134: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                                                                                                                                      ^
+outputs/fuzzing_outputs6/2.fuzz:9:152: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                                                                                                                                                        ^
+outputs/fuzzing_outputs6/2.fuzz:9:284: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                                                                                                                                                                                                                                                                                            ^
+outputs/fuzzing_outputs6/2.fuzz:9:316: error: stray ‘`’ in program
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |                                                                                                                                                                                                                                                                                                                            ^
+outputs/fuzzing_outputs6/2.fuzz:14:22: warning: extra tokens at end of #include directive
+   14 | # include  <iostream>;
+      |                      ^
+outputs/fuzzing_outputs6/2.fuzz:9:3: error: ‘Example’ does not name a type
+    9 |   Example 7 of `d` is a dangerous "program that leaks a memory buffer" from underneath a variable using `cvar_local()` as opposed to `cvar_alloc_auto()`, that allocates and destructs several large buffers but is later passed as is. Unallocated memory will leak for one variable with `cvar_alloc_auto()+cvar()*0 = 99`, and another that has only static values which cannot be allocated before use of the buffer:
+      |   ^~~~~~~
+outputs/fuzzing_outputs6/2.fuzz:11:11: error: ‘floaty’ does not name a type; did you mean ‘float’?
+   11 |    int x; floaty ; unsigned zz{};
+      |           ^~~~~~
+      |           float
+outputs/fuzzing_outputs6/2.fuzz:12:26: error: ‘cvar’ was not declared in this scope; did you mean ‘char’?
+   12 |    int* zp{(const char*)(cvar());}
+      |                          ^~~~
+      |                          char
+outputs/fuzzing_outputs6/2.fuzz:12:33: error: expected ‘}’ before ‘;’ token
+   12 |    int* zp{(const char*)(cvar());}
+      |           ~                     ^
+outputs/fuzzing_outputs6/2.fuzz:12:34: error: expected declaration before ‘}’ token
+   12 |    int* zp{(const char*)(cvar());}
+      |                                  ^
+outputs/fuzzing_outputs6/2.fuzz:13:1: error: ‘uint8_t’ does not name a type
+   13 | uint8_t v;  byte-count > VANIABLE_SIZE_IN_MEMORY - VANIABLE_SIZE_FOR_LEAK
+      | ^~~~~~~
+outputs/fuzzing_outputs6/2.fuzz:2:1: note: ‘uint8_t’ is defined in header ‘<cstdint>’; did you forget to ‘#include <cstdint>’?
+    1 | #include <iostream>
+  +++ |+#include <cstdint>
+    2 | 
+outputs/fuzzing_outputs6/2.fuzz:13:13: error: ‘byte’ does not name a type
+   13 | uint8_t v;  byte-count > VANIABLE_SIZE_IN_MEMORY - VANIABLE_SIZE_FOR_LEAK
+      |             ^~~~
+outputs/fuzzing_outputs6/2.fuzz:17:1: error: expected declaration before ‘}’ token
+   17 | }
+      | ^
+outputs/fuzzing_outputs6/2.fuzz:18:15: error: ‘x’ was not declared in this scope
+   18 |     int* z { &x }; char s[600]{}; int q = cvar(); char z
+      |               ^
+outputs/fuzzing_outputs6/2.fuzz:18:43: error: ‘cvar’ was not declared in this scope; did you mean ‘char’?
+   18 |     int* z { &x }; char s[600]{}; int q = cvar(); char z
+      |                                           ^~~~
+      |                                           char
+outputs/fuzzing_outputs6/2.fuzz:18:57: error: expected initializer at end of input
+   18 |     int* z { &x }; char s[600]{}; int q = cvar(); char z
+      |                                                         ^
+
+[TRACE] Validating outputs/fuzzing_outputs6/3.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/3.fuzz failed validation with error message: outputs/fuzzing_outputs6/3.fuzz:4:1: error: extended character   is not valid in an identifier
+    4 |     int A;
+      | ^
+outputs/fuzzing_outputs6/3.fuzz:4:1: error: extended character   is not valid in an identifier
+outputs/fuzzing_outputs6/3.fuzz:4:1: error: extended character   is not valid in an identifier
+outputs/fuzzing_outputs6/3.fuzz:5:17: error: extended character   is not valid in an identifier
+    5 |     return 1/ A; 
+      |                 ^
+outputs/fuzzing_outputs6/3.fuzz:8:79: warning: missing terminating ' character
+    8 | 1. Using templates with conditional logic is likely safe to omit, the same can't be guaranteed by passing in the function, but it at least protect and preserve input parameters of the function so the caller can verify the intended input.
+      |                                                                               ^
+outputs/fuzzing_outputs6/3.fuzz:8:79: error: missing terminating ' character
+    8 | 1. Using templates with conditional logic is likely safe to omit, the same can't be guaranteed by passing in the function, but it at least protect and preserve input parameters of the function so the caller can verify the intended input.
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs6/3.fuzz:12:2: error: #endif without #if
+   12 | #endif
+      |  ^~~~~
+outputs/fuzzing_outputs6/3.fuzz:13:394: warning: character constant too long for its type
+   13 | 1. The return result (A*b*) should not be in the stack, and be returned immediately by a function rather than in some hidden array returned automatically by other functions?  The problem lies in that stack addresses of pointer type (a**b is stack and b will probably stay in place until b > 9 or more lines...) could remain at this location (and be assigned multiple or 3, as necessary)? I don'd have no hope.  Is b ever changed so quickly by B and therefore is A stored away?   b can come from external sources too – don't change it while a is changing value.  So... you have to check each input parameter for a changing condition whether you need a check based on a different memory access
+      |                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs6/3.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs6/3.fuzz:4:1: error: ‘   ’ was not declared in this scope
+    4 |     int A;
+      | ^~~
+outputs/fuzzing_outputs6/3.fuzz:5:15: error: ‘A’ was not declared in this scope
+    5 |     return 1/ A; 
+      |               ^
+outputs/fuzzing_outputs6/3.fuzz:5:17: error: ‘ ’ was not declared in this scope
+    5 |     return 1/ A; 
+      |                 ^
+outputs/fuzzing_outputs6/3.fuzz: At global scope:
+outputs/fuzzing_outputs6/3.fuzz:8:1: error: expected unqualified-id before numeric constant
+    8 | 1. Using templates with conditional logic is likely safe to omit, the same can't be guaranteed by passing in the function, but it at least protect and preserve input parameters of the function so the caller can verify the intended input.
+      | ^~
+
+[TRACE] Validating outputs/fuzzing_outputs6/4.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/4.fuzz failed validation with error message: outputs/fuzzing_outputs6/4.fuzz:19:15: error: wrong number of template arguments (0, should be 2)
+   19 |     std::pair<> pairvalue
+      |               ^
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/fuzzing_outputs6/4.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:2992:12: note: provided for ‘template<class _T1, class _T2> struct std::pair’
+ 2992 |     struct pair;
+      |            ^~~~
+outputs/fuzzing_outputs6/4.fuzz:19:10: error: ‘<expression error>’ in namespace ‘std’ does not name a type
+   19 |     std::pair<> pairvalue
+      |          ^~~~~~
+outputs/fuzzing_outputs6/4.fuzz:24:23: error: field ‘myTextFileReader’ has incomplete type ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’}
+   24 |         std::ifstream myTextFileReader;
+      |                       ^~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/ios:40:
+/usr/include/c++/13/iosfwd:118:11: note: declaration of ‘std::ifstream’ {aka ‘class std::basic_ifstream<char>’}
+  118 |     class basic_ifstream;
+      |           ^~~~~~~~~~~~~~
+outputs/fuzzing_outputs6/4.fuzz:11:14: error: ‘void Feeholder::fun()’ marked ‘final’, but is not virtual
+   11 |         void fun() final {}
+      |              ^~~
+outputs/fuzzing_outputs6/4.fuzz:25:32: error: cannot convert ‘char**’ to ‘long int*’ in initialization
+   25 |         long* mem = new char*[3];
+      |                                ^
+      |                                |
+      |                                char**
+
+[TRACE] Validating outputs/fuzzing_outputs6/5.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/5.fuzz failed validation with error message: outputs/fuzzing_outputs6/5.fuzz: In function ‘void fun1()’:
+outputs/fuzzing_outputs6/5.fuzz:6:5: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+    6 |     cout << *this;
+      |     ^~~~
+      |     std::cout
+In file included from outputs/fuzzing_outputs6/5.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/fuzzing_outputs6/5.fuzz:6:14: error: invalid use of ‘this’ in non-member function
+    6 |     cout << *this;
+      |              ^~~~
+outputs/fuzzing_outputs6/5.fuzz:9:17: error: found ‘:’ in nested-name-specifier, expected ‘::’
+    9 |     int t1 = std:cout;
+      |                 ^
+      |                 ::
+outputs/fuzzing_outputs6/5.fuzz:9:18: error: cannot convert ‘std::ostream’ {aka ‘std::basic_ostream<char>’} to ‘int’ in initialization
+    9 |     int t1 = std:cout;
+      |              ~~~~^~~~
+      |                  |
+      |                  std::ostream {aka std::basic_ostream<char>}
+outputs/fuzzing_outputs6/5.fuzz:12:5: error: ‘fun’ was not declared in this scope; did you mean ‘fun1’?
+   12 | FOO(fun)t1);
+      |     ^~~
+      |     fun1
+outputs/fuzzing_outputs6/5.fuzz:12:1: error: ‘FOO’ was not declared in this scope
+   12 | FOO(fun)t1);
+      | ^~~
+outputs/fuzzing_outputs6/5.fuzz:15:16: error: lvalue required as increment operand
+   15 |     while (**++s01) *this -= (*--++(*---this - (++ - '0' + (*---s01))) );
+      |                ^~~
+outputs/fuzzing_outputs6/5.fuzz:15:22: error: invalid use of ‘this’ in non-member function
+   15 |     while (**++s01) *this -= (*--++(*---this - (++ - '0' + (*---s01))) );
+      |                      ^~~~
+outputs/fuzzing_outputs6/5.fuzz:15:41: error: invalid use of ‘this’ in non-member function
+   15 |     while (**++s01) *this -= (*--++(*---this - (++ - '0' + (*---s01))) );
+      |                                         ^~~~
+outputs/fuzzing_outputs6/5.fuzz:15:52: error: lvalue required as increment operand
+   15 |     while (**++s01) *this -= (*--++(*---this - (++ - '0' + (*---s01))) );
+      |                                                    ^~~~~
+outputs/fuzzing_outputs6/5.fuzz:15:65: error: wrong type argument to unary minus
+   15 |     while (**++s01) *this -= (*--++(*---this - (++ - '0' + (*---s01))) );
+      |                                                                 ^~~
+outputs/fuzzing_outputs6/5.fuzz:17:7: error: invalid use of ‘this’ in non-member function
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |       ^~~~
+outputs/fuzzing_outputs6/5.fuzz:17:39: error: ‘s_’ was not declared in this scope
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                       ^~
+outputs/fuzzing_outputs6/5.fuzz:17:58: error: expected primary-expression before ‘)’ token
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                          ^
+outputs/fuzzing_outputs6/5.fuzz:17:65: error: ‘s1’ was not declared in this scope; did you mean ‘s01’?
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                                 ^~
+      |                                                                 s01
+outputs/fuzzing_outputs6/5.fuzz:17:96: error: ‘s’ was not declared in this scope
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                                                                ^
+outputs/fuzzing_outputs6/5.fuzz:17:103: error: expected ‘)’ before ‘;’ token
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                                                    ~                  ^
+      |                                                                                                       )
+outputs/fuzzing_outputs6/5.fuzz:17:103: error: expected ‘)’ before ‘;’ token
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                                                 ~                     ^
+      |                                                                                                       )
+outputs/fuzzing_outputs6/5.fuzz:17:103: error: expected ‘)’ before ‘;’ token
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                              ~                                                                        ^
+      |                                                                                                       )
+outputs/fuzzing_outputs6/5.fuzz:17:104: error: expected primary-expression before ‘)’ token
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                                                                        ^
+outputs/fuzzing_outputs6/5.fuzz:17:149: error: expected primary-expression before ‘)’ token
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                                                                                                                     ^
+outputs/fuzzing_outputs6/5.fuzz:17:265: error: expected ‘}’ at end of input
+   17 |     (*this) >>= (9-('r')) << (0 && (++s_ - '-') && ((*---) <= ++s1 - '*')<<0 << (*-(--++(----++s-0401);)-(-(--((++) << (++1++ ----  &&(--(+++(--33);)(+(*( 94 --)( ( ((((((++(-----4))))--(-- -+)(01-14)))44 (( + (+(3,--0x005A-- )(++08.--23))) -- ((( ((((-----a))))-(
+      |                                                                                                                                                                                                                                                                         ^
+outputs/fuzzing_outputs6/5.fuzz:4:13: note: to match this ‘{’
+    4 | void fun1() {
+      |             ^
+
+[TRACE] Validating outputs/fuzzing_outputs6/6.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/6.fuzz failed validation with error message: outputs/fuzzing_outputs6/6.fuzz: In function ‘int multiply_by_ten()’:
+outputs/fuzzing_outputs6/6.fuzz:8:92: error: ‘__函数名__c’ was not declared in this scope
+    8 |         std::printf("%s enter_theten(). Calling multiply_by_one(). multiply_by_ten(%d)\n", __函数名__c, ++count);
+      |                                                                                            ^~~~~~~~~~~
+outputs/fuzzing_outputs6/6.fuzz:9:16: error: ‘multiply_by_one’ was not declared in this scope; did you mean ‘multiply_by_ten’?
+    9 |         result(multiply_by_one());
+      |                ^~~~~~~~~~~~~~~
+      |                multiply_by_ten
+outputs/fuzzing_outputs6/6.fuzz:9:9: error: ‘result’ was not declared in this scope
+    9 |         result(multiply_by_one());
+      |         ^~~~~~
+outputs/fuzzing_outputs6/6.fuzz:10:11: error: ‘aTen’ was not declared in this scope
+   10 |         --aTen;
+      |           ^~~~
+outputs/fuzzing_outputs6/6.fuzz:11:87: error: ‘result__’ was not declared in this scope
+   11 |         std::printf("%s leaving ten(), result: %f\n", __函数名__c, static_cast<char>(*result__[0]))
+      |                                                                                       ^~~~~~~~
+outputs/fuzzing_outputs6/6.fuzz:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   13 | }
+      | ^
+outputs/fuzzing_outputs6/6.fuzz: At global scope:
+outputs/fuzzing_outputs6/6.fuzz:16:1: error: expected constructor, destructor, or type conversion before ‘exit’
+   16 | exit { }
+      | ^~~~
+
+[TRACE] Validating outputs/fuzzing_outputs6/7.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/7.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs6/8.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/8.fuzz failed validation with error message: outputs/fuzzing_outputs6/8.fuzz: In function ‘int f(int)’:
+outputs/fuzzing_outputs6/8.fuzz:5:23: error: expected primary-expression before ‘,’ token
+    5 | int f(int x) { DO(x<7), }
+      |                       ^
+outputs/fuzzing_outputs6/8.fuzz:5:25: error: expected primary-expression before ‘}’ token
+    5 | int f(int x) { DO(x<7), }
+      |                         ^
+outputs/fuzzing_outputs6/8.fuzz:5:25: warning: no return statement in function returning non-void [-Wreturn-type]
+outputs/fuzzing_outputs6/8.fuzz: At global scope:
+outputs/fuzzing_outputs6/8.fuzz:6:6: error: variable or field ‘r’ declared void
+    6 | void r; int main()     { int y = 7 >> f(2 * r++;); std::{y; f};; } }
+      |      ^
+outputs/fuzzing_outputs6/8.fuzz: In function ‘int main()’:
+outputs/fuzzing_outputs6/8.fuzz:6:45: error: ‘r’ was not declared in this scope
+    6 | void r; int main()     { int y = 7 >> f(2 * r++;); std::{y; f};; } }
+      |                                             ^
+outputs/fuzzing_outputs6/8.fuzz:6:49: error: expected primary-expression before ‘)’ token
+    6 | void r; int main()     { int y = 7 >> f(2 * r++;); std::{y; f};; } }
+      |                                                 ^
+outputs/fuzzing_outputs6/8.fuzz:6:57: error: expected unqualified-id before ‘{’ token
+    6 | void r; int main()     { int y = 7 >> f(2 * r++;); std::{y; f};; } }
+      |                                                         ^
+outputs/fuzzing_outputs6/8.fuzz: At global scope:
+outputs/fuzzing_outputs6/8.fuzz:6:68: error: expected declaration before ‘}’ token
+    6 | void r; int main()     { int y = 7 >> f(2 * r++;); std::{y; f};; } }
+      |                                                                    ^
+outputs/fuzzing_outputs6/8.fuzz:8:1: error: ‘Use’ does not name a type
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      | ^~~
+outputs/fuzzing_outputs6/8.fuzz:8:82: error: ‘use’ does not name a type
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      |                                                                                  ^~~
+outputs/fuzzing_outputs6/8.fuzz:8:141: error: ‘use’ does not name a type
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      |                                                                                                                                             ^~~
+outputs/fuzzing_outputs6/8.fuzz:8:194: error: expected unqualified-id before ‘do’
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      |                                                                                                                                                                                                  ^~
+outputs/fuzzing_outputs6/8.fuzz:8:429: error: expected unqualified-id before ‘for’
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                             ^~~
+outputs/fuzzing_outputs6/8.fuzz:8:470: error: ‘nested’ does not name a type
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~~~
+outputs/fuzzing_outputs6/8.fuzz:8:522: error: ‘nested’ does not name a type
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~~~
+outputs/fuzzing_outputs6/8.fuzz:8:946: error: ‘expressions’ does not name a type
+    8 | Use cases (optional section): use only on invalid recursive functions or macros; use only outside function definitions or in any statement; use in any unusual C++, not supported in a pure C99; do _ _ _ _ not write valid C++ for a specific purpose (do _ not write C++ for a library to be usable with all versions and targets). Example cases: recursive algorithms or C++ classes, macros or template parameters and variable names; for each line start/restart block scope; nested statements in multiple functions using goto; nested statements in multiple functions using multiple return or breaks statements such the case with multiple if-elles that trigger loops, and other use-cases on invalid recursive operations (most prominent among these four groups is to perform multiple iterations but use unequal strides (e.g. two long blocks in 3).) Example cases for other valid C++ code: loops inside switch (else if condition used too early to exit); expressions like { while(_ x = function.Call(b, a)!= kFailure){} return _; }
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~~~~~~~~
+outputs/fuzzing_outputs6/8.fuzz:9:2: error: expected unqualified-id before ‘/’ token
+    9 | */
+      |  ^
+
+[TRACE] Validating outputs/fuzzing_outputs6/9.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs6/9.fuzz failed validation with error message: outputs/fuzzing_outputs6/9.fuzz:4:20: warning: extra tokens at end of #undef directive
+    4 | #undef C1          using const_type;
+      |                    ^~~~~
+outputs/fuzzing_outputs6/9.fuzz:5:1: error: stray ‘`’ in program
+    5 | ```
+      | ^
+outputs/fuzzing_outputs6/9.fuzz:5:2: error: stray ‘`’ in program
+    5 | ```
+      |  ^
+outputs/fuzzing_outputs6/9.fuzz:5:3: error: stray ‘`’ in program
+    5 | ```
+      |   ^
+outputs/fuzzing_outputs6/9.fuzz:3:12: error: expected ‘;’ after class definition
+    3 | class C  {}
+      |            ^
+      |            ;
+

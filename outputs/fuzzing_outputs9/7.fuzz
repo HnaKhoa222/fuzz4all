@@ -1,0 +1,15 @@
+#include <iostream>
+void f(){
+    cout << 0 << endl;
+}
+void  g();
+int main() {
+    g();
+    g();
+    f();
+
+    g();
+    
+    g();
+    g();
+}

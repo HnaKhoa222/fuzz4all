@@ -1,0 +1,111 @@
+[TRACE] Validating outputs/fuzzing_outputs5/0.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs5/0.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs5/1.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs5/1.fuzz failed validation with error message: outputs/fuzzing_outputs5/1.fuzz:9:2: error: unterminated comment
+    9 |  /* https:
+      |  ^
+outputs/fuzzing_outputs5/1.fuzz:7:3: error: expected unqualified-id before ‘/’ token
+    7 |  */
+      |   ^
+
+[TRACE] Validating outputs/fuzzing_outputs5/2.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs5/2.fuzz failed validation with error message: outputs/fuzzing_outputs5/2.fuzz:5:54: error: stray ‘`’ in program
+    5 | Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+      |                                                      ^
+outputs/fuzzing_outputs5/2.fuzz:5:84: error: stray ‘`’ in program
+    5 | Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+      |                                                                                    ^
+outputs/fuzzing_outputs5/2.fuzz:5:95: error: stray ‘`’ in program
+    5 | Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+      |                                                                                               ^
+outputs/fuzzing_outputs5/2.fuzz:5:101: error: stray ‘`’ in program
+    5 | Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+      |                                                                                                     ^
+outputs/fuzzing_outputs5/2.fuzz:5:106: error: stray ‘`’ in program
+    5 | Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+      |                                                                                                          ^
+outputs/fuzzing_outputs5/2.fuzz:5:110: error: stray ‘`’ in program
+    5 | Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+      |                                                                                                              ^
+outputs/fuzzing_outputs5/2.fuzz:15:44: warning: missing terminating ' character
+   15 | Examples taken originally taken from Google's UBSAN build system, but rewritten manually (it was also written before Google was looking at UBSanitizers, or perhaps even looked outside that domain by using `a = a / foo | bar`, which is the exact form you might see in plain shells).
+      |                                            ^
+outputs/fuzzing_outputs5/2.fuzz:15:44: error: missing terminating ' character
+   15 | Examples taken originally taken from Google's UBSAN build system, but rewritten manually (it was also written before Google was looking at UBSanitizers, or perhaps even looked outside that domain by using `a = a / foo | bar`, which is the exact form you might see in plain shells).
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/fuzzing_outputs5/2.fuzz:18:56: error: stray ‘`’ in program
+   18 | A complete test suite is compiled inside the docker in `Docker`. The base images currently used are GCC from https://cloud.drone.io:6200 (with clang added too), clang on arm, FreeBSD (with both clang as we compile) plus gcc/llvm cross (using cmake) from <NAME>'s `ARM Docker`.
+      |                                                        ^
+outputs/fuzzing_outputs5/2.fuzz:18:63: error: stray ‘`’ in program
+   18 | A complete test suite is compiled inside the docker in `Docker`. The base images currently used are GCC from https://cloud.drone.io:6200 (with clang added too), clang on arm, FreeBSD (with both clang as we compile) plus gcc/llvm cross (using cmake) from <NAME>'s `ARM Docker`.
+      |                                                               ^
+outputs/fuzzing_outputs5/2.fuzz:21:38: error: stray ‘`’ in program
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                      ^
+outputs/fuzzing_outputs5/2.fuzz:21:63: error: stray ‘`’ in program
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                                               ^
+outputs/fuzzing_outputs5/2.fuzz:21:96: error: too many decimal points in number
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                                                                                ^~~~~~
+outputs/fuzzing_outputs5/2.fuzz:21:140: error: stray ‘`’ in program
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                                                                                                                            ^
+outputs/fuzzing_outputs5/2.fuzz:21:146: error: stray ‘`’ in program
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                                                                                                                                  ^
+outputs/fuzzing_outputs5/2.fuzz:21:148: error: stray ‘`’ in program
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                                                                                                                                    ^
+outputs/fuzzing_outputs5/2.fuzz:21:156: error: stray ‘`’ in program
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                                                                                                                                            ^
+outputs/fuzzing_outputs5/2.fuzz:3:11: error: ‘b’ was not declared in this scope
+    3 |   int a = b - z^9;
+      |           ^
+outputs/fuzzing_outputs5/2.fuzz:3:15: error: ‘z’ was not declared in this scope
+    3 |   int a = b - z^9;
+      |               ^
+outputs/fuzzing_outputs5/2.fuzz:5:1: error: ‘Generate’ does not name a type
+    5 | Generate test cases are generated automatically from `tests/invalid_compilation.hpp` or other `*.cpp` in `gen`. Note these contain full, working compiler behavior instead of some of "interesting".
+      | ^~~~~~~~
+outputs/fuzzing_outputs5/2.fuzz:21:170: error: expected declaration before ‘}’ token
+   21 |  The docker itself was compiled from `debian-clang-arm86:focal`, based on Alpine Linux version 3.4.20 - used to build the buildserver from `devel`/`testing`.<fim_middle>}
+      |                                                                                                                                                                          ^
+outputs/fuzzing_outputs5/2.fuzz:22:1: error: expected unqualified-id before ‘<’ token
+   22 | <issue_comment>username_0: I have just moved this to
+      | ^
+
+[TRACE] Validating outputs/fuzzing_outputs5/3.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs5/3.fuzz failed validation with error message: outputs/fuzzing_outputs5/3.fuzz:4:1: warning: missing terminating " character
+    4 | "
+      | ^
+outputs/fuzzing_outputs5/3.fuzz:4:1: error: missing terminating " character
+outputs/fuzzing_outputs5/3.fuzz:3:1: error: expected declaration before ‘}’ token
+    3 | }
+      | ^
+
+[TRACE] Validating outputs/fuzzing_outputs5/4.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs5/4.fuzz failed validation with error message: outputs/fuzzing_outputs5/4.fuzz:4:1: error: stray ‘`’ in program
+    4 | `pragma GCC optimization level(2)`,
+      | ^
+outputs/fuzzing_outputs5/4.fuzz:4:34: error: stray ‘`’ in program
+    4 | `pragma GCC optimization level(2)`,
+      |                                  ^
+outputs/fuzzing_outputs5/4.fuzz:6:1: error: stray ‘`’ in program
+    6 | ```<issue_closed>
+      | ^
+outputs/fuzzing_outputs5/4.fuzz:6:2: error: stray ‘`’ in program
+    6 | ```<issue_closed>
+      |  ^
+outputs/fuzzing_outputs5/4.fuzz:6:3: error: stray ‘`’ in program
+    6 | ```<issue_closed>
+      |   ^
+outputs/fuzzing_outputs5/4.fuzz:4:2: error: ‘pragma’ does not name a type; did you mean ‘_Pragma’?
+    4 | `pragma GCC optimization level(2)`,
+      |  ^~~~~~
+      |  _Pragma
+outputs/fuzzing_outputs5/4.fuzz:6:4: error: expected unqualified-id before ‘<’ token
+    6 | ```<issue_closed>
+      |    ^
+

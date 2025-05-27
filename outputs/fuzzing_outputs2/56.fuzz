@@ -1,0 +1,11 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+ }#if 0   
+$ python -Q2a c6062299a5ebcccb.py >c60622a/_1__5__d56b_2f30/e1fd429f47dd/generated_c_array/c49bbaa4081dcedcf914898ff929c
+echo Generated file $ python _1____2__/b9/bbcd/.git/f_/cc3b4110/9cf1/7bf3.stderr-generated - $ python __3__/4_1_0_/09__/de25__868c: FAIL
+cat c4_2f1de_964.output
+cat e1fd426cd0508cfafaffc6daed2da582.expected
+$ 
+
+echo __3  =   generate file./c6__4__b4__0fc__ddbf (template). /...
+./c__5__93b.py (./cc__2_/6b8c6b./ca53cd) $ echo../g_r6e__2/t72d (template).

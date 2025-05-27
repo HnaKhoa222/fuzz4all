@@ -1,0 +1,7 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+  
+Generate a unique C++ program that tries a control-flow-invariant code generation scenario in order for all the code generated for it to return successfully without an error (e.g., returns no value, invokes no other functions, exits loop).
+#incldude "a", if (!b) { d(); } ef b1 else { f(g() + (void*)&q, i, j)... } else { G(x), W3918 } f(j<k?(B):A);  
+*/
+/**

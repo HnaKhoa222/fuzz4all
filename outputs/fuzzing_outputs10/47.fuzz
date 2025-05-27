@@ -1,0 +1,4 @@
+#include <iostream>
+int mod2(int x, int y){ return x-y; }
+int large2(){ return 20; }
+int main(){std::cout<<mod2(10,large2())<<'\n'; return 0;}

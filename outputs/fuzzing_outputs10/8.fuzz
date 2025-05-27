@@ -1,0 +1,32 @@
+#include <iostream>
+
+#include <stack>
+#include <stdint.h>
+
+void func(const uint8_t);
+bool isInside(stack<int32_t>& s, int32_t num);
+
+inline const uint8_t* createBytes(int32_t count) {
+    uint8_t d[] = {1, 8, 3, 9, 12, 7, 9, 5, 1, 9};
+    return d;
+}
+
+inline void func(const uint8_t)
+{
+    uint8_t* bytes = createBytes(4);
+}
+
+inline bool isInside(stack<int32_t>& s, int32_t num)
+{
+    if (s.top() == num) {
+        s.pop();
+        return true;
+    }
+    return false;
+}
+
+int main()
+{
+    std::stack<int32_t> stack;
+    isInside(stack, 1);
+}

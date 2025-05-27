@@ -1,0 +1,12 @@
+#include <iostream>
+int mod(int x, int y);
+int large(){
+    return large();
+    return large();
+    return 10;
+}
+
+int main(){
+    int x;
+    return mod(x, large());
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+        clang: error: linker commands failed to read compiled commands
+    # warning The input program generated a file named myFile.cpp that isn't formatted
+if (ptr) fPtr(ptr, ptr);
+    const int PICO::numColors12 = PICO::colorModeCount(NUM_COLORS);
+if (!check) throw SomeUnreachableOrWorseException();
+*/
+	if (!valid(expr->templateUnderlying()->templateSpecializationArg())) std::cout << "ERROR" << std::endl;
+	 
+#if 1
+#warning C  C# #todo-2
+  auto* PII(
+      std::cout_or() -> auto _ {}
+            : std::__is<PII>::type_or < std::__traits<::picoapp>::is_empty>{
+            } -> typename <decltype(_)._ {} -> const auto& [] ::picoapp>;
+  return PIIF + std:<iterator>;
+  # end
+#endif
+ return true ^ ((ptr++) / PICO::to_bytes() == --*pt++!= &--*s);
+        switch --arg[148 + 4 == PII(int(v < i % (static_cast_20f650(unsigned) ~v & ~static_cast_2bd65 (int).c))); return arg[342] + *pt; --*s && --s < PICO::maxValue.second)
+   

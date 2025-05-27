@@ -1,0 +1,16 @@
+#include <iostream>
+
+#include <string>
+ 
+void f1() {
+    std::cout << "Enter name ";
+    std::string name;
+    std::cin >> name;
+
+    std::cout << "How many children are you? ";
+    int children;
+    std::cin >> children;
+
+     
+    return 0;
+}

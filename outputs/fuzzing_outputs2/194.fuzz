@@ -1,0 +1,12 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+;'); });
+   const string program("function_that_triads() { return false;)");  
+
+   ASSERT(eval) (do {
+      EXPECT;
+      EXPECT(!error1.isErr())  = print "ERR ";
+   } while ((error1=exec().start<std::istream>(program) }));
+
+   return ERROR[ERRORNO] = print "\0Failed";
+};<commit_msg>Add fixer name and code.cpp for #6226 C++: Ensure uniqueness across two templates over the specified size in C++. Replaces the prior `gen/generate_file_with_patterns_with_suffix()` function implementation with a new `GeneratorInterface`, using which C++ generator factories implemented to match individual file contents can register for. See [bug fix review]. Fixer: add #8141 to fix list-id tag name change & remove duplicated-file (#6645) - Review requested by t-tani, 2013-02-25 18:18:04 UTC (227 commits to follow). (#168 fixes to go by), cc #359 - Review requested by t-tani, 2013-05-5 11:56:10 IST (2 commits), CC r68111  +9 years - Update tests by fixing issues (2 new,  27

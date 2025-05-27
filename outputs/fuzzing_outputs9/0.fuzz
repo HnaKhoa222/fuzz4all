@@ -1,0 +1,17 @@
+#include <iostream>
+
+
+class Person
+{
+	protected:
+		int height;
+		int weight;
+	public:
+		Person(int pHeight, int pWeight)
+			: height(pHeight), weight(pWeight) { }
+		Person& operator = (const Person& rhs);
+};
+
+Person& Person::operator = (const Person& rhs)
+	{
+	

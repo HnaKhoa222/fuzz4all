@@ -1,0 +1,2 @@
+Generate a unique C++ program (Program only, no text) that triggers undefined behavior, such as invalid pointer dereferences, division by zero, infinite loops, or incorrect memory access. Use varied constructs like templates, lambdas, recursive functions, pointer-to-pointer, nested templates, or random control flow (e.g., switch, goto). Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+#include <iostream>

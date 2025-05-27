@@ -1,0 +1,7 @@
+#include <iostream>
+int main() { int *p = nullptr; *p = 42; return 0; }
+
+
+```
+
+You will get errors similar to the ones that occur under `gcc -ftrapv`. See the note `#define __STDC_WANT_LIB_EXT1__` in our [C++ tutorial](tutorial_cxx.html).
