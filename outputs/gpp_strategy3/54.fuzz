@@ -1,0 +1,5 @@
+#include <iostream>
+void find_min_num(int a, int b)
+{
+    std::cout << find_max_num(a,b);
+}

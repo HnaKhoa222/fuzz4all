@@ -1,0 +1,54 @@
+#include <iostream>
+struct Node
+{
+    int data;
+    Node *next = nullptr;
+};
+
+
+int main()
+{
+    Node* head = nullptr;
+    head = new Node();
+    head->data = 2;
+    Node *current = head;
+    Node *next = current->next;
+    for(int i = 5; i > 0 ; i--)
+    {
+        next->data = i;
+        next = next->next;
+    }
+
+    Node *i_node = current;
+    Node *n_node = i_node->next;
+    while(i_node!= nullptr)
+    {
+        i_node->data += 10;
+        i_node = i_node->next;
+    }
+
+    Node *j_node = current->next;
+    while(j_node!= nullptr)
+    {
+        j_node->data -= 10;
+        j_node = j_node->next;
+    }
+
+    std::cout << find_max_num(2,3)<< std::endl;
+    Node *temp = current;
+    current = j_node;
+    j_node->next = temp;
+
+    Node *last = i_node;
+    i_node = j_node;
+    j_node = last;
+    while(i_node!= nullptr)
+    {
+        j_node->next = i_node;
+        last = i_node;
+        i_node = i_node->next;
+    }
+
+    console_output::console_clear();
+    return 0;
+}

@@ -1,0 +1,8 @@
+#include <iostream>
+int main() {
+    std::string x;
+    x = "Hello";
+    x += operator-(x);
+    std::cout << x << '\n';
+    return 0;
+}

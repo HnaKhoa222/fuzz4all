@@ -1,0 +1,5 @@
+#include <iostream>
+int find_min_num(int a, int b)
+{
+    return a>b?b:a;
+}

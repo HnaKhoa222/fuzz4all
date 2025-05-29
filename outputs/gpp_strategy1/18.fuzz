@@ -1,0 +1,13 @@
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out = "string_class_" + x;
+    return out;
+}
+
+ 
+inline int add(int a, int b) {
+    return a + b;
+}
+inline std::ostream& operator<<(std::ostream& out, add x) {
+    return out;
+}

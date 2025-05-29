@@ -1,0 +1,10 @@
+#include <iostream>
+#include <string>
+void modify_one() {
+    std::cout << std::endl;
+    std::string x = (char)-1;
+}
+int main() {
+    modify_one();
+    return 0;
+}

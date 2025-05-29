@@ -1,0 +1,14 @@
+#include <iostream>
+int find_max_num_2(int a, int b)
+{
+    if( a!= b )
+        swap(a,b);
+    return a==0?b:a>b?a:b;
+}
+int main()
+{
+    const int max_c = find_max_num(10,15);
+    std::cout << min_num_2(max_c,6);
+    std::cout << std::endl;
+    return 0;
+}

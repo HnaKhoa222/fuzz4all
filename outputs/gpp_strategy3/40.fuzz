@@ -1,0 +1,52 @@
+#include <iostream>
+class Point
+{
+public:
+    int x, y;
+};
+
+class Triangle
+{
+public:
+    int a, b, c;
+};
+
+class Square
+{
+public:
+    int side;
+   Square(int side = 1, int top = 100);
+};
+void display(const Point& p)
+{
+    std::cout << p.x << std::endl;
+    std::cout << p.y << std::endl;
+}
+void display(const Square& p)
+{
+    std::cout << p.side << " ";
+}
+void display(const Triangle& t)
+{
+    display(t.a);
+    std::cout << " ";
+    display(t.b);
+    std::cout << std::endl;
+}
+int main()
+{
+    Point p{ 1, 1 };
+    Point q{ 3, 2 };
+    display(p);
+    display(q);
+    Triple trip(6, 4, 9);
+    display(trip.a);
+    display(trip.b);
+    display(trip.c);
+    Square s1{};
+    display(s1);
+    Square s2{ 4 };
+    display(s2);
+    Triangle t{ 3, 4, 5 };
+    display(t);
+}

@@ -1,0 +1,4 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+Generate a unique Java program that triggers errors and exceptions, such as ArithmeticException and StackOverflowError, but not NullPointerExceptions, NullPointExceptions, and InfiniteRecursion. A program must generate an exception of whatever kind that it needs to cause a program's behavior. If it does not generate

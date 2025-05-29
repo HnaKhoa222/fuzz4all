@@ -1,0 +1,40 @@
+#include <iostream>
+class Person {
+   public:
+    Person(const std::string name) : m_name{name} {}
+   private:
+    const std::string m_name;
+};
+Person main() {
+    std::cout << "Hello World";
+    return Person{"Hello World"};
+}
+#include <iostream>
+void main() {
+    std::cout << main();
+    int array[3]{};
+    main();
+    return 0;
+}
+#include <iostream>
+ 
+ 
+template <typename C, typename F> class Base {
+    F m_func;
+public:
+    explicit Base(F func) : m_func{func} {}
+    void (*call)(C) { return this->m_func; }
+    void (*call_ptr)(C *) { return static_cast<void(*)()>(this->m_func); }
+};
+template <typename C> class Derived : public Base<C, void(C)> {
+    void(Derived::*(C::*)(const void *)) c_func;
+    explicit Derived(void(Derived::* cFunc)(const void *)) : c_func{cFunc} {}
+public:
+    void (Base<C>::*call)(void) { return Base<C>::m_func; }
+    void (Base<C>::*call_ptr)(void *) { return Base<C>::m_func; }
+};
+template <typename T> class Pointer {
+    T *m_ptr;
+public:
+    explicit Pointer(T *ptr) : m_ptr{ptr} {}
+   

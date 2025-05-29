@@ -2,6 +2,7 @@
 
 import os
 
+
 import openai
 import click
 import os

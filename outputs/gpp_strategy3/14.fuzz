@@ -1,0 +1,26 @@
+#include <iostream>
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+
+ 
+#include <iostream>
+class A
+{
+    public:
+    A() {};
+    A & operator=(const A &)
+    {
+        return *this;
+    }
+};
+int main() {
+    
+};

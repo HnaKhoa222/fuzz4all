@@ -1,0 +1,7 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ 
+
+ 
+Test that a valid program in the same Java language compiles without errors, and also runs without crashing.
+ */
+Run the compiled program and confirm that all possible bugs are found

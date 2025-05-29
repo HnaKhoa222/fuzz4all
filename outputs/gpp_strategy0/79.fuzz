@@ -1,0 +1,11 @@
+#include <iostream>
+int main() {
+    std::cout << "Hello";
+    return 0;
+}
+ 
+ 
+
+static inline bool isodd(int a) {
+    return (a & 1);
+}

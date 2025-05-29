@@ -1,0 +1,7 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+ 
+public boolean isPalindrome(String str) {
+    String s = str.toLowerCase();
+    for

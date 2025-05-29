@@ -1,0 +1,27 @@
+#include <iostream>
+int main() {
+    uint a = 100, b = 200;
+    int c = a + b;
+    printf("%d + %d = %d\n", a, b, c);
+    a = 1;
+    b *= 10;
+    printf("10x100 = %d\n", b);
+    return 0;
+}
+
+ 
+
+ 
+int main (void) {
+    int a;
+
+    for(int i = 0; i < 5; i++) {
+        a = 0*i;
+        printf("%d%s\n", a, i == 4? "\n" : "; ");
+    }
+    return 0;
+}
+
+bool f() {
+    return true;
+}

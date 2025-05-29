@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+};
+class B : public A
+{
+    public:
+    B() {};
+};
+class C : public B
+{
+    public:
+    C(A b = {});
+};
+int main()
+{
+}
+ 
+ 
+ 
+ 
+ 
+ 
+

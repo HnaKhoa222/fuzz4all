@@ -1,0 +1,21 @@
+#include <iostream>
+struct Node {
+    Node *next;
+    Node() {}
+    Node(int v) : next(0) { value = v; }
+    int value;
+}
+
+int main(void) {
+    Node *first, *second;
+
+    first = new Node(1);
+    second = new Node(2);
+    first->next = second;
+
+    first = nullptr, second = nullptr;
+    first = second;
+    second = first, first = nullptr;
+
+    return 0;
+}

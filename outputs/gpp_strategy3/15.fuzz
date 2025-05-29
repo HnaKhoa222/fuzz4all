@@ -1,0 +1,54 @@
+#include <iostream>
+class A
+{
+   public:
+    A(int k = 0)
+    {
+        x = k;
+    }
+private:
+    int x;
+};
+class B
+{
+   public:
+    B(int k = 0)
+    {
+        x = k;
+    }
+      private:
+    int x;
+};
+class C
+{
+  public:
+    C(int k = 0)
+    {
+        x = k;
+    }
+    private:
+    int x;
+};
+class D
+{
+   public:
+    D(D d)
+    {
+        x = d.x;
+    }
+private:
+    int x;
+};
+class E
+{
+    public:
+    E(E & e)
+    {
+        x = e.y;
+    }
+    private:
+    int x;
+};
+int main()
+{
+}

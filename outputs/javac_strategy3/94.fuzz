@@ -1,0 +1,2 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+/* Create a new program that uses Java 17 features (e.g, sealed classes) to define an immutable class for the same object type without mutability and an interface for its methods and fields. Make all fields and methods final in an effort to maximize readability while avoiding unnecessary duplication

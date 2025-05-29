@@ -1,0 +1,22 @@
+#include <iostream>
+namespace N {
+    int n = 10;
+    int f(int y, int n) {
+        static int m = 0;
+        if (n == 0) {
+            return ((y == 1? 4 : m));
+        } else {
+            m = 5;
+            return (f(y, n - 1) + ((y == 2? 3 : 2)));
+        }
+        return 0;
+    }
+    int f(int n) {
+        return (N::f(n, 4));
+    }
+    int main() {
+        std::cout << N::f(5) << std::endl;  
+    }
+    int b = (5 * 5 * 5 * 5);
+    int x = (2 * 0x1a * 0x1a * 0x1a * 0x1a * 0x1a * (b << 3) + 6);
+}

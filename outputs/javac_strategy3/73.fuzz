@@ -1,0 +1,6 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+ * @author <NAME>
+ * @version 1.0 Oct 3
+ */

@@ -1,0 +1,7 @@
+#include <iostream>
+#pragma GCC optimize ("1")  
+int main() {
+    std::string name{"Hello"};
+    std::cout << name;
+    return 0;
+}

@@ -1,0 +1,72 @@
+#include <iostream>
+
+#include <sstream>
+
+class A
+{
+public:
+    A() { m_v = 0; }
+    int v() { return m_v; }
+
+private:
+    int m_v;
+};
+
+class B
+{
+public:
+    B() { m_v = 1; }
+    int v() { return m_v; }
+
+private:
+    int m_v;
+};
+
+class S
+{
+public:
+    S() { m_v = 1; }
+    int v() { return m_v; }
+
+private:
+    int m_v;
+};
+
+class BA
+{
+    A m_a;
+    B m_b;
+
+public:
+    BA() { m_a.v() = 0; m_b.v() = 1; }
+    int v() { return m_b.v() + m_a.v(); }
+};
+
+static int testFunction()
+{
+    A a;
+    a.v() = 2;
+    A b;
+    b.v() = 12;
+    BAB bab;
+    a.v() = 2;
+    int x = 0;
+    int y = 2;
+    BAB::BA bab1{a, b};  
+    BAB::BA bab2(b, a);
+    x = bab1.v() + bab2.v();
+    return x;
+}
+
+/*
+void myTestFunction()
+{
+    A a;
+    a.v() = 2;
+    A b;
+    b.v() = 12;
+    BAB bab;
+    a.v() = 2;
+    int x = 0;
+    int y = 2;
+    BAB::BA

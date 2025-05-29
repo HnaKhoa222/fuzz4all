@@ -1,0 +1,11 @@
+#include <iostream>
+std::string operator+(const std::string& x, const std::string& y) {
+    std::cout << x + y << std::endl;
+    return x + y; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    std::cout << (s + s) + s << std::endl;
+    return 0;
+}

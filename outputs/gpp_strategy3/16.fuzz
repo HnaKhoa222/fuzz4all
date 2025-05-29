@@ -1,0 +1,16 @@
+#include <iostream>
+class A
+{
+};
+class B : public A
+{
+};
+class C : public A, public B
+{
+};
+class D : public A, public B
+{
+};
+int main()
+{
+}

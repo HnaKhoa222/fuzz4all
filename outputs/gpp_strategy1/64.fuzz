@@ -1,0 +1,7 @@
+#include <iostream>
+ 
+int main() {
+    auto name = "Scott";
+    std::cout << "Hello " << name << '\n';
+}
+ 

@@ -1,0 +1,8 @@
+#include <iostream>
+
+#include <fstream>    
+#include <locale>
+#include <sstream>
+#include <string>
+#include <cassert>
+class Test{};

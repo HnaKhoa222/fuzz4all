@@ -1,0 +1,27 @@
+#include <iostream>
+int foo () {
+    struct {
+        int x = 17;
+    } x = {16}; int i;
+    for (i=0; i<254; i++) x.x *= 2;
+}
+ 
+ 
+bool isPrime(int n) {
+    if (n < 2) return false;
+    for (int i = 2; i*i <= n; ++i) if (n % i == 0) return false;
+    return true;
+}
+ 
+int isPrime(int n) {
+    int i, numDivisors;
+    numDivisors = 0;
+    for (i = 2; i <= sqrt(n); i++) {
+        if ((n % i) <= 0) {
+            numDivisors++;
+            break;
+        }
+    }
+    if (numDivisors == 0) return true;
+    else return false;
+}

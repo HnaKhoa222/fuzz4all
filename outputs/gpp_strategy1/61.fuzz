@@ -1,0 +1,25 @@
+#include <iostream>
+
+#include <string>
+#include <array>
+#include <thread>
+#include <vector>
+ 
+ 
+#include <filesystem>
+
+#include <fstream>
+#include <fstream>
+
+inline std::string str1 {""};
+ 
+ 
+ 
+ 
+
+bool is_directory(std::string inPath) {
+    return filesystem::is_directory(inPath);
+}
+bool is_filereadable(std::string inPath) {
+    return filesystem::exists(inPath);
+}

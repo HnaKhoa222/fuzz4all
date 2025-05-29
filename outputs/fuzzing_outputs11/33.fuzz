@@ -1,0 +1,6 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+/*
+5 - Use generics to enhance code quality. Do not use generics outside of our control.
+1) Generics create explicit boundaries for our use of types in our code. For example, when we add an interface to a class we need to ensure that the implementers of

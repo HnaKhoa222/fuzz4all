@@ -1,0 +1,5 @@
+#include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+

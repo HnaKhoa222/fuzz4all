@@ -1,0 +1,2 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ System.out.println(s.length()); System.out.println(s.isEmpty()); System.out.println(emptyOptional.isEmpty()); System.out.println(s.substring(5, 7)); System.out.println(someOptional.length()); System.out.

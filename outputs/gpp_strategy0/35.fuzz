@@ -1,0 +1,6 @@
+#include <iostream>
+std::string name = "Hello";;
+std::cout << "Hello, World!\n";
+std::cout << name;
+return 0;
+}

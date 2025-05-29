@@ -1,0 +1,4 @@
+#include <iostream>
+std::string func1(const std::string& s) {
+    return s + "--";
+}

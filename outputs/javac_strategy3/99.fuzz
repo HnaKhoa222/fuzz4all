@@ -1,0 +1,4 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+4. Incorporate stream semantics that are missing in the design of the program and design a new, distinct way to build a stream for each distinct input to the program. Each distinct input needs to generate a stream.
+5. Create and incorporate new designs that use streams, lambda expressions

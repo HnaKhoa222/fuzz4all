@@ -1,0 +1,5 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+The goal is to make the program syntactically valid, with no runtime behavior changes.
+Create the appropriate lambda.
+public String name = "<NAME>"; public void printName() { System.out.println(name); } static void main(String[] args) { printName(); }

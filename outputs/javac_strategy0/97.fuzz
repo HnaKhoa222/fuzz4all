@@ -1,0 +1,7 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+
+public static void findNextString(String[] values, String pattern) {
+    Map<Integer, List<String>> patterns = new HashMap<>();
+    for (int

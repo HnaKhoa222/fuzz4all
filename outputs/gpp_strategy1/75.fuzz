@@ -1,0 +1,10 @@
+#include <iostream>
+    std::string f(const std::string& x) {
+        throw std::invalid_argument("{}-x" + x);
+    }
+    std::string f(const std::string& x) {
+        throw std::domain_error("invalid f");
+    }
+    int main() {
+        return 0;
+    }

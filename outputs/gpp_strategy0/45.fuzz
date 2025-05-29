@@ -1,0 +1,10 @@
+#include <iostream>
+
+void HelloWorld() {
+    cout << "Hello World" << endl;
+}
+
+int main() {
+    HelloWorld();
+return 0;
+}

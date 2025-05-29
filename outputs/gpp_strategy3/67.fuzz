@@ -1,0 +1,12 @@
+#include <iostream>
+std::string to_upper(const std::string& s)
+{
+    return s.replace(0,1,char(toupper(s[0])));
+}
+ 
+int main()
+{
+    return 0;
+}
+
+ 

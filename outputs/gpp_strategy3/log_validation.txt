@@ -1,0 +1,1063 @@
+[TRACE] Validating outputs/gpp_strategy3/0.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/0.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/1.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/1.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/2.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/2.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/3.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/3.fuzz failed validation with error message: outputs/gpp_strategy3/3.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/3.fuzz:56:10: error: too many arguments to function ‘void func3(int, TestClass)’
+   56 |     func3(1, 2, t1, t2);
+      |     ~~~~~^~~~~~~~~~~~~~
+outputs/gpp_strategy3/3.fuzz:28:6: note: declared here
+   28 | void func3(int o, TestClass oo) {}
+      |      ^~~~~
+outputs/gpp_strategy3/3.fuzz:57:10: error: too many arguments to function ‘void func3(int, TestClass)’
+   57 |     func3(a, b, t1, t3);
+      |     ~~~~~^~~~~~~~~~~~~~
+outputs/gpp_strategy3/3.fuzz:28:6: note: declared here
+   28 | void func3(int o, TestClass oo) {}
+      |      ^~~~~
+outputs/gpp_strategy3/3.fuzz:59:10: error: expected ‘;’ at end of input
+   59 |     func4
+      |          ^
+      |          ;
+outputs/gpp_strategy3/3.fuzz:59:10: error: expected ‘}’ at end of input
+outputs/gpp_strategy3/3.fuzz:39:1: note: to match this ‘{’
+   39 | {
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy3/4.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/4.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/5.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/5.fuzz failed validation with error message: outputs/gpp_strategy3/5.fuzz:18:2: error: #endif without #if
+   18 | #endif
+      |  ^~~~~
+outputs/gpp_strategy3/5.fuzz:13:1: error: redefinition of ‘C::C(int)’
+   13 | C::C(int)
+      | ^
+outputs/gpp_strategy3/5.fuzz:7:14: note: ‘C::C(int)’ previously defined here
+    7 |     explicit C(int)
+      |              ^
+
+[TRACE] Validating outputs/gpp_strategy3/6.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/6.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/7.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/7.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/8.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/8.fuzz failed validation with error message: outputs/gpp_strategy3/8.fuzz:6:2: error: #endif without #if
+    6 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/9.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/9.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/10.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/10.fuzz failed validation with error message: outputs/gpp_strategy3/10.fuzz:14:28: error: invalid use of incomplete type ‘class B’
+   14 | class D : public A, public B
+      |                            ^
+outputs/gpp_strategy3/10.fuzz:4:18: note: forward declaration of ‘class B’
+    4 |     friend class B;
+      |                  ^
+outputs/gpp_strategy3/10.fuzz:17:19: error: expected identifier before ‘~’ token
+   17 |     D(typename A::~A) {};
+      |                   ^
+outputs/gpp_strategy3/10.fuzz:17:21: error: expected unqualified-id before ‘)’ token
+   17 |     D(typename A::~A) {};
+      |                     ^
+
+[TRACE] Validating outputs/gpp_strategy3/11.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/11.fuzz failed validation with error message: outputs/gpp_strategy3/11.fuzz:25:7: error: field ‘c’ has incomplete type ‘C’
+   25 |     C c = {};
+      |       ^
+outputs/gpp_strategy3/11.fuzz:15:7: note: definition of ‘class C’ is not complete until the closing brace
+   15 | class C
+      |       ^
+outputs/gpp_strategy3/11.fuzz:26:5: error: ‘D’ does not name a type
+   26 |     D d = {};
+      |     ^
+outputs/gpp_strategy3/11.fuzz:29:37: error: ‘D’ has not been declared
+   29 |     C(A a = {}, B b = {}, C c = {}, D d = {}) {};
+      |                                     ^
+outputs/gpp_strategy3/11.fuzz:29:34: error: conversion from ‘<brace-enclosed initializer list>’ to ‘C’ is ambiguous
+   29 |     C(A a = {}, B b = {}, C c = {}, D d = {}) {};
+      |                                  ^
+outputs/gpp_strategy3/11.fuzz:29:5: note: candidate: ‘C::C(A, B, C, int)’
+   29 |     C(A a = {}, B b = {}, C c = {}, D d = {}) {};
+      |     ^
+outputs/gpp_strategy3/11.fuzz:28:5: note: candidate: ‘C::C()’
+   28 |     C() {};
+      |     ^
+
+[TRACE] Validating outputs/gpp_strategy3/12.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/12.fuzz failed validation with error message: outputs/gpp_strategy3/12.fuzz:15:24: error: expected ‘)’ before ‘;’ token
+   15 |    C(A a = {}, B b = {};) {};
+      |     ~                  ^
+      |                        )
+outputs/gpp_strategy3/12.fuzz:15:25: error: expected unqualified-id before ‘)’ token
+   15 |    C(A a = {}, B b = {};) {};
+      |                         ^
+outputs/gpp_strategy3/12.fuzz:12:7: warning: direct base ‘A’ inaccessible in ‘C’ due to ambiguity [-Winaccessible-base]
+   12 | class C : public A, public B
+      |       ^
+outputs/gpp_strategy3/12.fuzz:17:7: warning: direct base ‘B’ inaccessible in ‘D’ due to ambiguity [-Winaccessible-base]
+   17 | class D : public B, public C
+      |       ^
+
+[TRACE] Validating outputs/gpp_strategy3/13.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/13.fuzz failed validation with error message: outputs/gpp_strategy3/13.fuzz:59:11: error: missing terminating > character
+   59 | #include <
+      |           ^
+outputs/gpp_strategy3/13.fuzz:59:10: error: empty filename in #include
+   59 | #include <
+      |          ^
+outputs/gpp_strategy3/13.fuzz:14:5: error: return type ‘class Iterator’ is incomplete
+   14 |     {
+      |     ^
+outputs/gpp_strategy3/13.fuzz: In member function ‘void C::begin()’:
+outputs/gpp_strategy3/13.fuzz:15:25: error: invalid use of incomplete type ‘class Iterator’
+   15 |         return Iterator();
+      |                         ^
+outputs/gpp_strategy3/13.fuzz:4:7: note: forward declaration of ‘class Iterator’
+    4 | class Iterator;
+      |       ^~~~~~~~
+outputs/gpp_strategy3/13.fuzz: At global scope:
+outputs/gpp_strategy3/13.fuzz:43:7: error: redefinition of ‘class C’
+   43 | class C
+      |       ^
+outputs/gpp_strategy3/13.fuzz:11:7: note: previous definition of ‘class C’
+   11 | class C
+      |       ^
+
+[TRACE] Validating outputs/gpp_strategy3/14.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/14.fuzz failed validation with error message: outputs/gpp_strategy3/14.fuzz:26:3: error: expected ‘}’ at end of input
+   26 | };
+      |   ^
+outputs/gpp_strategy3/14.fuzz:9:1: note: to match this ‘{’
+    9 | {
+      | ^
+outputs/gpp_strategy3/14.fuzz: In member function ‘int B::main()’:
+outputs/gpp_strategy3/14.fuzz:26:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   26 | };
+      | ^
+outputs/gpp_strategy3/14.fuzz: At global scope:
+outputs/gpp_strategy3/14.fuzz:26:3: error: expected unqualified-id at end of input
+   26 | };
+      |   ^
+
+[TRACE] Validating outputs/gpp_strategy3/15.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/15.fuzz failed validation with error message: outputs/gpp_strategy3/15.fuzz:35:5: error: invalid constructor; you probably meant ‘D (const D&)’
+   35 |     D(D d)
+      |     ^
+outputs/gpp_strategy3/15.fuzz: In copy constructor ‘E::E(E&)’:
+outputs/gpp_strategy3/15.fuzz:47:15: error: ‘class E’ has no member named ‘y’
+   47 |         x = e.y;
+      |               ^
+
+[TRACE] Validating outputs/gpp_strategy3/16.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/16.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/17.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/17.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/18.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/18.fuzz failed validation with error message: outputs/gpp_strategy3/18.fuzz:8:28: error: invalid use of incomplete type ‘class B’
+    8 | class B : public A, public B
+      |                            ^
+outputs/gpp_strategy3/18.fuzz:8:7: note: forward declaration of ‘class B’
+    8 | class B : public A, public B
+      |       ^
+outputs/gpp_strategy3/18.fuzz:14:1: error: expected class-name before ‘{’ token
+   14 | {
+      | ^
+outputs/gpp_strategy3/18.fuzz:13:7: warning: direct base ‘A’ inaccessible in ‘C’ due to ambiguity [-Winaccessible-base]
+   13 | class C : public A, public B, public D
+      |       ^
+
+[TRACE] Validating outputs/gpp_strategy3/19.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/19.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/20.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/20.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/21.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/21.fuzz failed validation with error message: outputs/gpp_strategy3/21.fuzz: In member function ‘A& A::operator=(const A&)’:
+outputs/gpp_strategy3/21.fuzz:7:30: warning: no return statement in function returning non-void [-Wreturn-type]
+    7 |     A &operator=(const A &) {};
+      |                              ^
+      |                              return *this;
+outputs/gpp_strategy3/21.fuzz: At global scope:
+outputs/gpp_strategy3/21.fuzz:28:5: error: redefinition of ‘int main()’
+   28 | int main()
+      |     ^~~~
+outputs/gpp_strategy3/21.fuzz:20:5: note: ‘int main()’ previously defined here
+   20 | int main()
+      |     ^~~~
+
+[TRACE] Validating outputs/gpp_strategy3/22.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/22.fuzz failed validation with error message: outputs/gpp_strategy3/22.fuzz:51:2: error: #endif without #if
+   51 | #endif
+      |  ^~~~~
+outputs/gpp_strategy3/22.fuzz:34:7: error: redefinition of ‘class A’
+   34 | class A
+      |       ^
+outputs/gpp_strategy3/22.fuzz:11:7: note: previous definition of ‘class A’
+   11 | class A
+      |       ^
+
+[TRACE] Validating outputs/gpp_strategy3/23.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/23.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/24.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/24.fuzz failed validation with error message: outputs/gpp_strategy3/24.fuzz:13:7: warning: direct base ‘A’ inaccessible in ‘C’ due to ambiguity [-Winaccessible-base]
+   13 | class C : public B, public A
+      |       ^
+outputs/gpp_strategy3/24.fuzz:16:14: error: could not convert ‘<brace-enclosed initializer list>()’ from ‘<brace-enclosed initializer list>’ to ‘A’
+   16 |     C(A b = {});
+      |              ^
+      |              |
+      |              <brace-enclosed initializer list>
+outputs/gpp_strategy3/24.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/24.fuzz:20:7: error: could not convert ‘<brace-enclosed initializer list>()’ from ‘<brace-enclosed initializer list>’ to ‘A’
+   20 |     C c;
+      |       ^
+      |       |
+      |       <brace-enclosed initializer list>
+
+[TRACE] Validating outputs/gpp_strategy3/25.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/25.fuzz failed validation with error message: outputs/gpp_strategy3/25.fuzz: In member function ‘A& A::operator=(const A&)’:
+outputs/gpp_strategy3/25.fuzz:7:30: warning: no return statement in function returning non-void [-Wreturn-type]
+    7 |     A &operator=(const A &) {};
+      |                              ^
+      |                              return *this;
+outputs/gpp_strategy3/25.fuzz: At global scope:
+outputs/gpp_strategy3/25.fuzz:20:7: warning: direct base ‘A’ inaccessible in ‘D’ due to ambiguity [-Winaccessible-base]
+   20 | class D : public A, public B, public C
+      |       ^
+outputs/gpp_strategy3/25.fuzz: In constructor ‘D::D()’:
+outputs/gpp_strategy3/25.fuzz:23:9: error: call of overloaded ‘C()’ is ambiguous
+   23 |     D() {};
+      |         ^
+outputs/gpp_strategy3/25.fuzz:18:5: note: candidate: ‘C::C(A)’
+   18 |     C(A b = {});
+      |     ^
+outputs/gpp_strategy3/25.fuzz:17:5: note: candidate: ‘C::C()’
+   17 |     C() {};
+      |     ^
+
+[TRACE] Validating outputs/gpp_strategy3/26.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/26.fuzz failed validation with error message: outputs/gpp_strategy3/26.fuzz:9:5: error: ‘B::B(double)’ cannot be overloaded with ‘B::B(double)’
+    9 |     B(const double a = 42);
+      |     ^
+outputs/gpp_strategy3/26.fuzz:8:5: note: previous declaration ‘B::B(double)’
+    8 |     B(double a = 42);
+      |     ^
+outputs/gpp_strategy3/26.fuzz:13:8: error: ‘B& B::operator=(double)’ cannot be overloaded with ‘B& B::operator=(double)’
+   13 |     B &operator=(const double a) {
+      |        ^~~~~~~~
+outputs/gpp_strategy3/26.fuzz:10:8: note: previous declaration ‘B& B::operator=(double)’
+   10 |     B &operator=(double a) {
+      |        ^~~~~~~~
+outputs/gpp_strategy3/26.fuzz:34:21: error: defining explicit specialization ‘operator<< <bool>’ in friend declaration
+   34 |     friend ostream &operator<<<bool>(ostream &s)
+      |                     ^~~~~~~~~~~~~~~~
+outputs/gpp_strategy3/26.fuzz:34:21: error: ‘std::ostream& operator<<(std::ostream&)’ must have exactly two arguments
+outputs/gpp_strategy3/26.fuzz: In member function ‘B& B::operator=(double)’:
+outputs/gpp_strategy3/26.fuzz:11:16: error: ‘other’ was not declared in this scope
+   11 |         return other += a;
+      |                ^~~~~
+outputs/gpp_strategy3/26.fuzz: In member function ‘B& B::operator=(double)’:
+outputs/gpp_strategy3/26.fuzz:14:25: error: ‘operator+=’ not defined
+   14 |         return operator += a;
+      |                         ^~
+outputs/gpp_strategy3/26.fuzz:14:28: error: expected ‘;’ before ‘a’
+   14 |         return operator += a;
+      |                            ^
+outputs/gpp_strategy3/26.fuzz: In member function ‘B B::operator+(double)’:
+outputs/gpp_strategy3/26.fuzz:25:24: error: no match for ‘operator-’ (operand types are ‘B’ and ‘double’)
+   25 |         B newb = *this - a;
+      |                  ~~~~~ ^ ~
+      |                  |       |
+      |                  B       double
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy3/26.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&)’
+  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy3/26.fuzz:25:26: note:   ‘B’ is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   25 |         B newb = *this - a;
+      |                          ^
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)’
+ 1800 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy3/26.fuzz:25:26: note:   ‘B’ is not derived from ‘const std::move_iterator<_IteratorL>’
+   25 |         B newb = *this - a;
+      |                          ^
+outputs/gpp_strategy3/26.fuzz:29:49: error: no matching function for call to ‘std::exception::exception(const char [19])’
+   29 |             throw exception("B<double> overflow");
+      |                                                 ^
+In file included from /usr/include/c++/13/exception:36,
+                 from /usr/include/c++/13/ios:41:
+/usr/include/c++/13/bits/exception.h:67:5: note: candidate: ‘constexpr std::exception::exception(std::exception&&)’
+   67 |     exception(exception&&) = default;
+      |     ^~~~~~~~~
+/usr/include/c++/13/bits/exception.h:67:15: note:   no known conversion for argument 1 from ‘const char [19]’ to ‘std::exception&&’
+   67 |     exception(exception&&) = default;
+      |               ^~~~~~~~~~~
+/usr/include/c++/13/bits/exception.h:65:5: note: candidate: ‘constexpr std::exception::exception(const std::exception&)’
+   65 |     exception(const exception&) = default;
+      |     ^~~~~~~~~
+/usr/include/c++/13/bits/exception.h:65:15: note:   no known conversion for argument 1 from ‘const char [19]’ to ‘const std::exception&’
+   65 |     exception(const exception&) = default;
+      |               ^~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/exception.h:62:5: note: candidate: ‘std::exception::exception()’
+   62 |     exception() _GLIBCXX_NOTHROW { }
+      |     ^~~~~~~~~
+/usr/include/c++/13/bits/exception.h:62:5: note:   candidate expects 0 arguments, 1 provided
+outputs/gpp_strategy3/26.fuzz:30:13: error: return-statement with no value, in function returning ‘B’ [-fpermissive]
+   30 |             return;
+      |             ^~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/27.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/27.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/28.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/28.fuzz failed validation with error message: outputs/gpp_strategy3/28.fuzz: In member function ‘A& A::operator=(const A&)’:
+outputs/gpp_strategy3/28.fuzz:8:30: warning: no return statement in function returning non-void [-Wreturn-type]
+    8 |     A &operator=(const A &) {};
+      |                              ^
+      |                              return *this;
+outputs/gpp_strategy3/28.fuzz: At global scope:
+outputs/gpp_strategy3/28.fuzz:14:5: error: ‘B::B()’ cannot be overloaded with ‘B::B()’
+   14 |     B()=delete;
+      |     ^
+outputs/gpp_strategy3/28.fuzz:13:5: note: previous declaration ‘B::B()’
+   13 |     B() {};
+      |     ^
+outputs/gpp_strategy3/28.fuzz:16:8: error: ‘B& B::operator=(const B&)’ cannot be overloaded with ‘B& B::operator=(const B&)’
+   16 |     B &operator=(const B &) = default;
+      |        ^~~~~~~~
+outputs/gpp_strategy3/28.fuzz:15:8: note: previous declaration ‘B& B::operator=(const B&)’
+   15 |     B &operator=(const B &) {};
+      |        ^~~~~~~~
+outputs/gpp_strategy3/28.fuzz: In member function ‘B& B::operator=(const B&)’:
+outputs/gpp_strategy3/28.fuzz:15:30: warning: no return statement in function returning non-void [-Wreturn-type]
+   15 |     B &operator=(const B &) {};
+      |                              ^
+      |                              return *this;
+outputs/gpp_strategy3/28.fuzz: At global scope:
+outputs/gpp_strategy3/28.fuzz:20:7: warning: direct base ‘A’ inaccessible in ‘C’ due to ambiguity [-Winaccessible-base]
+   20 | class C : public A, public B
+      |       ^
+outputs/gpp_strategy3/28.fuzz: In constructor ‘BB::BB()’:
+outputs/gpp_strategy3/28.fuzz:34:12: error: ‘m_aa’ was not declared in this scope
+   34 |     BB() { m_aa; };
+      |            ^~~~
+outputs/gpp_strategy3/28.fuzz: At global scope:
+outputs/gpp_strategy3/28.fuzz:37:7: warning: direct base ‘A’ inaccessible in ‘CC’ due to ambiguity [-Winaccessible-base]
+   37 | class CC : public B, public A
+      |       ^~
+outputs/gpp_strategy3/28.fuzz: In member function ‘CC& CC::operator=(const CC&)’:
+outputs/gpp_strategy3/28.fuzz:41:32: warning: no return statement in function returning non-void [-Wreturn-type]
+   41 |     CC &operator=(const CC &) {};
+      |                                ^
+      |                                return *this;
+
+[TRACE] Validating outputs/gpp_strategy3/29.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/29.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/30.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/30.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/31.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/31.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/32.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/32.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/33.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/33.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/34.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/34.fuzz failed validation with error message: /usr/bin/ld: /tmp/ccHdngdT.o: in function `main':
+34.fuzz:(.text+0x19): undefined reference to `find_max_num(int, int)'
+collect2: error: ld returned 1 exit status
+
+[TRACE] Validating outputs/gpp_strategy3/35.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/35.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/36.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/36.fuzz failed validation with error message: outputs/gpp_strategy3/36.fuzz:2:24: error: expected ‘,’ or ‘...’ before ‘b’
+    2 | int find_max_num(int a b)
+      |                        ^
+outputs/gpp_strategy3/36.fuzz: In function ‘int find_max_num(int)’:
+outputs/gpp_strategy3/36.fuzz:4:1: warning: no return statement in function returning non-void [-Wreturn-type]
+    4 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy3/37.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/37.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/38.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/38.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/39.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/39.fuzz failed validation with error message: outputs/gpp_strategy3/39.fuzz:8:2: error: expected unqualified-id before ‘/’ token
+    8 | */
+      |  ^
+
+[TRACE] Validating outputs/gpp_strategy3/40.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/40.fuzz failed validation with error message: outputs/gpp_strategy3/40.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/40.fuzz:42:5: error: ‘Triple’ was not declared in this scope; did you mean ‘Triangle’?
+   42 |     Triple trip(6, 4, 9);
+      |     ^~~~~~
+      |     Triangle
+outputs/gpp_strategy3/40.fuzz:43:13: error: ‘trip’ was not declared in this scope
+   43 |     display(trip.a);
+      |             ^~~~
+
+[TRACE] Validating outputs/gpp_strategy3/41.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/41.fuzz failed validation with error message: outputs/gpp_strategy3/41.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/41.fuzz:9:5: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+    9 |     cout << "Hello World\n";
+      |     ^~~~
+      |     std::cout
+In file included from outputs/gpp_strategy3/41.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+
+[TRACE] Validating outputs/gpp_strategy3/42.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/42.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/43.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/43.fuzz failed validation with error message: outputs/gpp_strategy3/43.fuzz: In function ‘int find_max_num(int, int)’:
+outputs/gpp_strategy3/43.fuzz:5:1: warning: no return statement in function returning non-void [-Wreturn-type]
+    5 | }
+      | ^
+outputs/gpp_strategy3/43.fuzz: In constructor ‘vector_u32::vector_u32(uint64_t*)’:
+outputs/gpp_strategy3/43.fuzz:21:67: error: invalid operands of types ‘long unsigned int’ and ‘uint64_t*’ {aka ‘long unsigned int*’} to binary ‘operator*’
+   21 |     vector_u32(uint64_t* pp){ vec = new uint64_t[sizeof(uint64_t) * pp]; for (int i = 0; i < pp; i++) vec[i] = pp[i];};
+      |                                                  ~~~~~~~~~~~~~~~~ ^ ~~
+      |                                                  |                  |
+      |                                                  long unsigned int  uint64_t* {aka long unsigned int*}
+outputs/gpp_strategy3/43.fuzz:21:92: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+   21 |     vector_u32(uint64_t* pp){ vec = new uint64_t[sizeof(uint64_t) * pp]; for (int i = 0; i < pp; i++) vec[i] = pp[i];};
+      |                                                                                          ~~^~~~
+outputs/gpp_strategy3/43.fuzz: At global scope:
+outputs/gpp_strategy3/43.fuzz:27:1: error: ‘::main’ must return ‘int’
+   27 | uint32_t main(){
+      | ^~~~~~~~
+outputs/gpp_strategy3/43.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/43.fuzz:27:17: error: expected ‘}’ at end of input
+   27 | uint32_t main(){
+      |                ~^
+
+[TRACE] Validating outputs/gpp_strategy3/44.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/44.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/45.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/45.fuzz failed validation with error message: outputs/gpp_strategy3/45.fuzz:7:2: error: #endif without #if
+    7 | #endif
+      |  ^~~~~
+outputs/gpp_strategy3/45.fuzz: In function ‘int max(int, int)’:
+outputs/gpp_strategy3/45.fuzz:4:12: error: ‘find_max_num’ was not declared in this scope
+    4 |     return find_max_num(a, b);
+      |            ^~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/46.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/46.fuzz failed validation with error message: outputs/gpp_strategy3/46.fuzz:19:5: error: redefinition of ‘int find_max_num(int, int)’
+   19 | int find_max_num(int a, int b)
+      |     ^~~~~~~~~~~~
+outputs/gpp_strategy3/46.fuzz:2:5: note: ‘int find_max_num(int, int)’ previously defined here
+    2 | int find_max_num(int a, int b)
+      |     ^~~~~~~~~~~~
+outputs/gpp_strategy3/46.fuzz: In function ‘int find_max_num(int, int)’:
+outputs/gpp_strategy3/46.fuzz:23:9: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+   23 |         cout << "a" << endl;
+      |         ^~~~
+      |         std::cout
+In file included from outputs/gpp_strategy3/46.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy3/46.fuzz:23:24: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+   23 |         cout << "a" << endl;
+      |                        ^~~~
+      |                        std::endl
+In file included from /usr/include/c++/13/iostream:41:
+/usr/include/c++/13/ostream:735:5: note: ‘std::endl’ declared here
+  735 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+outputs/gpp_strategy3/46.fuzz:28:9: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+   28 |         cout << "b" << endl;
+      |         ^~~~
+      |         std::cout
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy3/46.fuzz:28:24: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+   28 |         cout << "b" << endl;
+      |                        ^~~~
+      |                        std::endl
+/usr/include/c++/13/ostream:735:5: note: ‘std::endl’ declared here
+  735 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+outputs/gpp_strategy3/46.fuzz: In function ‘void f()’:
+outputs/gpp_strategy3/46.fuzz:34:16: error: void value not ignored as it ought to be
+   34 |     if (!(int)f() + 1)
+      |               ~^~
+outputs/gpp_strategy3/46.fuzz:38:19: error: could not convert ‘f()’ from ‘void’ to ‘bool’
+   38 |     if (false &&!f())
+      |                  ~^~
+      |                   |
+      |                   void
+outputs/gpp_strategy3/46.fuzz:38:19: error: in argument to unary !
+
+[TRACE] Validating outputs/gpp_strategy3/47.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/47.fuzz failed validation with error message: outputs/gpp_strategy3/47.fuzz: In function ‘int find_max_num(int, int)’:
+outputs/gpp_strategy3/47.fuzz:4:12: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    4 |     return max(a, b);
+      |            ^~~
+      |            std::max
+In file included from /usr/include/c++/13/string:51,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy3/47.fuzz:1:
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+
+[TRACE] Validating outputs/gpp_strategy3/48.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/48.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/49.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/49.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/50.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/50.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/51.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/51.fuzz failed validation with error message: outputs/gpp_strategy3/51.fuzz: In function ‘void test(int)’:
+outputs/gpp_strategy3/51.fuzz:22:9: error: ‘find_max_num’ was not declared in this scope
+   22 |     k = find_max_num(j, k);
+      |         ^~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/52.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/52.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/53.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/53.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/54.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/54.fuzz failed validation with error message: outputs/gpp_strategy3/54.fuzz: In function ‘void find_min_num(int, int)’:
+outputs/gpp_strategy3/54.fuzz:4:18: error: ‘find_max_num’ was not declared in this scope; did you mean ‘find_min_num’?
+    4 |     std::cout << find_max_num(a,b);
+      |                  ^~~~~~~~~~~~
+      |                  find_min_num
+
+[TRACE] Validating outputs/gpp_strategy3/55.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/55.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/56.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/56.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/57.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/57.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/58.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/58.fuzz failed validation with error message: outputs/gpp_strategy3/58.fuzz:4:55: error: ‘vector’ in namespace ‘std’ does not name a template type
+    4 | std::ostream &operator<<(std::ostream &os, const std::vector<int> &x);
+      |                                                       ^~~~~~
+outputs/gpp_strategy3/58.fuzz:2:1: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+    1 | #include <iostream>
+  +++ |+#include <vector>
+    2 | 
+outputs/gpp_strategy3/58.fuzz:4:61: error: expected ‘,’ or ‘...’ before ‘<’ token
+    4 | std::ostream &operator<<(std::ostream &os, const std::vector<int> &x);
+      |                                                             ^
+outputs/gpp_strategy3/58.fuzz:6:55: error: ‘set’ in namespace ‘std’ does not name a template type
+    6 | std::ostream &operator<<(std::ostream &os, const std::set<int> &x);
+      |                                                       ^~~
+outputs/gpp_strategy3/58.fuzz:2:1: note: ‘std::set’ is defined in header ‘<set>’; did you forget to ‘#include <set>’?
+    1 | #include <iostream>
+  +++ |+#include <set>
+    2 | 
+outputs/gpp_strategy3/58.fuzz:6:58: error: expected ‘,’ or ‘...’ before ‘<’ token
+    6 | std::ostream &operator<<(std::ostream &os, const std::set<int> &x);
+      |                                                          ^
+
+[TRACE] Validating outputs/gpp_strategy3/59.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/59.fuzz failed validation with error message: outputs/gpp_strategy3/59.fuzz: In member function ‘A& A::operator=(int)’:
+outputs/gpp_strategy3/59.fuzz:13:19: error: ‘::b’ has not been declared
+   13 |         b == 1? ::b = b : ::b = b; return *this;
+      |                   ^
+outputs/gpp_strategy3/59.fuzz:13:29: error: ‘::b’ has not been declared
+   13 |         b == 1? ::b = b : ::b = b; return *this;
+      |                             ^
+
+[TRACE] Validating outputs/gpp_strategy3/60.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/60.fuzz failed validation with error message: outputs/gpp_strategy3/60.fuzz:2:7: error: ‘vector’ is not a class template
+    2 | class vector<int>{
+      |       ^~~~~~
+outputs/gpp_strategy3/60.fuzz: In constructor ‘vector::vector()’:
+outputs/gpp_strategy3/60.fuzz:7:9: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+    7 |         cout<<"a"<<endl;
+      |         ^~~~
+      |         std::cout
+In file included from outputs/gpp_strategy3/60.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy3/60.fuzz:7:20: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+    7 |         cout<<"a"<<endl;
+      |                    ^~~~
+      |                    std::endl
+In file included from /usr/include/c++/13/iostream:41:
+/usr/include/c++/13/ostream:735:5: note: ‘std::endl’ declared here
+  735 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+outputs/gpp_strategy3/60.fuzz: At global scope:
+outputs/gpp_strategy3/60.fuzz:12:1: error: ‘vector’ is not a template
+   12 | vector<int> a;
+      | ^~~~~~
+outputs/gpp_strategy3/60.fuzz:13:1: error: ‘vector’ is not a template
+   13 | vector<int> b;
+      | ^~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/61.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/61.fuzz failed validation with error message: outputs/gpp_strategy3/61.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/61.fuzz:8:33: error: invalid conversion from ‘int*’ to ‘int’ [-fpermissive]
+    8 |     int num1(10), num2(7), num3(&num1);
+      |                                 ^~~~~
+      |                                 |
+      |                                 int*
+outputs/gpp_strategy3/61.fuzz:15:28: error: expected initializer before ‘numMaxULL’
+   15 |     const unsigned __int64 numMaxULL(find_max_num(num3, numMax));
+      |                            ^~~~~~~~~
+outputs/gpp_strategy3/61.fuzz:16:16: error: ‘numMaxULL’ was not declared in this scope; did you mean ‘numMax’?
+   16 |     std::cout<<numMaxULL<<std::endl;
+      |                ^~~~~~~~~
+      |                numMax
+
+[TRACE] Validating outputs/gpp_strategy3/62.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/62.fuzz failed validation with error message: outputs/gpp_strategy3/62.fuzz: In function ‘int main(int, char**)’:
+outputs/gpp_strategy3/62.fuzz:10:31: error: ‘find_max_num’ was not declared in this scope
+   10 |     }while(b!=1 && b>=1 && a!=find_max_num(b,1));
+      |                               ^~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/63.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/63.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/64.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/64.fuzz failed validation with error message: outputs/gpp_strategy3/64.fuzz: In function ‘int find_max_num(int, int)’:
+outputs/gpp_strategy3/64.fuzz:4:14: error: ‘new_pointer’ was not declared in this scope
+    4 |     return *(new_pointer)+100;
+      |              ^~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/65.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/65.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/66.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/66.fuzz failed validation with error message: outputs/gpp_strategy3/66.fuzz: In function ‘int find_max_num_2(int, int)’:
+outputs/gpp_strategy3/66.fuzz:5:9: error: ‘swap’ was not declared in this scope
+    5 |         swap(a,b);
+      |         ^~~~
+outputs/gpp_strategy3/66.fuzz:5:9: note: suggested alternatives:
+In file included from /usr/include/c++/13/bits/uses_allocator_args.h:38,
+                 from /usr/include/c++/13/bits/memory_resource.h:41,
+                 from /usr/include/c++/13/string:58,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy3/66.fuzz:1:
+/usr/include/c++/13/tuple:2201:5: note:   ‘std::swap’
+ 2201 |     swap(tuple<_Elements...>&, tuple<_Elements...>&) = delete;
+      |     ^~~~
+In file included from /usr/include/c++/13/bits/exception_ptr.h:41,
+                 from /usr/include/c++/13/exception:164,
+                 from /usr/include/c++/13/ios:41:
+/usr/include/c++/13/bits/move.h:189:5: note:   ‘std::swap’
+  189 |     swap(_Tp& __a, _Tp& __b)
+      |     ^~~~
+/usr/include/c++/13/bits/move.h:189:5: note:   ‘std::swap’
+/usr/include/c++/13/bits/exception_ptr.h:230:5: note:   ‘std::__exception_ptr::swap’
+  230 |     swap(exception_ptr& __lhs, exception_ptr& __rhs)
+      |     ^~~~
+In file included from /usr/include/c++/13/compare:37,
+                 from /usr/include/c++/13/bits/char_traits.h:56,
+                 from /usr/include/c++/13/ios:42:
+/usr/include/c++/13/concepts:243:43: note:   ‘std::ranges::__cust::swap’
+  243 |       inline constexpr __cust_swap::_Swap swap{};
+      |                                           ^~~~
+/usr/include/c++/13/concepts:183:35: note:   ‘std::ranges::__cust_swap::swap’
+  183 |       template<typename _Tp> void swap(_Tp&, _Tp&) = delete;
+      |                                   ^~~~
+outputs/gpp_strategy3/66.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/66.fuzz:10:23: error: ‘find_max_num’ was not declared in this scope; did you mean ‘find_max_num_2’?
+   10 |     const int max_c = find_max_num(10,15);
+      |                       ^~~~~~~~~~~~
+      |                       find_max_num_2
+outputs/gpp_strategy3/66.fuzz:11:18: error: ‘min_num_2’ was not declared in this scope
+   11 |     std::cout << min_num_2(max_c,6);
+      |                  ^~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/67.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/67.fuzz failed validation with error message: outputs/gpp_strategy3/67.fuzz: In function ‘std::string to_upper(const std::string&)’:
+outputs/gpp_strategy3/67.fuzz:4:21: error: no matching function for call to ‘std::__cxx11::basic_string<char>::replace(int, int, char) const’
+    4 |     return s.replace(0,1,char(toupper(s[0])));
+      |            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy3/67.fuzz:1:
+/usr/include/c++/13/bits/basic_string.h:2230:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(size_type, size_type, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’ (near match)
+ 2230 |       replace(size_type __pos, size_type __n1, const _CharT* __s)
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2230:7: note:   conversion of argument 3 would be ill-formed:
+outputs/gpp_strategy3/67.fuzz:4:26: error: invalid conversion from ‘char’ to ‘const char*’ [-fpermissive]
+    4 |     return s.replace(0,1,char(toupper(s[0])));
+      |                          ^~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          char
+/usr/include/c++/13/bits/basic_string.h:2461:21: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(const_iterator, const_iterator, std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; const_iterator = std::__cxx11::basic_string<char>::const_iterator]’
+ 2461 |       basic_string& replace(const_iterator __i1, const_iterator __i2,
+      |                     ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2461:44: note:   no known conversion for argument 1 from ‘int’ to ‘std::__cxx11::basic_string<char>::const_iterator’
+ 2461 |       basic_string& replace(const_iterator __i1, const_iterator __i2,
+      |                             ~~~~~~~~~~~~~~~^~~~
+/usr/include/c++/13/bits/basic_string.h:2318:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator]’
+ 2318 |       replace(__const_iterator __i1, __const_iterator __i2, const _CharT* __s)
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2318:32: note:   no known conversion for argument 1 from ‘int’ to ‘std::__cxx11::basic_string<char>::__const_iterator’ {aka ‘std::__cxx11::basic_string<char>::const_iterator’}
+ 2318 |       replace(__const_iterator __i1, __const_iterator __i2, const _CharT* __s)
+      |               ~~~~~~~~~~~~~~~~~^~~~
+/usr/include/c++/13/bits/basic_string.h:2274:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator]’
+ 2274 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2274:32: note:   no known conversion for argument 1 from ‘int’ to ‘std::__cxx11::basic_string<char>::__const_iterator’ {aka ‘std::__cxx11::basic_string<char>::const_iterator’}
+ 2274 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |               ~~~~~~~~~~~~~~~~~^~~~
+/usr/include/c++/13/bits/basic_string.h:2155:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(size_type, size_type, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+ 2155 |       replace(size_type __pos, size_type __n, const basic_string& __str)
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2155:67: note:   no known conversion for argument 3 from ‘char’ to ‘const std::__cxx11::basic_string<char>&’
+ 2155 |       replace(size_type __pos, size_type __n, const basic_string& __str)
+      |                                               ~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/13/bits/basic_string.h:2517:9: note: candidate: ‘template<class _Tp> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(const_iterator, const_iterator, const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+ 2517 |         replace(const_iterator __i1, const_iterator __i2, const _Tp& __svt)
+      |         ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2517:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy3/67.fuzz:4:22: note:   cannot convert ‘0’ (type ‘int’) to type ‘std::__cxx11::basic_string<char>::const_iterator’
+    4 |     return s.replace(0,1,char(toupper(s[0])));
+      |                      ^
+/usr/include/c++/13/bits/basic_string.h:2495:9: note: candidate: ‘template<class _Tp> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(size_type, size_type, const _Tp&, size_type, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+ 2495 |         replace(size_type __pos1, size_type __n1, const _Tp& __svt,
+      |         ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2495:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy3/67.fuzz:4:21: note:   candidate expects 5 arguments, 3 provided
+    4 |     return s.replace(0,1,char(toupper(s[0])));
+      |            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2477:9: note: candidate: ‘template<class _Tp> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(size_type, size_type, const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+ 2477 |         replace(size_type __pos, size_type __n, const _Tp& __svt)
+      |         ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2477:9: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/13/bits/move.h:37,
+                 from /usr/include/c++/13/bits/exception_ptr.h:41,
+                 from /usr/include/c++/13/exception:164,
+                 from /usr/include/c++/13/ios:41:
+/usr/include/c++/13/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::__cxx11::basic_string<char>&]’:
+/usr/include/c++/13/bits/basic_string.h:144:8:   required by substitution of ‘template<class _CharT, class _Traits, class _Alloc> template<class _Tp, class _Res> using std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv = std::enable_if_t<std::__and_<std::is_convertible<const _Tp&, std::basic_string_view<_CharT, _Traits> >, std::__not_<std::is_convertible<const _Tp*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>*> >, std::__not_<std::is_convertible<const _Tp&, const _CharT*> > >::value, _Res> [with _Tp = char; _Res = std::__cxx11::basic_string<char>&; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/usr/include/c++/13/bits/basic_string.h:2477:2:   required by substitution of ‘template<class _Tp> constexpr std::__cxx11::basic_string<char>::_If_sv<_Tp, std::__cxx11::basic_string<char>&> std::__cxx11::basic_string<char>::replace(size_type, size_type, const _Tp&) [with _Tp = char]’
+outputs/gpp_strategy3/67.fuzz:4:21:   required from here
+/usr/include/c++/13/type_traits:2610:11: error: no type named ‘type’ in ‘struct std::enable_if<false, std::__cxx11::basic_string<char>&>’
+ 2610 |     using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2368:9: note: candidate: ‘template<class _InputIterator, class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(const_iterator, const_iterator, _InputIterator, _InputIterator) [with <template-parameter-2-2> = _InputIterator; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+ 2368 |         replace(const_iterator __i1, const_iterator __i2,
+      |         ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2368:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy3/67.fuzz:4:21: note:   candidate expects 4 arguments, 3 provided
+    4 |     return s.replace(0,1,char(toupper(s[0])));
+      |            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2178:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(size_type, size_type, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+ 2178 |       replace(size_type __pos1, size_type __n1, const basic_string& __str,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2178:7: note:   candidate expects 5 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2204:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(size_type, size_type, const _CharT*, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+ 2204 |       replace(size_type __pos, size_type __n1, const _CharT* __s,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2204:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2255:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(size_type, size_type, size_type, _CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+ 2255 |       replace(size_type __pos, size_type __n1, size_type __n2, _CharT __c)
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2255:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2295:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, const _CharT*, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator; size_type = long unsigned int]’
+ 2295 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2295:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2340:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, size_type, _CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator; size_type = long unsigned int]’
+ 2340 |       replace(__const_iterator __i1, __const_iterator __i2, size_type __n,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2340:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2399:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, _CharT*, _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator]’
+ 2399 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2399:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2411:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, const _CharT*, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator]’
+ 2411 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2411:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2423:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, iterator, iterator) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator; iterator = std::__cxx11::basic_string<char>::iterator]’
+ 2423 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2423:7: note:   candidate expects 4 arguments, 3 provided
+/usr/include/c++/13/bits/basic_string.h:2435:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::replace(__const_iterator, __const_iterator, const_iterator, const_iterator) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; __const_iterator = std::__cxx11::basic_string<char>::const_iterator; const_iterator = std::__cxx11::basic_string<char>::const_iterator]’
+ 2435 |       replace(__const_iterator __i1, __const_iterator __i2,
+      |       ^~~~~~~
+/usr/include/c++/13/bits/basic_string.h:2435:7: note:   candidate expects 4 arguments, 3 provided
+
+[TRACE] Validating outputs/gpp_strategy3/68.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/68.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/69.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/69.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/70.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/70.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/71.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/71.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/72.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/72.fuzz failed validation with error message: outputs/gpp_strategy3/72.fuzz:2:10: fatal error: new.cpp: No such file or directory
+    2 | #include "new.cpp"
+      |          ^~~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/gpp_strategy3/73.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/73.fuzz failed validation with error message: outputs/gpp_strategy3/73.fuzz:2:1: error: ‘B’ does not name a type
+    2 | B a;
+      | ^
+outputs/gpp_strategy3/73.fuzz:13:5: error: conflicting declaration of C function ‘int main(int, char**)’
+   13 | int main(int argc, char *argv[])
+      |     ^~~~
+outputs/gpp_strategy3/73.fuzz:3:5: note: previous declaration ‘int main()’
+    3 | int main()
+      |     ^~~~
+
+[TRACE] Validating outputs/gpp_strategy3/74.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/74.fuzz failed validation with error message: outputs/gpp_strategy3/74.fuzz:2:9: error: ‘find_max_num’ was not declared in this scope
+    2 | int a = find_max_num(0, 0);
+      |         ^~~~~~~~~~~~
+outputs/gpp_strategy3/74.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/74.fuzz:17:13: error: no match for ‘operator==’ (operand types are ‘A’ and ‘B’)
+   17 |     return(a==b);
+      |            ~^~~
+      |            |  |
+      |            A  B
+
+[TRACE] Validating outputs/gpp_strategy3/75.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/75.fuzz failed validation with error message: outputs/gpp_strategy3/75.fuzz:29:33: warning: missing terminating ' character
+   29 |         vec.push_back(text[i] - '0
+      |                                 ^
+outputs/gpp_strategy3/75.fuzz:29:33: error: missing terminating ' character
+   29 |         vec.push_back(text[i] - '0
+      |                                 ^~
+outputs/gpp_strategy3/75.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/75.fuzz:28:30: error: request for member ‘length’ in ‘text’, which is of non-class type ‘const char* const’
+   28 |     for(auto i = 0; i < text.length(); ++i) {
+      |                              ^~~~~~
+outputs/gpp_strategy3/75.fuzz:29:32: error: expected primary-expression at end of input
+   29 |         vec.push_back(text[i] - '0
+      |                                ^
+outputs/gpp_strategy3/75.fuzz:29:32: error: expected ‘}’ at end of input
+outputs/gpp_strategy3/75.fuzz:28:45: note: to match this ‘{’
+   28 |     for(auto i = 0; i < text.length(); ++i) {
+      |                                             ^
+outputs/gpp_strategy3/75.fuzz:29:32: error: expected ‘}’ at end of input
+   29 |         vec.push_back(text[i] - '0
+      |                                ^
+outputs/gpp_strategy3/75.fuzz:24:1: note: to match this ‘{’
+   24 | {
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy3/76.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/76.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/77.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/77.fuzz failed validation with error message: outputs/gpp_strategy3/77.fuzz: In constructor ‘Node::Node()’:
+outputs/gpp_strategy3/77.fuzz:5:5: error: uninitialized reference member in ‘int&’ [-fpermissive]
+    5 |     Node() {
+      |     ^~~~
+outputs/gpp_strategy3/77.fuzz:25:10: note: ‘int& Node::data’ should be initialized
+   25 |     int& data;
+      |          ^~~~
+outputs/gpp_strategy3/77.fuzz: In member function ‘Node& Node::operator++()’:
+outputs/gpp_strategy3/77.fuzz:20:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   20 |     }
+      |     ^
+outputs/gpp_strategy3/77.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/77.fuzz:34:27: error: expected ‘,’ or ‘;’ at end of input
+   34 |     Node* node1 = new Node
+      |                           ^
+outputs/gpp_strategy3/77.fuzz:34:27: error: expected ‘}’ at end of input
+outputs/gpp_strategy3/77.fuzz:33:1: note: to match this ‘{’
+   33 | {
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy3/78.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/78.fuzz failed validation with error message: outputs/gpp_strategy3/78.fuzz: In function ‘int FindMax2(A, A)’:
+outputs/gpp_strategy3/78.fuzz:17:9: error: no match for ‘operator>’ (operand types are ‘A’ and ‘A’)
+   17 |    if(a > b)    result = a;
+      |       ~ ^ ~
+      |       |   |
+      |       A   A
+outputs/gpp_strategy3/78.fuzz:17:26: error: cannot convert ‘A’ to ‘int’ in assignment
+   17 |    if(a > b)    result = a;
+      |                          ^
+      |                          |
+      |                          A
+outputs/gpp_strategy3/78.fuzz:18:9: error: no match for ‘operator>’ (operand types are ‘A’ and ‘int’)
+   18 |    if(b > result)  result = b;
+      |       ~ ^ ~~~~~~
+      |       |   |
+      |       A   int
+outputs/gpp_strategy3/78.fuzz:18:29: error: cannot convert ‘A’ to ‘int’ in assignment
+   18 |    if(b > result)  result = b;
+      |                             ^
+      |                             |
+      |                             A
+
+[TRACE] Validating outputs/gpp_strategy3/79.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/79.fuzz failed validation with error message: outputs/gpp_strategy3/79.fuzz:22:26: error: return type ‘struct E’ is incomplete
+   22 |     struct E operator*() { std::cout << "D=*E\n"; return D(); }
+      |                          ^
+outputs/gpp_strategy3/79.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/79.fuzz:29:18: error: no match for ‘operator=’ (operand types are ‘D’ and ‘C’)
+   29 |     D& d2 = d1 = c;
+      |                  ^
+outputs/gpp_strategy3/79.fuzz:21:10: note: candidate: ‘void D::operator=(C*)’
+   21 |     void operator=(C*) { std::cout << "D=*&C\n"; }
+      |          ^~~~~~~~
+outputs/gpp_strategy3/79.fuzz:21:20: note:   no known conversion for argument 1 from ‘C’ to ‘C*’
+   21 |     void operator=(C*) { std::cout << "D=*&C\n"; }
+      |                    ^~
+outputs/gpp_strategy3/79.fuzz:18:8: note: candidate: ‘constexpr D& D::operator=(const D&)’
+   18 | struct D
+      |        ^
+outputs/gpp_strategy3/79.fuzz:18:8: note:   no known conversion for argument 1 from ‘C’ to ‘const D&’
+outputs/gpp_strategy3/79.fuzz:18:8: note: candidate: ‘constexpr D& D::operator=(D&&)’
+outputs/gpp_strategy3/79.fuzz:18:8: note:   no known conversion for argument 1 from ‘C’ to ‘D&&’
+
+[TRACE] Validating outputs/gpp_strategy3/80.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/80.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/81.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/81.fuzz failed validation with error message: outputs/gpp_strategy3/81.fuzz: In function ‘int find_max_num2(int, int)’:
+outputs/gpp_strategy3/81.fuzz:6:35: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+    6 |     cout << "A: "<<a<<", B: "<<b<<endl;
+      |                                   ^~~~
+      |                                   std::endl
+In file included from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy3/81.fuzz:1:
+/usr/include/c++/13/ostream:735:5: note: ‘std::endl’ declared here
+  735 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+outputs/gpp_strategy3/81.fuzz:8:21: error: no match for call to ‘(std::uniform_int_distribution<int>) (std::default_random_engine)’
+    8 |     return r_uniform(std::default_random_engine{});
+      |            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/bits/stl_algo.h:65,
+                 from /usr/include/c++/13/algorithm:61,
+                 from outputs/gpp_strategy3/81.fuzz:3:
+/usr/include/c++/13/bits/uniform_int_dist.h:203:9: note: candidate: ‘std::uniform_int_distribution<_IntType>::result_type std::uniform_int_distribution<_IntType>::operator()(_UniformRandomBitGenerator&) [with _UniformRandomBitGenerator = std::linear_congruential_engine<long unsigned int, 16807, 0, 2147483647>; _IntType = int; result_type = int]’ (near match)
+  203 |         operator()(_UniformRandomBitGenerator& __urng)
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/uniform_int_dist.h:203:9: note:   conversion of argument 1 would be ill-formed:
+outputs/gpp_strategy3/81.fuzz:8:27: error: cannot bind non-const lvalue reference of type ‘std::linear_congruential_engine<long unsigned int, 16807, 0, 2147483647>&’ to an rvalue of type ‘std::default_random_engine’ {aka ‘std::linear_congruential_engine<long unsigned int, 16807, 0, 2147483647>’}
+    8 |     return r_uniform(std::default_random_engine{});
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/uniform_int_dist.h:208:9: note: candidate: ‘template<class _UniformRandomBitGenerator> std::uniform_int_distribution<_IntType>::result_type std::uniform_int_distribution<_IntType>::operator()(_UniformRandomBitGenerator&, const param_type&) [with _IntType = int]’
+  208 |         operator()(_UniformRandomBitGenerator& __urng,
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/uniform_int_dist.h:208:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy3/81.fuzz:8:21: note:   candidate expects 2 arguments, 1 provided
+    8 |     return r_uniform(std::default_random_engine{});
+      |            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/82.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/82.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/83.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/83.fuzz failed validation with error message: /usr/bin/ld: /tmp/ccMoJ9cR.o: in function `main':
+83.fuzz:(.text+0x23): undefined reference to `B::do_something()'
+collect2: error: ld returned 1 exit status
+
+[TRACE] Validating outputs/gpp_strategy3/84.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/84.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/85.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/85.fuzz failed validation with error message: outputs/gpp_strategy3/85.fuzz: In function ‘int find_max_num(int, int)’:
+outputs/gpp_strategy3/85.fuzz:8:14: error: ‘max_num’ was not declared in this scope
+    8 |     return a+max_num;
+      |              ^~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/86.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/86.fuzz failed validation with error message: outputs/gpp_strategy3/86.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/86.fuzz:6:34: error: ‘find_max_num’ was not declared in this scope
+    6 |     std::cout << "max_num = " << find_max_num(2,2) << '\n';
+      |                                  ^~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/87.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/87.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/88.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/88.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/89.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/89.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/90.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/90.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/91.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/91.fuzz failed validation with error message: outputs/gpp_strategy3/91.fuzz: In function ‘int find_max_num(int, int)’:
+outputs/gpp_strategy3/91.fuzz:4:12: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    4 |     return max(a,b);
+      |            ^~~
+      |            std::max
+In file included from /usr/include/c++/13/string:51,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy3/91.fuzz:1:
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+outputs/gpp_strategy3/91.fuzz: In function ‘int greet_people(const std::string&, const std::string&)’:
+outputs/gpp_strategy3/91.fuzz:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   16 | }
+      | ^
+outputs/gpp_strategy3/91.fuzz: At global scope:
+outputs/gpp_strategy3/91.fuzz:17:5: error: redefinition of ‘int main()’
+   17 | int main() {
+      |     ^~~~
+outputs/gpp_strategy3/91.fuzz:6:5: note: ‘int main()’ previously defined here
+    6 | int main(void)
+      |     ^~~~
+
+[TRACE] Validating outputs/gpp_strategy3/92.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/92.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/93.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/93.fuzz failed validation with error message: outputs/gpp_strategy3/93.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/93.fuzz:6:9: error: ‘find_max_num’ was not declared in this scope
+    6 |     x = find_max_num(10,y);
+      |         ^~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/94.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/94.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/95.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/95.fuzz failed validation with error message: outputs/gpp_strategy3/95.fuzz: In function ‘int func1(int, int)’:
+outputs/gpp_strategy3/95.fuzz:4:12: error: ‘find_max_num’ was not declared in this scope
+    4 |     return find_max_num(a, b);
+      |            ^~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/96.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/96.fuzz failed validation with error message: outputs/gpp_strategy3/96.fuzz: In function ‘int main()’:
+outputs/gpp_strategy3/96.fuzz:37:18: error: ‘find_max_num’ was not declared in this scope
+   37 |     std::cout << find_max_num(2,3)<< std::endl;
+      |                  ^~~~~~~~~~~~
+outputs/gpp_strategy3/96.fuzz:52:5: error: ‘console_output’ has not been declared
+   52 |     console_output::console_clear();
+      |     ^~~~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/97.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/97.fuzz failed validation with error message: outputs/gpp_strategy3/97.fuzz:10:5: error: redefinition of ‘int find_max_num(int, int)’
+   10 | int find_max_num(int a, int b)
+      |     ^~~~~~~~~~~~
+outputs/gpp_strategy3/97.fuzz:2:5: note: ‘int find_max_num(int, int)’ previously defined here
+    2 | int find_max_num(int a, int b)
+      |     ^~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy3/98.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/98.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy3/99.fuzz ...
+[VERBOSE] outputs/gpp_strategy3/99.fuzz is safe

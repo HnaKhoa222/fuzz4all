@@ -1,0 +1,23 @@
+#include <iostream>
+struct A
+{
+public:
+    A() : b(new A()) { }
+    A* a;
+    A b;
+};
+void f()
+{
+    A x;
+    A* a = &x;
+    using std::cin;
+    cin >> *a;
+    #pragma warning(disable:4244)
+    std::cout << *a;
+}
+int main()
+{
+     
+    f();
+    return 0;
+}

@@ -1,0 +1,22 @@
+Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.

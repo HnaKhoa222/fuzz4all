@@ -1,0 +1,12 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+/*
+Java-specific features (e.g., Optional, CompletableFuture):
+There are a few Java constructs that are specifically useful for implementing concurrent operations:
+Optional
+java.util.Optional
+java.util.Optional
+java.util.Optional
+java.util.Optional
+There

@@ -1,0 +1,10 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main {
+  @FunctionalInterface
+  public interface Function<X, Y> {
+    Y apply(X x);
+  }
+
+  public static <U> U andThen(Function<U, U> before, Function<U, U> after) {
+    return before.apply(

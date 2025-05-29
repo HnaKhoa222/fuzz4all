@@ -1,0 +1,21 @@
+#include <iostream>
+
+
+struct my_class 
+{
+     my_class() {}
+    int x;
+    ~my_class() {}
+};
+
+namespace std 
+{
+    template <class T, class U, class V>
+    struct ptrdiff;
+}
+int main() throw()
+{
+    std::ptrdiff(my_class{2}, &my_class::x);
+    for(;;)
+        getchar();
+}

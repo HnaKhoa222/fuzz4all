@@ -1,0 +1,27 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+     
+    {
+        int max_num = b;
+    }
+    return a+max_num;
+}
+ 
+class testClass
+{
+     
+    int a;
+    void test()
+    {
+        delete this;
+    }
+};
+int main()
+{
+    {
+        testClass obj;
+    }
+    std::cout << find_max_num(100,200) << std::endl;
+    return 0;
+}

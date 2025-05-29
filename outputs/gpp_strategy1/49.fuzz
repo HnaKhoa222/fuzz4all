@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+inline std::string operator+(const std::string& a,const std::string&b) {
+    return a + ++b;
+}
+ 
+#include <iostream>
+template <typename T1,typename... T2>
+struct generic1stFunc;
+template <typename T>
+struct generic1stFunc<T> {};
+template <>
+struct generic1stFunc<char> {};
+template <>
+struct generic1stFunc<bool> {};
+ 
+#include <iostream>
+template <typename T>
+struct generic1stFunc {
+    T operator[](int ind) {return ind;}
+    T operator()(int ind1,int ind2) {return ind1;}
+    T operator()(T ind) {return ind;}
+};
+template <>
+struct generic1stFunc<char> {
+    char operator[](int ind) {return ind;}
+    char operator()(int ind1,int ind2) {return ind1;}
+    char operator()(char ind) {return ind;}
+};
+template <>
+struct generic1stFunc<bool> {
+    bool operator[](int ind) {return ind;}
+    bool operator()(int ind1,int ind2) {return ind1;}
+    bool operator()(bool ind) {return ind;}
+};
+template <typename T>
+struct generic2ndFunc {
+    template <typename U>
+    U operator[](int ind) {return ind;}
+    template <typename U>
+    U operator()(int ind1,int ind2) {return ind1;}
+    template <

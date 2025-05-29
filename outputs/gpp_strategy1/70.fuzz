@@ -1,0 +1,13 @@
+#include <iostream>
+ 
+inline std::string operator+(const std::string& x, double) {
+    if (x == "-x") { return x; }
+    return x + "--";
+}
+int main() {
+    std::cout << "--" << std::endl;
+    std::cout << "test: " << ++std::string("+x;", 0.0)!= "--";
+    std::cout << "test: " << std::string("-x", 0.0)!= "--";
+    std::cout << std::endl;
+    return 0;
+}

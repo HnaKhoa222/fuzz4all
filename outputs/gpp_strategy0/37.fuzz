@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stack>
+#include <string>
+#include <vector>
+#include <cmath>
+template<typename T>
+void printarr(T* arr, int n) {
+    for (auto j = 0; j < n; j++){
+        std::cout << *(j+arr);
+    }
+}
+
+void f( std::vector<int>& vec) {
+    std::cout << "Enter the vector's size\n";
+    int n;
+    cin >> n;
+    std::cout << "Enter element " << n << " element" << (n==1?"":"s") << " in the vector\n";
+    int val;
+    while (cin >> val){
+        vec.push_back(val);
+    }
+    int k;
+    std::cout << "Enter the size for k-th sub-element of the vector\n";
+    cin >> k;
+    std::vector<int> subset = vec.substr(0, k);
+    std::cout << "K'th element from the vector is : " << subset[k-1] << "\n ";
+     
+}

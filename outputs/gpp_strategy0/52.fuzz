@@ -1,0 +1,8 @@
+#include <iostream>
+int main() {
+    std::string name{ "Hello "} << "Name";
+    auto& x = 10;
+
+    std::cout << name << "::" <<x;
+    return 0;
+}

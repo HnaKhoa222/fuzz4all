@@ -1,0 +1,6 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+This exercise is too easy for you to pass - try it. But if you use multiple programming languages:
+
+Generate the following program using one of the exercises above and a new programming language.
+ */

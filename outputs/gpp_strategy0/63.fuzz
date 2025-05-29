@@ -1,0 +1,6 @@
+#include <iostream>
+int main() {
+    int num(7);
+    std::cout << num;
+    return 0;
+}

@@ -1,0 +1,43 @@
+#include <iostream>
+inline std::string operator+(const std::string& x,const std::string& y) {
+    return x+"--"+y;
+}
+#endif
+
+/* 
+What would happen when this is compiled? 
+
+The result would usually involve an infinite recursive loop and the following errors in your compiler 
+error. Note the compiler can not be prevented from using such a silly program and it would run forever.
+
+```
+In file included from./recursive.cpp:15:
+./recursive.cpp:12:13: error: unintialized use of type name
+     std::string r =  "- " + x ;
+             ^
+         std::string
+./recursive.cpp:12:46: error: unintialized use of type name
+       std::string r =  "- " + x ;
+                                                ^
+         std::string
+           
+```   
+ 
+Please reformat the code and use your debugger/REPL to verify that your program is safe.
+
+A mutated program should be accepted by the runtime, you've got nothing more to prevent that.
+
+```
+In file included from./mutated.cpp:15:
+./mutated.cpp:14:13: error: unintialized use of type name
+     std::string r =  x + "->" + y ;
+             ^
+       std::string
+./mutated.cpp:14:30: error: unintialized use of type name
+   std::string r =  x + "->" + y ;
+                             ^
+       std::string
+           
+```   
+ 
+Please reformat the code and use your debugger/REPL to verify

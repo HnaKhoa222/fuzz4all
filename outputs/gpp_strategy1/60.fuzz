@@ -1,0 +1,16 @@
+#include <iostream>
+inline int operator[](const int& x) {
+    return x + 1;
+}
+ 
+#include <iostream>
+class MyClass {
+private:
+    int number;
+public:
+    MyClass() : number(0) {}
+    int operator()() {
+        std::cout << "Operator called!" << std::endl;
+        return number;
+    }
+};

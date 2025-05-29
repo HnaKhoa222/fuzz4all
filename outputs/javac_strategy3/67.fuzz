@@ -1,0 +1,7 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+@Test
+public void test1(@Timeout(3))
+	public void test2() throws NoSuchMethodException, SecurityException, ClassNotFoundException, TimeoutException, InterruptedException, IOException {
+		String testString = "21m47s23";
+		int testValue = 

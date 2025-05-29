@@ -1,0 +1,13 @@
+#include <iostream>
+class vector<int>{
+public:
+    vector()
+    {
+        for(int i=0;i<max;i=i+1)
+        cout<<"a"<<endl;
+    }
+private:
+    int max;
+};
+vector<int> a;
+vector<int> b;

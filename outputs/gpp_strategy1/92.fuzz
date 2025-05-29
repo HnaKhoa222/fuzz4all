@@ -1,0 +1,22 @@
+#include <iostream>
+#include <stdexcept>
+#include <string>
+std::string remove_prefix(const std::string& s, const std::string& prefix) {
+   if (s.compare(0, prefix.size(), prefix) == 0) {
+       std::string::size_type pos = prefix.size();
+       if ((pos < s.length()) && (s[prefix.size()] =='')) {
+          std::string::size_type end = s.find(' ', 2*pos);
+          if (end && ((end < 0) || (end < pos) || (end+1 > s.length()-1))) {
+             return s.substr(pos);
+          }
+       }
+    }
+    return "";
+}
+int main() {
+    std::string str1 = "test";
+    std::cout << str1 << '\n';
+    std::string str2     = remove_prefix(str1, "test");
+    std::cout << str2 << '\n';
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main() {
+    std::string s{"hello"};
+    std::cout << s;
+    auto x = std::make_ostreambuf_iterator(std::cout);
+    auto x2 = x;
+    
+    x.pbase();
+    x2.pbase();
+    *x2 = 'z';
+    
+    std::string z{x};
+    z(x2);
+
+    return 0;
+}

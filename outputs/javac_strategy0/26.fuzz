@@ -1,0 +1,12 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+public class Main {
+    public static void main(String[] args) {
+        for (int i : args) {
+            System.out.println(i);
+        }
+    }
+ }
+public class Main {
+    public static void main(String[] args) {
+        for (int

@@ -1,0 +1,8 @@
+#include <iostream>
+int main() {
+    const int a = 3;
+    const int b = 5;
+    const int c = a / b;
+    std::cout << "result: " << c;
+    return 0;
+}

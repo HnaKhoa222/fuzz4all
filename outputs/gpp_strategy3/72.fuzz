@@ -1,0 +1,19 @@
+#include <iostream>
+#include "new.cpp"
+int main()
+{
+    struct X
+    {
+        X() {}
+        ~X() {}
+        X(const X&) {}
+        X(X&&) noexcept {}
+        X(int i) { m = i; }
+        ~X() {}
+        void operator++() {}
+        int m;
+    };
+    X x;
+    x++;
+    return(0);
+}

@@ -1,0 +1,6 @@
+#include <iostream>
+int main() {
+    std::string name{"Hello"};
+    name = "World!";
+    return 0;
+}

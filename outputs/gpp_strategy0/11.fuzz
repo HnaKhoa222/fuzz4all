@@ -1,0 +1,9 @@
+#include <iostream>
+int main() {
+    printf("Hello, World!");
+    std::cout << "World";
+    std::cin >> a;
+    printf("Hello, %zu! Your number is %d", 456u, a);
+
+    return 0;
+}

@@ -1,0 +1,10 @@
+#include <iostream>
+int main() {
+    do {
+        static_assert(isodd(42));
+        if (false) {
+        }
+    } while (0);
+    std::cout << "Hello " << 42;
+    return 0;
+}

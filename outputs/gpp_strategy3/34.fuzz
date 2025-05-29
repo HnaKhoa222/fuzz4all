@@ -1,0 +1,10 @@
+#include <iostream>
+int find_max_num(int a, int b);
+int a = 4;
+int b = 5;
+
+int main()
+{
+    find_max_num(a, b);
+    return 0;
+}

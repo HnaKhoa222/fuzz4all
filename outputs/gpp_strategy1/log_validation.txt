@@ -1,0 +1,2340 @@
+[TRACE] Validating outputs/gpp_strategy1/0.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/0.fuzz failed validation with error message: outputs/gpp_strategy1/0.fuzz:2:2: error: expected declaration before ‘}’ token
+    2 |  }
+      |  ^
+outputs/gpp_strategy1/0.fuzz:7:23: error: ‘constexpr’ static data member ‘ptr’ must have an initializer
+    7 |   static constexpr U* ptr;
+      |                       ^~~
+outputs/gpp_strategy1/0.fuzz: In function ‘D f2c()’:
+outputs/gpp_strategy1/0.fuzz:21:12: error: cannot convert ‘D (*)()’ {aka ‘int (*)()’} to ‘int*’ in initialization
+   21 |   int* p = &g;
+      |            ^~
+      |            |
+      |            D (*)() {aka int (*)()}
+outputs/gpp_strategy1/0.fuzz:22:9: error: wrong type argument to unary minus
+   22 |   *p = -g;
+      |         ^
+
+[TRACE] Validating outputs/gpp_strategy1/1.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/1.fuzz failed validation with error message: outputs/gpp_strategy1/1.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/1.fuzz:18:9: error: ‘strcpy’ was not declared in this scope
+   18 |         strcpy(p, "asdf");
+      |         ^~~~~~
+outputs/gpp_strategy1/1.fuzz:4:1: note: ‘strcpy’ is defined in header ‘<cstring>’; did you forget to ‘#include <cstring>’?
+    3 | #include <algorithm>
+  +++ |+#include <cstring>
+    4 | 
+
+[TRACE] Validating outputs/gpp_strategy1/2.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/2.fuzz failed validation with error message: outputs/gpp_strategy1/2.fuzz:9:5: error: ‘list’ does not name a type
+    9 |     list<int> elems;
+      |     ^~~~
+outputs/gpp_strategy1/2.fuzz: In member function ‘void Vector::push_back(int)’:
+outputs/gpp_strategy1/2.fuzz:12:9: error: ‘elems’ was not declared in this scope
+   12 |         elems.push_back(e);
+      |         ^~~~~
+outputs/gpp_strategy1/2.fuzz: In member function ‘int Vector::pop_back()’:
+outputs/gpp_strategy1/2.fuzz:16:17: error: ‘elems’ was not declared in this scope
+   16 |         int e = elems.back();
+      |                 ^~~~~
+outputs/gpp_strategy1/2.fuzz: In member function ‘int Vector::size()’:
+outputs/gpp_strategy1/2.fuzz:22:16: error: ‘elems’ was not declared in this scope
+   22 |         return elems.size();
+      |                ^~~~~
+outputs/gpp_strategy1/2.fuzz: In function ‘std::ostream& operator<<(std::ostream&, const Vector&)’:
+outputs/gpp_strategy1/2.fuzz:29:20: error: ‘const class Vector’ has no member named ‘elems’
+   29 |     for(auto i : v.elems) ost << i<<"\t";
+      |                    ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/3.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/3.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/4.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/4.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/5.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/5.fuzz failed validation with error message: outputs/gpp_strategy1/5.fuzz:3:10: fatal error: gtest/gtest.h: No such file or directory
+    3 | #include "gtest/gtest.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/gpp_strategy1/6.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/6.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/7.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/7.fuzz failed validation with error message: outputs/gpp_strategy1/7.fuzz:7:2: error: #endif without #if
+    7 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/8.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/8.fuzz failed validation with error message: outputs/gpp_strategy1/8.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/8.fuzz:18:28: error: no matching function for call to ‘my_class::my_class(<brace-enclosed initializer list>)’
+   18 |     std::ptrdiff(my_class{2}, &my_class::x);
+      |                            ^
+outputs/gpp_strategy1/8.fuzz:6:6: note: candidate: ‘my_class::my_class()’
+    6 |      my_class() {}
+      |      ^~~~~~~~
+outputs/gpp_strategy1/8.fuzz:6:6: note:   candidate expects 0 arguments, 1 provided
+outputs/gpp_strategy1/8.fuzz:4:8: note: candidate: ‘constexpr my_class::my_class(const my_class&)’
+    4 | struct my_class
+      |        ^~~~~~~~
+outputs/gpp_strategy1/8.fuzz:4:8: note:   no known conversion for argument 1 from ‘int’ to ‘const my_class&’
+
+[TRACE] Validating outputs/gpp_strategy1/9.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/9.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/10.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/10.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/11.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/11.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/12.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/12.fuzz failed validation with error message: outputs/gpp_strategy1/12.fuzz:2:19: warning: extra tokens at end of #include directive
+    2 | #include <string> class Mutated { std::string text1, text2; };
+      |                   ^~~~~
+outputs/gpp_strategy1/12.fuzz:3:1: error: ‘Mutated’ does not name a type
+    3 | Mutated mut = { "some text", "more text" };
+      | ^~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/13.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/13.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/14.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/14.fuzz failed validation with error message: outputs/gpp_strategy1/14.fuzz:8:22: error: redefinition of ‘std::ostream& operator<<(std::ostream&, std::string)’
+    8 | inline std::ostream& operator<<(std::ostream& out, std::string x) {
+      |                      ^~~~~~~~
+outputs/gpp_strategy1/14.fuzz:2:22: note: ‘std::ostream& operator<<(std::ostream&, std::string)’ previously defined here
+    2 | inline std::ostream& operator<<(std::ostream& out, std::string x) {
+      |                      ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/15.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/15.fuzz failed validation with error message: outputs/gpp_strategy1/15.fuzz:7:2: error: expected ‘;’ after struct definition
+    7 | }
+      |  ^
+      |  ;
+
+[TRACE] Validating outputs/gpp_strategy1/16.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/16.fuzz failed validation with error message: outputs/gpp_strategy1/16.fuzz: In function ‘std::ostream& operator<<(std::ostream&, bool)’:
+outputs/gpp_strategy1/16.fuzz:3:9: error: ambiguous overload for ‘operator<<’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘bool’)
+    3 |     out << x;
+      |     ~~~ ^~ ~
+      |     |      |
+      |     |      bool
+      |     std::ostream {aka std::basic_ostream<char>}
+In file included from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/16.fuzz:1:
+/usr/include/c++/13/ostream:168:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:172:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:176:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+In file included from /usr/include/c++/13/ostream:880:
+/usr/include/c++/13/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:183:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:194:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:203:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:207:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:222:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:226:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:234:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:241:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float16) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  241 |       operator<<(_Float16 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:250:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float32) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  250 |       operator<<(_Float32 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:259:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float64) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  259 |       operator<<(_Float64 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:277:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__gnu_cxx::__bfloat16_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __gnu_cxx::__bfloat16_t = __bf16]’
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |       ^~~~~~~~
+outputs/gpp_strategy1/16.fuzz:2:22: note: candidate: ‘std::ostream& operator<<(std::ostream&, bool)’
+    2 | inline std::ostream& operator<<(std::ostream& out, bool x) {
+      |                      ^~~~~~~~
+outputs/gpp_strategy1/16.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/16.fuzz:10:33: error: ambiguous overload for ‘operator<<’ (operand types are ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} and ‘bool’)
+   10 |     std::cout << std::boolalpha << x << std::endl;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^~ ~
+      |               |                    |
+      |               |                    bool
+      |               std::basic_ostream<char>::__ostream_type {aka std::basic_ostream<char>}
+/usr/include/c++/13/ostream:168:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:172:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:176:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:183:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:194:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:203:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:207:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:222:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:226:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:234:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:241:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float16) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  241 |       operator<<(_Float16 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:250:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float32) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  250 |       operator<<(_Float32 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:259:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float64) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  259 |       operator<<(_Float64 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:277:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__gnu_cxx::__bfloat16_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __gnu_cxx::__bfloat16_t = __bf16]’
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |       ^~~~~~~~
+outputs/gpp_strategy1/16.fuzz:2:22: note: candidate: ‘std::ostream& operator<<(std::ostream&, bool)’
+    2 | inline std::ostream& operator<<(std::ostream& out, bool x) {
+      |                      ^~~~~~~~
+outputs/gpp_strategy1/16.fuzz:11:33: error: ambiguous overload for ‘operator<<’ (operand types are ‘std::basic_ostream<char>::__ostream_type’ {aka ‘std::basic_ostream<char>’} and ‘bool’)
+   11 |     std::cout << std::boolalpha << y << std::endl;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^~ ~
+      |               |                    |
+      |               |                    bool
+      |               std::basic_ostream<char>::__ostream_type {aka std::basic_ostream<char>}
+/usr/include/c++/13/ostream:168:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:172:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:176:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:183:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:194:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:203:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:207:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:222:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:226:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:234:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:241:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float16) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  241 |       operator<<(_Float16 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:250:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float32) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  250 |       operator<<(_Float32 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:259:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float64) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  259 |       operator<<(_Float64 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:277:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__gnu_cxx::__bfloat16_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __gnu_cxx::__bfloat16_t = __bf16]’
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |       ^~~~~~~~
+outputs/gpp_strategy1/16.fuzz:2:22: note: candidate: ‘std::ostream& operator<<(std::ostream&, bool)’
+    2 | inline std::ostream& operator<<(std::ostream& out, bool x) {
+      |                      ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/17.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/17.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/18.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/18.fuzz failed validation with error message: outputs/gpp_strategy1/18.fuzz: In function ‘std::ostream& operator<<(std::ostream&, std::string)’:
+outputs/gpp_strategy1/18.fuzz:3:29: error: no match for ‘operator=’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘std::__cxx11::basic_string<char>’)
+    3 |     out = "string_class_" + x;
+      |                             ^
+In file included from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/18.fuzz:1:
+/usr/include/c++/13/ostream:449:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator=(std::basic_ostream<_CharT, _Traits>&&) [with _CharT = char; _Traits = std::char_traits<char>]’
+  449 |       operator=(basic_ostream&& __rhs)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:449:33: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::basic_ostream<char>&&’
+  449 |       operator=(basic_ostream&& __rhs)
+      |                 ~~~~~~~~~~~~~~~~^~~~~
+outputs/gpp_strategy1/18.fuzz: At global scope:
+outputs/gpp_strategy1/18.fuzz:11:52: error: ‘add’ is not a type
+   11 | inline std::ostream& operator<<(std::ostream& out, add x) {
+      |                                                    ^~~
+
+[TRACE] Validating outputs/gpp_strategy1/19.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/19.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/20.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/20.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/21.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/21.fuzz failed validation with error message: outputs/gpp_strategy1/21.fuzz:9:10: fatal error: test_string: No such file or directory
+    9 | #include "test_string"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/gpp_strategy1/22.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/22.fuzz failed validation with error message: outputs/gpp_strategy1/22.fuzz:2:20: error: ‘std::string operator+=(std::string&)’ must have exactly two arguments
+    2 | inline std::string operator+=(std::string& x) {
+      |                    ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/23.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/23.fuzz failed validation with error message: outputs/gpp_strategy1/23.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/23.fuzz:3:19: error: wrong type argument to bit-complement
+    3 |     std::cout << ~"Hello";
+      |                   ^~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/24.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/24.fuzz failed validation with error message: outputs/gpp_strategy1/24.fuzz: In member function ‘int bad::operator+(bad)’:
+outputs/gpp_strategy1/24.fuzz:9:20: error: no match for ‘operator++’ (operand type is ‘bad’)
+    9 |             return ++x;
+      |                    ^~~
+outputs/gpp_strategy1/24.fuzz: At global scope:
+outputs/gpp_strategy1/24.fuzz:13:6: error: ‘vector’ in namespace ‘std’ does not name a template type
+   13 | std::vector<int> generateNonWorkingCode();
+      |      ^~~~~~
+outputs/gpp_strategy1/24.fuzz:2:1: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+    1 | #include <iostream>
+  +++ |+#include <vector>
+    2 | #include <string>
+
+[TRACE] Validating outputs/gpp_strategy1/25.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/25.fuzz failed validation with error message: outputs/gpp_strategy1/25.fuzz:37:2: error: #endif without #if
+   37 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/26.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/26.fuzz failed validation with error message: outputs/gpp_strategy1/26.fuzz:3:1: error: ‘inlines’ does not name a type; did you mean ‘inline’?
+    3 | inlines bool operator!=(const std::string& x, const std::string& y) {
+      | ^~~~~~~
+      | inline
+outputs/gpp_strategy1/26.fuzz:7:89: error: expected ‘)’ before ‘...’ token
+    7 | template<typename... _> auto tuple_join(auto &&value, const _... args) -> decltype((args...), (value + ",")) {
+      |                                                                                    ~    ^~~
+      |                                                                                         )
+outputs/gpp_strategy1/26.fuzz:9:2: error: expected initializer at end of input
+    9 | }
+      |  ^
+
+[TRACE] Validating outputs/gpp_strategy1/27.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/27.fuzz failed validation with error message: outputs/gpp_strategy1/27.fuzz:27:2: error: #endif without #if
+   27 | #endif
+      |  ^~~~~
+outputs/gpp_strategy1/27.fuzz: In function ‘std::string operator+=(std::string&, const std::string&)’:
+outputs/gpp_strategy1/27.fuzz:3:38: error: passing ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} as ‘this’ argument discards qualifiers [-fpermissive]
+    3 |     if (y[0] == y.c_str()[1]) y.erase(y.begin());
+      |                               ~~~~~~~^~~~~~~~~~~
+In file included from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/27.fuzz:1:
+/usr/include/c++/13/bits/basic_string.h:2089:7: note:   in call to ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::iterator std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::erase(__const_iterator) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; iterator = std::__cxx11::basic_string<char>::iterator; __const_iterator = std::__cxx11::basic_string<char>::const_iterator]’
+ 2089 |       erase(__const_iterator __position)
+      |       ^~~~~
+outputs/gpp_strategy1/27.fuzz:6:27: error: ‘std::string’ {aka ‘class std::__cxx11::basic_string<char>’} has no member named ‘remove_prefix’
+    6 |         if (y[0]!= '+') x.remove_prefix(1);
+      |                           ^~~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/28.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/28.fuzz failed validation with error message: outputs/gpp_strategy1/28.fuzz: In function ‘std::string operator++(std::string&)’:
+outputs/gpp_strategy1/28.fuzz:4:14: error: no ‘operator++(int)’ declared for postfix ‘++’ [-fpermissive]
+    4 |     return (x++)++;
+      |             ~^~
+
+[TRACE] Validating outputs/gpp_strategy1/29.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/29.fuzz failed validation with error message: outputs/gpp_strategy1/29.fuzz:18:11: error: ‘namespace m { }’ redeclared as different kind of entity
+   18 | namespace m {
+      |           ^
+outputs/gpp_strategy1/29.fuzz:13:13: note: previous declaration ‘std::string m(const std::string&)’
+   13 | std::string m( const std::string &str ) {
+      |             ^
+
+[TRACE] Validating outputs/gpp_strategy1/30.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/30.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/31.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/31.fuzz failed validation with error message: outputs/gpp_strategy1/31.fuzz: In function ‘std::string operator-(const std::string&)’:
+outputs/gpp_strategy1/31.fuzz:4:16: error: no match for ‘operator=’ (operand types are ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} and ‘std::__cxx11::basic_string<char>’)
+    4 |     x = "--" + x;
+      |                ^
+In file included from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/31.fuzz:1:
+/usr/include/c++/13/bits/basic_string.h:853:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ (near match)
+  853 |       operator=(basic_string&& __str)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:853:7: note:   passing ‘const std::string*’ {aka ‘const std::__cxx11::basic_string<char>*’} as ‘this’ argument discards qualifiers
+/usr/include/c++/13/bits/basic_string.h:812:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ (near match)
+  812 |       operator=(const basic_string& __str)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:812:7: note:   passing ‘const std::string*’ {aka ‘const std::__cxx11::basic_string<char>*’} as ‘this’ argument discards qualifiers
+/usr/include/c++/13/bits/basic_string.h:921:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  921 |       operator=(initializer_list<_CharT> __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:921:42: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::initializer_list<char>’
+  921 |       operator=(initializer_list<_CharT> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:835:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  835 |       operator=(_CharT __c)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:835:24: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘char’
+  835 |       operator=(_CharT __c)
+      |                 ~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:823:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  823 |       operator=(const _CharT* __s)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:823:31: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const char*’
+  823 |       operator=(const _CharT* __s)
+      |                 ~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:936:8: note: candidate: ‘template<class _Tp> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  936 |        operator=(const _Tp& __svt)
+      |        ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:936:8: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/13/bits/move.h:37,
+                 from /usr/include/c++/13/bits/exception_ptr.h:41,
+                 from /usr/include/c++/13/exception:164,
+                 from /usr/include/c++/13/ios:41:
+/usr/include/c++/13/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::__cxx11::basic_string<char>&]’:
+/usr/include/c++/13/bits/basic_string.h:144:8:   required by substitution of ‘template<class _CharT, class _Traits, class _Alloc> template<class _Tp, class _Res> using std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv = std::enable_if_t<std::__and_<std::is_convertible<const _Tp&, std::basic_string_view<_CharT, _Traits> >, std::__not_<std::is_convertible<const _Tp*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>*> >, std::__not_<std::is_convertible<const _Tp&, const _CharT*> > >::value, _Res> [with _Tp = std::__cxx11::basic_string<char>; _Res = std::__cxx11::basic_string<char>&; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/usr/include/c++/13/bits/basic_string.h:936:8:   required by substitution of ‘template<class _Tp> constexpr std::__cxx11::basic_string<char>::_If_sv<_Tp, std::__cxx11::basic_string<char>&> std::__cxx11::basic_string<char>::operator=(const _Tp&) [with _Tp = std::__cxx11::basic_string<char>]’
+outputs/gpp_strategy1/31.fuzz:4:16:   required from here
+/usr/include/c++/13/type_traits:2610:11: error: no type named ‘type’ in ‘struct std::enable_if<false, std::__cxx11::basic_string<char>&>’
+ 2610 |     using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~
+outputs/gpp_strategy1/31.fuzz:5:1: warning: no return statement in function returning non-void [-Wreturn-type]
+    5 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy1/32.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/32.fuzz failed validation with error message: outputs/gpp_strategy1/32.fuzz:2:1: error: unterminated comment
+    2 | /* Please create a very short program which uses new C++ features in a complex way
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy1/33.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/33.fuzz failed validation with error message: outputs/gpp_strategy1/33.fuzz:2:13: error: ‘char operator-(const char&)’ must have an argument of class or enumerated type
+    2 | inline char operator-(const char& x) {
+      |             ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/34.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/34.fuzz failed validation with error message: outputs/gpp_strategy1/34.fuzz:14:6: error: ‘cout’ in namespace ‘std’ does not name a type
+   14 | std::cout << a.size() << std::endl;
+      |      ^~~~
+In file included from outputs/gpp_strategy1/34.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy1/34.fuzz:15:6: error: ‘cout’ in namespace ‘std’ does not name a type
+   15 | std::cout << a.c_str() << std::endl;
+      |      ^~~~
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy1/34.fuzz:16:6: error: ‘cout’ in namespace ‘std’ does not name a type
+   16 | std::cout << a << std::endl;
+      |      ^~~~
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy1/34.fuzz:17:6: error: ‘cout’ in namespace ‘std’ does not name a type
+   17 | std::cout << -(a) << std::endl;
+      |      ^~~~
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+
+[TRACE] Validating outputs/gpp_strategy1/35.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/35.fuzz failed validation with error message: outputs/gpp_strategy1/35.fuzz:4:2: error: #endif without #if
+    4 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/36.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/36.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/37.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/37.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/38.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/38.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/39.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/39.fuzz failed validation with error message: outputs/gpp_strategy1/39.fuzz:2:15: error: ‘double operator-(const double&, const double&)’ must have an argument of class or enumerated type
+    2 | inline double operator-(const double& x, const double& y) {
+      |               ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/40.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/40.fuzz failed validation with error message: outputs/gpp_strategy1/40.fuzz:7:7: error: field ‘b’ has incomplete type ‘A’
+    7 |     A b;
+      |       ^
+outputs/gpp_strategy1/40.fuzz:2:8: note: definition of ‘struct A’ is not complete until the closing brace
+    2 | struct A
+      |        ^
+outputs/gpp_strategy1/40.fuzz: In function ‘void f()’:
+outputs/gpp_strategy1/40.fuzz:14:9: error: no match for ‘operator>>’ (operand types are ‘std::istream’ {aka ‘std::basic_istream<char>’} and ‘A’)
+   14 |     cin >> *a;
+      |     ~~~ ^~ ~~
+      |     |      |
+      |     |      A
+      |     std::istream {aka std::basic_istream<char>}
+In file included from /usr/include/c++/13/iostream:42,
+                 from outputs/gpp_strategy1/40.fuzz:1:
+/usr/include/c++/13/istream:325:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  325 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:325:25: note:   no known conversion for argument 1 from ‘A’ to ‘void*&’
+  325 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+/usr/include/c++/13/istream:293:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__gnu_cxx::__bfloat16_t&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>; __gnu_cxx::__bfloat16_t = __bf16]’
+  293 |       operator>>(__gnu_cxx::__bfloat16_t & __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:293:44: note:   no known conversion for argument 1 from ‘A’ to ‘__gnu_cxx::__bfloat16_t&’ {aka ‘__bf16&’}
+  293 |       operator>>(__gnu_cxx::__bfloat16_t & __f)
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/istream:269:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(_Float64&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  269 |       operator>>(_Float64& __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:269:28: note:   no known conversion for argument 1 from ‘A’ to ‘_Float64&’
+  269 |       operator>>(_Float64& __f)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/13/istream:257:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(_Float32&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  257 |       operator>>(_Float32& __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:257:28: note:   no known conversion for argument 1 from ‘A’ to ‘_Float32&’
+  257 |       operator>>(_Float32& __f)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/13/istream:231:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(_Float16&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  231 |       operator>>(_Float16& __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:231:28: note:   no known conversion for argument 1 from ‘A’ to ‘_Float16&’
+  231 |       operator>>(_Float16& __f)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/13/istream:224:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  224 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:224:31: note:   no known conversion for argument 1 from ‘A’ to ‘long double&’
+  224 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/13/istream:220:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  220 |       operator>>(double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:220:26: note:   no known conversion for argument 1 from ‘A’ to ‘double&’
+  220 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+/usr/include/c++/13/istream:216:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  216 |       operator>>(float& __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:216:25: note:   no known conversion for argument 1 from ‘A’ to ‘float&’
+  216 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/13/istream:201:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  201 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:201:38: note:   no known conversion for argument 1 from ‘A’ to ‘long long unsigned int&’
+  201 |       operator>>(unsigned long long& __n)
+      |                  ~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/istream:197:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  197 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:197:29: note:   no known conversion for argument 1 from ‘A’ to ‘long long int&’
+  197 |       operator>>(long long& __n)
+      |                  ~~~~~~~~~~~^~~
+/usr/include/c++/13/istream:192:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  192 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:192:33: note:   no known conversion for argument 1 from ‘A’ to ‘long unsigned int&’
+  192 |       operator>>(unsigned long& __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/istream:188:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  188 |       operator>>(long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:188:24: note:   no known conversion for argument 1 from ‘A’ to ‘long int&’
+  188 |       operator>>(long& __n)
+      |                  ~~~~~~^~~
+/usr/include/c++/13/istream:184:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  184 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:184:32: note:   no known conversion for argument 1 from ‘A’ to ‘unsigned int&’
+  184 |       operator>>(unsigned int& __n)
+      |                  ~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/istream:181:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]’
+  181 |       operator>>(int& __n);
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:181:23: note:   no known conversion for argument 1 from ‘A’ to ‘int&’
+  181 |       operator>>(int& __n);
+      |                  ~~~~~^~~
+/usr/include/c++/13/istream:177:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  177 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:177:34: note:   no known conversion for argument 1 from ‘A’ to ‘short unsigned int&’
+  177 |       operator>>(unsigned short& __n)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/istream:174:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]’
+  174 |       operator>>(short& __n);
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:174:25: note:   no known conversion for argument 1 from ‘A’ to ‘short int&’
+  174 |       operator>>(short& __n);
+      |                  ~~~~~~~^~~
+/usr/include/c++/13/istream:170:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  170 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:170:24: note:   no known conversion for argument 1 from ‘A’ to ‘bool&’
+  170 |       operator>>(bool& __n)
+      |                  ~~~~~~^~~
+/usr/include/c++/13/istream:122:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__istream_type& (*)(__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:122:36: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)’ {aka ‘std::basic_istream<char>& (*)(std::basic_istream<char>&)’}
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/istream:126:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>; __ios_type = std::basic_ios<char>]’
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:126:32: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/istream:133:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]’
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:133:30: note:   no known conversion for argument 1 from ‘A’ to ‘std::ios_base& (*)(std::ios_base&)’
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/13/istream:349:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]’
+  349 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+/usr/include/c++/13/istream:349:36: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_istream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  349 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from /usr/include/c++/13/string:55,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41:
+/usr/include/c++/13/bits/basic_string.tcc:827:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+  827 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.tcc:827:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:13: note:   ‘A’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   14 |     cin >> *a;
+      |             ^
+In file included from /usr/include/c++/13/bits/memory_resource.h:38,
+                 from /usr/include/c++/13/string:58:
+/usr/include/c++/13/cstddef:130:5: note: candidate: ‘template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator>>(byte, _IntegerType)’
+  130 |     operator>>(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/13/cstddef:130:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:5: note:   cannot convert ‘std::cin’ (type ‘std::istream’ {aka ‘std::basic_istream<char>’}) to type ‘std::byte’
+   14 |     cin >> *a;
+      |     ^~~
+In file included from /usr/include/c++/13/istream:1106:
+/usr/include/c++/13/bits/istream.tcc:975:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT&)’
+  975 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/istream.tcc:975:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:13: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘A’)
+   14 |     cin >> *a;
+      |             ^
+/usr/include/c++/13/istream:846:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char&)’
+  846 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/istream:846:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:12: note:   cannot convert ‘* a’ (type ‘A’) to type ‘unsigned char&’
+   14 |     cin >> *a;
+      |            ^~
+/usr/include/c++/13/istream:851:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char&)’
+  851 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/istream:851:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:12: note:   cannot convert ‘* a’ (type ‘A’) to type ‘signed char&’
+   14 |     cin >> *a;
+      |            ^~
+/usr/include/c++/13/istream:949:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Num> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT (&)[_Num])’
+  949 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT (&__s)[_Num])
+      |     ^~~~~~~~
+/usr/include/c++/13/istream:949:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:13: note:   mismatched types ‘_CharT [_Num]’ and ‘A’
+   14 |     cin >> *a;
+      |             ^
+/usr/include/c++/13/istream:958:5: note: candidate: ‘template<class _Traits, long unsigned int _Num> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char (&)[_Num])’
+  958 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char (&__s)[_Num])
+      |     ^~~~~~~~
+/usr/include/c++/13/istream:958:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:13: note:   mismatched types ‘unsigned char [_Num]’ and ‘A’
+   14 |     cin >> *a;
+      |             ^
+/usr/include/c++/13/istream:963:5: note: candidate: ‘template<class _Traits, long unsigned int _Num> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char (&)[_Num])’
+  963 |     operator>>(basic_istream<char, _Traits>& __in, signed char (&__s)[_Num])
+      |     ^~~~~~~~
+/usr/include/c++/13/istream:963:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:14:13: note:   mismatched types ‘signed char [_Num]’ and ‘A’
+   14 |     cin >> *a;
+      |             ^
+/usr/include/c++/13/istream:1096:5: note: candidate: ‘template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)’
+ 1096 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+/usr/include/c++/13/istream:1096:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/istream: In substitution of ‘template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = A&]’:
+outputs/gpp_strategy1/40.fuzz:14:13:   required from here
+/usr/include/c++/13/istream:1096:5: error: template constraint failure for ‘template<class _Is, class _Tp>  requires (__derived_from_ios_base<_Is>) && requires(_Is& __is, _Tp&& __t) {__is >> (forward<_Tp>)(__t);} using std::__rvalue_stream_extraction_t = _Is&&’
+/usr/include/c++/13/istream:1096:5: note: constraints not satisfied
+/usr/include/c++/13/ostream: In substitution of ‘template<class _Is, class _Tp>  requires (__derived_from_ios_base<_Is>) && requires(_Is& __is, _Tp&& __t) {__is >> (forward<_Tp>)(__t);} using std::__rvalue_stream_extraction_t = _Is&& [with _Is = std::basic_istream<char>&; _Tp = A&]’:
+/usr/include/c++/13/istream:1096:5:   required by substitution of ‘template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = A&]’
+outputs/gpp_strategy1/40.fuzz:14:13:   required from here
+/usr/include/c++/13/ostream:768:13:   required for the satisfaction of ‘__derived_from_ios_base<_Is>’ [with _Is = std::basic_istream<char, std::char_traits<char> >&]
+/usr/include/c++/13/ostream:768:39: note: the expression ‘is_class_v<_Tp> [with _Tp = std::basic_istream<char, std::char_traits<char> >&]’ evaluated to ‘false’
+  768 |     concept __derived_from_ios_base = is_class_v<_Tp>
+      |                                       ^~~~~~~~~~~~~~~
+outputs/gpp_strategy1/40.fuzz:16:15: error: no match for ‘operator<<’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘A’)
+   16 |     std::cout << *a;
+      |     ~~~~~~~~~ ^~ ~~
+      |          |       |
+      |          |       A
+      |          std::ostream {aka std::basic_ostream<char>}
+/usr/include/c++/13/ostream:110:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:110:36: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)’ {aka ‘std::basic_ostream<char>& (*)(std::basic_ostream<char>&)’}
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:119:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]’
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:119:32: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:129:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:129:30: note:   no known conversion for argument 1 from ‘A’ to ‘std::ios_base& (*)(std::ios_base&)’
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:168:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:168:23: note:   no known conversion for argument 1 from ‘A’ to ‘long int’
+  168 |       operator<<(long __n)
+      |                  ~~~~~^~~
+/usr/include/c++/13/ostream:172:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:172:32: note:   no known conversion for argument 1 from ‘A’ to ‘long unsigned int’
+  172 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:176:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:176:23: note:   no known conversion for argument 1 from ‘A’ to ‘bool’
+  176 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from /usr/include/c++/13/ostream:880:
+/usr/include/c++/13/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from ‘A’ to ‘short int’
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+/usr/include/c++/13/ostream:183:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:183:33: note:   no known conversion for argument 1 from ‘A’ to ‘short unsigned int’
+  183 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from ‘A’ to ‘int’
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+/usr/include/c++/13/ostream:194:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:194:31: note:   no known conversion for argument 1 from ‘A’ to ‘unsigned int’
+  194 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:203:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:203:28: note:   no known conversion for argument 1 from ‘A’ to ‘long long int’
+  203 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:207:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:207:37: note:   no known conversion for argument 1 from ‘A’ to ‘long long unsigned int’
+  207 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:222:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:222:25: note:   no known conversion for argument 1 from ‘A’ to ‘double’
+  222 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/13/ostream:226:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:226:24: note:   no known conversion for argument 1 from ‘A’ to ‘float’
+  226 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+/usr/include/c++/13/ostream:234:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:234:30: note:   no known conversion for argument 1 from ‘A’ to ‘long double’
+  234 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:241:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float16) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  241 |       operator<<(_Float16 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:241:27: note:   no known conversion for argument 1 from ‘A’ to ‘_Float16’
+  241 |       operator<<(_Float16 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:250:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float32) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  250 |       operator<<(_Float32 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:250:27: note:   no known conversion for argument 1 from ‘A’ to ‘_Float32’
+  250 |       operator<<(_Float32 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:259:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float64) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  259 |       operator<<(_Float64 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:259:27: note:   no known conversion for argument 1 from ‘A’ to ‘_Float64’
+  259 |       operator<<(_Float64 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:277:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__gnu_cxx::__bfloat16_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __gnu_cxx::__bfloat16_t = __bf16]’
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:277:42: note:   no known conversion for argument 1 from ‘A’ to ‘__gnu_cxx::__bfloat16_t’ {aka ‘__bf16’}
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:292:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  292 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:292:30: note:   no known conversion for argument 1 from ‘A’ to ‘const void*’
+  292 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:297:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]’
+  297 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:297:18: note:   no known conversion for argument 1 from ‘A’ to ‘std::nullptr_t’
+  297 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+/usr/include/c++/13/ostream:304:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const volatile void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  304 |       operator<<(const volatile void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:304:39: note:   no known conversion for argument 1 from ‘A’ to ‘const volatile void*’
+  304 |       operator<<(const volatile void* __p)
+      |                  ~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/ostream.tcc:124:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]’
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from ‘A’ to ‘std::basic_ostream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/13/bits/basic_string.h:47,
+                 from /usr/include/c++/13/string:54:
+/usr/include/c++/13/string_view:761:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, basic_string_view<_CharT, _Traits>)’
+  761 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/13/string_view:761:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   ‘A’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h:4032:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 4032 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:4032:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   ‘A’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/cstddef:124:5: note: candidate: ‘template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator<<(byte, _IntegerType)’
+  124 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/13/cstddef:124:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:10: note:   cannot convert ‘std::cout’ (type ‘std::ostream’ {aka ‘std::basic_ostream<char>’}) to type ‘std::byte’
+   16 |     std::cout << *a;
+      |     ~~~~~^~~~
+In file included from /usr/include/c++/13/bits/ios_base.h:46:
+/usr/include/c++/13/system_error:339:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)’
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/13/system_error:339:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const std::error_code&’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:554:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)’
+  554 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:554:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘A’)
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/ostream:564:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)’
+  564 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:564:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘char’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:570:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)’
+  570 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:570:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘char’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:581:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)’
+  581 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:581:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘signed char’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:586:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)’
+  586 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:586:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘unsigned char’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:595:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t)’ (deleted)
+  595 |     operator<<(basic_ostream<char, _Traits>&, wchar_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:595:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘wchar_t’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:600:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char8_t)’ (deleted)
+  600 |     operator<<(basic_ostream<char, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:600:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘char8_t’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:605:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char16_t)’ (deleted)
+  605 |     operator<<(basic_ostream<char, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:605:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘char16_t’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:609:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char32_t)’ (deleted)
+  609 |     operator<<(basic_ostream<char, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:609:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘char32_t’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:615:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char8_t)’ (deleted)
+  615 |     operator<<(basic_ostream<wchar_t, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:615:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   mismatched types ‘wchar_t’ and ‘char’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/ostream:620:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char16_t)’ (deleted)
+  620 |     operator<<(basic_ostream<wchar_t, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:620:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   mismatched types ‘wchar_t’ and ‘char’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/ostream:624:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char32_t)’ (deleted)
+  624 |     operator<<(basic_ostream<wchar_t, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:624:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   mismatched types ‘wchar_t’ and ‘char’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/ostream:645:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  645 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:645:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   mismatched types ‘const _CharT*’ and ‘A’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/bits/ostream.tcc:307:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)’
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const char*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:662:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)’
+  662 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:662:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const char*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:675:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)’
+  675 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:675:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const signed char*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:680:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)’
+  680 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:680:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const unsigned char*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:689:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*)’ (deleted)
+  689 |     operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:689:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const wchar_t*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:694:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char8_t*)’ (deleted)
+  694 |     operator<<(basic_ostream<char, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:694:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const char8_t*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:699:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char16_t*)’ (deleted)
+  699 |     operator<<(basic_ostream<char, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:699:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const char16_t*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:703:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char32_t*)’ (deleted)
+  703 |     operator<<(basic_ostream<char, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:703:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:18: note:   cannot convert ‘* a’ (type ‘A’) to type ‘const char32_t*’
+   16 |     std::cout << *a;
+      |                  ^~
+/usr/include/c++/13/ostream:709:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*)’ (deleted)
+  709 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:709:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   mismatched types ‘wchar_t’ and ‘char’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/ostream:714:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*)’ (deleted)
+  714 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:714:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   mismatched types ‘wchar_t’ and ‘char’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/ostream:718:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*)’ (deleted)
+  718 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:718:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/40.fuzz:16:19: note:   mismatched types ‘wchar_t’ and ‘char’
+   16 |     std::cout << *a;
+      |                   ^
+/usr/include/c++/13/ostream:801:5: note: candidate: ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)’
+  801 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:801:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/ostream: In substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = A]’:
+outputs/gpp_strategy1/40.fuzz:16:19:   required from here
+/usr/include/c++/13/ostream:801:5: error: template constraint failure for ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&&’
+/usr/include/c++/13/ostream:801:5: note: constraints not satisfied
+/usr/include/c++/13/ostream: In substitution of ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&& [with _Os = std::basic_ostream<char>&; _Tp = A]’:
+/usr/include/c++/13/ostream:801:5:   required by substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = A]’
+outputs/gpp_strategy1/40.fuzz:16:19:   required from here
+/usr/include/c++/13/ostream:768:13:   required for the satisfaction of ‘__derived_from_ios_base<_Os>’ [with _Os = std::basic_ostream<char, std::char_traits<char> >&]
+/usr/include/c++/13/ostream:768:39: note: the expression ‘is_class_v<_Tp> [with _Tp = std::basic_ostream<char, std::char_traits<char> >&]’ evaluated to ‘false’
+  768 |     concept __derived_from_ios_base = is_class_v<_Tp>
+      |                                       ^~~~~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/41.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/41.fuzz failed validation with error message: outputs/gpp_strategy1/41.fuzz: In function ‘void some_function()’:
+outputs/gpp_strategy1/41.fuzz:4:9: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+    4 |     x = "hello world";
+      |         ^~~~~~~~~~~~~
+      |         |
+      |         const char*
+
+[TRACE] Validating outputs/gpp_strategy1/42.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/42.fuzz failed validation with error message: outputs/gpp_strategy1/42.fuzz:2:13: error: ‘void operator-=(std::string&)’ must have exactly two arguments
+    2 | inline void operator-=(std::string& x) {
+      |             ^~~~~~~~
+outputs/gpp_strategy1/42.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/42.fuzz:10:16: error: no match for ‘operator-’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘const char [7]’)
+   10 |     auto y = x - " world";
+      |              ~ ^ ~~~~~~~~
+      |              |   |
+      |              |   const char [7]
+      |              std::string {aka std::__cxx11::basic_string<char>}
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/42.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&)’
+  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/42.fuzz:10:18: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   10 |     auto y = x - " world";
+      |                  ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)’
+ 1800 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/42.fuzz:10:18: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   10 |     auto y = x - " world";
+      |                  ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/43.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/43.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/44.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/44.fuzz failed validation with error message: outputs/gpp_strategy1/44.fuzz: In function ‘std::string operator-(const std::string&)’:
+outputs/gpp_strategy1/44.fuzz:4:14: error: no match for ‘operator*’ (operand types are ‘int’ and ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’})
+    4 |     return 2 * x;
+      |            ~ ^ ~
+      |            |   |
+      |            int const std::string {aka const std::__cxx11::basic_string<char>}
+
+[TRACE] Validating outputs/gpp_strategy1/45.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/45.fuzz failed validation with error message: outputs/gpp_strategy1/45.fuzz:9:6: error: redefinition of ‘void print(const std::string&)’
+    9 | void print(const std::string& s) { if (s == "*2") s = s + "+3"; print(s); }
+      |      ^~~~~
+outputs/gpp_strategy1/45.fuzz:7:6: note: ‘void print(const std::string&)’ previously defined here
+    7 | void print(const std::string& s) {}
+      |      ^~~~~
+outputs/gpp_strategy1/45.fuzz: In function ‘void print(const std::string&)’:
+outputs/gpp_strategy1/45.fuzz:9:59: error: no match for ‘operator=’ (operand types are ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} and ‘std::__cxx11::basic_string<char>’)
+    9 | void print(const std::string& s) { if (s == "*2") s = s + "+3"; print(s); }
+      |                                                           ^~~~
+In file included from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/45.fuzz:1:
+/usr/include/c++/13/bits/basic_string.h:853:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ (near match)
+  853 |       operator=(basic_string&& __str)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:853:7: note:   passing ‘const std::string*’ {aka ‘const std::__cxx11::basic_string<char>*’} as ‘this’ argument discards qualifiers
+/usr/include/c++/13/bits/basic_string.h:812:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ (near match)
+  812 |       operator=(const basic_string& __str)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:812:7: note:   passing ‘const std::string*’ {aka ‘const std::__cxx11::basic_string<char>*’} as ‘this’ argument discards qualifiers
+/usr/include/c++/13/bits/basic_string.h:921:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  921 |       operator=(initializer_list<_CharT> __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:921:42: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::initializer_list<char>’
+  921 |       operator=(initializer_list<_CharT> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:835:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  835 |       operator=(_CharT __c)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:835:24: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘char’
+  835 |       operator=(_CharT __c)
+      |                 ~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:823:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  823 |       operator=(const _CharT* __s)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:823:31: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const char*’
+  823 |       operator=(const _CharT* __s)
+      |                 ~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:936:8: note: candidate: ‘template<class _Tp> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  936 |        operator=(const _Tp& __svt)
+      |        ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:936:8: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/13/bits/move.h:37,
+                 from /usr/include/c++/13/bits/exception_ptr.h:41,
+                 from /usr/include/c++/13/exception:164,
+                 from /usr/include/c++/13/ios:41:
+/usr/include/c++/13/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::__cxx11::basic_string<char>&]’:
+/usr/include/c++/13/bits/basic_string.h:144:8:   required by substitution of ‘template<class _CharT, class _Traits, class _Alloc> template<class _Tp, class _Res> using std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv = std::enable_if_t<std::__and_<std::is_convertible<const _Tp&, std::basic_string_view<_CharT, _Traits> >, std::__not_<std::is_convertible<const _Tp*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>*> >, std::__not_<std::is_convertible<const _Tp&, const _CharT*> > >::value, _Res> [with _Tp = std::__cxx11::basic_string<char>; _Res = std::__cxx11::basic_string<char>&; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+/usr/include/c++/13/bits/basic_string.h:936:8:   required by substitution of ‘template<class _Tp> constexpr std::__cxx11::basic_string<char>::_If_sv<_Tp, std::__cxx11::basic_string<char>&> std::__cxx11::basic_string<char>::operator=(const _Tp&) [with _Tp = std::__cxx11::basic_string<char>]’
+outputs/gpp_strategy1/45.fuzz:9:59:   required from here
+/usr/include/c++/13/type_traits:2610:11: error: no type named ‘type’ in ‘struct std::enable_if<false, std::__cxx11::basic_string<char>&>’
+ 2610 |     using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~
+outputs/gpp_strategy1/45.fuzz: At global scope:
+outputs/gpp_strategy1/45.fuzz:11:6: error: redefinition of ‘void print(const std::string&)’
+   11 | void print(const std::string& s) {
+      |      ^~~~~
+outputs/gpp_strategy1/45.fuzz:7:6: note: ‘void print(const std::string&)’ previously defined here
+    7 | void print(const std::string& s) {}
+      |      ^~~~~
+outputs/gpp_strategy1/45.fuzz: In function ‘void print(const std::string&)’:
+outputs/gpp_strategy1/45.fuzz:12:28: error: no match for ‘operator=’ (operand types are ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} and ‘std::__cxx11::basic_string<char>’)
+   12 |     if (s == "*2") s = s + "+3";
+      |                            ^~~~
+/usr/include/c++/13/bits/basic_string.h:853:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ (near match)
+  853 |       operator=(basic_string&& __str)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:853:7: note:   passing ‘const std::string*’ {aka ‘const std::__cxx11::basic_string<char>*’} as ‘this’ argument discards qualifiers
+/usr/include/c++/13/bits/basic_string.h:812:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ (near match)
+  812 |       operator=(const basic_string& __str)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:812:7: note:   passing ‘const std::string*’ {aka ‘const std::__cxx11::basic_string<char>*’} as ‘this’ argument discards qualifiers
+/usr/include/c++/13/bits/basic_string.h:921:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  921 |       operator=(initializer_list<_CharT> __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:921:42: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::initializer_list<char>’
+  921 |       operator=(initializer_list<_CharT> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:835:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  835 |       operator=(_CharT __c)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:835:24: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘char’
+  835 |       operator=(_CharT __c)
+      |                 ~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:823:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  823 |       operator=(const _CharT* __s)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:823:31: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const char*’
+  823 |       operator=(const _CharT* __s)
+      |                 ~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/basic_string.h:936:8: note: candidate: ‘template<class _Tp> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  936 |        operator=(const _Tp& __svt)
+      |        ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:936:8: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/45.fuzz: At global scope:
+outputs/gpp_strategy1/45.fuzz:17:6: error: redefinition of ‘void print(const std::string&)’
+   17 | void print(const std::string& s) { std::cout << s << std::endl; }
+      |      ^~~~~
+outputs/gpp_strategy1/45.fuzz:7:6: note: ‘void print(const std::string&)’ previously defined here
+    7 | void print(const std::string& s) {}
+      |      ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/46.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/46.fuzz failed validation with error message: outputs/gpp_strategy1/46.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/46.fuzz:9:26: error: ‘operator--’ not defined
+    9 |     std::cout << operator-- - "" - operator-- + std::cout.rdbuf();
+      |                          ^~
+outputs/gpp_strategy1/46.fuzz:9:44: error: ‘operator--’ not defined
+    9 |     std::cout << operator-- - "" - operator-- + std::cout.rdbuf();
+      |                                            ^~
+outputs/gpp_strategy1/46.fuzz:10:47: error: no match for ‘operator-’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘const char [2]’)
+   10 |     std::cout << mod_operator(std::string("") - "0");
+      |                                    ~~~~~~~~~~ ^ ~~~
+      |                                    |            |
+      |                                    |            const char [2]
+      |                                    std::string {aka std::__cxx11::basic_string<char>}
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/46.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&)’
+  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/46.fuzz:10:49: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   10 |     std::cout << mod_operator(std::string("") - "0");
+      |                                                 ^~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)’
+ 1800 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/46.fuzz:10:49: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   10 |     std::cout << mod_operator(std::string("") - "0");
+      |                                                 ^~~
+outputs/gpp_strategy1/46.fuzz:11:40: error: ‘operator--’ not defined
+   11 |     std::cout << mod_operator((operator-- -  operator--  + std::string("")));
+      |                                        ^~
+outputs/gpp_strategy1/46.fuzz:11:54: error: ‘operator--’ not defined
+   11 |     std::cout << mod_operator((operator-- -  operator--  + std::string("")));
+      |                                                      ^~
+outputs/gpp_strategy1/46.fuzz:12:31: error: no match for ‘operator-’ (operand type is ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+   12 |     std::cout << mod_operator(- mod_operator("-0"));
+      |                               ^~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&)’
+  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/46.fuzz:12:50: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   12 |     std::cout << mod_operator(- mod_operator("-0"));
+      |                                                  ^
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)’
+ 1800 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/46.fuzz:12:50: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   12 |     std::cout << mod_operator(- mod_operator("-0"));
+      |                                                  ^
+
+[TRACE] Validating outputs/gpp_strategy1/47.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/47.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/48.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/48.fuzz failed validation with error message: outputs/gpp_strategy1/48.fuzz: In function ‘std::string operator--(std::string&)’:
+outputs/gpp_strategy1/48.fuzz:3:6: error: no ‘operator--(int)’ declared for postfix ‘--’ [-fpermissive]
+    3 |     x--;
+      |     ~^~
+
+[TRACE] Validating outputs/gpp_strategy1/49.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/49.fuzz failed validation with error message: outputs/gpp_strategy1/49.fuzz: In function ‘std::string operator+(const std::string&, const std::string&)’:
+outputs/gpp_strategy1/49.fuzz:4:16: error: no match for ‘operator++’ (operand type is ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’})
+    4 |     return a + ++b;
+      |                ^~~
+outputs/gpp_strategy1/49.fuzz: At global scope:
+outputs/gpp_strategy1/49.fuzz:19:8: error: redeclared with 1 template parameter
+   19 | struct generic1stFunc {
+      |        ^~~~~~~~~~~~~~
+outputs/gpp_strategy1/49.fuzz:9:8: note: previous declaration ‘template<class T1, class ... T2> struct generic1stFunc’ used 2 template parameters
+    9 | struct generic1stFunc;
+      |        ^~~~~~~~~~~~~~
+outputs/gpp_strategy1/49.fuzz:25:8: error: redefinition of ‘struct generic1stFunc<char>’
+   25 | struct generic1stFunc<char> {
+      |        ^~~~~~~~~~~~~~~~~~~~
+outputs/gpp_strategy1/49.fuzz:13:8: note: previous definition of ‘struct generic1stFunc<char>’
+   13 | struct generic1stFunc<char> {};
+      |        ^~~~~~~~~~~~~~~~~~~~
+outputs/gpp_strategy1/49.fuzz:31:8: error: redefinition of ‘struct generic1stFunc<bool>’
+   31 | struct generic1stFunc<bool> {
+      |        ^~~~~~~~~~~~~~~~~~~~
+outputs/gpp_strategy1/49.fuzz:15:8: note: previous definition of ‘struct generic1stFunc<bool>’
+   15 | struct generic1stFunc<bool> {};
+      |        ^~~~~~~~~~~~~~~~~~~~
+outputs/gpp_strategy1/49.fuzz:42:15: error: expected identifier at end of input
+   42 |     template <
+      |               ^
+outputs/gpp_strategy1/49.fuzz:42:15: error: expected ‘>’ at end of input
+outputs/gpp_strategy1/49.fuzz:42:15: error: expected unqualified-id at end of input
+outputs/gpp_strategy1/49.fuzz:42:15: error: expected ‘}’ at end of input
+outputs/gpp_strategy1/49.fuzz:37:23: note: to match this ‘{’
+   37 | struct generic2ndFunc {
+      |                       ^
+outputs/gpp_strategy1/49.fuzz:42:15: error: expected ‘;’ at end of input
+   42 |     template <
+      |               ^
+      |               ;
+
+[TRACE] Validating outputs/gpp_strategy1/50.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/50.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/51.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/51.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/52.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/52.fuzz failed validation with error message: outputs/gpp_strategy1/52.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/52.fuzz:5:19: error: no matching function for call to ‘operator-(std::string&)’
+    5 |     x += operator-(x);
+      |          ~~~~~~~~~^~~
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/52.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&)’
+  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/52.fuzz:5:19: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+    5 |     x += operator-(x);
+      |          ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)’
+ 1800 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/52.fuzz:5:19: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+    5 |     x += operator-(x);
+      |          ~~~~~~~~~^~~
+
+[TRACE] Validating outputs/gpp_strategy1/53.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/53.fuzz failed validation with error message: outputs/gpp_strategy1/53.fuzz:6:10: fatal error: template_meta/meta.hpp: No such file or directory
+    6 | #include "template_meta/meta.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/gpp_strategy1/54.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/54.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/55.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/55.fuzz failed validation with error message: outputs/gpp_strategy1/55.fuzz:6:8: error: two or more data types in declaration of ‘a’
+    6 | inline int a(b) {
+      |        ^~~
+outputs/gpp_strategy1/55.fuzz:6:14: error: ‘b’ was not declared in this scope
+    6 | inline int a(b) {
+      |              ^
+outputs/gpp_strategy1/55.fuzz:2:22: note: in definition of macro ‘a’
+    2 | #define a(b) int a = b; a = a + a;
+      |                      ^
+outputs/gpp_strategy1/55.fuzz:2:25: error: ‘a’ does not name a type
+    2 | #define a(b) int a = b; a = a + a;
+      |                         ^
+outputs/gpp_strategy1/55.fuzz:6:12: note: in expansion of macro ‘a’
+    6 | inline int a(b) {
+      |            ^
+outputs/gpp_strategy1/55.fuzz:6:17: error: expected unqualified-id before ‘{’ token
+    6 | inline int a(b) {
+      |                 ^
+
+[TRACE] Validating outputs/gpp_strategy1/56.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/56.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/57.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/57.fuzz failed validation with error message: outputs/gpp_strategy1/57.fuzz:5:2: error: invalid preprocessing directive #incluir; did you mean #include?
+    5 | #incluir <iostream>
+      |  ^~~~~~~
+      |  include
+outputs/gpp_strategy1/57.fuzz:2:27: error: variable ‘const std::array<int, 10> a’ has initializer but incomplete type
+    2 | const std::array<int, 10> a =  {7, 9, 3, 4, 5, 6, 8, 1, 2};
+      |                           ^
+outputs/gpp_strategy1/57.fuzz:3:27: error: variable ‘const std::array<int, 10> b’ has initializer but incomplete type
+    3 | const std::array<int, 10> b =  {7, 9, 3, 4, 5, 6, 8, 1, 2};
+      |                           ^
+outputs/gpp_strategy1/57.fuzz: In function ‘void swap(std::array<int, 10>&, std::array<int, 10>&)’:
+outputs/gpp_strategy1/57.fuzz:8:5: error: invalid use of incomplete type ‘struct std::array<int, 10>’
+    8 |     x.swap(y);
+      |     ^
+In file included from /usr/include/c++/13/bits/uses_allocator_args.h:38,
+                 from /usr/include/c++/13/bits/memory_resource.h:41,
+                 from /usr/include/c++/13/string:58,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/57.fuzz:1:
+/usr/include/c++/13/tuple:2019:45: note: declaration of ‘struct std::array<int, 10>’
+ 2019 |   template<typename _Tp, size_t _Nm> struct array;
+      |                                             ^~~~~
+outputs/gpp_strategy1/57.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/57.fuzz:20:24: error: variable ‘std::array<int, 3> a’ has initializer but incomplete type
+   20 |     std::array<int, 3> a = {1, 2, 3};
+      |                        ^
+outputs/gpp_strategy1/57.fuzz:21:24: error: variable ‘std::array<int, 3> b’ has initializer but incomplete type
+   21 |     std::array<int, 3> b = {4, 5, 6};
+      |                        ^
+outputs/gpp_strategy1/57.fuzz:29:5: error: ‘result_t’ was not declared in this scope
+   29 |     result_t a - b;
+      |     ^~~~~~~~
+outputs/gpp_strategy1/57.fuzz: At global scope:
+outputs/gpp_strategy1/57.fuzz:31:3: error: expected unqualified-id before ‘/’ token
+   31 |  */
+      |   ^
+
+[TRACE] Validating outputs/gpp_strategy1/58.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/58.fuzz failed validation with error message: outputs/gpp_strategy1/58.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/58.fuzz:9:19: error: ‘make_ostreambuf_iterator’ is not a member of ‘std’; did you mean ‘ostreambuf_iterator’?
+    9 |     auto x = std::make_ostreambuf_iterator(std::cout);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                   ostreambuf_iterator
+outputs/gpp_strategy1/58.fuzz:16:20: error: no matching function for call to ‘std::__cxx11::basic_string<char>::basic_string(<brace-enclosed initializer list>)’
+   16 |     std::string z{x};
+      |                    ^
+In file included from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/58.fuzz:1:
+/usr/include/c++/13/bits/basic_string.h:795:9: note: candidate: ‘template<class _Tp, class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, const _Alloc&) [with <template-parameter-2-2> = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  795 |         basic_string(const _Tp& __t, const _Alloc& __a = _Alloc())
+      |         ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:795:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:783:9: note: candidate: ‘template<class _Tp, class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, size_type, size_type, const _Alloc&) [with <template-parameter-2-2> = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  783 |         basic_string(const _Tp& __t, size_type __pos, size_type __n,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:783:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:760:9: note: candidate: ‘template<class _InputIterator, class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&) [with <template-parameter-2-2> = _InputIterator; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  760 |         basic_string(_InputIterator __beg, _InputIterator __end,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:760:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:664:7: note: candidate: ‘template<class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(size_type, _CharT, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  664 |       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:664:7: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/58.fuzz:16:20: note:   candidate expects 3 arguments, 1 provided
+   16 |     std::string z{x};
+      |                    ^
+/usr/include/c++/13/bits/basic_string.h:641:7: note: candidate: ‘template<class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  641 |       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:641:7: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/58.fuzz:16:20: note:   cannot convert ‘x’ (type ‘<type error>’) to type ‘const char*’
+   16 |     std::string z{x};
+      |                    ^
+/usr/include/c++/13/bits/basic_string.h:716:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  716 |       basic_string(basic_string&& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:716:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:711:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  711 |       basic_string(const basic_string& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:711:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:706:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::initializer_list<_Tp>, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  706 |       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:706:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:677:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  677 |       basic_string(basic_string&& __str) noexcept
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:677:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:619:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  619 |       basic_string(const _CharT* __s, size_type __n,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:619:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:599:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  599 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:599:7: note:   candidate expects 4 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:581:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  581 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:581:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:564:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  564 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:564:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:547:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  547 |       basic_string(const basic_string& __str)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:547:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:535:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  535 |       basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:535:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:522:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  522 |       basic_string()
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:522:7: note:   candidate expects 0 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:176:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(__sv_wrapper, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  176 |       basic_string(__sv_wrapper __svw, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:176:7: note:   candidate expects 2 arguments, 1 provided
+
+[TRACE] Validating outputs/gpp_strategy1/59.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/59.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/60.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/60.fuzz failed validation with error message: outputs/gpp_strategy1/60.fuzz:2:12: error: ‘int operator[](const int&)’ must be a member function
+    2 | inline int operator[](const int& x) {
+      |            ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/61.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/61.fuzz failed validation with error message: outputs/gpp_strategy1/61.fuzz: In function ‘bool is_directory(std::string)’:
+outputs/gpp_strategy1/61.fuzz:21:12: error: ‘filesystem’ has not been declared
+   21 |     return filesystem::is_directory(inPath);
+      |            ^~~~~~~~~~
+outputs/gpp_strategy1/61.fuzz: In function ‘bool is_filereadable(std::string)’:
+outputs/gpp_strategy1/61.fuzz:24:12: error: ‘filesystem’ has not been declared
+   24 |     return filesystem::exists(inPath);
+      |            ^~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/62.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/62.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/63.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/63.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/64.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/64.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/65.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/65.fuzz failed validation with error message: outputs/gpp_strategy1/65.fuzz:7:20: error: redefinition of ‘std::string operator-(const std::string&)’
+    7 | inline std::string operator-(const std::string& x) {
+      |                    ^~~~~~~~
+outputs/gpp_strategy1/65.fuzz:2:20: note: ‘std::string operator-(const std::string&)’ previously defined here
+    2 | inline std::string operator-(const std::string& x) {
+      |                    ^~~~~~~~
+outputs/gpp_strategy1/65.fuzz: In member function ‘std::string x::f()’:
+outputs/gpp_strategy1/65.fuzz:40:30: error: could not convert ‘((x*)this)->x::data’ from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+   40 |     std::string f() { return data; };
+      |                              ^~~~
+      |                              |
+      |                              int
+outputs/gpp_strategy1/65.fuzz: At global scope:
+outputs/gpp_strategy1/65.fuzz:49:5: error: expected unqualified-id at end of input
+   49 | void
+      |     ^
+
+[TRACE] Validating outputs/gpp_strategy1/66.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/66.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/67.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/67.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/68.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/68.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/69.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/69.fuzz failed validation with error message: outputs/gpp_strategy1/69.fuzz:5:2: error: #endif without #if
+    5 | #endif
+      |  ^~~~~
+outputs/gpp_strategy1/69.fuzz:7:1: error: unterminated comment
+    7 | /*
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy1/70.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/70.fuzz failed validation with error message: outputs/gpp_strategy1/70.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/70.fuzz:9:30: error: no match for ‘operator++’ (operand type is ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+    9 |     std::cout << "test: " << ++std::string("+x;", 0.0)!= "--";
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+outputs/gpp_strategy1/70.fuzz:10:52: error: no match for ‘operator!=’ (operand types are ‘std::basic_ostream<char>’ and ‘const char [3]’)
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~ ~~~~
+      |                           |                           |
+      |                           std::basic_ostream<char>    const char [3]
+In file included from /usr/include/c++/13/string:43,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/70.fuzz:1:
+/usr/include/c++/13/bits/allocator.h:237:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator==(const allocator<_CharT>&, const allocator<_T2>&)’ (reversed)
+  237 |     operator==(const allocator<_T1>&, const allocator<_T2>&)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/allocator.h:237:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘const char [3]’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+In file included from /usr/include/c++/13/string:48:
+/usr/include/c++/13/bits/stl_iterator.h:534:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&) requires requires{{std::operator==::__x->base() == std::operator==::__y->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’ (reversed)
+  534 |     operator==(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:534:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   mismatched types ‘const std::reverse_iterator<_IteratorL>’ and ‘const char [3]’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+/usr/include/c++/13/bits/stl_iterator.h:1678:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&) requires requires{{std::operator==::__x->base() == std::operator==::__y->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’ (reversed)
+ 1678 |     operator==(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1678:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘const char [3]’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+In file included from /usr/include/c++/13/bits/basic_string.h:47,
+                 from /usr/include/c++/13/string:54:
+/usr/include/c++/13/string_view:616:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator==(basic_string_view<_CharT, _Traits>, __type_identity_t<basic_string_view<_CharT, _Traits> >)’ (reversed)
+  616 |     operator==(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/string_view:616:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘const char*’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+/usr/include/c++/13/bits/basic_string.h:3727:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr bool std::operator==(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’ (reversed)
+ 3727 |     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3727:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const char [3]’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+In file included from /usr/include/c++/13/bits/uses_allocator_args.h:38,
+                 from /usr/include/c++/13/bits/memory_resource.h:41,
+                 from /usr/include/c++/13/string:58:
+/usr/include/c++/13/tuple:1919:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)’ (reversed)
+ 1919 |     operator==(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+/usr/include/c++/13/tuple:1919:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   mismatched types ‘const std::tuple<_UTypes ...>’ and ‘const char [3]’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+In file included from /usr/include/c++/13/bits/ios_base.h:46:
+/usr/include/c++/13/system_error:465:3: note: candidate: ‘bool std::operator==(const error_code&, const error_condition&)’ (reversed)
+  465 |   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/13/system_error:465:32: note:   no known conversion for argument 1 from ‘const char [3]’ to ‘const std::error_code&’
+  465 |   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/13/bits/stl_iterator.h:593:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator==(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorL>&) requires requires{{std::operator==::__x->base() == std::operator==::__y->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’ (rewritten)
+  593 |     operator==(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:593:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+/usr/include/c++/13/bits/stl_iterator.h:1748:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator==(const move_iterator<_IteratorL>&, const move_iterator<_IteratorL>&)’ (rewritten)
+ 1748 |     operator==(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1748:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::move_iterator<_IteratorL>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+In file included from /usr/include/c++/13/bits/stl_algobase.h:64,
+                 from /usr/include/c++/13/string:51:
+/usr/include/c++/13/bits/stl_pair.h:812:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator==(const pair<_T1, _T2>&, const pair<_T1, _T2>&)’ (rewritten)
+  812 |     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_pair.h:812:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::pair<_T1, _T2>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+/usr/include/c++/13/string_view:609:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator==(basic_string_view<_CharT, _Traits>, basic_string_view<_CharT, _Traits>)’ (rewritten)
+  609 |     operator==(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/string_view:609:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+/usr/include/c++/13/bits/basic_string.h:3710:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr bool std::operator==(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’ (rewritten)
+ 3710 |     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3710:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+In file included from /usr/include/c++/13/bits/locale_facets.h:48,
+                 from /usr/include/c++/13/bits/basic_ios.h:37,
+                 from /usr/include/c++/13/ios:46:
+/usr/include/c++/13/bits/streambuf_iterator.h:234:5: note: candidate: ‘template<class _CharT, class _Traits> bool std::operator==(const istreambuf_iterator<_CharT, _Traits>&, const istreambuf_iterator<_CharT, _Traits>&)’ (rewritten)
+  234 |     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/streambuf_iterator.h:234:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+/usr/include/c++/13/system_error:449:3: note: candidate: ‘bool std::operator==(const error_code&, const error_code&)’ (rewritten)
+  449 |   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/13/system_error:449:32: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>’ to ‘const std::error_code&’
+  449 |   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/13/system_error:480:3: note: candidate: ‘bool std::operator==(const error_condition&, const error_condition&)’ (rewritten)
+  480 |   operator==(const error_condition& __lhs,
+      |   ^~~~~~~~
+/usr/include/c++/13/system_error:480:37: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>’ to ‘const std::error_condition&’
+  480 |   operator==(const error_condition& __lhs,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /usr/include/c++/13/iosfwd:42,
+                 from /usr/include/c++/13/ios:40:
+/usr/include/c++/13/bits/postypes.h:197:5: note: candidate: ‘template<class _StateT> bool std::operator!=(const fpos<_StateT>&, const fpos<_StateT>&)’
+  197 |     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/postypes.h:197:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::fpos<_StateT>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+/usr/include/c++/13/bits/stl_iterator.h:542:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const reverse_iterator<_IteratorL>&, const reverse_iterator<_IteratorR>&) requires requires{{std::operator!=::__x->base() != std::operator!=::__y->base()} -> decltype(auto) [requires std::convertible_to<<placeholder>, bool>];}’
+  542 |     operator!=(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:542:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/70.fuzz:10:55: note:   ‘std::basic_ostream<char>’ is not derived from ‘const std::reverse_iterator<_IteratorL>’
+   10 |     std::cout << "test: " << std::string("-x", 0.0)!= "--";
+      |                                                       ^~~~
+
+[TRACE] Validating outputs/gpp_strategy1/71.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/71.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/72.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/72.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/73.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/73.fuzz failed validation with error message: outputs/gpp_strategy1/73.fuzz:9:2: error: #endif without #if
+    9 | #endif
+      |  ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/74.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/74.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/75.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/75.fuzz failed validation with error message: outputs/gpp_strategy1/75.fuzz:5:17: error: redefinition of ‘std::string f(const std::string&)’
+    5 |     std::string f(const std::string& x) {
+      |                 ^
+outputs/gpp_strategy1/75.fuzz:2:17: note: ‘std::string f(const std::string&)’ previously defined here
+    2 |     std::string f(const std::string& x) {
+      |                 ^
+
+[TRACE] Validating outputs/gpp_strategy1/76.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/76.fuzz failed validation with error message: outputs/gpp_strategy1/76.fuzz: In function ‘int main(int, char**)’:
+outputs/gpp_strategy1/76.fuzz:7:61: error: no match for ‘operator+’ (operand type is ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                             ^~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/76.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:634:5: note: candidate: ‘template<class _Iterator> constexpr std::reverse_iterator<_IteratorL> std::operator+(typename reverse_iterator<_IteratorL>::difference_type, const reverse_iterator<_IteratorL>&)’
+  634 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:634:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/stl_iterator.h:1808:5: note: candidate: ‘template<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename move_iterator<_IteratorL>::difference_type, const move_iterator<_IteratorL>&)’
+ 1808 |     operator+(typename move_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1808:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+In file included from /usr/include/c++/13/string:54:
+/usr/include/c++/13/bits/basic_string.h:3553:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3553 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3553:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3571:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3571 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3571:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3590:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3590 |     operator+(_CharT __lhs, const basic_string<_CharT,_Traits,_Alloc>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3590:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3607:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’
+ 3607 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3607:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3625:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 3625 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3625:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3637:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3637 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3637:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3644:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3644 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3644:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3651:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3651 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3651:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3674:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3674 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3674:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3681:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3681 |     operator+(_CharT __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3681:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3688:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)’
+ 3688 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3688:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+/usr/include/c++/13/bits/basic_string.h:3695:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)’
+ 3695 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3695:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/76.fuzz:7:78: note:   candidate expects 2 arguments, 1 provided
+    7 | int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+      |                                                                              ^
+
+[TRACE] Validating outputs/gpp_strategy1/77.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/77.fuzz failed validation with error message: outputs/gpp_strategy1/77.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/77.fuzz:9:15: error: no match for ‘operator+=’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘const char [3]’)
+    9 |     std::cout += "++";
+      |     ~~~~~~~~~~^~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/78.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/78.fuzz failed validation with error message: outputs/gpp_strategy1/78.fuzz: In function ‘void modify_one()’:
+outputs/gpp_strategy1/78.fuzz:5:21: error: conversion from ‘char’ to non-scalar type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} requested
+    5 |     std::string x = (char)-1;
+      |                     ^~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/79.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/79.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/80.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/80.fuzz failed validation with error message: outputs/gpp_strategy1/80.fuzz: In function ‘void f7(int)’:
+outputs/gpp_strategy1/80.fuzz:13:55: error: expected ‘}’ at end of input
+   13 | void f7(const int i = 10) { if (i+2) std::cout << "o";
+      |                           ~                           ^
+
+[TRACE] Validating outputs/gpp_strategy1/81.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/81.fuzz failed validation with error message: outputs/gpp_strategy1/81.fuzz:15:30: error: template argument 2 is invalid
+   15 | xclass<int,T + xclass<int,int>> f4() {
+      |                              ^~
+outputs/gpp_strategy1/81.fuzz: In function ‘int x()’:
+outputs/gpp_strategy1/81.fuzz:19:19: error: no match for ‘operator==’ (operand types are ‘xclass<int, xclass<int, int> >’ and ‘int’)
+   19 |     if (f3<int>() == f4<int>()) {
+      |         ~~~~~~~~~ ^~ ~~~~~~~~~
+      |                |            |
+      |                |            int
+      |                xclass<int, xclass<int, int> >
+outputs/gpp_strategy1/81.fuzz: In instantiation of ‘xclass<int, xclass<T, int> > f3() [with T = int]’:
+outputs/gpp_strategy1/81.fuzz:19:16:   required from here
+outputs/gpp_strategy1/81.fuzz:12:17: error: could not convert ‘f2<int>()’ from ‘xclass<[...],int>’ to ‘xclass<[...],xclass<int, int>>’
+   12 |     return f2<T>();
+      |            ~~~~~^~
+      |                 |
+      |                 xclass<[...],int>
+outputs/gpp_strategy1/81.fuzz: In instantiation of ‘int f4() [with T = int]’:
+outputs/gpp_strategy1/81.fuzz:19:29:   required from here
+outputs/gpp_strategy1/81.fuzz:16:30: error: cannot convert ‘xclass<int, xclass<int, int> >’ to ‘int’ in return
+   16 |     return f2<xclass<T, int>>();
+      |            ~~~~~~~~~~~~~~~~~~^~
+      |                              |
+      |                              xclass<int, xclass<int, int> >
+
+[TRACE] Validating outputs/gpp_strategy1/82.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/82.fuzz failed validation with error message: outputs/gpp_strategy1/82.fuzz: In function ‘std::string operator+(const std::string&, const std::string&)’:
+outputs/gpp_strategy1/82.fuzz:4:10: error: ‘strcpy’ is not a member of ‘std’
+    4 |     std::strcpy(s2, s.c_str());
+      |          ^~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/83.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/83.fuzz failed validation with error message: outputs/gpp_strategy1/83.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/83.fuzz:8:47: error: no match for ‘operator+’ (operand types are ‘const int’ and ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’})
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                             ~ ^ ~
+      |                                             |   |
+      |                                             |   const std::string {aka const std::__cxx11::basic_string<char>}
+      |                                             const int
+In file included from /usr/include/c++/13/string:48,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/83.fuzz:1:
+/usr/include/c++/13/bits/stl_iterator.h:634:5: note: candidate: ‘template<class _Iterator> constexpr std::reverse_iterator<_IteratorL> std::operator+(typename reverse_iterator<_IteratorL>::difference_type, const reverse_iterator<_IteratorL>&)’
+  634 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:634:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_IteratorL>’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/stl_iterator.h:1808:5: note: candidate: ‘template<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename move_iterator<_IteratorL>::difference_type, const move_iterator<_IteratorL>&)’
+ 1808 |     operator+(typename move_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_iterator.h:1808:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+In file included from /usr/include/c++/13/string:54:
+/usr/include/c++/13/bits/basic_string.h:3553:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3553 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3553:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3571:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3571 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3571:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘const _CharT*’ and ‘int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3590:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3590 |     operator+(_CharT __lhs, const basic_string<_CharT,_Traits,_Alloc>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3590:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   deduced conflicting types for parameter ‘_CharT’ (‘int’ and ‘char’)
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3607:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’
+ 3607 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3607:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3625:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)’
+ 3625 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3625:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3637:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 3637 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3637:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3644:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3644 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3644:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3651:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3651 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3651:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3674:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3674 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3674:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘const _CharT*’ and ‘int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3681:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)’
+ 3681 |     operator+(_CharT __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3681:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   types ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const std::string’ {aka ‘const std::__cxx11::basic_string<char>’} have incompatible cv-qualifiers
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3688:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)’
+ 3688 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3688:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+/usr/include/c++/13/bits/basic_string.h:3695:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)’
+ 3695 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:3695:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/83.fuzz:8:49: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const int’
+    8 |     std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+      |                                                 ^
+outputs/gpp_strategy1/83.fuzz:2:13: note: candidate: ‘std::string operator+(const std::string&, int)’
+    2 | std::string operator+(const std::string& x, int i) {
+      |             ^~~~~~~~
+outputs/gpp_strategy1/83.fuzz:2:42: note:   no known conversion for argument 1 from ‘const int’ to ‘const std::string&’ {aka ‘const std::__cxx11::basic_string<char>&’}
+    2 | std::string operator+(const std::string& x, int i) {
+      |                       ~~~~~~~~~~~~~~~~~~~^
+
+[TRACE] Validating outputs/gpp_strategy1/84.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/84.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/85.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/85.fuzz failed validation with error message: outputs/gpp_strategy1/85.fuzz: In function ‘std::string operator+(const std::string&, int)’:
+outputs/gpp_strategy1/85.fuzz:4:14: error: no ‘operator++(int)’ declared for postfix ‘++’ [-fpermissive]
+    4 |     return {x++}; }
+      |             ~^~
+outputs/gpp_strategy1/85.fuzz:4:16: error: could not convert ‘{<expression error>}’ from ‘<brace-enclosed initializer list>’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+    4 |     return {x++}; }
+      |                ^
+      |                |
+      |                <brace-enclosed initializer list>
+outputs/gpp_strategy1/85.fuzz: In function ‘bool operator==(const char*, const std::pair<char, std::basic_string_view<char> >&)’:
+outputs/gpp_strategy1/85.fuzz:15:22: error: no match for call to ‘(const std::basic_string_view<char>) ()’
+   15 |     if (s && p.second() == std::string_view(s)) { return true; }
+      |              ~~~~~~~~^~
+outputs/gpp_strategy1/85.fuzz:16:19: error: expression cannot be used as a function
+   16 |     return p.first() == s;
+      |            ~~~~~~~^~
+outputs/gpp_strategy1/85.fuzz: At global scope:
+outputs/gpp_strategy1/85.fuzz:18:5: error: redefinition of ‘int main()’
+   18 | int main() {
+      |     ^~~~
+outputs/gpp_strategy1/85.fuzz:5:5: note: ‘int main()’ previously defined here
+    5 | int main() {
+      |     ^~~~
+outputs/gpp_strategy1/85.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/85.fuzz:23:52: error: no matching function for call to ‘std::pair<const char*, std::basic_string_view<char> >::pair(const char [2])’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+In file included from /usr/include/c++/13/bits/stl_algobase.h:64,
+                 from /usr/include/c++/13/string:51,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy1/85.fuzz:1:
+/usr/include/c++/13/bits/stl_pair.h:386:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<const _U1, const _U2>() && _S_dangles<const _U1, const _U2>() constexpr std::pair<_T1, _T2>::pair(const std::pair<_U1, _U2>&&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’ (deleted)
+  386 |         pair(const pair<_U1, _U2>&&) = delete;
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:386:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:376:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<const _U1, const _U2>() && !_S_dangles<const _U1, const _U2>() constexpr std::pair<_T1, _T2>::pair(const std::pair<_U1, _U2>&&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  376 |         pair(const pair<_U1, _U2>&& __p)
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:376:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:369:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<_U1&, _U2&>() && _S_dangles<_U1&, _U2&>() constexpr std::pair<_T1, _T2>::pair(std::pair<_U1, _U2>&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’ (deleted)
+  369 |         pair(pair<_U1, _U2>&) = delete;
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:369:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:361:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<_U1&, _U2&>() && !_S_dangles<_U1&, _U2&>() constexpr std::pair<_T1, _T2>::pair(std::pair<_U1, _U2>&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  361 |         pair(pair<_U1, _U2>& __p)
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:361:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:354:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<_U1, _U2>() && _S_dangles<_U1, _U2>() constexpr std::pair<_T1, _T2>::pair(std::pair<_U1, _U2>&&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’ (deleted)
+  354 |         pair(pair<_U1, _U2>&&) = delete;
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:354:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:345:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<_U1, _U2>() && !_S_dangles<_U1, _U2>() constexpr std::pair<_T1, _T2>::pair(std::pair<_U1, _U2>&&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  345 |         pair(pair<_U1, _U2>&& __p)
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:345:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:339:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<const _U1&, const _U2&>() && _S_dangles<const _U1&, const _U2&>() constexpr std::pair<_T1, _T2>::pair(const std::pair<_U1, _U2>&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’ (deleted)
+  339 |         pair(const pair<_U1, _U2>&) = delete;
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:339:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:330:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<const _U1&, const _U2&>() && !_S_dangles<_U1, _U2>() constexpr std::pair<_T1, _T2>::pair(const std::pair<_U1, _U2>&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  330 |         pair(const pair<_U1, _U2>& __p)
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:330:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:323:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<_U1, _U2>() && _S_dangles<_U1, _U2>() constexpr std::pair<_T1, _T2>::pair(_U1&&, _U2&&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’ (deleted)
+  323 |         pair(_U1&&, _U2&&) = delete;
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:323:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   candidate expects 2 arguments, 1 provided
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:315:9: note: candidate: ‘template<class _U1, class _U2>  requires  _S_constructible<_U1, _U2>() && !_S_dangles<_U1, _U2>() constexpr std::pair<_T1, _T2>::pair(_U1&&, _U2&&) [with _U2 = _U1; _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  315 |         pair(_U1&& __x, _U2&& __y)
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:315:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   candidate expects 2 arguments, 1 provided
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:238:9: note: candidate: ‘template<class ... _Args1, long unsigned int ..._Indexes1, class ... _Args2, long unsigned int ..._Indexes2> constexpr std::pair<_T1, _T2>::pair(std::tuple<_Args1 ...>&, std::tuple<_Args2 ...>&, std::_Index_tuple<_Indexes1 ...>, std::_Index_tuple<_Indexes2 ...>) [with _Args1 = {_Args1 ...}; long unsigned int ..._Indexes1 = {_Indexes1 ...}; _Args2 = {_Args2 ...}; long unsigned int ..._Indexes2 = {_Indexes2 ...}; _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  238 |         pair(tuple<_Args1...>&, tuple<_Args2...>&,
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:238:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   mismatched types ‘std::tuple<_UTypes ...>’ and ‘const char [2]’
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:202:9: note: candidate: ‘template<class ... _Args1, class ... _Args2> constexpr std::pair<_T1, _T2>::pair(std::piecewise_construct_t, std::tuple<_Args1 ...>, std::tuple<_Args2 ...>) [with _Args1 = {_Args1 ...}; _Args2 = {_Args2 ...}; _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  202 |         pair(piecewise_construct_t, tuple<_Args1...>, tuple<_Args2...>);
+      |         ^~~~
+/usr/include/c++/13/bits/stl_pair.h:202:9: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy1/85.fuzz:23:52: note:   candidate expects 3 arguments, 1 provided
+   23 |     std::pair<char const*, std::string_view> pp("A");
+      |                                                    ^
+/usr/include/c++/13/bits/stl_pair.h:305:7: note: candidate: ‘constexpr std::pair<_T1, _T2>::pair(const _T1&, const _T2&) requires  _S_constructible<const _T1&, const _T2&>() [with _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  305 |       pair(const _T1& __x, const _T2& __y)
+      |       ^~~~
+/usr/include/c++/13/bits/stl_pair.h:305:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/13/bits/stl_pair.h:249:7: note: candidate: ‘constexpr std::pair<_T1, _T2>::pair() requires (is_default_constructible_v<_T1>) && (is_default_constructible_v<_T2>) [with _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  249 |       pair()
+      |       ^~~~
+/usr/include/c++/13/bits/stl_pair.h:249:7: note:   candidate expects 0 arguments, 1 provided
+/usr/include/c++/13/bits/stl_pair.h:198:17: note: candidate: ‘constexpr std::pair<_T1, _T2>::pair(std::pair<_T1, _T2>&&) [with _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  198 |       constexpr pair(pair&&) = default;         ///< Move constructor
+      |                 ^~~~
+/usr/include/c++/13/bits/stl_pair.h:198:22: note:   no known conversion for argument 1 from ‘const char [2]’ to ‘std::pair<const char*, std::basic_string_view<char> >&&’
+  198 |       constexpr pair(pair&&) = default;         ///< Move constructor
+      |                      ^~~~~~
+/usr/include/c++/13/bits/stl_pair.h:197:17: note: candidate: ‘constexpr std::pair<_T1, _T2>::pair(const std::pair<_T1, _T2>&) [with _T1 = const char*; _T2 = std::basic_string_view<char>]’
+  197 |       constexpr pair(const pair&) = default;    ///< Copy constructor
+      |                 ^~~~
+/usr/include/c++/13/bits/stl_pair.h:197:22: note:   no known conversion for argument 1 from ‘const char [2]’ to ‘const std::pair<const char*, std::basic_string_view<char> >&’
+  197 |       constexpr pair(const pair&) = default;    ///< Copy constructor
+      |                      ^~~~~~~~~~~
+outputs/gpp_strategy1/85.fuzz:24:20: error: wrong number of template arguments (1, should be 2)
+   24 |     std::pair<char const
+      |                    ^~~~~
+In file included from /usr/include/c++/13/string:48:
+/usr/include/c++/13/bits/stl_iterator.h:2992:12: note: provided for ‘template<class _T1, class _T2> struct std::pair’
+ 2992 |     struct pair;
+      |            ^~~~
+outputs/gpp_strategy1/85.fuzz:24:25: error: expected unqualified-id at end of input
+   24 |     std::pair<char const
+      |                         ^
+outputs/gpp_strategy1/85.fuzz:24:25: error: expected ‘}’ at end of input
+outputs/gpp_strategy1/85.fuzz:18:12: note: to match this ‘{’
+   18 | int main() {
+      |            ^
+
+[TRACE] Validating outputs/gpp_strategy1/86.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/86.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/87.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/87.fuzz failed validation with error message: outputs/gpp_strategy1/87.fuzz: In function ‘std::string do_something(int, double*, int)’:
+outputs/gpp_strategy1/87.fuzz:11:36: error: ‘cos’ is not a member of ‘std’; did you mean ‘ios’?
+   11 |     *pi += 0.5*(input2 + 1) * std::cos(2.0*M_PI*input2);
+      |                                    ^~~
+      |                                    ios
+outputs/gpp_strategy1/87.fuzz:11:44: error: ‘M_PI’ was not declared in this scope
+   11 |     *pi += 0.5*(input2 + 1) * std::cos(2.0*M_PI*input2);
+      |                                            ^~~~
+
+[TRACE] Validating outputs/gpp_strategy1/88.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/88.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/89.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/89.fuzz failed validation with error message: outputs/gpp_strategy1/89.fuzz:24:2: error: #endif without #if
+   24 | #endif
+      |  ^~~~~
+outputs/gpp_strategy1/89.fuzz:9:12: error: ISO C++17 does not allow dynamic exception specifications
+    9 | int main() throw (std::exception) {
+      |            ^~~~~
+outputs/gpp_strategy1/89.fuzz:26:6: error: redefinition of ‘void foo()’
+   26 | void foo() {
+      |      ^~~
+outputs/gpp_strategy1/89.fuzz:6:6: note: ‘void foo()’ previously defined here
+    6 | void foo() {
+      |      ^~~
+outputs/gpp_strategy1/89.fuzz: In function ‘void foo()’:
+outputs/gpp_strategy1/89.fuzz:36:8: error: expected ‘;’ at end of input
+   36 |     foo
+      |        ^
+      |        ;
+outputs/gpp_strategy1/89.fuzz:36:8: error: expected ‘}’ at end of input
+outputs/gpp_strategy1/89.fuzz:26:12: note: to match this ‘{’
+   26 | void foo() {
+      |            ^
+
+[TRACE] Validating outputs/gpp_strategy1/90.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/90.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/91.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/91.fuzz failed validation with error message: outputs/gpp_strategy1/91.fuzz:2:13: error: ‘std::string operator+(long double)’ must have an argument of class or enumerated type
+    2 | std::string operator+(long double x) {
+      |             ^~~~~~~~
+outputs/gpp_strategy1/91.fuzz:8:6: error: redefinition of ‘bool f(int)’
+    8 | bool f(int n) {
+      |      ^
+outputs/gpp_strategy1/91.fuzz:4:6: note: ‘bool f(int)’ previously defined here
+    4 | bool f(int n) {
+      |      ^
+
+[TRACE] Validating outputs/gpp_strategy1/92.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/92.fuzz failed validation with error message: outputs/gpp_strategy1/92.fuzz:7:54: error: empty character constant
+    7 |        if ((pos < s.length()) && (s[prefix.size()] =='')) {
+      |                                                      ^~
+
+[TRACE] Validating outputs/gpp_strategy1/93.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/93.fuzz failed validation with error message: outputs/gpp_strategy1/93.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/93.fuzz:7:27: error: ‘s’ was not declared in this scope
+    7 |     auto const y = "++" + s + a + b;
+      |                           ^
+outputs/gpp_strategy1/93.fuzz:8:15: error: invalid operands of types ‘double’ and ‘const char [3]’ to binary ‘operator+’
+    8 |     if (y!= b + "--" + s + a) {
+      |             ~ ^ ~~~~
+      |             |   |
+      |             |   const char [3]
+      |             double
+outputs/gpp_strategy1/93.fuzz: At global scope:
+outputs/gpp_strategy1/93.fuzz:36:15: error: expected ‘;’ at end of member declaration
+   36 |     size_type size
+      |               ^~~~
+      |                   ;
+outputs/gpp_strategy1/93.fuzz:36:19: error: expected ‘}’ at end of input
+   36 |     size_type size
+      |                   ^
+outputs/gpp_strategy1/93.fuzz:29:13: note: to match this ‘{’
+   29 | class Stack {
+      |             ^
+outputs/gpp_strategy1/93.fuzz:36:19: error: expected ‘;’ at end of input
+   36 |     size_type size
+      |                   ^
+      |                   ;
+
+[TRACE] Validating outputs/gpp_strategy1/94.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/94.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/95.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/95.fuzz failed validation with error message: outputs/gpp_strategy1/95.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/95.fuzz:14:33: error: ‘class std::basic_streambuf<char>’ has no member named ‘in_avail_nobuf’
+   14 |         if (!(std::cin.rdbuf()->in_avail_nobuf())) {
+      |                                 ^~~~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy1/96.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/96.fuzz failed validation with error message: outputs/gpp_strategy1/96.fuzz:12:10: error: ‘cout’ in namespace ‘std’ does not name a type
+   12 |     std::cout << x << " " << y << std::endl;
+      |          ^~~~
+In file included from outputs/gpp_strategy1/96.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy1/96.fuzz:13:5: error: expected unqualified-id before ‘return’
+   13 |     return 0;
+      |     ^~~~~~
+outputs/gpp_strategy1/96.fuzz:14:1: error: expected declaration before ‘}’ token
+   14 | }
+      | ^
+outputs/gpp_strategy1/96.fuzz: In function ‘int main()’:
+outputs/gpp_strategy1/96.fuzz:21:11: error: expected primary-expression at end of input
+   21 |     return
+      |           ^
+outputs/gpp_strategy1/96.fuzz:21:11: error: expected ‘;’ at end of input
+   21 |     return
+      |           ^
+      |           ;
+outputs/gpp_strategy1/96.fuzz:21:11: error: expected ‘}’ at end of input
+outputs/gpp_strategy1/96.fuzz:15:12: note: to match this ‘{’
+   15 | int main() {
+      |            ^
+outputs/gpp_strategy1/96.fuzz: In function ‘std::string operator+(const std::string&, const std::string&)’:
+outputs/gpp_strategy1/96.fuzz:11:7: warning: control reaches end of non-void function [-Wreturn-type]
+   11 |       }
+      |       ^
+
+[TRACE] Validating outputs/gpp_strategy1/97.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/97.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy1/98.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/98.fuzz failed validation with error message: cc1plus: error: ‘::main’ must return ‘int’
+
+[TRACE] Validating outputs/gpp_strategy1/99.fuzz ...
+[VERBOSE] outputs/gpp_strategy1/99.fuzz is safe

@@ -1,0 +1,13 @@
+#include <iostream>
+#include <sstream>
+int main() {
+    std::string name = "Hello";;
+    std::cout << "Hello, World!\n";
+    std::cout << name;
+    int score = 3.5;
+    std::cout << score;
+std::stringstream buf;
+buf << score << std::endl;
+std::cout << buf.str();
+return 0;
+}

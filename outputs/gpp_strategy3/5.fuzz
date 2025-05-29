@@ -1,0 +1,18 @@
+#include <iostream>
+
+
+class C
+{
+public:
+    explicit C(int)
+    {
+        std::cout << "C::explicit C(" << std::to_string(110) << ")\n";
+    }
+};
+
+C::C(int)
+{
+    std::cout << "C::C(" << std::to_string(110) << ")\n";
+}
+
+#endif  

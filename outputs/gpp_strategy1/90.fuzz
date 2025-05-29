@@ -1,0 +1,4 @@
+#include <iostream>
+std::string operator+(const std::string&, int) { throw std::logic_error("no operator+ defined!"); }
+int main() { std::cout << "Hello world!\n"; }
+ 

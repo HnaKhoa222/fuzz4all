@@ -1,0 +1,17 @@
+#include <iostream>
+inline std::string mod_operator(const std::string& x){
+    return "--"+x;
+}
+int main()
+{
+    char c;
+
+    std::cout << operator-- - "" - operator-- + std::cout.rdbuf();   
+    std::cout << mod_operator(std::string("") - "0");  
+    std::cout << mod_operator((operator-- -  operator--  + std::string("")));   
+    std::cout << mod_operator(- mod_operator("-0"));  
+    std::cout << mod_operator(std::string("0"));  
+
+    return 0;
+}
+ 

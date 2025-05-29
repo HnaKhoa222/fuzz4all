@@ -1,0 +1,15 @@
+#include <iostream>
+using std::cout;
+#include <algorithm>
+#include <random>
+int find_max_num2(int a, int b) {
+    cout << "A: "<<a<<", B: "<<b<<endl;
+    auto r_uniform = std::uniform_int_distribution<int>(a,b);
+    return r_uniform(std::default_random_engine{});
+}
+int main()
+{
+    find_max_num2(0,0);
+    std::cout << find_max_num2(0,0)<<std::endl;
+    return 0;
+}

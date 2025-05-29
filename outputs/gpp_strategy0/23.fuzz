@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <iomanip>
+#include <string>
+using namespace std;
+class Point {
+private:
+    
+public:
+    float x, y;
+    
+    
+    Point() : x(0), y(0) {
+        std::cout << "\n";
+    }
+};
+class Circle {
+private:
+    
+public:
+    Point center;
+    float radius;
+    
+    
+    Circle() : center(), radius(0) {
+        std::cout << "\n";
+    }
+    
+    
+    Circle(float cx_, float cy_, float r_) : center(cx_, cy_), radius(r_) {
+        std::cout << "\n";
+    }
+    
+    
+    void set_center(float x, float y) {
+        center.x = x;
+        center.y = y;
+    }
+    
+    
+    void set_radius(float r) {
+        radius = r;
+    }
+    
+    
+    
+    void print_center() {
+        std::cout << "\nPoint " << center.x << ", " << center.y << "\n";
+    }
+    
+    
+    void print_radius() {
+        std::cout << "\nRadius: " << radius << "\n";
+    }
+    
+    
+    float distance_sq(Point b) {
+        float dx = b.x - center.x;
+        float dy = b.y - center.y;
+        return ((dx * dx)

@@ -1,0 +1,11 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+1.
+2.<fim_middle>
+3.
+
+
+ 
+Compile and execute the program in Java and observe the value returned from length, and compare the result to the output displayed in the Console:
+$ javac Divide.java
+javac -d results -cp lib

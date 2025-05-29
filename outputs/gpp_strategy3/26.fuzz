@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+#define REMAIN  (1<<20)
+ 
+class B
+{
+    public:
+    B(double a = 42);
+    B(const double a = 42);
+    B &operator=(double a) {
+        return other += a;
+    }
+    B &operator=(const double a) {
+        return operator += a;
+    }
+    ~B();
+    double get() const {
+        return double(double(this -> value));
+    }
+    int count = 0;
+    private:
+    int value = REMAIN >> 1;
+    public:
+    B operator+(double a) {
+        B newb = *this - a;
+        newb.count++;
+        if (newb.count > REMAIN)
+        {
+            throw exception("B<double> overflow");
+            return;
+        }
+        return newb;
+    }
+    friend ostream &operator<<<bool>(ostream &s)
+    {
+        char s3;
+
+        s << boolalpha;
+        while (s3 = std::cin.get())
+        {
+            s << (~s3) << s3;
+        }
+        
+        return s;
+    }    
+};

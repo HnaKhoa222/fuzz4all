@@ -1,0 +1,24 @@
+#include <iostream>
+#include <algorithm>
+std::vector<std::string> vec = {
+    "hello",
+    "world"
+};
+bool my_sort(std::string i, std::string j) {
+    return i < j;
+}
+std::vector<std::string> my_sort(std::vector<std::string>& vec) {
+    sort(vec.begin(), vec.end(), my_sort);
+    return vec;
+}
+int main() {
+    std::vector<std::string> vec = {
+        "hello",
+        "world"
+    };
+    std::vector<std::string> sorted = my_sort(vec);
+    for (auto s : sorted) {
+        std::cout << s << '\n';
+    }
+    return 0;
+}

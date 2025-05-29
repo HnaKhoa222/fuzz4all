@@ -1,0 +1,20 @@
+#include <iostream>
+std::string operator+(long double x) {
+    return x + "--"; }
+bool f(int n) {
+    if (!n) return false;
+    n += 1;
+    return true; }
+bool f(int n) {
+    if (!n) return true;
+    n += 1;
+    return f(n); }
+int main() {
+    bool b, c = false;
+    std::cout << "Enter a value for b: " << std::flush;
+    std::cin >> b;
+    std::cout << "Enter a value for c: " << std::flush;
+    std::cin >> c;
+    f(b + c);
+    return 0;
+}

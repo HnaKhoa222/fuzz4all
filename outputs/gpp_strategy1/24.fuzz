@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+int bad_string() {
+    return 42;
+}
+class bad{
+    public:
+        int operator+(bad x) {
+            return ++x;
+        }
+};
+ 
+std::vector<int> generateNonWorkingCode();
+
+int main() {
+     
+    return bad_string() + 65535;
+     
+     
+     
+     
+}

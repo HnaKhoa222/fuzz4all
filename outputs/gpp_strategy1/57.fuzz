@@ -1,0 +1,31 @@
+#include <iostream>
+const std::array<int, 10> a =  {7, 9, 3, 4, 5, 6, 8, 1, 2};
+const std::array<int, 10> b =  {7, 9, 3, 4, 5, 6, 8, 1, 2};
+#include <algorithm>
+#incluir <iostream>
+
+void swap(std::array<int, 10>& x, std::array<int, 10>& y) {
+    x.swap(y);
+}
+
+void swap(int* x, int* y) {
+    std::swap(*x, *y);
+}
+
+void swap(std::string& x, std::string& y) {
+    x.swap(y);
+}
+
+int main() {
+    std::array<int, 3> a = {1, 2, 3};
+    std::array<int, 3> b = {4, 5, 6};
+#ifdef LAZY
+    if (std::is_same_v<decltype(a){}, decltype(b)>) {
+        swap(a, b);
+        return 1;
+    }
+#endif
+    using result_t = decltype(a - b);
+    result_t a - b;
+}
+ */

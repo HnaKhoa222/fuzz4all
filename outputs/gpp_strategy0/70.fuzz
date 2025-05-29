@@ -1,0 +1,18 @@
+#include <iostream>
+int y = 0;
+void *z;
+void main() {
+    z = 0;
+}
+ 
+int y = 0;
+void *z;
+ 
+int main() {
+    y = 0;
+     
+}
+void *main() {
+     
+     
+}

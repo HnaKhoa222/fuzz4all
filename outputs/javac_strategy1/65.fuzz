@@ -1,0 +1,5 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+This issue is known to be affecting all versions of Java, Java SE, and Java EE.
+
+This is more severe when the Java compiler cannot infer the intended type of a variable or a value before the variable is assigned to it, such as assignment in a switch-case statement.

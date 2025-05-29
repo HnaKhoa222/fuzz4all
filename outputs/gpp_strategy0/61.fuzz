@@ -1,0 +1,6 @@
+#include <iostream>
+int main() {
+    const char * name("Hello");
+    std::cout << name;
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    b=b+a-a;
+    return a-b;
+}
+int main()
+{
+    int a=0,
+    b=0,c=0;
+     a=7;
+     b=8;
+     c=a-b;
+     find_max_num(a,b);
+     std::cout<<c<<std::endl;
+     return 0;
+}

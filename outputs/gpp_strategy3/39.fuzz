@@ -1,0 +1,8 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    if (!a)
+        return b;
+    return std::max(find_max_num(a - 1, b + 1), find_max_num(a - 1, b));
+}
+*/

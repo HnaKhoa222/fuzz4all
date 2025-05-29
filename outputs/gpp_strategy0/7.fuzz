@@ -1,0 +1,16 @@
+#include <iostream>
+
+
+struct A {
+    A() {}
+     
+    A(const int & x) : y(0) {
+        if (x)
+            y = x;
+    }
+    int y;
+};
+
+int main() {
+    new A();
+}

@@ -1,0 +1,14 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+public static void main(String[] args) {
+   String s;
+   try {
+      throw new NullPointerException();
+   } catch (NullPointerException ex) {
+      s = "foo";
+   }
+   System.out.println(s.length());
+}
+
+public static void main(String

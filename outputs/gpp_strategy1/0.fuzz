@@ -1,0 +1,26 @@
+#include <iostream>
+ }
+
+class C
+ {
+  using U = C;   
+  static constexpr U* ptr;
+ public:
+  C() { std::cout << "constructor" << std::endl; }
+  static void print() { std::cout << "function" << std::endl; }
+ };
+
+using D = int;
+inline auto f() -> D { return D(); }
+
+auto g() -> D {
+  return 0;
+}
+
+auto f2c() -> D {
+  int* p = &g;  
+  *p = -g;  
+  return f();  
+}
+
+ 

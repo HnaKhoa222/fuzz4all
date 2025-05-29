@@ -1,0 +1,25 @@
+#include <iostream>
+ 
+inline std::string append_space(const std::string& x) {
+    return x + " ";
+}
+#include <string>
+
+std::string m( const std::string &str );
+#include <vector>
+#include <unordered_map>
+#define vector_of_strings std::vector< std::string >
+
+std::string m( const std::string &str ) {
+    std::vector< std::string > vec{ str };
+    return vec[0];
+}
+
+namespace m {
+    struct c {
+        std::string v;
+
+        std::string m( const std::string & ) { return v; }
+    };
+    std::string m( const c & ) { return "c"; }
+}

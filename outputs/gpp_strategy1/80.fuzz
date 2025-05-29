@@ -1,0 +1,13 @@
+#include <iostream>
+std::string op2(const std::string& x, int i) {
+    if (x.empty() && i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return "o" + x + "oooo"; }
+void f(const int i) { if (i+2) std::cout << "--" << op2("o", i+2) << "--" << std::endl; }
+void f2(const double i);
+double d;
+void f3(int d = 3) { if (d+6) std::cout << "x" << std::endl; }
+void f4(const float i) { if (i+8) std::cout << "xx" << std::endl; }
+void f5(const std::string& s) { if (s.empty()) std::cout << "--"; else std::cout << "y"; }
+std::string x = "--";
+void f6(const std::string& s = "") { std::cout << x << s; }
+void f7(const int i = 10) { if (i+2) std::cout << "o";

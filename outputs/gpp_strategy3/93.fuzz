@@ -1,0 +1,11 @@
+#include <iostream>
+int main()
+{
+    int x = 0;
+    int y = 0;
+    x = find_max_num(10,y);
+    std::cout << x << "- Hello" << y << "\n";
+
+
+    return 0;
+}

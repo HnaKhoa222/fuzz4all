@@ -1,0 +1,49 @@
+#include <iostream>
+inline std::string operator-(const std::string& x) {
+    return std::string(x.size(), '+');
+}
+ 
+#include <iostream>
+inline std::string operator-(const std::string& x) {  
+    return x + x;
+}
+ 
+#include <iostream>
+inline int f(int x) {
+    return x * 10 + 200;
+}
+ 
+#include <iostream>
+inline int g() {
+    return 80;
+}
+ 
+#include <iostream>
+namespace A {
+    void f() {
+        f();
+    }
+}
+ 
+#include <iostream>
+namespace B {
+    void f() {
+        g();
+        B::f();  
+    }
+}
+ 
+#include <iostream>
+struct x {
+    x() = default;
+    int data = 0;
+    std::string f() { return data; };
+};
+#include <iostream>
+struct y { 
+    y() = default;
+    int data = 0;
+    int f() { return data; }
+};
+#include <iostream>
+void

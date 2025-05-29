@@ -1,0 +1,14 @@
+#include <iostream>
+
+static void run() {
+#define RUN(expr) std::cout << expr << '\n';
+    RUN(isodd(3));
+    RUN(3 + 4 - 5 * 6 / 7);
+    RUN(234342);
+    RUN(static_cast<double>(23424) / 1.0);
+    RUN(0);
+    RUN(sizeof(0));
+    RUN(sizeof(true));
+    RUN("1000");
+#undef RUN
+}

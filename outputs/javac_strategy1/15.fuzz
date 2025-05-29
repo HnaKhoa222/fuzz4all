@@ -1,0 +1,4 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+</p>
+        <p>public class Main { public static void main(String[] args) { int x = 1 / 0; } }</p>
+        <p>public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse

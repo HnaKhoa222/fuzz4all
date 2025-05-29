@@ -1,0 +1,40 @@
+#include <iostream>
+#pragma clang diagnostic ignored "-Wdocumentation"
+
+class classDef
+{
+private:
+public:
+    class privateClass
+    {
+    public:
+        static privateDef* ptrField
+}
+
+void funcWithArgs(...);
+
+classDef::privateClass::privateClass() {}
+
+classDef::privateDef{
+private:
+    friend void funcWithArgs(...);  
+}
+
+classDef::privateDef::privateDef() {}
+
+classDef::privateDef(const privateClass& x) {}  
+
+int privateDef::privateDef();  
+
+classDef(classDef &&);  
+
+classDef(){};  
+
+classDef(const classDef&) = default;  
+
+classDef(const classDef &){};  
+<fim_middle>
+classDef &operator=(const classDef&) = default;  
+
+classDef &operator=(classDef &&){};  
+classDef &copyMethod(classDef &&){};  

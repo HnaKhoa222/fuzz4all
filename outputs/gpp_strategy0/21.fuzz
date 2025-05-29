@@ -1,0 +1,49 @@
+#include <iostream>
+
+
+void foo(int a) {
+    a++;
+    foo(a);
+}
+int main() {
+    foo(3);
+}
+
+ 
+ 
+#include<iostream>
+
+template<class T>
+T return_value_of(){
+    return T();
+}
+
+template<class T>
+std::string return_value_of(){
+    return "Hello";
+}
+
+int
+main()
+{
+    std::string s = return_value_of<std::string>();
+    return 0;
+}
+
+**************
+ 
+ 
+#include <iostream>
+template<class A>class C{};
+template<>class C<int>{
+public:
+    template<class B>void foo(){
+        B x;
+        x = 10;
+        std::cout << x; 
+        foo(10);
+    }
+};
+int
+main() {
+    C

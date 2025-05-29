@@ -1,0 +1,9 @@
+#include <iostream>
+inline bool operator!=(const std::string&, const std::string&);
+inlines bool operator!=(const std::string& x, const std::string& y) {
+    return!x == y;
+}
+ 
+template<typename... _> auto tuple_join(auto &&value, const _... args) -> decltype((args...), (value + ",")) {
+    return (std::forward<decltype(value)>(value) + ", ");
+}

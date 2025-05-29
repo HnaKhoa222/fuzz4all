@@ -1,0 +1,1337 @@
+[TRACE] Validating outputs/gpp_strategy0/81.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/81.fuzz failed validation with error message: outputs/gpp_strategy0/81.fuzz: In function ‘void foo()’:
+outputs/gpp_strategy0/81.fuzz:11:7: error: assignment of read-only variable ‘a’
+   11 |     a = a;
+      |     ~~^~~
+
+[TRACE] Validating outputs/gpp_strategy0/16.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/16.fuzz failed validation with error message: outputs/gpp_strategy0/16.fuzz:25:5: error: redefinition of ‘int main()’
+   25 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/16.fuzz:2:5: note: ‘int main()’ previously defined here
+    2 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/16.fuzz:32:5: error: redefinition of ‘int main()’
+   32 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/16.fuzz:2:5: note: ‘int main()’ previously defined here
+    2 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/16.fuzz:39:5: error: redefinition of ‘int main()’
+   39 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/16.fuzz:2:5: note: ‘int main()’ previously defined here
+    2 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/16.fuzz:46:5: error: redefinition of ‘int main()’
+   46 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/16.fuzz:2:5: note: ‘int main()’ previously defined here
+    2 | int main() {
+      |     ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/1.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/1.fuzz failed validation with error message: outputs/gpp_strategy0/1.fuzz:37:1: error: ‘a_thing’ does not name a type
+   37 | a_thing.print();
+      | ^~~~~~~
+outputs/gpp_strategy0/1.fuzz:38:1: error: ‘a_thing’ does not name a type
+   38 | a_thing.do_something();
+      | ^~~~~~~
+outputs/gpp_strategy0/1.fuzz:40:6: error: ‘cerr’ in namespace ‘std’ does not name a type
+   40 | std::cerr << "This is another thing.\n";
+      |      ^~~~
+In file included from outputs/gpp_strategy0/1.fuzz:1:
+/usr/include/c++/13/iostream:64:18: note: ‘std::cerr’ declared here
+   64 |   extern ostream cerr;          ///< Linked to standard error (unbuffered)
+      |                  ^~~~
+outputs/gpp_strategy0/1.fuzz:41:28: error: expected constructor, destructor, or type conversion before ‘(’ token
+   41 | std::this_thread::sleep_for(std::chrono::seconds(1));
+      |                            ^
+outputs/gpp_strategy0/1.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/1.fuzz:44:15: error: no matching function for call to ‘Something::Something()’
+   44 |     Something a;
+      |               ^
+outputs/gpp_strategy0/1.fuzz:16:14: note: candidate: ‘Something::Something(const std::string&)’
+   16 |     explicit Something(const std::string& name) : name_(name) {}
+      |              ^~~~~~~~~
+outputs/gpp_strategy0/1.fuzz:16:14: note:   candidate expects 1 argument, 0 provided
+outputs/gpp_strategy0/1.fuzz:5:7: note: candidate: ‘constexpr Something::Something(const Something&)’
+    5 | class Something {
+      |       ^~~~~~~~~
+outputs/gpp_strategy0/1.fuzz:5:7: note:   candidate expects 1 argument, 0 provided
+outputs/gpp_strategy0/1.fuzz:5:7: note: candidate: ‘constexpr Something::Something(Something&&)’
+outputs/gpp_strategy0/1.fuzz:5:7: note:   candidate expects 1 argument, 0 provided
+
+[TRACE] Validating outputs/gpp_strategy0/78.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/78.fuzz failed validation with error message: outputs/gpp_strategy0/78.fuzz: In function ‘int foo()’:
+outputs/gpp_strategy0/78.fuzz:7:1: warning: no return statement in function returning non-void [-Wreturn-type]
+    7 | }
+      | ^
+outputs/gpp_strategy0/78.fuzz: At global scope:
+outputs/gpp_strategy0/78.fuzz:16:5: error: ambiguating new declaration of ‘int isPrime(int)’
+   16 | int isPrime(int n) {
+      |     ^~~~~~~
+outputs/gpp_strategy0/78.fuzz:10:6: note: old declaration ‘bool isPrime(int)’
+   10 | bool isPrime(int n) {
+      |      ^~~~~~~
+outputs/gpp_strategy0/78.fuzz: In function ‘int isPrime(int)’:
+outputs/gpp_strategy0/78.fuzz:19:22: error: ‘sqrt’ was not declared in this scope
+   19 |     for (i = 2; i <= sqrt(n); i++) {
+      |                      ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/84.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/84.fuzz failed validation with error message: outputs/gpp_strategy0/84.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/84.fuzz:4:23: error: ‘isodd’ was not declared in this scope
+    4 |         static_assert(isodd(42));
+      |                       ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy0/99.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/99.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/47.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/47.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/13.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/13.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/66.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/66.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/88.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/88.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/24.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/24.fuzz failed validation with error message: outputs/gpp_strategy0/24.fuzz: In member function ‘void Person::display()’:
+outputs/gpp_strategy0/24.fuzz:6:33: error: ‘name’ was not declared in this scope; did you mean ‘tzname’?
+    6 |         std::cout << "Name " << name << std::endl;
+      |                                 ^~~~
+      |                                 tzname
+outputs/gpp_strategy0/24.fuzz:7:32: error: ‘age’ was not declared in this scope
+    7 |         std::cout << "Age " << age << std::endl;
+      |                                ^~~
+outputs/gpp_strategy0/24.fuzz: At global scope:
+outputs/gpp_strategy0/24.fuzz:9:5: error: ‘name’ was not declared in this scope; did you mean ‘tzname’?
+    9 | } P(name, 3);
+      |     ^~~~
+      |     tzname
+outputs/gpp_strategy0/24.fuzz:10:1: error: ‘P’ does not name a type
+   10 | P.display()
+      | ^
+outputs/gpp_strategy0/24.fuzz:30:5: error: ‘Publisher’ does not name a type
+   30 |     Publisher* publication;
+      |     ^~~~~~~~~
+outputs/gpp_strategy0/24.fuzz:31:23: error: ‘Publisher’ has not been declared
+   31 |     Book(char* title, Publisher* publication);
+      |                       ^~~~~~~~~
+outputs/gpp_strategy0/24.fuzz:33:31: error: ‘Publisher’ has not been declared
+   33 | Book::Book(const char* title, Publisher* publication) {
+      |                               ^~~~~~~~~
+outputs/gpp_strategy0/24.fuzz:33:1: error: no declaration matches ‘Book::Book(const char*, int*)’
+   33 | Book::Book(const char* title, Publisher* publication) {
+      | ^~~~
+outputs/gpp_strategy0/24.fuzz:28:7: note: candidates are: ‘constexpr Book::Book(Book&&)’
+   28 | class Book {
+      |       ^~~~
+outputs/gpp_strategy0/24.fuzz:28:7: note:                 ‘constexpr Book::Book(const Book&)’
+outputs/gpp_strategy0/24.fuzz:31:5: note:                 ‘Book::Book(char*, int*)’
+   31 |     Book(char* title, Publisher* publication);
+      |     ^~~~
+outputs/gpp_strategy0/24.fuzz:28:7: note: ‘class Book’ defined here
+   28 | class Book {
+      |       ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/86.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/86.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/60.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/60.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/29.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/29.fuzz failed validation with error message: outputs/gpp_strategy0/29.fuzz:15:1: error: ‘ifstream’ does not name a type; did you mean ‘ofstream’?
+   15 | ifstream infile;
+      | ^~~~~~~~
+      | ofstream
+outputs/gpp_strategy0/29.fuzz:16:1: error: expected unqualified-id before ‘if’
+   16 | if (infile.is_open())
+      | ^~
+outputs/gpp_strategy0/29.fuzz:18:1: error: expected unqualified-id before ‘else’
+   18 | else
+      | ^~~~
+outputs/gpp_strategy0/29.fuzz:20:1: error: expected unqualified-id before ‘return’
+   20 | return 0;
+      | ^~~~~~
+outputs/gpp_strategy0/29.fuzz:21:1: error: expected declaration before ‘}’ token
+   21 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy0/61.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/61.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/72.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/72.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/0.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/0.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/83.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/83.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/92.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/92.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/21.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/21.fuzz failed validation with error message: outputs/gpp_strategy0/21.fuzz:27:1: error: redefinition of ‘int main()’
+   27 | main()
+      | ^~~~
+outputs/gpp_strategy0/21.fuzz:8:5: note: ‘int main()’ previously defined here
+    8 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/21.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/21.fuzz:29:49: error: call of overloaded ‘return_value_of<std::string>()’ is ambiguous
+   29 |     std::string s = return_value_of<std::string>();
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+outputs/gpp_strategy0/21.fuzz:17:3: note: candidate: ‘T return_value_of() [with T = std::__cxx11::basic_string<char>]’
+   17 | T return_value_of(){
+      |   ^~~~~~~~~~~~~~~
+outputs/gpp_strategy0/21.fuzz:22:13: note: candidate: ‘std::string return_value_of() [with T = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>]’
+   22 | std::string return_value_of(){
+      |             ^~~~~~~~~~~~~~~
+outputs/gpp_strategy0/21.fuzz: At global scope:
+outputs/gpp_strategy0/21.fuzz:37:1: error: expected unqualified-id before ‘template’
+   37 | template<class A>class C{};
+      | ^~~~~~~~
+outputs/gpp_strategy0/21.fuzz:38:17: error: ‘C’ is not a class template
+   38 | template<>class C<int>{
+      |                 ^
+outputs/gpp_strategy0/21.fuzz:38:23: error: explicit specialization of non-template ‘C’
+   38 | template<>class C<int>{
+      |                       ^
+outputs/gpp_strategy0/21.fuzz: In member function ‘void C::foo()’:
+outputs/gpp_strategy0/21.fuzz:44:12: error: no matching function for call to ‘C::foo(int)’
+   44 |         foo(10);
+      |         ~~~^~~~
+outputs/gpp_strategy0/21.fuzz:40:27: note: candidate: ‘template<class B> void C::foo()’
+   40 |     template<class B>void foo(){
+      |                           ^~~
+outputs/gpp_strategy0/21.fuzz:40:27: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/21.fuzz:44:12: note:   candidate expects 0 arguments, 1 provided
+   44 |         foo(10);
+      |         ~~~^~~~
+outputs/gpp_strategy0/21.fuzz: At global scope:
+outputs/gpp_strategy0/21.fuzz:48:1: error: redefinition of ‘int main()’
+   48 | main() {
+      | ^~~~
+outputs/gpp_strategy0/21.fuzz:8:5: note: ‘int main()’ previously defined here
+    8 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/21.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/21.fuzz:49:6: error: expected unqualified-id at end of input
+   49 |     C
+      |      ^
+outputs/gpp_strategy0/21.fuzz:49:6: error: expected ‘}’ at end of input
+outputs/gpp_strategy0/21.fuzz:48:8: note: to match this ‘{’
+   48 | main() {
+      |        ^
+
+[TRACE] Validating outputs/gpp_strategy0/27.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/27.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/48.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/48.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/40.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/40.fuzz failed validation with error message: outputs/gpp_strategy0/40.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/40.fuzz:3:30: error: invalid operands of types ‘const char [6]’ and ‘const char [6]’ to binary ‘operator+’
+    3 |     std::string name{"Hello" + "World"};
+      |                      ~~~~~~~ ^ ~~~~~~~
+      |                      |         |
+      |                      |         const char [6]
+      |                      const char [6]
+outputs/gpp_strategy0/40.fuzz:3:39: error: no matching function for call to ‘std::__cxx11::basic_string<char>::basic_string(<brace-enclosed initializer list>)’
+    3 |     std::string name{"Hello" + "World"};
+      |                                       ^
+In file included from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy0/40.fuzz:1:
+/usr/include/c++/13/bits/basic_string.h:795:9: note: candidate: ‘template<class _Tp, class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, const _Alloc&) [with <template-parameter-2-2> = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  795 |         basic_string(const _Tp& __t, const _Alloc& __a = _Alloc())
+      |         ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:795:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:783:9: note: candidate: ‘template<class _Tp, class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Tp&, size_type, size_type, const _Alloc&) [with <template-parameter-2-2> = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  783 |         basic_string(const _Tp& __t, size_type __pos, size_type __n,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:783:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:760:9: note: candidate: ‘template<class _InputIterator, class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&) [with <template-parameter-2-2> = _InputIterator; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  760 |         basic_string(_InputIterator __beg, _InputIterator __end,
+      |         ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:760:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:664:7: note: candidate: ‘template<class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(size_type, _CharT, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  664 |       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:664:7: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:641:7: note: candidate: ‘template<class> constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  641 |       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:641:7: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/bits/basic_string.h:716:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  716 |       basic_string(basic_string&& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:716:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:711:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  711 |       basic_string(const basic_string& __str, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:711:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:706:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::initializer_list<_Tp>, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  706 |       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:706:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:677:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  677 |       basic_string(basic_string&& __str) noexcept
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:677:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:619:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  619 |       basic_string(const _CharT* __s, size_type __n,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:619:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:599:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  599 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:599:7: note:   candidate expects 4 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:581:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  581 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:581:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:564:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’
+  564 |       basic_string(const basic_string& __str, size_type __pos,
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:564:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:547:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  547 |       basic_string(const basic_string& __str)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:547:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:535:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  535 |       basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:535:7: note:   conversion of argument 1 would be ill-formed:
+/usr/include/c++/13/bits/basic_string.h:522:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  522 |       basic_string()
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:522:7: note:   candidate expects 0 arguments, 1 provided
+/usr/include/c++/13/bits/basic_string.h:176:7: note: candidate: ‘constexpr std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(__sv_wrapper, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  176 |       basic_string(__sv_wrapper __svw, const _Alloc& __a)
+      |       ^~~~~~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:176:7: note:   candidate expects 2 arguments, 1 provided
+
+[TRACE] Validating outputs/gpp_strategy0/46.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/46.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/73.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/73.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/90.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/90.fuzz failed validation with error message: outputs/gpp_strategy0/90.fuzz:7:1: error: expected declaration before ‘}’ token
+    7 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy0/8.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/8.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/74.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/74.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/82.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/82.fuzz failed validation with error message: outputs/gpp_strategy0/82.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/82.fuzz:4:9: error: ‘isodd’ was not declared in this scope
+    4 |     if (isodd(a)) {
+      |         ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy0/91.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/91.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/10.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/10.fuzz failed validation with error message: outputs/gpp_strategy0/10.fuzz:15:5: error: redefinition of ‘int main()’
+   15 | int main (void) {
+      |     ^~~~
+outputs/gpp_strategy0/10.fuzz:2:5: note: ‘int main()’ previously defined here
+    2 | int main() {
+      |     ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/3.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/3.fuzz failed validation with error message: outputs/gpp_strategy0/3.fuzz:39:10: fatal error: assert: No such file or directory
+   39 | #include <assert>
+      |          ^~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/gpp_strategy0/4.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/4.fuzz failed validation with error message: outputs/gpp_strategy0/4.fuzz:61:1: error: unterminated comment
+   61 | /*
+      | ^
+outputs/gpp_strategy0/4.fuzz: In constructor ‘BA::BA()’:
+outputs/gpp_strategy0/4.fuzz:41:17: error: lvalue required as left operand of assignment
+   41 |     BA() { m_a.v() = 0; m_b.v() = 1; }
+      |            ~~~~~^~
+outputs/gpp_strategy0/4.fuzz:41:30: error: lvalue required as left operand of assignment
+   41 |     BA() { m_a.v() = 0; m_b.v() = 1; }
+      |                         ~~~~~^~
+outputs/gpp_strategy0/4.fuzz: In function ‘int testFunction()’:
+outputs/gpp_strategy0/4.fuzz:48:8: error: lvalue required as left operand of assignment
+   48 |     a.v() = 2;
+      |     ~~~^~
+outputs/gpp_strategy0/4.fuzz:50:8: error: lvalue required as left operand of assignment
+   50 |     b.v() = 12;
+      |     ~~~^~
+outputs/gpp_strategy0/4.fuzz:51:5: error: ‘BAB’ was not declared in this scope; did you mean ‘BA’?
+   51 |     BAB bab;
+      |     ^~~
+      |     BA
+outputs/gpp_strategy0/4.fuzz:52:8: error: lvalue required as left operand of assignment
+   52 |     a.v() = 2;
+      |     ~~~^~
+outputs/gpp_strategy0/4.fuzz:55:5: error: ‘BAB’ is not a class, namespace, or enumeration
+   55 |     BAB::BA bab1{a, b};
+      |     ^~~
+outputs/gpp_strategy0/4.fuzz:56:5: error: ‘BAB’ is not a class, namespace, or enumeration
+   56 |     BAB::BA bab2(b, a);
+      |     ^~~
+outputs/gpp_strategy0/4.fuzz:57:9: error: ‘bab1’ was not declared in this scope
+   57 |     x = bab1.v() + bab2.v();
+      |         ^~~~
+outputs/gpp_strategy0/4.fuzz:57:20: error: ‘bab2’ was not declared in this scope
+   57 |     x = bab1.v() + bab2.v();
+      |                    ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/37.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/37.fuzz failed validation with error message: outputs/gpp_strategy0/37.fuzz: In function ‘void f(std::vector<int>&)’:
+outputs/gpp_strategy0/37.fuzz:16:5: error: ‘cin’ was not declared in this scope; did you mean ‘std::cin’?
+   16 |     cin >> n;
+      |     ^~~
+      |     std::cin
+In file included from outputs/gpp_strategy0/37.fuzz:1:
+/usr/include/c++/13/iostream:62:18: note: ‘std::cin’ declared here
+   62 |   extern istream cin;           ///< Linked to standard input
+      |                  ^~~
+outputs/gpp_strategy0/37.fuzz:25:35: error: ‘class std::vector<int>’ has no member named ‘substr’
+   25 |     std::vector<int> subset = vec.substr(0, k);
+      |                                   ^~~~~~
+
+[TRACE] Validating outputs/gpp_strategy0/65.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/65.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/5.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/5.fuzz failed validation with error message: outputs/gpp_strategy0/5.fuzz:5:1: error: ‘cout’ does not name a type
+    5 | cout << "Hello world!" << endl;
+      | ^~~~
+outputs/gpp_strategy0/5.fuzz: In member function ‘void vector2<T, U, V>::push_back(U)’:
+outputs/gpp_strategy0/5.fuzz:13:21: error: expected primary-expression before ‘value’
+   13 |         push_back(V value);
+      |                     ^~~~~
+
+[TRACE] Validating outputs/gpp_strategy0/2.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/2.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/20.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/20.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/15.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/15.fuzz failed validation with error message: outputs/gpp_strategy0/15.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/15.fuzz:3:9: error: expected primary-expression before ‘)’ token
+    3 |     for(){
+      |         ^
+outputs/gpp_strategy0/15.fuzz:6:1: error: expected primary-expression before ‘}’ token
+    6 | }
+      | ^
+outputs/gpp_strategy0/15.fuzz:5:6: error: expected ‘;’ before ‘}’ token
+    5 |     }
+      |      ^
+      |      ;
+    6 | }
+      | ~     
+outputs/gpp_strategy0/15.fuzz:6:1: error: expected primary-expression before ‘}’ token
+    6 | }
+      | ^
+outputs/gpp_strategy0/15.fuzz:5:6: error: expected ‘)’ before ‘}’ token
+    5 |     }
+      |      ^
+      |      )
+    6 | }
+      | ~     
+outputs/gpp_strategy0/15.fuzz:3:8: note: to match this ‘(’
+    3 |     for(){
+      |        ^
+outputs/gpp_strategy0/15.fuzz:6:1: error: expected primary-expression before ‘}’ token
+    6 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy0/42.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/42.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/52.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/52.fuzz failed validation with error message: outputs/gpp_strategy0/52.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/52.fuzz:3:33: error: expected ‘,’ or ‘;’ before ‘<<’ token
+    3 |     std::string name{ "Hello "} << "Name";
+      |                                 ^~
+outputs/gpp_strategy0/52.fuzz:4:15: error: cannot bind non-const lvalue reference of type ‘int&’ to an rvalue of type ‘int’
+    4 |     auto& x = 10;
+      |               ^~
+
+[TRACE] Validating outputs/gpp_strategy0/32.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/32.fuzz failed validation with error message: outputs/gpp_strategy0/32.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/32.fuzz:2:13: error: expected primary-expression before ‘...’ token
+    2 | int main() {...
+      |             ^~~
+
+[TRACE] Validating outputs/gpp_strategy0/44.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/44.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/51.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/51.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/9.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/9.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/94.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/94.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/75.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/75.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/33.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/33.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/77.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/77.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/95.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/95.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/71.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/71.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/58.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/58.fuzz failed validation with error message: outputs/gpp_strategy0/58.fuzz:5:16: error: expected ‘;’ after class definition
+    5 | class Matrix {}
+      |                ^
+      |                ;
+outputs/gpp_strategy0/58.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/58.fuzz:17:49: error: too many initializers for ‘Matrix<10, 10>’
+   17 |     Matrix<10, 10> m{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+      |                                                 ^
+outputs/gpp_strategy0/58.fuzz: In instantiation of ‘std::ostream& operator<<(std::ostream&, const Matrix<N, M>&) [with long unsigned int N = 10; long unsigned int M = 10; std::ostream = std::basic_ostream<char>]’:
+outputs/gpp_strategy0/58.fuzz:18:18:   required from here
+outputs/gpp_strategy0/58.fuzz:11:17: error: no match for call to ‘(const Matrix<10, 10>) (std::size_t&)’
+   11 |         out << m(i) << " ";
+      |                ~^~~
+
+[TRACE] Validating outputs/gpp_strategy0/31.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/31.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/93.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/93.fuzz failed validation with error message: outputs/gpp_strategy0/93.fuzz:11:16: error: ‘privateDef’ does not name a type
+   11 |         static privateDef* ptrField
+      |                ^~~~~~~~~~
+outputs/gpp_strategy0/93.fuzz:12:2: error: expected ‘;’ after class definition
+   12 | }
+      |  ^
+      |  ;
+outputs/gpp_strategy0/93.fuzz:16:1: error: cannot define member function ‘classDef::privateClass::privateClass’ within ‘classDef’
+   16 | classDef::privateClass::privateClass() {}
+      | ^~~~~~~~
+outputs/gpp_strategy0/93.fuzz:18:11: error: invalid use of incomplete type ‘class classDef’
+   18 | classDef::privateDef{
+      |           ^~~~~~~~~~
+outputs/gpp_strategy0/93.fuzz:4:7: note: definition of ‘class classDef’ is not complete until the closing brace
+    4 | class classDef
+      |       ^~~~~~~~
+outputs/gpp_strategy0/93.fuzz:23:11: error: invalid use of incomplete type ‘class classDef’
+   23 | classDef::privateDef::privateDef() {}
+      |           ^~~~~~~~~~
+outputs/gpp_strategy0/93.fuzz:4:7: note: definition of ‘class classDef’ is not complete until the closing brace
+    4 | class classDef
+      |       ^~~~~~~~
+outputs/gpp_strategy0/93.fuzz:25:1: error: ISO C++ forbids declaration of ‘privateDef’ with no type [-fpermissive]
+   25 | classDef::privateDef(const privateClass& x) {}
+      | ^~~~~~~~
+outputs/gpp_strategy0/93.fuzz:25:1: error: extra qualification ‘classDef::’ on member ‘privateDef’ [-fpermissive]
+outputs/gpp_strategy0/93.fuzz:27:5: error: ‘privateDef’ is not a class, namespace, or enumeration
+   27 | int privateDef::privateDef();
+      |     ^~~~~~~~~~
+outputs/gpp_strategy0/93.fuzz:35:1: error: ‘classDef::classDef(const classDef&)’ cannot be overloaded with ‘classDef::classDef(const classDef&)’
+   35 | classDef(const classDef &){};
+      | ^~~~~~~~
+outputs/gpp_strategy0/93.fuzz:33:1: note: previous declaration ‘classDef::classDef(const classDef&)’
+   33 | classDef(const classDef&) = default;
+      | ^~~~~~~~
+outputs/gpp_strategy0/93.fuzz:36:1: error: expected unqualified-id before ‘<’ token
+   36 | <fim_middle>
+      | ^
+outputs/gpp_strategy0/93.fuzz:40:37: error: expected ‘}’ at end of input
+   40 | classDef &copyMethod(classDef &&){};
+      |                                     ^
+outputs/gpp_strategy0/93.fuzz:5:1: note: to match this ‘{’
+    5 | {
+      | ^
+outputs/gpp_strategy0/93.fuzz: In member function ‘int classDef::privateDef(const privateClass&)’:
+outputs/gpp_strategy0/93.fuzz:25:46: warning: no return statement in function returning non-void [-Wreturn-type]
+   25 | classDef::privateDef(const privateClass& x) {}
+      |                                              ^
+outputs/gpp_strategy0/93.fuzz: In member function ‘classDef& classDef::operator=(classDef&&)’:
+outputs/gpp_strategy0/93.fuzz:39:34: warning: no return statement in function returning non-void [-Wreturn-type]
+   39 | classDef &operator=(classDef &&){};
+      |                                  ^
+      |                                  return *this;
+outputs/gpp_strategy0/93.fuzz: In member function ‘classDef& classDef::copyMethod(classDef&&)’:
+outputs/gpp_strategy0/93.fuzz:40:35: warning: no return statement in function returning non-void [-Wreturn-type]
+   40 | classDef &copyMethod(classDef &&){};
+      |                                   ^
+outputs/gpp_strategy0/93.fuzz: At global scope:
+outputs/gpp_strategy0/93.fuzz:40:37: error: expected unqualified-id at end of input
+   40 | classDef &copyMethod(classDef &&){};
+      |                                     ^
+
+[TRACE] Validating outputs/gpp_strategy0/80.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/80.fuzz failed validation with error message: outputs/gpp_strategy0/80.fuzz: In function ‘void run()’:
+outputs/gpp_strategy0/80.fuzz:5:9: error: ‘isodd’ was not declared in this scope
+    5 |     RUN(isodd(3));
+      |         ^~~~~
+outputs/gpp_strategy0/80.fuzz:4:32: note: in definition of macro ‘RUN’
+    4 | #define RUN(expr) std::cout << expr << '\n';
+      |                                ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/76.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/76.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/69.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/69.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/17.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/17.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/49.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/49.fuzz failed validation with error message: outputs/gpp_strategy0/49.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/49.fuzz:4:11: error: no match for ‘operator<<’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘main()::Color’)
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      | ~~~~~~~~~ ^~ ~~~~~~~~~~
+      |      |              |
+      |      |              main()::Color
+      |      std::ostream {aka std::basic_ostream<char>}
+In file included from /usr/include/c++/13/iostream:41,
+                 from outputs/gpp_strategy0/49.fuzz:1:
+/usr/include/c++/13/ostream:110:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:110:36: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)’ {aka ‘std::basic_ostream<char>& (*)(std::basic_ostream<char>&)’}
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:119:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]’
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:119:32: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:129:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:129:30: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘std::ios_base& (*)(std::ios_base&)’
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/13/ostream:168:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:168:23: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘long int’
+  168 |       operator<<(long __n)
+      |                  ~~~~~^~~
+/usr/include/c++/13/ostream:172:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:172:32: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘long unsigned int’
+  172 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:176:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:176:23: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘bool’
+  176 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from /usr/include/c++/13/ostream:880:
+/usr/include/c++/13/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘short int’
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+/usr/include/c++/13/ostream:183:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:183:33: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘short unsigned int’
+  183 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘int’
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+/usr/include/c++/13/ostream:194:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:194:31: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘unsigned int’
+  194 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:203:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:203:28: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘long long int’
+  203 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:207:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:207:37: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘long long unsigned int’
+  207 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:222:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:222:25: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘double’
+  222 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/13/ostream:226:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:226:24: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘float’
+  226 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+/usr/include/c++/13/ostream:234:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:234:30: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘long double’
+  234 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:241:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float16) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  241 |       operator<<(_Float16 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:241:27: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘_Float16’
+  241 |       operator<<(_Float16 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:250:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float32) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  250 |       operator<<(_Float32 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:250:27: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘_Float32’
+  250 |       operator<<(_Float32 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:259:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(_Float64) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  259 |       operator<<(_Float64 __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:259:27: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘_Float64’
+  259 |       operator<<(_Float64 __f)
+      |                  ~~~~~~~~~^~~
+/usr/include/c++/13/ostream:277:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__gnu_cxx::__bfloat16_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __gnu_cxx::__bfloat16_t = __bf16]’
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:277:42: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘__gnu_cxx::__bfloat16_t’ {aka ‘__bf16’}
+  277 |       operator<<(__gnu_cxx::__bfloat16_t __f)
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:292:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  292 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:292:30: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘const void*’
+  292 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/13/ostream:297:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]’
+  297 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:297:18: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘std::nullptr_t’
+  297 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+/usr/include/c++/13/ostream:304:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const volatile void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  304 |       operator<<(const volatile void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/13/ostream:304:39: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘const volatile void*’
+  304 |       operator<<(const volatile void* __p)
+      |                  ~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/13/bits/ostream.tcc:124:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]’
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from ‘main()::Color’ to ‘std::basic_ostream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/c++/13/bits/basic_string.h:47,
+                 from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40:
+/usr/include/c++/13/string_view:761:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, basic_string_view<_CharT, _Traits>)’
+  761 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/13/string_view:761:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘main()::Color’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/bits/basic_string.h:4032:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 4032 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/basic_string.h:4032:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘main()::Color’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+In file included from /usr/include/c++/13/bits/memory_resource.h:38,
+                 from /usr/include/c++/13/string:58:
+/usr/include/c++/13/cstddef:124:5: note: candidate: ‘template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator<<(byte, _IntegerType)’
+  124 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/13/cstddef:124:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:6: note:   cannot convert ‘std::cout’ (type ‘std::ostream’ {aka ‘std::basic_ostream<char>’}) to type ‘std::byte’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      | ~~~~~^~~~
+In file included from /usr/include/c++/13/bits/ios_base.h:46:
+/usr/include/c++/13/system_error:339:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)’
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/13/system_error:339:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const std::error_code&’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:554:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)’
+  554 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:554:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘main()::Color’)
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/ostream:564:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)’
+  564 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:564:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:570:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)’
+  570 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:570:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:581:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)’
+  581 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:581:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘signed char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:586:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)’
+  586 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:586:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘unsigned char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:595:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t)’ (deleted)
+  595 |     operator<<(basic_ostream<char, _Traits>&, wchar_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:595:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘wchar_t’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:600:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char8_t)’ (deleted)
+  600 |     operator<<(basic_ostream<char, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:600:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘char8_t’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:605:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char16_t)’ (deleted)
+  605 |     operator<<(basic_ostream<char, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:605:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘char16_t’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:609:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char32_t)’ (deleted)
+  609 |     operator<<(basic_ostream<char, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:609:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘char32_t’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:615:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char8_t)’ (deleted)
+  615 |     operator<<(basic_ostream<wchar_t, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:615:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘wchar_t’ and ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/ostream:620:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char16_t)’ (deleted)
+  620 |     operator<<(basic_ostream<wchar_t, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:620:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘wchar_t’ and ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/ostream:624:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char32_t)’ (deleted)
+  624 |     operator<<(basic_ostream<wchar_t, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:624:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘wchar_t’ and ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/ostream:645:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  645 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:645:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘const _CharT*’ and ‘main()::Color’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/bits/ostream.tcc:307:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)’
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const char*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:662:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)’
+  662 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:662:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const char*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:675:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)’
+  675 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:675:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const signed char*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:680:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)’
+  680 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:680:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const unsigned char*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:689:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*)’ (deleted)
+  689 |     operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:689:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const wchar_t*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:694:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char8_t*)’ (deleted)
+  694 |     operator<<(basic_ostream<char, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:694:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const char8_t*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:699:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char16_t*)’ (deleted)
+  699 |     operator<<(basic_ostream<char, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:699:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const char16_t*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:703:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char32_t*)’ (deleted)
+  703 |     operator<<(basic_ostream<char, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:703:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   cannot convert ‘main()::Color::Red’ (type ‘main()::Color’) to type ‘const char32_t*’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |              ~~~~~~~^~~
+/usr/include/c++/13/ostream:709:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*)’ (deleted)
+  709 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:709:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘wchar_t’ and ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/ostream:714:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*)’ (deleted)
+  714 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:714:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘wchar_t’ and ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/ostream:718:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*)’ (deleted)
+  718 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:718:5: note:   template argument deduction/substitution failed:
+outputs/gpp_strategy0/49.fuzz:4:21: note:   mismatched types ‘wchar_t’ and ‘char’
+    4 | std::cout << Color::Red << Color::Green << Color::Blue;
+      |                     ^~~
+/usr/include/c++/13/ostream:801:5: note: candidate: ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)’
+  801 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/13/ostream:801:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/13/ostream: In substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = main()::Color]’:
+outputs/gpp_strategy0/49.fuzz:4:21:   required from here
+/usr/include/c++/13/ostream:801:5: error: template constraint failure for ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&&’
+/usr/include/c++/13/ostream:801:5: note: constraints not satisfied
+/usr/include/c++/13/ostream: In substitution of ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&& [with _Os = std::basic_ostream<char>&; _Tp = main()::Color]’:
+/usr/include/c++/13/ostream:801:5:   required by substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = main()::Color]’
+outputs/gpp_strategy0/49.fuzz:4:21:   required from here
+/usr/include/c++/13/ostream:768:13:   required for the satisfaction of ‘__derived_from_ios_base<_Os>’ [with _Os = std::basic_ostream<char, std::char_traits<char> >&]
+/usr/include/c++/13/ostream:768:39: note: the expression ‘is_class_v<_Tp> [with _Tp = std::basic_ostream<char, std::char_traits<char> >&]’ evaluated to ‘false’
+  768 |     concept __derived_from_ios_base = is_class_v<_Tp>
+      |                                       ^~~~~~~~~~~~~~~
+
+[TRACE] Validating outputs/gpp_strategy0/35.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/35.fuzz failed validation with error message: outputs/gpp_strategy0/35.fuzz:3:6: error: ‘cout’ in namespace ‘std’ does not name a type
+    3 | std::cout << "Hello, World!\n";
+      |      ^~~~
+In file included from outputs/gpp_strategy0/35.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy0/35.fuzz:4:6: error: ‘cout’ in namespace ‘std’ does not name a type
+    4 | std::cout << name;
+      |      ^~~~
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy0/35.fuzz:5:1: error: expected unqualified-id before ‘return’
+    5 | return 0;
+      | ^~~~~~
+outputs/gpp_strategy0/35.fuzz:6:1: error: expected declaration before ‘}’ token
+    6 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy0/22.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/22.fuzz failed validation with error message: outputs/gpp_strategy0/22.fuzz:2:24: error: ‘cin’ in namespace ‘std’ does not name a type
+    2 | std::string name; std::cin >> name;
+      |                        ^~~
+In file included from outputs/gpp_strategy0/22.fuzz:1:
+/usr/include/c++/13/iostream:62:18: note: ‘std::cin’ declared here
+   62 |   extern istream cin;           ///< Linked to standard input
+      |                  ^~~
+outputs/gpp_strategy0/22.fuzz:3:6: error: ‘cout’ in namespace ‘std’ does not name a type
+    3 | std::cout << "Hello, " << name;
+      |      ^~~~
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy0/22.fuzz:4:1: error: expected unqualified-id before ‘return’
+    4 | return 0;
+      | ^~~~~~
+outputs/gpp_strategy0/22.fuzz:5:1: error: expected declaration before ‘}’ token
+    5 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy0/18.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/18.fuzz failed validation with error message: outputs/gpp_strategy0/18.fuzz:5:5: error: redefinition of ‘int main()’
+    5 | int main() { return 0; }
+      |     ^~~~
+outputs/gpp_strategy0/18.fuzz:3:5: note: ‘int main()’ previously defined here
+    3 | int main() { return 0; }
+      |     ^~~~
+outputs/gpp_strategy0/18.fuzz:7:5: error: conflicting declaration of C function ‘int main(int, char**)’
+    7 | int main(int argc, char **argv) {
+      |     ^~~~
+outputs/gpp_strategy0/18.fuzz:3:5: note: previous declaration ‘int main()’
+    3 | int main() { return 0; }
+      |     ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/14.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/14.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/56.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/56.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/54.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/54.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/64.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/64.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/28.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/28.fuzz failed validation with error message: outputs/gpp_strategy0/28.fuzz:3:1: error: expected unqualified-id before ‘return’
+    3 | return 0;
+      | ^~~~~~
+outputs/gpp_strategy0/28.fuzz:4:1: error: expected declaration before ‘}’ token
+    4 | }
+      | ^
+
+[TRACE] Validating outputs/gpp_strategy0/96.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/96.fuzz failed validation with error message: outputs/gpp_strategy0/96.fuzz:5:10: fatal error: cpp.hpp: No such file or directory
+    5 | #include "cpp.hpp"
+      |          ^~~~~~~~~
+compilation terminated.
+
+[TRACE] Validating outputs/gpp_strategy0/68.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/68.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/7.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/7.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/57.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/57.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/23.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/23.fuzz failed validation with error message: outputs/gpp_strategy0/23.fuzz:61:26: error: expected ‘}’ at end of input
+   61 |         return ((dx * dx)
+      |                          ^
+outputs/gpp_strategy0/23.fuzz:18:14: note: to match this ‘{’
+   18 | class Circle {
+      |              ^
+outputs/gpp_strategy0/23.fuzz: In constructor ‘Circle::Circle(float, float, float)’:
+outputs/gpp_strategy0/23.fuzz:31:46: error: no matching function for call to ‘Point::Point(float&, float&)’
+   31 |     Circle(float cx_, float cy_, float r_) : center(cx_, cy_), radius(r_) {
+      |                                              ^~~~~~~~~~~~~~~~
+outputs/gpp_strategy0/23.fuzz:14:5: note: candidate: ‘Point::Point()’
+   14 |     Point() : x(0), y(0) {
+      |     ^~~~~
+outputs/gpp_strategy0/23.fuzz:14:5: note:   candidate expects 0 arguments, 2 provided
+outputs/gpp_strategy0/23.fuzz:7:7: note: candidate: ‘constexpr Point::Point(const Point&)’
+    7 | class Point {
+      |       ^~~~~
+outputs/gpp_strategy0/23.fuzz:7:7: note:   candidate expects 1 argument, 2 provided
+outputs/gpp_strategy0/23.fuzz:7:7: note: candidate: ‘constexpr Point::Point(Point&&)’
+outputs/gpp_strategy0/23.fuzz:7:7: note:   candidate expects 1 argument, 2 provided
+outputs/gpp_strategy0/23.fuzz: In member function ‘float Circle::distance_sq(Point)’:
+outputs/gpp_strategy0/23.fuzz:61:26: error: expected ‘)’ at end of input
+   61 |         return ((dx * dx)
+      |                          ^
+outputs/gpp_strategy0/23.fuzz:61:16: note: to match this ‘(’
+   61 |         return ((dx * dx)
+      |                ^
+outputs/gpp_strategy0/23.fuzz:61:26: error: expected ‘;’ at end of input
+   61 |         return ((dx * dx)
+      |                          ^
+outputs/gpp_strategy0/23.fuzz:61:26: error: expected ‘}’ at end of input
+outputs/gpp_strategy0/23.fuzz:58:32: note: to match this ‘{’
+   58 |     float distance_sq(Point b) {
+      |                                ^
+outputs/gpp_strategy0/23.fuzz: At global scope:
+outputs/gpp_strategy0/23.fuzz:61:26: error: expected unqualified-id at end of input
+   61 |         return ((dx * dx)
+      |                          ^
+
+[TRACE] Validating outputs/gpp_strategy0/43.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/43.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/19.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/19.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/59.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/59.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/11.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/11.fuzz failed validation with error message: outputs/gpp_strategy0/11.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/11.fuzz:5:17: error: ‘a’ was not declared in this scope
+    5 |     std::cin >> a;
+      |                 ^
+
+[TRACE] Validating outputs/gpp_strategy0/53.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/53.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/34.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/34.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/26.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/26.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/38.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/38.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/67.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/67.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/70.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/70.fuzz failed validation with error message: outputs/gpp_strategy0/70.fuzz:4:1: error: ‘::main’ must return ‘int’
+    4 | void main() {
+      | ^~~~
+outputs/gpp_strategy0/70.fuzz:8:5: error: redefinition of ‘int y’
+    8 | int y = 0;
+      |     ^
+outputs/gpp_strategy0/70.fuzz:2:5: note: ‘int y’ previously defined here
+    2 | int y = 0;
+      |     ^
+outputs/gpp_strategy0/70.fuzz:9:7: error: redefinition of ‘void* z’
+    9 | void *z;
+      |       ^
+outputs/gpp_strategy0/70.fuzz:3:7: note: ‘void* z’ previously declared here
+    3 | void *z;
+      |       ^
+outputs/gpp_strategy0/70.fuzz:11:5: error: redefinition of ‘int main()’
+   11 | int main() {
+      |     ^~~~
+outputs/gpp_strategy0/70.fuzz:4:6: note: ‘int main()’ previously defined here
+    4 | void main() {
+      |      ^~~~
+outputs/gpp_strategy0/70.fuzz:15:1: error: ‘::main’ must return ‘int’
+   15 | void *main() {
+      | ^~~~
+outputs/gpp_strategy0/70.fuzz:15:7: error: redefinition of ‘int main()’
+   15 | void *main() {
+      |       ^~~~
+outputs/gpp_strategy0/70.fuzz:4:6: note: ‘int main()’ previously defined here
+    4 | void main() {
+      |      ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/30.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/30.fuzz failed validation with error message: outputs/gpp_strategy0/30.fuzz:16: error: unterminated #ifndef
+   16 | #ifndef my_stringclass_h
+      | 
+outputs/gpp_strategy0/30.fuzz:35:45: error: expected ‘}’ at end of input
+   35 |     size_t size() const {return strlen(_data
+      |                                             ^
+outputs/gpp_strategy0/30.fuzz:18:22: note: to match this ‘{’
+   18 | class my_stringclass {
+      |                      ^
+outputs/gpp_strategy0/30.fuzz: In member function ‘size_t my_stringclass::size() const’:
+outputs/gpp_strategy0/30.fuzz:35:45: error: expected ‘)’ at end of input
+   35 |     size_t size() const {return strlen(_data
+      |                                             ^
+outputs/gpp_strategy0/30.fuzz:35:39: note: to match this ‘(’
+   35 |     size_t size() const {return strlen(_data
+      |                                       ^
+outputs/gpp_strategy0/30.fuzz:35:45: error: expected ‘;’ at end of input
+   35 |     size_t size() const {return strlen(_data
+      |                                             ^
+outputs/gpp_strategy0/30.fuzz:35:45: error: expected ‘}’ at end of input
+outputs/gpp_strategy0/30.fuzz:35:25: note: to match this ‘{’
+   35 |     size_t size() const {return strlen(_data
+      |                         ^
+outputs/gpp_strategy0/30.fuzz: At global scope:
+outputs/gpp_strategy0/30.fuzz:35:45: error: expected unqualified-id at end of input
+   35 |     size_t size() const {return strlen(_data
+      |                                             ^
+
+[TRACE] Validating outputs/gpp_strategy0/36.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/36.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/39.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/39.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/97.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/97.fuzz failed validation with error message: outputs/gpp_strategy0/97.fuzz:3:6: error: ‘vector’ in namespace ‘std’ does not name a template type
+    3 | std::vector<std::string> vec = {
+      |      ^~~~~~
+outputs/gpp_strategy0/97.fuzz:3:1: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+    2 | #include <algorithm>
+  +++ |+#include <vector>
+    3 | std::vector<std::string> vec = {
+outputs/gpp_strategy0/97.fuzz:10:6: error: ‘vector’ in namespace ‘std’ does not name a template type
+   10 | std::vector<std::string> my_sort(std::vector<std::string>& vec) {
+      |      ^~~~~~
+outputs/gpp_strategy0/97.fuzz:10:1: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+   10 | std::vector<std::string> my_sort(std::vector<std::string>& vec) {
+      | ^~~
+outputs/gpp_strategy0/97.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/97.fuzz:15:10: error: ‘vector’ is not a member of ‘std’
+   15 |     std::vector<std::string> vec = {
+      |          ^~~~~~
+outputs/gpp_strategy0/97.fuzz:15:10: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+outputs/gpp_strategy0/97.fuzz:15:28: error: expected primary-expression before ‘>’ token
+   15 |     std::vector<std::string> vec = {
+      |                            ^
+outputs/gpp_strategy0/97.fuzz:15:30: error: ‘vec’ was not declared in this scope
+   15 |     std::vector<std::string> vec = {
+      |                              ^~~
+outputs/gpp_strategy0/97.fuzz:19:10: error: ‘vector’ is not a member of ‘std’
+   19 |     std::vector<std::string> sorted = my_sort(vec);
+      |          ^~~~~~
+outputs/gpp_strategy0/97.fuzz:19:10: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+outputs/gpp_strategy0/97.fuzz:19:28: error: expected primary-expression before ‘>’ token
+   19 |     std::vector<std::string> sorted = my_sort(vec);
+      |                            ^
+outputs/gpp_strategy0/97.fuzz:19:30: error: ‘sorted’ was not declared in this scope; did you mean ‘strtod’?
+   19 |     std::vector<std::string> sorted = my_sort(vec);
+      |                              ^~~~~~
+      |                              strtod
+
+[TRACE] Validating outputs/gpp_strategy0/12.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/12.fuzz failed validation with error message: outputs/gpp_strategy0/12.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/12.fuzz:4:5: error: ‘print’ was not declared in this scope; did you mean ‘printf’?
+    4 |     print(a, sizeof(int));
+      |     ^~~~~
+      |     printf
+
+[TRACE] Validating outputs/gpp_strategy0/45.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/45.fuzz failed validation with error message: outputs/gpp_strategy0/45.fuzz: In function ‘void HelloWorld()’:
+outputs/gpp_strategy0/45.fuzz:4:5: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?
+    4 |     cout << "Hello World" << endl;
+      |     ^~~~
+      |     std::cout
+In file included from outputs/gpp_strategy0/45.fuzz:1:
+/usr/include/c++/13/iostream:63:18: note: ‘std::cout’ declared here
+   63 |   extern ostream cout;          ///< Linked to standard output
+      |                  ^~~~
+outputs/gpp_strategy0/45.fuzz:4:30: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?
+    4 |     cout << "Hello World" << endl;
+      |                              ^~~~
+      |                              std::endl
+In file included from /usr/include/c++/13/iostream:41:
+/usr/include/c++/13/ostream:735:5: note: ‘std::endl’ declared here
+  735 |     endl(basic_ostream<_CharT, _Traits>& __os)
+      |     ^~~~
+
+[TRACE] Validating outputs/gpp_strategy0/25.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/25.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/85.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/85.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/98.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/98.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/55.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/55.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/63.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/63.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/50.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/50.fuzz failed validation with error message: outputs/gpp_strategy0/50.fuzz:8:1: error: ‘::main’ must return ‘int’
+    8 | Person main() {
+      | ^~~~~~
+outputs/gpp_strategy0/50.fuzz: In function ‘int main()’:
+outputs/gpp_strategy0/50.fuzz:10:12: error: cannot convert ‘Person’ to ‘int’ in return
+   10 |     return Person{"Hello World"};
+      |            ^~~~~~~~~~~~~~~~~~~~~
+      |            |
+      |            Person
+outputs/gpp_strategy0/50.fuzz: At global scope:
+outputs/gpp_strategy0/50.fuzz:13:1: error: ‘::main’ must return ‘int’
+   13 | void main() {
+      | ^~~~
+outputs/gpp_strategy0/50.fuzz:13:6: error: redefinition of ‘int main()’
+   13 | void main() {
+      |      ^~~~
+outputs/gpp_strategy0/50.fuzz:8:8: note: ‘int main()’ previously defined here
+    8 | Person main() {
+      |        ^~~~
+outputs/gpp_strategy0/50.fuzz:26:44: error: expected ‘;’ at end of member declaration
+   26 |     void (*call)(C) { return this->m_func; }
+      |                                            ^
+      |                                             ;
+outputs/gpp_strategy0/50.fuzz:27:74: error: expected ‘;’ at end of member declaration
+   27 |     void (*call_ptr)(C *) { return static_cast<void(*)()>(this->m_func); }
+      |                                                                          ^
+      |                                                                           ;
+outputs/gpp_strategy0/50.fuzz:26:23: error: expected primary-expression before ‘return’
+   26 |     void (*call)(C) { return this->m_func; }
+      |                       ^~~~~~
+outputs/gpp_strategy0/50.fuzz:26:23: error: expected ‘}’ before ‘return’
+outputs/gpp_strategy0/50.fuzz:26:21: note: to match this ‘{’
+   26 |     void (*call)(C) { return this->m_func; }
+      |                     ^
+outputs/gpp_strategy0/50.fuzz:26:23: error: expected ‘;’ before ‘return’
+   26 |     void (*call)(C) { return this->m_func; }
+      |                       ^~~~~~
+outputs/gpp_strategy0/50.fuzz:27:29: error: expected primary-expression before ‘return’
+   27 |     void (*call_ptr)(C *) { return static_cast<void(*)()>(this->m_func); }
+      |                             ^~~~~~
+outputs/gpp_strategy0/50.fuzz:27:29: error: expected ‘}’ before ‘return’
+outputs/gpp_strategy0/50.fuzz:27:27: note: to match this ‘{’
+   27 |     void (*call_ptr)(C *) { return static_cast<void(*)()>(this->m_func); }
+      |                           ^
+outputs/gpp_strategy0/50.fuzz:27:29: error: expected ‘;’ before ‘return’
+   27 |     void (*call_ptr)(C *) { return static_cast<void(*)()>(this->m_func); }
+      |                             ^~~~~~
+outputs/gpp_strategy0/50.fuzz:30:25: error: expected unqualified-id before ‘)’ token
+   30 |     void(Derived::*(C::*)(const void *)) c_func;
+      |                         ^
+outputs/gpp_strategy0/50.fuzz:30:26: error: expected ‘)’ before ‘(’ token
+   30 |     void(Derived::*(C::*)(const void *)) c_func;
+      |         ~                ^
+      |                          )
+outputs/gpp_strategy0/50.fuzz:33:17: error: wrong number of template arguments (1, should be 2)
+   33 |     void (Base<C>::*call)(void) { return Base<C>::m_func; }
+      |                 ^
+outputs/gpp_strategy0/50.fuzz:22:41: note: provided for ‘template<class C, class F> class Base’
+   22 | template <typename C, typename F> class Base {
+      |                                         ^~~~
+outputs/gpp_strategy0/50.fuzz:33:59: error: expected ‘;’ at end of member declaration
+   33 |     void (Base<C>::*call)(void) { return Base<C>::m_func; }
+      |                                                           ^
+      |                                                            ;
+outputs/gpp_strategy0/50.fuzz:34:17: error: wrong number of template arguments (1, should be 2)
+   34 |     void (Base<C>::*call_ptr)(void *) { return Base<C>::m_func; }
+      |                 ^
+outputs/gpp_strategy0/50.fuzz:22:41: note: provided for ‘template<class C, class F> class Base’
+   22 | template <typename C, typename F> class Base {
+      |                                         ^~~~
+outputs/gpp_strategy0/50.fuzz:34:65: error: expected ‘;’ at end of member declaration
+   34 |     void (Base<C>::*call_ptr)(void *) { return Base<C>::m_func; }
+      |                                                                 ^
+      |                                                                  ;
+outputs/gpp_strategy0/50.fuzz: In constructor ‘Derived<C>::Derived(void (Derived<C>::*)(const void*))’:
+outputs/gpp_strategy0/50.fuzz:31:62: error: class ‘Derived<C>’ does not have any field named ‘c_func’
+   31 |     explicit Derived(void(Derived::* cFunc)(const void *)) : c_func{cFunc} {}
+      |                                                              ^~~~~~
+outputs/gpp_strategy0/50.fuzz: At global scope:
+outputs/gpp_strategy0/50.fuzz:39:45: error: expected ‘}’ at end of input
+   39 |     explicit Pointer(T *ptr) : m_ptr{ptr} {}
+      |                                             ^
+outputs/gpp_strategy0/50.fuzz:36:37: note: to match this ‘{’
+   36 | template <typename T> class Pointer {
+      |                                     ^
+outputs/gpp_strategy0/50.fuzz:39:45: error: expected ‘;’ at end of input
+   39 |     explicit Pointer(T *ptr) : m_ptr{ptr} {}
+      |                                             ^
+      |                                             ;
+
+[TRACE] Validating outputs/gpp_strategy0/41.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/41.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/79.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/79.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/62.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/62.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/89.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/89.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/6.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/6.fuzz is safe
+[TRACE] Validating outputs/gpp_strategy0/87.fuzz ...
+[VERBOSE] outputs/gpp_strategy0/87.fuzz failed validation with error message: outputs/gpp_strategy0/87.fuzz:2:11: error: expected ‘}’ at end of input
+    2 | struct A {
+      |          ~^
+outputs/gpp_strategy0/87.fuzz:2:11: error: expected unqualified-id at end of input
+

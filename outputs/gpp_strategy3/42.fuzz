@@ -1,0 +1,13 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    if (a < b)
+    {
+        return a;
+    }
+    return b;
+}
+int main()
+{
+    return 0;
+}

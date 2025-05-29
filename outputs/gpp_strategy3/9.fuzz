@@ -1,0 +1,31 @@
+#include <iostream>
+
+
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+
+class B : public A   
+{
+    public:
+    B() {};
+};
+
+class C : public A, public B
+{
+    public:
+    C(A a = {}, B b = {}) {};
+};
+
+class D  
+{
+     public:
+    D() {};
+};
+
+int main()
+{
+}

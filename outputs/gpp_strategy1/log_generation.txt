@@ -1,0 +1,1833 @@
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ }
+
+class C
+ {
+  using U = C;   
+  static constexpr U* ptr;
+ public:
+  C() { std::cout << "constructor" << std::endl; }
+  static void print() { std::cout << "function" << std::endl; }
+ };
+
+using D = int;
+inline auto f() -> D { return D(); }
+
+auto g() -> D {
+  return 0;
+}
+
+auto f2c() -> D {
+  int* p = &g;  
+  *p = -g;  
+  return f();  
+}
+
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <algorithm>
+
+void safe_fail() {}
+
+int main()
+{
+    safe_fail();
+
+    constexpr auto n = 100;
+    void* p;
+
+    p = malloc(n);
+
+    try
+    {
+        strcpy(p, "asdf");
+    }
+    catch(... )
+    {
+        free(p);
+    }
+
+    free(p);
+
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <iomanip> 
+
+using namespace std;
+
+
+class Vector {
+    list<int> elems;
+public:
+    void push_back(int e) {
+        elems.push_back(e);
+    }
+
+    int pop_back() {
+        int e = elems.back();
+        elems.pop_back();
+        return e;
+    }
+    
+    int size() {
+        return elems.size();
+    }
+
+    friend ostream& operator<<(ostream& ost, const Vector& v);
+};
+
+ostream& operator<<(ostream& ost, const Vector& v) {
+    for(auto i : v.elems) ost << i<<"\t";
+    return ost;
+}    
+
+
+int main(int argc, char** argv) {
+    Vector v;
+    v.push_back(11);
+    v.push_back(22);
+    v.push_back(33);
+    v.push_back(44);
+    v.push_back(55);
+    
+    return 0;
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+using namespace std;
+
+int main() {
+    return 0;
+};
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+int get_answer()
+{
+    return 42;
+}
+
+int main(int argc, char **argv)
+{
+    const int MAX_LEN = 32, MIN_LEN = 9;
+    char buffer[MAX_LEN];
+    std::cout << "Please enter a string of length [";
+    std::cout << MIN_LEN << ", " << MAX_LEN << "]:" << std::endl;
+    std::cin >> buffer;
+    const int answer = get_answer();
+
+    std::cout << "Answer: " << answer << std::endl;
+
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include "gtest/gtest.h"
+
+TEST(Example, Simple) {
+    while (true);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+  int main()
+  {
+    return 0;
+  }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <string>
+
+const char g_error_code[] = {"ERROR"};
+
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+struct my_class 
+{
+     my_class() {}
+    int x;
+    ~my_class() {}
+};
+
+namespace std 
+{
+    template <class T, class U, class V>
+    struct ptrdiff;
+}
+int main() throw()
+{
+    std::ptrdiff(my_class{2}, &my_class::x);
+    for(;;)
+        getchar();
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << '"' << x << '"';
+    return out;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << '"' << x << '"';
+    return out;
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << '{' << x << '}';
+    return out;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int a = 23;
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << a << "'" << x << '"';
+    return out;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <string> class Mutated { std::string text1, text2; };
+Mutated mut = { "some text", "more text" };
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+ 
+int main() {
+    std::cout << "Hello World!" << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << "X" << x << 'X';
+    return out;
+}
+ 
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << "Y" << x << 'Y';
+    return out;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct Node {
+    Node *next;
+    Node() {}
+    Node(int v) : next(0) { value = v; }
+    int value;
+}
+
+int main(void) {
+    Node *first, *second;
+
+    first = new Node(1);
+    second = new Node(2);
+    first->next = second;
+
+    first = nullptr, second = nullptr;
+    first = second;
+    second = first, first = nullptr;
+
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::ostream& operator<<(std::ostream& out, bool x) {
+    out << x;
+    return out;
+}
+ 
+int main() {
+    bool x, y;
+    std::cout << "Hello world" << std::endl;
+    std::cout << std::boolalpha << x << std::endl;
+    std::cout << std::boolalpha << y << std::endl;
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << '"' << x << '"';
+    return out;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out = "string_class_" + x;
+    return out;
+}
+
+ 
+inline int add(int a, int b) {
+    return a + b;
+}
+inline std::ostream& operator<<(std::ostream& out, add x) {
+    return out;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator~(const std::string& x) {
+    return x.substr(1, 1) + x.substr(0, 1);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+inline std::string operator~(const std::string& x) {
+    return x.substr(1, 1) + x.substr(0, 1);
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string test() {
+    auto y = "a";
+    y = y.substr(1, 1) + y.substr(0, 1) + y;
+    return y;
+}
+
+ 
+#include "test_string"
+int main() {
+    return test_string<std::string>();
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator+=(std::string& x) {
+    x += "\n";
+    return x;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() {
+    std::cout << ~"Hello";
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <string>
+int bad_string() {
+    return 42;
+}
+class bad{
+    public:
+        int operator+(bad x) {
+            return ++x;
+        }
+};
+ 
+std::vector<int> generateNonWorkingCode();
+
+int main() {
+     
+    return bad_string() + 65535;
+     
+     
+     
+     
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator+(const std::string& x, const std::string& y) {
+    return x + y;
+}
+ 
+#include <map>
+class Node {
+ public:
+   std::string tag;
+   Node* left, *right;
+   Node(std::string x, Node* left = nullptr, Node* right = nullptr) : tag(x), left(left), right(right) {}
+   bool isLeaf() const { return left == right; }
+};
+void printTree(Node* root, std::map<std::string, std::string>& dict) {
+   while (root) {
+      if (root->left) {
+         std::string left, right;
+         if (root->left) {
+            left = dict[root->left->tag];
+         }
+         if (root->right) {
+            right = dict[root->right->tag];
+         }
+         std::cout << '[' << root->tag << ":" << left + right << "]";
+      } else {
+         std::cout << root->tag << ":NULL";
+      }
+      if (root->right) {
+         std::cout << " > ";
+      } else if (root->left) {
+         std::cout << std::endl;
+      }
+
+      root= root->right;
+   }
+}
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline bool operator!=(const std::string&, const std::string&);
+inlines bool operator!=(const std::string& x, const std::string& y) {
+    return!x == y;
+}
+ 
+template<typename... _> auto tuple_join(auto &&value, const _... args) -> decltype((args...), (value + ",")) {
+    return (std::forward<decltype(value)>(value) + ", ");
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator+=(std::string& x, const std::string& y) {
+    if (y[0] == y.c_str()[1]) y.erase(y.begin());
+    if (y[0] == y.c_str()[0]) {
+        x.append(y.substr(1));
+        if (y[0]!= '+') x.remove_prefix(1);
+    }
+    return x;
+}
+template <typename T>
+struct X { };
+template <>
+struct X<std::string> { };
+inline std::string operator+(X<std::string>, const std::string& x) {
+    return x;
+}
+#define CHECK(...) if (false) std::cout << std::boolalpha << __VA_ARGS__
+
+int main() {
+    using namespace std;
+    std::string input;
+    std::getline(cin, input);
+    CHECK("%s", input);
+    CHECK("%s", input);
+    return 0;
+}
+#endif
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator++(std::string& x)
+{
+    return (x++)++;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+inline std::string append_space(const std::string& x) {
+    return x + " ";
+}
+#include <string>
+
+std::string m( const std::string &str );
+#include <vector>
+#include <unordered_map>
+#define vector_of_strings std::vector< std::string >
+
+std::string m( const std::string &str ) {
+    std::vector< std::string > vec{ str };
+    return vec[0];
+}
+
+namespace m {
+    struct c {
+        std::string v;
+
+        std::string m( const std::string & ) { return v; }
+    };
+    std::string m( const c & ) { return "c"; }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <string>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x)
+{
+    x = "--" + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+/* Please create a very short program which uses new C++ features in a complex way
+*
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline char operator-(const char& x) {
+    return '-' + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+ 
+
+#include <iostream>
+std::string a = "Hello";
+std::cout << a.size() << std::endl;
+std::cout << a.c_str() << std::endl;
+std::cout << a << std::endl;
+std::cout << -(a) << std::endl;
+std::string b = a;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+
+#endif  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--";
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline double operator-(const double& x, const double& y) {
+    return x - y;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct A
+{
+public:
+    A() : b(new A()) { }
+    A* a;
+    A b;
+};
+void f()
+{
+    A x;
+    A* a = &x;
+    using std::cin;
+    cin >> *a;
+    #pragma warning(disable:4244)
+    std::cout << *a;
+}
+int main()
+{
+     
+    f();
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+void some_function() {
+    auto x = -1;
+    x = "hello world";
+    if(x<0) {
+        std::cout << "Negative value " << x << std::endl;
+    }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline void operator-=(std::string& x) {
+    if (x[x.size() - 1] =='s') {
+        x.append("--");
+    }
+}
+int main() {
+    std::string x = "hello world";
+     
+    auto y = x - " world";
+    std::cout << "x = " << x << "\ny = " << y << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+void test(const std::string& a, const std::string& b) {
+    std::cout << "Hello " + a + b << '\n';
+}
+ 
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+inline std::string operator-(const std::string& x) {
+    return 2 * x;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator*(const std::string& x, int n) {
+    std::cout << x << "times " << n << " = " << x * n << std::endl;
+    return x + "__" + std::to_string(n);
+}
+ 
+void print(const std::string& s) {}
+#include <iostream>
+void print(const std::string& s) { if (s == "*2") s = s + "+3"; print(s); }
+#include <iostream>
+void print(const std::string& s) {
+    if (s == "*2") s = s + "+3";
+    print(s);
+}
+ 
+#include <iostream>
+void print(const std::string& s) { std::cout << s << std::endl; }
+
+int main() { return 0; }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string mod_operator(const std::string& x){
+    return "--"+x;
+}
+int main()
+{
+    char c;
+
+    std::cout << operator-- - "" - operator-- + std::cout.rdbuf();   
+    std::cout << mod_operator(std::string("") - "0");  
+    std::cout << mod_operator((operator-- -  operator--  + std::string("")));   
+    std::cout << mod_operator(- mod_operator("-0"));  
+    std::cout << mod_operator(std::string("0"));  
+
+    return 0;
+}
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return x + "--";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator--(std::string& x) {
+    x--;
+    return x;
+}
+int main() {
+    std::string x;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+inline std::string operator+(const std::string& a,const std::string&b) {
+    return a + ++b;
+}
+ 
+#include <iostream>
+template <typename T1,typename... T2>
+struct generic1stFunc;
+template <typename T>
+struct generic1stFunc<T> {};
+template <>
+struct generic1stFunc<char> {};
+template <>
+struct generic1stFunc<bool> {};
+ 
+#include <iostream>
+template <typename T>
+struct generic1stFunc {
+    T operator[](int ind) {return ind;}
+    T operator()(int ind1,int ind2) {return ind1;}
+    T operator()(T ind) {return ind;}
+};
+template <>
+struct generic1stFunc<char> {
+    char operator[](int ind) {return ind;}
+    char operator()(int ind1,int ind2) {return ind1;}
+    char operator()(char ind) {return ind;}
+};
+template <>
+struct generic1stFunc<bool> {
+    bool operator[](int ind) {return ind;}
+    bool operator()(int ind1,int ind2) {return ind1;}
+    bool operator()(bool ind) {return ind;}
+};
+template <typename T>
+struct generic2ndFunc {
+    template <typename U>
+    U operator[](int ind) {return ind;}
+    template <typename U>
+    U operator()(int ind1,int ind2) {return ind1;}
+    template <
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+inline std::string operator-(const std::string& x) {
+    return x + "--";
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string func1(const std::string& s) {
+    return s + "--";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class C {
+    private:
+        std::string s_;
+    public:
+         
+inline void use_template_meta() {
+     
+}
+};
+
+class D {
+    public:
+         
+
+inline void use_union() {
+     
+}
+};
+void f(){}
+void use_template_meta();
+#include <string>
+ 
+
+int main() {
+     
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() {
+    std::string x;
+    x = "Hello";
+    x += operator-(x);
+    std::cout << x << '\n';
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+void print(const std::string& str) {
+    cout << str  + "->" << str << endl;
+}
+ 
+#include "template_meta/meta.hpp"
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main() {
+    std::string x = "Hello";
+    x = x;
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#define a(b) int a = b; a = a + a;
+inline std::string operator-(const std::string& x) {
+    return x + "--";
+}
+inline int a(b) {
+    a = a + a;
+    return a;
+}
+#undef a
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::ostream& operator<<(std::ostream& x, const std::string&) {
+    return x;
+}
+ 
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& x, const char*) {
+    return x;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+const std::array<int, 10> a =  {7, 9, 3, 4, 5, 6, 8, 1, 2};
+const std::array<int, 10> b =  {7, 9, 3, 4, 5, 6, 8, 1, 2};
+#include <algorithm>
+#incluir <iostream>
+
+void swap(std::array<int, 10>& x, std::array<int, 10>& y) {
+    x.swap(y);
+}
+
+void swap(int* x, int* y) {
+    std::swap(*x, *y);
+}
+
+void swap(std::string& x, std::string& y) {
+    x.swap(y);
+}
+
+int main() {
+    std::array<int, 3> a = {1, 2, 3};
+    std::array<int, 3> b = {4, 5, 6};
+#ifdef LAZY
+    if (std::is_same_v<decltype(a){}, decltype(b)>) {
+        swap(a, b);
+        return 1;
+    }
+#endif
+    using result_t = decltype(a - b);
+    result_t a - b;
+}
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <string>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main() {
+    std::string s{"hello"};
+    std::cout << s;
+    auto x = std::make_ostreambuf_iterator(std::cout);
+    auto x2 = x;
+    
+    x.pbase();
+    x2.pbase();
+    *x2 = 'z';
+    
+    std::string z{x};
+    z(x2);
+
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return x + "+--";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+inline std::string operator-(const std::string& x) {
+    return x + "+--";
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline int operator[](const int& x) {
+    return x + 1;
+}
+ 
+#include <iostream>
+class MyClass {
+private:
+    int number;
+public:
+    MyClass() : number(0) {}
+    int operator()() {
+        std::cout << "Operator called!" << std::endl;
+        return number;
+    }
+};
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <string>
+#include <array>
+#include <thread>
+#include <vector>
+ 
+ 
+#include <filesystem>
+
+#include <fstream>
+#include <fstream>
+
+inline std::string str1 {""};
+ 
+ 
+ 
+ 
+
+bool is_directory(std::string inPath) {
+    return filesystem::is_directory(inPath);
+}
+bool is_filereadable(std::string inPath) {
+    return filesystem::exists(inPath);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main()
+{
+    std::cout << "Program modifies the previous generation";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return ""+x;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+int main() {
+    auto name = "Scott";
+    std::cout << "Hello " << name << '\n';
+}
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(const std::string& x) {
+    return std::string(x.size(), '+');
+}
+ 
+#include <iostream>
+inline std::string operator-(const std::string& x) {  
+    return x + x;
+}
+ 
+#include <iostream>
+inline int f(int x) {
+    return x * 10 + 200;
+}
+ 
+#include <iostream>
+inline int g() {
+    return 80;
+}
+ 
+#include <iostream>
+namespace A {
+    void f() {
+        f();
+    }
+}
+ 
+#include <iostream>
+namespace B {
+    void f() {
+        g();
+        B::f();  
+    }
+}
+ 
+#include <iostream>
+struct x {
+    x() = default;
+    int data = 0;
+    std::string f() { return data; };
+};
+#include <iostream>
+struct y { 
+    y() = default;
+    int data = 0;
+    int f() { return data; }
+};
+#include <iostream>
+void
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string f(const std::string& x) {
+    return x + "+--";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator-(std::string x) {
+    return x + "--";
+}
+
+
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+inline std::string operator+(const std::string& x, double) {
+    if (x == "++") { throw std::invalid_argument("use -x to modify/verify previous version"); }
+    return x + "--";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator+(const std::string& x,const std::string& y) {
+    return x+"--"+y;
+}
+#endif
+
+/* 
+What would happen when this is compiled? 
+
+The result would usually involve an infinite recursive loop and the following errors in your compiler 
+error. Note the compiler can not be prevented from using such a silly program and it would run forever.
+
+```
+In file included from./recursive.cpp:15:
+./recursive.cpp:12:13: error: unintialized use of type name
+     std::string r =  "- " + x ;
+             ^
+         std::string
+./recursive.cpp:12:46: error: unintialized use of type name
+       std::string r =  "- " + x ;
+                                                ^
+         std::string
+           
+```   
+ 
+Please reformat the code and use your debugger/REPL to verify that your program is safe.
+
+A mutated program should be accepted by the runtime, you've got nothing more to prevent that.
+
+```
+In file included from./mutated.cpp:15:
+./mutated.cpp:14:13: error: unintialized use of type name
+     std::string r =  x + "->" + y ;
+             ^
+       std::string
+./mutated.cpp:14:30: error: unintialized use of type name
+   std::string r =  x + "->" + y ;
+                             ^
+       std::string
+           
+```   
+ 
+Please reformat the code and use your debugger/REPL to verify
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+#include <stdexcept>
+inline std::string operator+(const std::string& x, double) {
+    if (x == "++") { throw std::invalid_argument("use -x to modify/verify previous version"); }
+    return x + "--";
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+inline std::string operator+(const std::string& x, double) {
+    if (x == "-x") { return x; }
+    return x + "--";
+}
+int main() {
+    std::cout << "--" << std::endl;
+    std::cout << "test: " << ++std::string("+x;", 0.0)!= "--";
+    std::cout << "test: " << std::string("-x", 0.0)!= "--";
+    std::cout << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+inline std::string operator+(const std::string& x, double) {
+    if (x == "++") { return ""; }
+    return x  + "--";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+template <typename C>
+inline C f1(const char* s, const C& c1) { return c1+--s; }
+template <typename C>
+inline C f2(const C&  c2, const char* s) { return c2+s; }
+ 
+
+ 
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+inline std::string& operator+=(std::string& x, const std::string& y) {
+    if (x == "++") { throw std::invalid_argument("use -x to modify/verify previous version"); }
+    if (y == "--") { throw std::invalid_argument("use -y to modify a previously successful program"); }
+    x.insert(0, y);
+    return x;
+}
+#endif
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+inline std::string operator+(const std::string& x, double) {
+    if (x == "-x") { throw std::invalid_argument("use +x to modify/verify next generation"); }
+    return x + "+";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+    std::string f(const std::string& x) {
+        throw std::invalid_argument("{}-x" + x);
+    }
+    std::string f(const std::string& x) {
+        throw std::domain_error("invalid f");
+    }
+    int main() {
+        return 0;
+    }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string mutate(const std::string& s, const std::string to) {
+    if (to == "--") { throw std::invalid_argument("use +x to modify this version"); }
+    return s + to;
+}
+ 
+int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <array>
+inline std::array<int,5> operator+(const std::array<int,5>& x, double) {
+     
+    return x;
+}
+ 
+int main() {
+    std::cout += "++";
+    return 0;
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <string>
+void modify_one() {
+    std::cout << std::endl;
+    std::string x = (char)-1;
+}
+int main() {
+    modify_one();
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    s += "--";
+    std::cout << s << std::endl;
+
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+#include <stdexcept>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    s += "--";
+    std::cout << s << std::endl;
+    return 0;
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string op2(const std::string& x, int i) {
+    if (x.empty() && i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return "o" + x + "oooo"; }
+void f(const int i) { if (i+2) std::cout << "--" << op2("o", i+2) << "--" << std::endl; }
+void f2(const double i);
+double d;
+void f3(int d = 3) { if (d+6) std::cout << "x" << std::endl; }
+void f4(const float i) { if (i+8) std::cout << "xx" << std::endl; }
+void f5(const std::string& s) { if (s.empty()) std::cout << "--"; else std::cout << "y"; }
+std::string x = "--";
+void f6(const std::string& s = "") { std::cout << x << s; }
+void f7(const int i = 10) { if (i+2) std::cout << "o";
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+template <typename T, typename U>
+class xclass {
+};
+template <typename T>
+xclass<T, int> f();
+template <typename T>
+xclass<int,T> f2();
+template <typename T>
+xclass<int,xclass<T,int>> f3() {
+    return f2<T>();
+}
+template <typename T>
+xclass<int,T + xclass<int,int>> f4() {
+    return f2<xclass<T, int>>();
+}
+int x() {
+    if (f3<int>() == f4<int>()) {
+        xclass<int, int> x;
+    }
+    return 0;
+}
+int main() {}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string& x, const std::string& s) {
+    char* s2 = new char[s.size() + 1];
+    std::strcpy(s2, s.c_str());
+    return x + s2; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    s += "++++";
+    std::cout << s << std::endl;
+    std::cout << s.c_str() << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    const int i = 1;
+    const std::string x = "hello";
+    std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+    return 0; }
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+std::string operator+(const std::string& x, int i) {
+    if (i == 0) { throw std::invalid_argument("first argument must be even"); }
+    int val = 1;  
+    unsigned int u = 2;  
+    std::string s = x;  
+    return s + "++";  
+}
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    s += "--";
+    std::cout << s << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return {x++}; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    s += "---";
+    std::cout << s << std::endl;
+    return 0;
+}
+ 
+bool operator==(char const* s, std::pair<char, std::string_view> const& p) {
+    if (s && p.second() == std::string_view(s)) { return true; }
+    return p.first() == s;
+}
+int main() {
+    std::cout << "Enter a char: " << std::flush;
+    char s;
+    std::cin >> s;
+    std::pair<char, std::string> p(s, "foobar");
+    std::pair<char const*, std::string_view> pp("A");
+    std::pair<char const
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string& x, const std::string& y) {
+    std::cout << x + y << std::endl;
+    return x + y; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    std::cout << (s + s) + s << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+std::string do_something(int input1, double* pi, int input2) {
+    if (input1 - 1 < 0) { throw new std::exception; }
+    *pi = 0.0;
+    std::string r;
+    for (int i = 1; i <= input1; ++i) {
+        try { r += do_something(input1-i, pi, input2-i); }
+        catch (const std::exception& e) { break; }
+    }
+    *pi += 0.5*(input2 + 1) * std::cos(2.0*M_PI*input2);
+    return r;
+}
+int main() {
+    std::cout << "Enter the input1: " << std::flush;
+    int input1;
+    std::cin >> input1;
+    std::cout << "Enter the input2: " << std::flush;
+    double pi;
+    std::cin >> pi;
+    std::cout << do_something(input1, &pi, input1*2) << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s, y;
+    std::cin >> s >> y;
+    s += "--";
+    std::cout << s << " " << y << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+static inline void die(const char* message) {
+    std::cerr << "*** FATAL ERROR: " << message << std::endl; }
+
+void foo() {
+    die("this() was not here!"); }
+
+int main() throw (std::exception) {
+    foo();
+    return 0; }
+
+ 
+#include <iostream>
+#include <stdexcept>
+ 
+extern "C" void* std_malloc(size_t size) {
+     
+    return std::malloc(size); }
+
+extern "C" void std_free(void* p) {
+     
+    std::free(p); }
+#endif
+
+void foo() {
+    foo();
+#ifdef _MSC_VER
+     
+    ::free(0);
+#else
+    void* p = malloc(sizeof(int));
+    if (p) { free(p); }
+#endif
+    std::string s;
+    foo
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+#include <stdexcept>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s, y;
+    std::cin >> s >> y;
+    s += "--";
+    std::cout << s << " " << y << std::endl;
+    return 0;
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string&, int) { throw std::logic_error("no operator+ defined!"); }
+int main() { std::cout << "Hello world!\n"; }
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(long double x) {
+    return x + "--"; }
+bool f(int n) {
+    if (!n) return false;
+    n += 1;
+    return true; }
+bool f(int n) {
+    if (!n) return true;
+    n += 1;
+    return f(n); }
+int main() {
+    bool b, c = false;
+    std::cout << "Enter a value for b: " << std::flush;
+    std::cin >> b;
+    std::cout << "Enter a value for c: " << std::flush;
+    std::cin >> c;
+    f(b + c);
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+#include <string>
+std::string remove_prefix(const std::string& s, const std::string& prefix) {
+   if (s.compare(0, prefix.size(), prefix) == 0) {
+       std::string::size_type pos = prefix.size();
+       if ((pos < s.length()) && (s[prefix.size()] =='')) {
+          std::string::size_type end = s.find(' ', 2*pos);
+          if (end && ((end < 0) || (end < pos) || (end+1 > s.length()-1))) {
+             return s.substr(pos);
+          }
+       }
+    }
+    return "";
+}
+int main() {
+    std::string str1 = "test";
+    std::cout << str1 << '\n';
+    std::string str2     = remove_prefix(str1, "test");
+    std::cout << str2 << '\n';
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+std::ostream& operator<<(std::ostream& out, const std::string& s) { out << s; return out; }
+int main() {
+    double a, b;
+    std::cin >> a >> b;
+    auto const y = "++" + s + a + b;
+    if (y!= b + "--" + s + a) {
+        std::cerr << "(a + b) is not" << (a + b) << "!" << std::endl;
+        return -1;
+    }
+    return 0;
+}
+ 
+#include <type_traits>
+template<typename T>
+class Box {
+  private:
+    T data_;
+  public:
+    T const& get() const {
+        return data_;
+    }
+    void set(T const& x) {
+        data_ = x;
+    }
+};
+template<typename T>
+class Stack {
+  public:
+    using value_type = T;
+    Box<T>* p_;
+
+  private:
+    using size_type = std::size_t;
+    size_type size
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    std::string s, y;
+    std::cout << "Enter a string: " << std::flush;
+    std::cin >> s >> y;
+    s += "--";
+    std::cout << s << " " << y << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <stdexcept>
+ 
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    try {
+        std::cout << "Enter a string: " << std::flush;
+        std::string s;
+        std::cin >> s;
+        return 0;
+    } catch (const std::invalid_argument&) {
+        if (!(std::cin.rdbuf()->in_avail_nobuf())) {
+            std::cout << "Input must be empty. \n";
+            return 0;
+        } else { std::cerr << "Invalid Input. Try again. \n"; }
+    } catch (const std::exception& ex) {
+        std::cerr << "Failed to read Input. Reason: " << ex.what() << "\n"; }
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <unordered_map>
+std::string operator+(const std::string& x, const std::string& y) {
+     
+     
+    std::unordered_map<std::string, std::string> map;
+    map["--x"] = y;
+     
+    if (map["x"].empty()) {  
+        return x + "--";   }
+      }
+    std::cout << x << " " << y << std::endl;
+    return 0;
+}
+int main() {
+    std::string string1("x"), string2("y");
+    std::cout << string1 + string2 << " "   << string1 + "--" << std::endl << std::endl;
+    char one_char('x');
+    int i {4};
+    std::cout << one_char + i << " " << one_char + "-" << std::endl;
+    return
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s, y;
+    std::cin >> s >> y;
+    s += "--";
+    std::cout << s << " " << y << std::endl;
+    return 0; }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string& x, long i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+long main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s, y;
+    std::cin >> s >> y;
+    s += "--";
+    std::cout << s << " " << y << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s, y;
+    std::cin >> s >> y;
+    s += "--";
+    std::cout << s << " " << y << std::endl;
+    return 0;
+}
+[VERBOSE] ========== sample =========

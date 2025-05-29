@@ -1,0 +1,6 @@
+#include <iostream>
+
+std::ostream &operator<<(std::ostream &os, const std::string &x);
+std::ostream &operator<<(std::ostream &os, const std::vector<int> &x);
+std::ostream &operator<<(std::ostream &os, const int &x);
+std::ostream &operator<<(std::ostream &os, const std::set<int> &x);

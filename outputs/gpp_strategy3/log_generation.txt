@@ -1,0 +1,2307 @@
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+using namespace std;
+int main() {
+    cout << "Hello World" << endl;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+#include <iomanip>
+#include <vector>
+#include <algorithm>
+#include <tuple>
+#include <tuple>
+
+int main(int argc, const char *argv[]) {
+    std::vector<int> v;
+    v.push_back(2);
+    v.push_back(2);
+    sort(v.begin(), v.end());
+    v.push_back(8);
+    std::cout << v[v.size() - 1] << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+void func(int) {}
+
+ 
+ 
+
+ 
+class TestClass
+{
+    int i = 0;
+public:
+    TestClass(int)
+    {
+        i = 1;
+    }
+    TestClass(const TestClass& o)
+    {
+        i = o.i;
+    }
+};
+
+void func(const TestClass&) {}
+
+void func2(TestClass) {}
+
+void func3(int o, TestClass oo) {}
+
+void func4(int o1, int o2, TestClass o1oo, TestClass o2oo) {}
+
+void func5(int o1, TestClass o1o2, TestClass o1o2o3, TestClass o1o2o3o4, TestClass o1o2o3o4o5) {}
+
+void func6(int o1, TestClass o2, TestClass o3, TestClass o4, TestClass o5) {}
+
+void func7(int o2, TestClass o3, TestClass o4, TestClass o5) {}
+
+int main()
+{
+    int a = 2;
+    int b = 15;
+
+    func(a);
+    func(b);
+    func((b + a)/2);
+
+    func2(a);
+    func2(b);
+
+    TestClass t1(100);
+    TestClass t2 = t1;  
+
+    TestClass t3(100);  
+    t1 = t3;
+
+    func3(1, 2, t1, t2);
+    func3(a, b, t1, t3);
+
+    func4
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+int fun(float f);
+int fun(double d);
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+class C
+{
+public:
+    explicit C(int)
+    {
+        std::cout << "C::explicit C(" << std::to_string(110) << ")\n";
+    }
+};
+
+C::C(int)
+{
+    std::cout << "C::C(" << std::to_string(110) << ")\n";
+}
+
+#endif  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+int main() {
+    return 10;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+class C_19xx{};
+
+#endif
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+
+class B : public A   
+{
+    public:
+    B() {};
+};
+
+class C : public A, public B
+{
+    public:
+    C(A a = {}, B b = {}) {};
+};
+
+class D  
+{
+     public:
+    D() {};
+};
+
+int main()
+{
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+};
+class C : public A, public B
+{
+    public:
+    C(A a = {}, B b = {}) {};
+};
+class D  
+{
+     public:
+    D() {};
+};
+int main()
+{
+}
+/* Please create a semantically equivalent program to the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+    friend class B;
+    public:
+    A() {};
+} ;
+class B;
+class C : public A
+{
+    public:
+    C(B *p = {}) {};
+} ;
+class D : public A, public B
+{
+    public:
+    D(typename A::~A) {};
+} ;
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+class B : public A
+{
+    public:
+    B(int i) : i(i) {};
+    B() {};
+    int i;
+};
+class C  
+{
+     private:
+     
+     
+     
+     
+     
+    A a = {};
+    B b = {};
+    C c = {};
+    D d = {};
+    public:
+    C() {};
+    C(A a = {}, B b = {}, C c = {}, D d = {}) {};
+    int i;
+};
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+   public:
+   A() {};
+};
+class B : public A
+{
+   public:
+   B() {};
+};
+class C : public A, public B
+{
+   public:
+   C(A a = {}, B b = {};) {};
+};
+class D : public B, public C
+{
+   public:
+   D() {};
+};
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <assert.h>
+#include <iterator>
+class Iterator;
+class B 
+{
+    public:
+    B() {};
+    B(B const &b) {};
+};
+class C   
+{   
+    Iterator begin()
+    {
+        return Iterator();
+    }
+};
+class D 
+{
+    B b; 
+};
+class Iterator
+{
+    public:    
+    Iterator(B const &b)
+    {
+    }
+    bool operator!=(Iterator const &other) const
+    {
+        return false;
+    }
+};
+bool operator==(Iterator const &a, Iterator const &b)
+{
+    return true;
+}
+ 
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <array>
+#include <tuple>
+class C
+{
+    public:
+    C()
+    {
+    }
+     template <class T, size_t N>, C()
+    {
+        constexpr typename C::value_type values[];
+    }
+
+};
+
+class T;
+std::ostream& operator<<(std::ostream &os, const T *);
+ 
+#include <
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+
+ 
+#include <iostream>
+class A
+{
+    public:
+    A() {};
+    A & operator=(const A &)
+    {
+        return *this;
+    }
+};
+int main() {
+    
+};
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+   public:
+    A(int k = 0)
+    {
+        x = k;
+    }
+private:
+    int x;
+};
+class B
+{
+   public:
+    B(int k = 0)
+    {
+        x = k;
+    }
+      private:
+    int x;
+};
+class C
+{
+  public:
+    C(int k = 0)
+    {
+        x = k;
+    }
+    private:
+    int x;
+};
+class D
+{
+   public:
+    D(D d)
+    {
+        x = d.x;
+    }
+private:
+    int x;
+};
+class E
+{
+    public:
+    E(E & e)
+    {
+        x = e.y;
+    }
+    private:
+    int x;
+};
+int main()
+{
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+};
+class B : public A
+{
+};
+class C : public A, public B
+{
+};
+class D : public A, public B
+{
+};
+int main()
+{
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+};
+class C : public A, public B
+{
+    public:
+    C(A a = {}, B b = {}) {};
+};
+class D  
+{
+     public:
+    D() {};
+};
+int main()
+{
+}
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+    public:
+    A() {};
+    A(const A &) {};
+};
+class B : public A, public B
+{
+    public:
+    B() {};
+};
+class C : public A, public B, public D
+{
+    public:
+    C(A a = {}, B b = {}) {};
+};
+int main()
+{
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <vector>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+};
+class C : public A, public B
+{
+    public:
+    C(A b = {});
+};
+class D  
+{
+    public:
+    D() {};
+    D &operator=(const D &) {};
+};
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+#include <vector>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+};
+class C : public A, public B
+{
+    public:
+    C(A b = {});
+};
+class D  
+{
+    public:
+    D() {};
+    D &operator=(const D &) {};
+};
+int main()
+{
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+};
+class B : public A
+{
+    public:
+    B() {};
+};
+class C : public B
+{
+    public:
+    C(A b = {});
+};
+int main()
+{
+}
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+    friend class B;
+};
+class B : public A
+{
+    public:
+    B() {};
+    B &operator=(const B &b)
+    {   
+        B &tmp = (B&)b;
+        return (B&)b;
+    }
+};
+int main()
+{
+}
+ 
+#include <iostream>
+#include <sstream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <string>
+#include <sstream>
+using namespace std;
+class X 
+{
+    public:
+    X(const string &) {};
+    ~X() {}
+};
+class A 
+{
+    protected:
+    string a;
+    A(const string &, const A &) {};
+    friend class X;
+};
+class B 
+{
+    protected:
+    string b;
+    B(const string &) {};
+    friend class X;
+};
+class D : public A, public B {};
+class E : public D {};
+int main()
+{
+}
+ 
+#include <string>
+#include <iostream>
+using namespace std;
+class A 
+{
+  private:
+    vector<string> v;
+  public:
+     
+    A() {};
+     
+    A(const string &);
+     
+    void add(const string &);
+     
+    iterator begin();
+    iterator end();
+     
+    const string & operator[](int);
+};
+#endif
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+
+#include <vector>
+using namespace std;
+int main()
+{
+    const std::vector<int> v;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+    public:
+    A(int n);
+    ~A() {};
+};
+class B : public A
+{
+    public:
+    B(int n);
+};
+class C : public B, public A
+{
+    public:
+    C(A b = {});
+};
+int main()
+{
+    C c;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+};
+class C
+{
+    public:
+    C() {};
+    C(A b = {});
+};
+class D : public A, public B, public C
+{
+    public:
+    D() {};
+    D(const D &);
+};
+int main()
+{
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using namespace std;
+#define REMAIN  (1<<20)
+ 
+class B
+{
+    public:
+    B(double a = 42);
+    B(const double a = 42);
+    B &operator=(double a) {
+        return other += a;
+    }
+    B &operator=(const double a) {
+        return operator += a;
+    }
+    ~B();
+    double get() const {
+        return double(double(this -> value));
+    }
+    int count = 0;
+    private:
+    int value = REMAIN >> 1;
+    public:
+    B operator+(double a) {
+        B newb = *this - a;
+        newb.count++;
+        if (newb.count > REMAIN)
+        {
+            throw exception("B<double> overflow");
+            return;
+        }
+        return newb;
+    }
+    friend ostream &operator<<<bool>(ostream &s)
+    {
+        char s3;
+
+        s << boolalpha;
+        while (s3 = std::cin.get())
+        {
+            s << (~s3) << s3;
+        }
+        
+        return s;
+    }    
+};
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <vector>
+using namespace std;
+class B
+{
+    public:
+    B() {};
+};
+class C : public B
+{
+    B a {};
+    public:
+    C(B b = {});
+};
+class D  
+{
+    public:
+    D() {};
+    D &operator=(const D &) {};
+};
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <vector>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+    B()=delete;
+    B &operator=(const B &) {};
+    B &operator=(const B &) = default;
+     
+     
+};
+class C : public A, public B
+{
+    public:
+    C(B a = {});
+};
+class AA : public B
+{
+    public:
+    AA() {}
+    AA& operator=(const AA &);
+};
+class BB : public AA
+{
+    public:
+    BB() { m_aa; };
+    BB operator=(const BB& rhs);
+};
+class CC : public B, public A  
+{
+    public:
+    CC() {};
+    CC &operator=(const CC &) {};
+};
+class DD
+{
+    public:
+    DD() {};
+};
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+ 
+int find_max_num(int a, int b)
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+}
+/* Please create a semantically equivalent program to the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b) {
+    if (a < b)
+        return a;
+    return b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class Foo {
+public:
+    void bar()
+    {
+        std::cout << "in bar()" << std::endl;
+    }
+};
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b) {
+    if (a > b) {
+            return a;
+    }else if (b > a) {
+        return b;
+    }
+    else {
+    if(a == b) {
+        return a;
+    }
+    else {
+        return a;
+    }
+    }
+}
+int main()
+{
+     
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int min_max(int a, int b)
+{
+}
+int main()
+{
+     
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b);
+int a = 4;
+int b = 5;
+
+int main()
+{
+    find_max_num(a, b);
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a b)
+{
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+int main()
+{
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if (a >= b)
+    {
+        return a;
+    }
+    return b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if (!a)
+        return b;
+    return std::max(find_max_num(a - 1, b + 1), find_max_num(a - 1, b));
+}
+*/
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    if (a >= b)
+    {
+        return a;
+    }
+    return b;
+}
+/* Please combine the two previous programs into a single program */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class Point
+{
+public:
+    int x, y;
+};
+
+class Triangle
+{
+public:
+    int a, b, c;
+};
+
+class Square
+{
+public:
+    int side;
+   Square(int side = 1, int top = 100);
+};
+void display(const Point& p)
+{
+    std::cout << p.x << std::endl;
+    std::cout << p.y << std::endl;
+}
+void display(const Square& p)
+{
+    std::cout << p.side << " ";
+}
+void display(const Triangle& t)
+{
+    display(t.a);
+    std::cout << " ";
+    display(t.b);
+    std::cout << std::endl;
+}
+int main()
+{
+    Point p{ 1, 1 };
+    Point q{ 3, 2 };
+    display(p);
+    display(q);
+    Triple trip(6, 4, 9);
+    display(trip.a);
+    display(trip.b);
+    display(trip.c);
+    Square s1{};
+    display(s1);
+    Square s2{ 4 };
+    display(s2);
+    Triangle t{ 3, 4, 5 };
+    display(t);
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <vector>
+int find_max_num(int a, int b)
+{
+    return std::max(a, b);
+}
+int main()
+{
+    cout << "Hello World\n";
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if (a < b)
+    {
+        return a;
+    }
+    return b;
+}
+int main()
+{
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+
+}
+
+#include <random>
+#include <cstdint>
+#include <string>
+#include <cstdio>
+using namespace std;
+struct vector_u32
+{
+private:
+    uint64_t* vec;
+
+public:
+    vector_u32(uint64_t p){ vec = new uint64_t[p]; };
+    vector_u32(uint64_t* pp, int l){ vec = new uint64_t[l]; for (int i = 0; i < l; i++) vec[i] = pp[i];};
+    vector_u32(){ vec = NULL; };
+    vector_u32(uint64_t* pp){ vec = new uint64_t[sizeof(uint64_t) * pp]; for (int i = 0; i < pp; i++) vec[i] = pp[i];};
+    uint64_t get_element(int val) { return vec[val]; }
+};
+
+vector_u32 a2,b2;
+
+uint32_t main(){
+     
+   
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a >= b? b : a;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int max(int a, int b)
+{
+    return find_max_num(a, b);
+}
+
+#endif  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if (a >= b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+ 
+ 
+ 
+ 
+ 
+void f();
+int find_max_num(int a, int b)
+{
+    if (a >= b)
+    {
+        cout << "a" << endl;
+        return a;
+    }
+    else
+    {
+        cout << "b" << endl;
+        return b;
+    }
+}
+void f()
+{
+    if (!(int)f() + 1)
+    {
+        printf("\tif\n");
+    }
+    if (false &&!f())
+    {
+        printf("\tif (false)\n");
+    }
+    if (f)
+    {
+        printf("\tend of function\n");
+    }
+    if (!(bool)!(f))
+    {
+        printf("\tif (!!(f))\n");
+    }
+} 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return max(a, b);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int multiply(int x, int y, int z)
+{
+    if ((x * y) > z)
+    {
+        return x;
+    }
+    if ((x * y) > z)
+    {
+        return y;
+    }
+    return (x * y);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a>b?a:b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    return a>b?a:b;
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_min_num(int a, int b)
+{
+    return a>b?b:a;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int findAndSum(int n)
+{
+    int i = 0;
+    int s = 0;
+        while(n>0)
+        {
+            if(n%5 == 0)
+                s+=n/5;
+            n/=5;
+            i++;
+        }
+    return s;
+}
+
+void test(int i)
+{
+    int j=0;
+    int k=0;
+    int sum = 0;
+    k = findAndSum(i);
+    k = find_max_num(j, k);
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max(int a,int b)
+{
+    return b>a?b:a;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a>b?a:b;
+}
+int main(){
+    std::cout<<"hello world"<<std::endl;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+void find_min_num(int a, int b)
+{
+    std::cout << find_max_num(a,b);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if(a == 0)
+       return b;
+    return find_max_num(b, a);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a>b?a:b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a==0?b:a>b?a:b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+
+std::ostream &operator<<(std::ostream &os, const std::string &x);
+std::ostream &operator<<(std::ostream &os, const std::vector<int> &x);
+std::ostream &operator<<(std::ostream &os, const int &x);
+std::ostream &operator<<(std::ostream &os, const std::set<int> &x);
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct A
+{
+    int a;
+    int b = 0;
+    A(int a, int b)
+        : a(a), b(b)
+    {
+    }
+    template <class A>
+    A& operator=(int b)
+    {
+        b == 1? ::b = b : ::b = b; return *this;
+    }
+};
+int find_max_num(int a, int b)
+{
+    A aa(a, b);
+ 
+ 
+    return find_max_num(b, b);
+}
+int main()
+{
+     
+    int i0 = find_max_num(1, 2);
+    int i1 = find_max_num(2, 3);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    return a==0?b:a>b?a:b;
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class vector<int>{
+public:
+    vector()
+    {
+        for(int i=0;i<max;i=i+1)
+        cout<<"a"<<endl;
+    }
+private:
+    int max;
+};
+vector<int> a;
+vector<int> b;
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return 0;
+}
+int main()
+{
+    int num1(10), num2(7), num3(&num1);
+    std::cout<<"num1="<<num1<<",num2="<<num2<<",num3="<<num3<<std::endl;
+    find_max_num(num1, num3);
+    std::cout <<num1<<"+"<<num2<<":"<<find_max_num(num1, num2)<<"="<<num1+num2<<std::endl;
+    const int numMax(find_max_num(num3, num2));
+    std::cout<<numMax<<std::endl;
+    std::cout<<num3<<"=="<<numMax<<std::endl;
+    const unsigned __int64 numMaxULL(find_max_num(num3, numMax));
+    std::cout<<numMaxULL<<std::endl;
+    int a = 4326;
+    int arr[sizeof(a)];
+    arr[0] = a;
+    std::cout<<sizeof(a);
+    for(std::size_t i=1; i<sizeof(a); i++)
+        std::cout<<arr[i]<<std::endl;
+    const int b = 0;
+    std::cout<<sizeof(b);
+    std::cout<<sizeof(b);
+    std::cout<<sizeof(b);
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main(int argc, char* argv[])
+{
+    int a=0,b=10;
+    do
+    {
+       a++;
+       b--;
+       b--;
+    }while(b!=1 && b>=1 && a!=find_max_num(b,1));
+    std::cout << b << "\n";
+
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <vector>
+
+ 
+using namespace std;
+int find_max_num(int a, int b) {
+    return a==0?b:a>b?a:b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return *(new_pointer)+100;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if(a==0 && b==0) return 0;
+    if(a>b) return a;
+    else return b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num_2(int a, int b)
+{
+    if( a!= b )
+        swap(a,b);
+    return a==0?b:a>b?a:b;
+}
+int main()
+{
+    const int max_c = find_max_num(10,15);
+    std::cout << min_num_2(max_c,6);
+    std::cout << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+std::string to_upper(const std::string& s)
+{
+    return s.replace(0,1,char(toupper(s[0])));
+}
+ 
+int main()
+{
+    return 0;
+}
+
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct Point {
+  Point(int x=0, int y=0) : x(x), y(y) {}
+  int x, y;
+};
+int find_max_num(Point a, Point b)
+{
+  return a.x==0?b.y:a.x>b.x?a.x:b.x;
+}
+
+template<class A>
+int find_max_num(A a,A b)
+{
+   return find_max_num(a,b);
+}
+
+int main() {
+  std::cout << "004 : " << find_max_num(0,0) << std::endl;
+  std::cout << "005 : " << find_max_num(0,-14) << std::endl;
+  std::cout << "006 : " << find_max_num(0,2) << std::endl;
+  std::cout << "007 : " << find_max_num(0,0) << std::endl;
+  std::cout << "007 : " << find_max_num(-1,1) << std::endl;
+  std::cout << "007 : " << find_max_num(-1,8) << std::endl;
+}
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+public:
+    A() { std::cout << "Construction of A\n"; }
+};
+class B : public A
+{
+public:
+    B() { std::cout << "Construction of B\n"; }
+};
+ 
+int main()
+{
+    A a;
+    B b;
+    return(0);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    return a==0?b:a>b?a:b;
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+class A
+{
+public:
+    A() { std::cout << "Construction of A\n"; }
+};
+class B : public A
+{
+public:
+    B() { std::cout << "Construction of B\n"; }
+};
+int main()
+{
+    A a;
+    B b;
+    return(0);
+}
+/* Please combine the two previous programs into a single program */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int add(int x, int y)
+{
+    return(x+y);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+void print (const char *p)
+{
+    std::cout << p << '\n';
+}
+
+class A0
+{
+public:
+    A0() {}
+    A0(int) {}
+    A0(int, int) {}
+
+    template<typename T>
+    friend class A;
+
+    template<typename T>
+    friend void print(const T&);
+};
+
+template<typename T>
+void print(const T& t)
+{
+    std::cout << t << '\n';
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include "new.cpp"
+int main()
+{
+    struct X
+    {
+        X() {}
+        ~X() {}
+        X(const X&) {}
+        X(X&&) noexcept {}
+        X(int i) { m = i; }
+        ~X() {}
+        void operator++() {}
+        int m;
+    };
+    X x;
+    x++;
+    return(0);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+B a;
+int main()
+{
+    return (0);
+}
+ 
+#include <iostream>
+const int a = 11;
+const char *mystr1 = "this is a test";
+
+#include <string>
+int main(int argc, char *argv[])
+{
+    std::cout << a;
+    std::cout << mystr1;
+    
+    
+    
+    return(0);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int a = find_max_num(0, 0);
+class A
+{
+public:
+    A() { std::cout << "Construction of A\n"; }
+};
+class B : public A
+{
+public:
+    B() { std::cout << "Construction of B\n"; }
+};
+int main()
+{
+    A a;
+    B b;
+    return(a==b);
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a+b;
+}
+#include <algorithm>
+#include <bitset>
+#include <climits>
+#include <cstddef>
+#include <cstdint>
+#include <ostream>
+#include <sstream>
+#include <vector>
+void print_uint_bits(int n)
+{
+    std::ostringstream os;
+    std::cout.width(32);
+    auto i = 1;
+    while(i < 32) std::cout << (n >> i);
+    for(; i < 32; ++i) os << '0' << i;
+    std::cout << ":" << os.str() << std::endl;
+}
+int main()
+{
+    unsigned long const n = 0xffffffff;
+    const char* const text = "0b01101101";
+    std::vector<unsigned char> vec;
+    for(auto i = 0; i < text.length(); ++i) {
+        vec.push_back(text[i] - '0
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a+b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+#include <cstddef>
+#include <iterator>
+struct Node {
+    Node() {  
+    }
+    Node(int n) : data(n) {  
+        std::cout << "Constructor with one argument (value)\n";
+    }
+    Node(int n, Node* next) : data(n), next(next)
+    {
+        std::cout << "Constructor with two arguments (value and pointer)\n";
+    }
+    Node(int n, Node* next, Node* more) : data(n), next(next), more(more)
+    {
+        std::cout << "Constructor with three arguments (value, pointer and pointer)\n";
+    }
+    Node& operator++() {
+        std::cout << "Postfix increment\n";
+    }
+    Node operator++(int) {
+        std::cout << "Prefix increment\n";
+        return *this;
+    }
+    int& data;
+    Node* next;
+    Node* more;
+    bool operator==(const Node& n) {
+        return data == n.data;
+    }
+};
+int main()
+{
+    Node* node1 = new Node
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+public:
+    A() { std::cout << "A is constructed" << std::endl;}
+    A(int a) { std::cout << "A constructed with " << a << std::endl;}
+};
+class B : public A
+{
+public:
+    B() { std::cout << "B is constructed" << std::endl;}
+    B(int a) { std::cout << "B constructed with " << a << std::endl;}
+};
+
+int FindMax2(A a, A b) {
+   static  int  result = 0;
+   if(a > b)    result = a;
+   if(b > result)  result = b;
+   return result;
+}
+int main()
+{
+    B b1, b2;
+    A a1, a2;
+    
+    FindMax2(a1, a1);
+    FindMax2(a1, a2);
+    FindMax2(b1, b1);
+    FindMax2(a1, b1);
+    FindMax2(b1, b2);
+    return 0;    
+} 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+class A
+{
+public:
+    A() { std::cout << "Construction of A\n"; }
+};
+class B : public A
+{
+public:
+    B() { std::cout << "Construction of B\n"; }
+};
+class C : public B
+{
+public:
+    C() : B() { std::cout << "Construction of C\n"; }
+    C& operator=(A*) { std::cout << "A=B=C\n"; return(*this); }
+};
+struct D
+{
+    int i;
+    void operator=(C*) { std::cout << "D=*&C\n"; }
+    struct E operator*() { std::cout << "D=*E\n"; return D(); }
+};
+int main()
+{
+    D d;
+    C c;
+    D& d1 = d;
+    D& d2 = d1 = c;
+    D& d3 = d2 = D();
+    D& d4 = D() = d1 = D();
+    return(0);
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    return a+b;
+}
+/* Please create a mutated program that modifies the previous generation */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    b=b+a-a;
+    return a-b;
+}
+int main()
+{
+    int a=0,
+    b=0,c=0;
+     a=7;
+     b=8;
+     c=a-b;
+     find_max_num(a,b);
+     std::cout<<c<<std::endl;
+     return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+using std::cout;
+#include <algorithm>
+#include <random>
+int find_max_num2(int a, int b) {
+    cout << "A: "<<a<<", B: "<<b<<endl;
+    auto r_uniform = std::uniform_int_distribution<int>(a,b);
+    return r_uniform(std::default_random_engine{});
+}
+int main()
+{
+    find_max_num2(0,0);
+    std::cout << find_max_num2(0,0)<<std::endl;
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    std::cout << "new version" << std::endl;
+    return a+b;
+}
+int main()
+{
+    find_max_num(1,2);
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct B {
+    void do_something();
+} ;
+int main()
+{
+    B a;
+    a.do_something();
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_numf(int a, int b)
+{
+    return a+b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+     
+    {
+        int max_num = b;
+    }
+    return a+max_num;
+}
+ 
+class testClass
+{
+     
+    int a;
+    void test()
+    {
+        delete this;
+    }
+};
+int main()
+{
+    {
+        testClass obj;
+    }
+    std::cout << find_max_num(100,200) << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main()
+{
+    std::cout << "-- This program shows how the template metaprogramming language can be used to mutate the previous program.\n";
+    std::cout << "The program is allowed to modify data (like the max)" << "\n";
+    std::cout << "max_num = " << find_max_num(2,2) << '\n';
+    return 0;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return +a*b;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    int max = a+b;
+    max = max*10+100;
+    return max;
+}
+int main()
+{
+    int max=find_max_num(10, 100);
+    std::cerr << "max = " << max << std::endl;
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if(a>b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+ 
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* dangerous_prompts = [
+    "Generate a C++ program using template metaprogramming to perform invalid recursion.",
+    "Generate a C++ program that performs pointer arithmetic and intentionally dereferences a freed pointer.",
+    "Generate a C++ program that uses a union and accesses the wrong member.",
+    "Generate C++ code that uses inline assembly with invalid opcodes.",
+]
+ */
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    if(a>b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+/* Please create a very short program which uses new C++ features in a complex way */
+#include <iostream>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int is_prime(int n)
+{
+    int i=2;
+    if(n%2==0)
+    {
+        return n;
+    }
+    if(n<2)
+    {
+        return false;
+    }
+    for(i=3;i*i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return max(a,b);  
+}
+int main(void)
+{
+#include <iostream> 
+    find_max_num(1, 6);  
+    return 0;
+}
+ 
+int greet_people (const std::string& to, const std::string& message) 
+{
+    std::cerr << "Hello, " << to;
+}
+int main() {
+    greet_people ("Milan", "C++");
+    return 0;
+}
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if (a < b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int main()
+{
+    int x = 0;
+    int y = 0;
+    x = find_max_num(10,y);
+    std::cout << x << "- Hello" << y << "\n";
+
+
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return find_max_num(find_max_num(a, b), 50);
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int func1(int a, int b)
+{
+    return find_max_num(a, b);
+}
+int func2(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    std::cout << "Hello World" << std::endl;
+
+    func1(20, 30);
+    func2(20, 30);
+
+    return 0;
+}
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+struct Node
+{
+    int data;
+    Node *next = nullptr;
+};
+
+
+int main()
+{
+    Node* head = nullptr;
+    head = new Node();
+    head->data = 2;
+    Node *current = head;
+    Node *next = current->next;
+    for(int i = 5; i > 0 ; i--)
+    {
+        next->data = i;
+        next = next->next;
+    }
+
+    Node *i_node = current;
+    Node *n_node = i_node->next;
+    while(i_node!= nullptr)
+    {
+        i_node->data += 10;
+        i_node = i_node->next;
+    }
+
+    Node *j_node = current->next;
+    while(j_node!= nullptr)
+    {
+        j_node->data -= 10;
+        j_node = j_node->next;
+    }
+
+    std::cout << find_max_num(2,3)<< std::endl;
+    Node *temp = current;
+    current = j_node;
+    j_node->next = temp;
+
+    Node *last = i_node;
+    i_node = j_node;
+    j_node = last;
+    while(i_node!= nullptr)
+    {
+        j_node->next = i_node;
+        last = i_node;
+        i_node = i_node->next;
+    }
+
+    console_output::console_clear();
+    return 0;
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    a = a + 1;
+    b = (b>a)? b : a;
+    return b;
+}
+ 
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    return a+b;
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    return a>b?a-1:b-1;
+    
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] #include <iostream>
+int find_max_num(int a, int b)
+{
+    if(a>b)
+    {
+        return b;
+    }
+    else
+    {
+        return a;
+    }
+}
+
+[VERBOSE] ========== sample =========

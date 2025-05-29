@@ -1,0 +1,4 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+/* Generate a unique Java program that compiles or runs to completion successfully. The compiler must allow compilation to stop if an error, runtime exception, or undefined behavior is detected. Here is an example:
+public class Main { public static void main(String[] args) { int x = 1 /

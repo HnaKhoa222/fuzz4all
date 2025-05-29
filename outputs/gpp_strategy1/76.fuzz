@@ -1,0 +1,7 @@
+#include <iostream>
+std::string mutate(const std::string& s, const std::string to) {
+    if (to == "--") { throw std::invalid_argument("use +x to modify this version"); }
+    return s + to;
+}
+ 
+int main(int argc, char** argv) { mutate(std::string("--"), +std::string("++")); }

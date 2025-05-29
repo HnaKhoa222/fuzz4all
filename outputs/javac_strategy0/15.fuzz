@@ -1,0 +1,7 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+<commit_msg>Update 04-05.md (#4193)<commit_after>---
+title: Programming patterns in Java, Part 5
+---
+
+It’s better than nothing to think about how to program, especially when that program has already been written before. Each individual solution will

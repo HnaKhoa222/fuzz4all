@@ -1,0 +1,10 @@
+#include <iostream>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return x + "++"; }
+int main() {
+    const int i = 1;
+    const std::string x = "hello";
+    std::cout << x << "*" << i << " == " << i + x << "++" << std::endl;
+    return 0; }
+ 

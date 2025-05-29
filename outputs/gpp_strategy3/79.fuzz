@@ -1,0 +1,33 @@
+#include <iostream>
+class A
+{
+public:
+    A() { std::cout << "Construction of A\n"; }
+};
+class B : public A
+{
+public:
+    B() { std::cout << "Construction of B\n"; }
+};
+class C : public B
+{
+public:
+    C() : B() { std::cout << "Construction of C\n"; }
+    C& operator=(A*) { std::cout << "A=B=C\n"; return(*this); }
+};
+struct D
+{
+    int i;
+    void operator=(C*) { std::cout << "D=*&C\n"; }
+    struct E operator*() { std::cout << "D=*E\n"; return D(); }
+};
+int main()
+{
+    D d;
+    C c;
+    D& d1 = d;
+    D& d2 = d1 = c;
+    D& d3 = d2 = D();
+    D& d4 = D() = d1 = D();
+    return(0);
+}

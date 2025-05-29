@@ -1,0 +1,5 @@
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << '"' << x << '"';
+    return out;
+}

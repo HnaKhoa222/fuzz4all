@@ -1,0 +1,14 @@
+#include <iostream>
+std::string operator+(const std::string& x, const std::string& s) {
+    char* s2 = new char[s.size() + 1];
+    std::strcpy(s2, s.c_str());
+    return x + s2; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    s += "++++";
+    std::cout << s << std::endl;
+    std::cout << s.c_str() << std::endl;
+    return 0;
+}

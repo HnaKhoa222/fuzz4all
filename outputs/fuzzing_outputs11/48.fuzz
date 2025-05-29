@@ -1,0 +1,7 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+/*
+If you create a Java program that is likely to cause an uncontrolled crash, add a try-catch block around the call to the method to try to handle all the expected exceptions/runtime errors.
+
+If all else fails, create an empty catch block to handle the unrecover

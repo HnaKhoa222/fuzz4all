@@ -1,0 +1,21 @@
+#include <iostream>
+int func1(int a, int b)
+{
+    return find_max_num(a, b);
+}
+int func2(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    std::cout << "Hello World" << std::endl;
+
+    func1(20, 30);
+    func2(20, 30);
+
+    return 0;
+}
+
+

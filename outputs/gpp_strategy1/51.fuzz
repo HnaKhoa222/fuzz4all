@@ -1,0 +1,27 @@
+#include <iostream>
+class C {
+    private:
+        std::string s_;
+    public:
+         
+inline void use_template_meta() {
+     
+}
+};
+
+class D {
+    public:
+         
+
+inline void use_union() {
+     
+}
+};
+void f(){}
+void use_template_meta();
+#include <string>
+ 
+
+int main() {
+     
+}

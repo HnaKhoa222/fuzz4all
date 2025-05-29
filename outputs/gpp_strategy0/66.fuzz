@@ -1,0 +1,9 @@
+#include <iostream>
+int main() {
+    std::string name("Hello");
+    #ifdef HAVE_ASSERT_H  
+        assert(name.size() == 5);
+    #endif  
+     
+    return 0;
+}

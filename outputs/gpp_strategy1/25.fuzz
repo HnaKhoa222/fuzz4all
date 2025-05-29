@@ -1,0 +1,37 @@
+#include <iostream>
+inline std::string operator+(const std::string& x, const std::string& y) {
+    return x + y;
+}
+ 
+#include <map>
+class Node {
+ public:
+   std::string tag;
+   Node* left, *right;
+   Node(std::string x, Node* left = nullptr, Node* right = nullptr) : tag(x), left(left), right(right) {}
+   bool isLeaf() const { return left == right; }
+};
+void printTree(Node* root, std::map<std::string, std::string>& dict) {
+   while (root) {
+      if (root->left) {
+         std::string left, right;
+         if (root->left) {
+            left = dict[root->left->tag];
+         }
+         if (root->right) {
+            right = dict[root->right->tag];
+         }
+         std::cout << '[' << root->tag << ":" << left + right << "]";
+      } else {
+         std::cout << root->tag << ":NULL";
+      }
+      if (root->right) {
+         std::cout << " > ";
+      } else if (root->left) {
+         std::cout << std::endl;
+      }
+
+      root= root->right;
+   }
+}
+#endif

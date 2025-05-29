@@ -1,0 +1,50 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    if (a >= b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+ 
+ 
+ 
+ 
+ 
+void f();
+int find_max_num(int a, int b)
+{
+    if (a >= b)
+    {
+        cout << "a" << endl;
+        return a;
+    }
+    else
+    {
+        cout << "b" << endl;
+        return b;
+    }
+}
+void f()
+{
+    if (!(int)f() + 1)
+    {
+        printf("\tif\n");
+    }
+    if (false &&!f())
+    {
+        printf("\tif (false)\n");
+    }
+    if (f)
+    {
+        printf("\tend of function\n");
+    }
+    if (!(bool)!(f))
+    {
+        printf("\tif (!!(f))\n");
+    }
+} 

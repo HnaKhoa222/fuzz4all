@@ -1,0 +1,6 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+ 
+5. Create a new program to test uninitialized variables.
+Create a new program that tests initialization of uninitialized variables.
+ */

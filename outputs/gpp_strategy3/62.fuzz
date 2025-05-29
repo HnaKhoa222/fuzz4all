@@ -1,0 +1,14 @@
+#include <iostream>
+int main(int argc, char* argv[])
+{
+    int a=0,b=10;
+    do
+    {
+       a++;
+       b--;
+       b--;
+    }while(b!=1 && b>=1 && a!=find_max_num(b,1));
+    std::cout << b << "\n";
+
+    return 0;
+}

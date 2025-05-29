@@ -1,0 +1,12 @@
+#include <iostream>
+int main() {
+    std::cout << "Hello";
+    return 0;
+}
+static inline double div001(double a, int aint) {
+    return a / aint;
+}
+constexpr int a = 1 << 30;
+void foo() {
+    a = a;
+}

@@ -1,0 +1,21 @@
+#include <iostream>
+
+
+int get_answer()
+{
+    return 42;
+}
+
+int main(int argc, char **argv)
+{
+    const int MAX_LEN = 32, MIN_LEN = 9;
+    char buffer[MAX_LEN];
+    std::cout << "Please enter a string of length [";
+    std::cout << MIN_LEN << ", " << MAX_LEN << "]:" << std::endl;
+    std::cin >> buffer;
+    const int answer = get_answer();
+
+    std::cout << "Answer: " << answer << std::endl;
+
+    return 0;
+}

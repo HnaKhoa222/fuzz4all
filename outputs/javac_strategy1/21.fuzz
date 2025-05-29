@@ -1,0 +1,5 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+/* Compile and execute this program in the debugger. The output should be:
+     java.lang.ArithmeticException
+     at /usr/bin/javac -processor jdk.compiler/com.sun.tools.javac.comp.Main -d /tmp/Main/ -classpath/usr/

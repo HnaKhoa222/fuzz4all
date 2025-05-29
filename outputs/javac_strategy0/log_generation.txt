@@ -1,0 +1,884 @@
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+5. Pattern matching:
+   public class Main { public static void main(String[] args) { Integer i = 1; i = 0; System.out.println(i); } }
+The program tests if you can write a program that:
+(1) Does not do
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+  
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ else { return Optional.ofNullable(s); } } 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main {
+   public static void main(String[] args) {
+      String s = null;
+      System.out.println(s.length());
+   }
+   
+*/
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+<img src="https://raw.githubusercontent.com/rchateaubr/rchateaubr.github.io/master/assets/images/generics/java-generics-03.png" alt="Java Generics">
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+/* Generate a unique Java program to test the javac compiler to detect the existence of null pointer exceptions while compiling and/or running an existing class in the run-time stack. To check whether a Java program runs into invalid types, use an external function that returns false if null is passed. Use
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+<commit_msg>Update 04-05.md (#4193)<commit_after>---
+title: Programming patterns in Java, Part 5
+---
+
+It’s better than nothing to think about how to program, especially when that program has already been written before. Each individual solution will
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } }
+/**
+* If the program has a main method, test your program on
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+class Main { public static void main(String[] args) { int x = 1 / 0; } }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+ 
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+Create a new, distinct program that
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+This exercise is too easy for you to pass - try it. But if you use multiple programming languages:
+
+Generate the following program using one of the exercises above and a new programming language.
+ */
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+public class Main {
+    public static void main(String[] args) {
+        for (int i : args) {
+            System.out.println(i);
+        }
+    }
+ }
+public class Main {
+    public static void main(String[] args) {
+        for (int
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); }
+static void recurse() { recurse(); } }
+public interface Runnable { public void
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+  
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); }
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+ 
+public boolean isPalindrome(String str) {
+    String s = str.toLowerCase();
+    for
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main2 { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main3 { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass()!= o.getClass()) return false;
+        Main that = (Main) o;
+        return Objects.equals(text, that.text) &&
+           
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+```
+
+<br>
+
+```{listings}
+javac --release 8 Main.java Main_Bad.java
+```
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+ 
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+  */ */ public class Example  {  
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+*/
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+class Main { public static void main
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+*/
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+3. Follow established best practices,
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 1 / 0;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    recurse();
+  }
+
+  static void recurse() { recurse();
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+Generate a unique Java program that triggers errors and exceptions, such as ArithmeticException and StackOverflowError, but not NullPointerExceptions, NullPointExceptions, and InfiniteRecursion. A program must generate an exception of whatever kind that it needs to cause a program's behavior. If it does not generate
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+* 
+What would you expect to happen, given your program and input?
+
+Your answer here:
+ */
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+```
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(int[] args) { int x = 1 / 0; } }
+ */
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+public class Main { public static int main(String[] args) { int x; try { x = 1 / 0; } catch (ArithmeticException e) { x = 0; } return x; } }
+
+public class Main { public static void main(String[]
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+Output:
+main
+1
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } public static void recurse() { recurse(); } }
+```
+# Exercises
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+ 2. ArithmeticException:
+    public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+.
+ 
+public class Main {
+  public static void main(String[] args) {
+    String s = "Hello" + "World";
+    String s = "Hello";
+    String s = "Hello" + "World" + "Hello";
+  }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ 
+public class Main { public static void main(int[] arr, int[] b, int m) { return; } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ }
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+ 
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+
+public class Main { public static void main(String[] args) { recur(); }
+    static void recur() { recur(); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } public static void recurse() { recurse(); } }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+*/
+
+
+
+}
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+    """
+  }
+}
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+    
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>}
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+public class Main { public static String
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+
+[VERBOSE] ========== sample =========
+[VERBOSE] /* Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion), ClassCastException (e.g., invalid type casts), or syntax errors. Incorporate diverse Java constructs such as lambdas, streams, generics, try-catch blocks, Optional, CompletableFuture, or Java 17 features like sealed classes, records, and pattern matching for switch. Ensure the program has a main method and is syntactically valid but likely to cause errors during compilation or execution. Vary the structure, variable names, and logic in each program to maximize error diversity. Here are some example patterns to inspire (but do not copy directly):
+1. NullPointerException:
+   public class Main {
+       public static void main(String[] args) {
+           String s = null;
+           System.out.println(s.length());
+       }
+   }
+2. ArithmeticException:
+   public class Main {
+       public static void main(String[] args) {
+           int x = 1 / 0;
+       }
+   }
+3. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+           recurse();
+       }
+       static void recurse() { recurse(); }
+   }
+Create a new, distinct program that follows these principles.
+ */
+Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity.
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } } static void recurse() { recurse(); }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+public class Main { public static void main(String[] args) { recurse(); } private static void recurse() { recurse(); } }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+ } /*
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+1
+```
+
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+
+public static void findNextString(String[] values, String pattern) {
+    Map<Integer, List<String>> patterns = new HashMap<>();
+    for (int
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+[VERBOSE] ========== sample =========
+[VERBOSE] ========== sample =========
+[VERBOSE] public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+
+[VERBOSE] ========== sample =========

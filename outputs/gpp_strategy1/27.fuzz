@@ -1,0 +1,27 @@
+#include <iostream>
+inline std::string operator+=(std::string& x, const std::string& y) {
+    if (y[0] == y.c_str()[1]) y.erase(y.begin());
+    if (y[0] == y.c_str()[0]) {
+        x.append(y.substr(1));
+        if (y[0]!= '+') x.remove_prefix(1);
+    }
+    return x;
+}
+template <typename T>
+struct X { };
+template <>
+struct X<std::string> { };
+inline std::string operator+(X<std::string>, const std::string& x) {
+    return x;
+}
+#define CHECK(...) if (false) std::cout << std::boolalpha << __VA_ARGS__
+
+int main() {
+    using namespace std;
+    std::string input;
+    std::getline(cin, input);
+    CHECK("%s", input);
+    CHECK("%s", input);
+    return 0;
+}
+#endif

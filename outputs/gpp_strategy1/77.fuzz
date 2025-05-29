@@ -1,0 +1,12 @@
+#include <iostream>
+#include <array>
+inline std::array<int,5> operator+(const std::array<int,5>& x, double) {
+     
+    return x;
+}
+ 
+int main() {
+    std::cout += "++";
+    return 0;
+}
+

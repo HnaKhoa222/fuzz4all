@@ -1,0 +1,10 @@
+#include <iostream>
+int main() {
+    const int a = 0x5;
+    if (isodd(a)) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+ 

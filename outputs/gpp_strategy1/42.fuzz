@@ -1,0 +1,13 @@
+#include <iostream>
+inline void operator-=(std::string& x) {
+    if (x[x.size() - 1] =='s') {
+        x.append("--");
+    }
+}
+int main() {
+    std::string x = "hello world";
+     
+    auto y = x - " world";
+    std::cout << "x = " << x << "\ny = " << y << std::endl;
+    return 0;
+}

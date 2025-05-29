@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdexcept>
+std::ostream& operator<<(std::ostream& out, const std::string& s) { out << s; return out; }
+int main() {
+    double a, b;
+    std::cin >> a >> b;
+    auto const y = "++" + s + a + b;
+    if (y!= b + "--" + s + a) {
+        std::cerr << "(a + b) is not" << (a + b) << "!" << std::endl;
+        return -1;
+    }
+    return 0;
+}
+ 
+#include <type_traits>
+template<typename T>
+class Box {
+  private:
+    T data_;
+  public:
+    T const& get() const {
+        return data_;
+    }
+    void set(T const& x) {
+        data_ = x;
+    }
+};
+template<typename T>
+class Stack {
+  public:
+    using value_type = T;
+    Box<T>* p_;
+
+  private:
+    using size_type = std::size_t;
+    size_type size

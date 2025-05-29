@@ -1,0 +1,39 @@
+#include <iostream>
+
+struct A
+{
+    void use_A()
+    {
+    }
+};
+struct B
+{
+    B();
+    B(A &&);
+};
+B::B()
+{
+    std::cout << "ctor \n";
+}
+B::B(A &&)
+{
+    std::cout << "copy\n";
+}
+
+
+struct C
+{
+    B b;
+    ~C()
+    {
+        std::cout << "dtor\n";
+    }
+};
+int main()
+{
+    auto a1 = B{ A{} };
+    auto a2 = B{ A{} };
+    auto c = C{ a1 };
+    
+    std::cout << "...ctor \n";
+}

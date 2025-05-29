@@ -1,0 +1,3 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+</pre>
+<p>Note: If this code was compiled on an Intel machine using Java 8 then it will output 0. You only have to modify it to output 1 for that machine.</p>

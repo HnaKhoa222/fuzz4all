@@ -1,0 +1,34 @@
+fuzzing:
+     output_folder: outputs/gjava  # Đơn giản hóa đường dẫn
+     num: 100  # Giảm để thử nghiệm
+     total_time: 1  # 1 giờ
+     log_level: 3  # VERBOSE
+     otf: true
+     resume: false  # Chạy mới
+     evaluate: false
+     use_hand_written_prompt: true  # false dùng autoprompt
+     no_input_prompt: false  # Dùng tài liệu
+     prompt_strategy: 3
+     batch_size: 10  # Khớp với C++
+     target_name: javac  # Tránh lỗi target:not found
+target:
+     language: java
+     path: javac
+     trigger_to_generate_input: "Generate a unique Java program that triggers undefined behavior, exceptions, or compilation errors, such as null pointer exceptions, division by zero, infinite recursion, or invalid type casts. Use varied constructs like lambdas, streams, generics, try-catch blocks, or Java-specific features (e.g., Optional, CompletableFuture). Incorporate Java 17 features like sealed classes or pattern matching where applicable. Ensure each program is distinct in structure, variable names, and logic to maximize error diversity."
+     input_hint: "public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }"
+     path_documentation: ../config/documentation/java/java_std.md
+     path_example_code: null
+     path_hand_written_prompt: /home/khoa/Downloads/fuzz4all-main/Fuzz4All/javac_prompts.txt
+     target_string: ""
+     seed_inputs:  # Thêm để tăng đa dạng
+       - "public class Main { public static void main(String[] args) { int x = 1/0; } }"
+       - "public class Main { public static void main(String[] args) { while(true) {} } }"
+       - "public class Main { public static void main(String[] args) { Object o = null; o.toString(); } }"
+
+llm:
+     temperature: 1  # Tăng để đa dạng
+     batch_size: 10
+     device: cpu  # Khớp setup  15289
+     model_name: bigcode/starcoderbase-1b
+     max_length: 512
+     eos: ["<|endoftext|>", "<|"]

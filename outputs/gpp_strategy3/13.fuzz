@@ -1,0 +1,59 @@
+#include <iostream>
+#include <assert.h>
+#include <iterator>
+class Iterator;
+class B 
+{
+    public:
+    B() {};
+    B(B const &b) {};
+};
+class C   
+{   
+    Iterator begin()
+    {
+        return Iterator();
+    }
+};
+class D 
+{
+    B b; 
+};
+class Iterator
+{
+    public:    
+    Iterator(B const &b)
+    {
+    }
+    bool operator!=(Iterator const &other) const
+    {
+        return false;
+    }
+};
+bool operator==(Iterator const &a, Iterator const &b)
+{
+    return true;
+}
+ 
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <array>
+#include <tuple>
+class C
+{
+    public:
+    C()
+    {
+    }
+     template <class T, size_t N>, C()
+    {
+        constexpr typename C::value_type values[];
+    }
+
+};
+
+class T;
+std::ostream& operator<<(std::ostream &os, const T *);
+ 
+#include <

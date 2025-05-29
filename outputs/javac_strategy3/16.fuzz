@@ -1,0 +1,8 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+1. Infinite recursion:
+   public class Main {
+       public static void main(String[] args) {
+                   recurse(); }
+       static void recursive() { recursive();

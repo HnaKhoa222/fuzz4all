@@ -1,0 +1,8 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+  public static void main(String[] args) throws Exception {
+      try {
+          int i = (int) Math.sqrt(4.0);
+          int j = (int) 12.23 / (int.MAX_VALUE + (-100));
+      } catch (

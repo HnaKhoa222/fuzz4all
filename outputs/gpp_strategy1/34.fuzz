@@ -1,0 +1,18 @@
+#include <iostream>
+inline std::string operator-(const std::string& x) {
+    return "--" + x;
+}
+int main(int argc, char ** argv)
+{
+    return 0;
+}
+
+ 
+
+#include <iostream>
+std::string a = "Hello";
+std::cout << a.size() << std::endl;
+std::cout << a.c_str() << std::endl;
+std::cout << a << std::endl;
+std::cout << -(a) << std::endl;
+std::string b = a;

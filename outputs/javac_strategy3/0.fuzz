@@ -1,0 +1,3 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+```
+![image-20210222120756770](C:\Users\lakshas\AppData\Roaming\Typora\typora-user-images\image-202102221207

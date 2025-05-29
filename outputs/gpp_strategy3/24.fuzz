@@ -1,0 +1,21 @@
+#include <iostream>
+class A
+{
+    public:
+    A(int n);
+    ~A() {};
+};
+class B : public A
+{
+    public:
+    B(int n);
+};
+class C : public B, public A
+{
+    public:
+    C(A b = {});
+};
+int main()
+{
+    C c;
+}

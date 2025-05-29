@@ -1,0 +1,25 @@
+#include <iostream>
+struct Point {
+  Point(int x=0, int y=0) : x(x), y(y) {}
+  int x, y;
+};
+int find_max_num(Point a, Point b)
+{
+  return a.x==0?b.y:a.x>b.x?a.x:b.x;
+}
+
+template<class A>
+int find_max_num(A a,A b)
+{
+   return find_max_num(a,b);
+}
+
+int main() {
+  std::cout << "004 : " << find_max_num(0,0) << std::endl;
+  std::cout << "005 : " << find_max_num(0,-14) << std::endl;
+  std::cout << "006 : " << find_max_num(0,2) << std::endl;
+  std::cout << "007 : " << find_max_num(0,0) << std::endl;
+  std::cout << "007 : " << find_max_num(-1,1) << std::endl;
+  std::cout << "007 : " << find_max_num(-1,8) << std::endl;
+}
+

@@ -1,0 +1,5 @@
+#include <iostream>
+int main() {
+    throw std::runtime_error("Hello world!");
+    return 0;
+}

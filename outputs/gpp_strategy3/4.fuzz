@@ -1,0 +1,5 @@
+#include <iostream>
+
+
+int fun(float f);
+int fun(double d);

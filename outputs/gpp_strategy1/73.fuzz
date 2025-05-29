@@ -1,0 +1,9 @@
+#include <iostream>
+#include <stdexcept>
+inline std::string& operator+=(std::string& x, const std::string& y) {
+    if (x == "++") { throw std::invalid_argument("use -x to modify/verify previous version"); }
+    if (y == "--") { throw std::invalid_argument("use -y to modify a previously successful program"); }
+    x.insert(0, y);
+    return x;
+}
+#endif

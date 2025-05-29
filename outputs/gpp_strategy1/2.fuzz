@@ -1,0 +1,44 @@
+#include <iostream>
+
+#include <iomanip> 
+
+using namespace std;
+
+
+class Vector {
+    list<int> elems;
+public:
+    void push_back(int e) {
+        elems.push_back(e);
+    }
+
+    int pop_back() {
+        int e = elems.back();
+        elems.pop_back();
+        return e;
+    }
+    
+    int size() {
+        return elems.size();
+    }
+
+    friend ostream& operator<<(ostream& ost, const Vector& v);
+};
+
+ostream& operator<<(ostream& ost, const Vector& v) {
+    for(auto i : v.elems) ost << i<<"\t";
+    return ost;
+}    
+
+
+int main(int argc, char** argv) {
+    Vector v;
+    v.push_back(11);
+    v.push_back(22);
+    v.push_back(33);
+    v.push_back(44);
+    v.push_back(55);
+    
+    return 0;
+}
+

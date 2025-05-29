@@ -1,0 +1,8 @@
+#include <iostream>
+void some_function() {
+    auto x = -1;
+    x = "hello world";
+    if(x<0) {
+        std::cout << "Negative value " << x << std::endl;
+    }
+}

@@ -1,0 +1,6 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+/* Generate a unique Java program to trigger different syntax problems that might occur during compilation and execution. E.g., try to compile the following program:
+Main main = new Main(x);
+main.doSomethingThatChangesState("hi", x);
+Create a new, distinct new program

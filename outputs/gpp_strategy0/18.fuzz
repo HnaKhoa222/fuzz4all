@@ -1,0 +1,14 @@
+#include <iostream>
+ 
+int main() { return 0; }
+ 
+int main() { return 0; }
+ 
+int main(int argc, char **argv) {
+
+    return 0;
+}
+ 
+struct myClass {
+    myClass(int count) { std::cout << count << std::endl; }
+};

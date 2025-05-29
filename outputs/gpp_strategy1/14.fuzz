@@ -1,0 +1,11 @@
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << "X" << x << 'X';
+    return out;
+}
+ 
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << "Y" << x << 'Y';
+    return out;
+}

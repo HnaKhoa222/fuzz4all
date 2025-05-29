@@ -1,0 +1,4 @@
+#include <iostream>
+inline std::string f(const std::string& x) {
+    return x + "+--";
+}

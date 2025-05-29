@@ -1,0 +1,521 @@
+[TRACE] Validating outputs/fuzzing_outputs11/0.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/0.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/1.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/1.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/2.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/2.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+/ Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/3.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/3.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/4.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/4.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:5: error: class, interface, enum, or record expected
+https: 
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/5.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/5.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/6.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/6.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 3 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/7.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/7.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+}
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/8.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/8.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+/tmp/temp1748441001.181924/Main.java:4: error: duplicate class: Main
+public class Main { public static <T> T getOrDefault(T val, T def) { return val; } }
+       ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/9.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/9.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/10.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/10.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/11.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/11.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: reached end of file while parsing
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } } public 
+                                                                                                                        ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/12.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/12.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/13.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/13.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/14.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/14.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/15.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/15.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/16.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/16.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/17.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/17.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:1: error: implicitly declared class does not have main method in the form of void main() or void main(String[] args)
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+^
+Note: /tmp/temp1748441001.181924/Main.java uses preview features of Java SE 22.
+Note: Recompile with -Xlint:preview for details.
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/18.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/18.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+/tmp/temp1748441001.181924/Main.java:4: error: duplicate class: Main
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+       ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/19.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/19.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/20.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/20.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: class, interface, enum, or record expected
+*/
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/21.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/21.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/22.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/22.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:6: error: reached end of file while parsing
+    recurse();
+              ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/23.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/23.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+/tmp/temp1748441001.181924/Main.java:4: error: duplicate class: Main
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+       ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/24.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/24.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: class, interface, enum, or record expected
+public class Main { public static void main(String[] args) { int x = 1 / 0; } } public static void recurse() { recurse(); } public class Main { public static void main(String[] args) { } } public static void recurse() { recurse(); } }
+                                                                                                                                                                                                                                         ^
+Note: /tmp/temp1748441001.181924/Main.java uses preview features of Java SE 22.
+Note: Recompile with -Xlint:preview for details.
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/25.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/25.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle> public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/26.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/26.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:6: error: duplicate class: Main
+public class Main {
+       ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/27.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/27.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/28.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/28.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/29.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/29.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: class, interface, enum, or record expected
+*/
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/30.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/30.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/31.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/31.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/32.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/32.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/33.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/33.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: unclosed comment
+/*
+^
+/tmp/temp1748441001.181924/Main.java:6: error: reached end of file while parsing
+1) Generics create explicit boundaries for our use of types in our code. For example, when we add an interface to a class we need to ensure that the implementers of
+                                                                                                                                                                    ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/34.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/34.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: class, interface, enum, or record expected
+*/
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/35.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/35.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/36.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/36.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/37.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/37.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/38.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/38.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/39.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/39.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/40.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/40.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/41.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/41.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/42.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/42.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: unclosed comment
+/* Create a list of the following sentences, with spaces, newlines, and symbols at appropriate places between each one :
+^
+/tmp/temp1748441001.181924/Main.java:8: error: reached end of file while parsing
+b) "I am a developer, I should code something for
+                                                 ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/43.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/43.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle> 
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/44.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/44.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/45.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/45.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/46.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/46.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/47.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/47.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+/tmp/temp1748441001.181924/Main.java:5: error: illegal character: '#'
+## References
+^
+/tmp/temp1748441001.181924/Main.java:5: error: illegal character: '#'
+## References
+ ^
+3 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/48.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/48.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: unclosed comment
+/*
+^
+/tmp/temp1748441001.181924/Main.java:7: error: reached end of file while parsing
+If all else fails, create an empty catch block to handle the unrecover
+                                                                      ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/49.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/49.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int a = 1; int b = 1 / a; } }
+       ^
+/tmp/temp1748441001.181924/Main.java:4: error: duplicate class: Main
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+       ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/50.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/50.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: illegal start of type
+public class Main {<init>(s);</init>(s);}
+                         ^
+/tmp/temp1748441001.181924/Main.java:3: error: <identifier> expected
+public class Main {<init>(s);</init>(s);}
+                           ^
+/tmp/temp1748441001.181924/Main.java:3: error: <identifier> expected
+public class Main {<init>(s);</init>(s);}
+                              ^
+/tmp/temp1748441001.181924/Main.java:3: error: <identifier> expected
+public class Main {<init>(s);</init>(s);}
+                                   ^
+/tmp/temp1748441001.181924/Main.java:3: error: <identifier> expected
+public class Main {<init>(s);</init>(s);}
+                                      ^
+/tmp/temp1748441001.181924/Main.java:4: error: illegal start of type
+public class Main {<init>(s) {} public static String foo10(int n){ return foo10(n-1);} public static void main(String[] args) { System.out.println("foo:" +
+                         ^
+/tmp/temp1748441001.181924/Main.java:4: error: <identifier> expected
+public class Main {<init>(s) {} public static String foo10(int n){ return foo10(n-1);} public static void main(String[] args) { System.out.println("foo:" +
+                           ^
+/tmp/temp1748441001.181924/Main.java:4: error: reached end of file while parsing
+public class Main {<init>(s) {} public static String foo10(int n){ return foo10(n-1);} public static void main(String[] args) { System.out.println("foo:" +
+                                                                                                                                                           ^
+8 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/51.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/51.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/52.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/52.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/53.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/53.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/54.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/54.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: class, interface, enum, or record expected
+3. Syntax errors:
+^
+/tmp/temp1748441001.181924/Main.java:5: error: class, interface, enum, or record expected
+*/
+^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/55.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/55.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/56.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/56.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/57.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/57.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: class, interface, enum, or record expected
+https: 
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/58.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/58.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/59.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/59.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:5: error: not a statement
+public class Main { public static void main(String[] args) { recurse
+                                                             ^
+/tmp/temp1748441001.181924/Main.java:5: error: reached end of file while parsing
+public class Main { public static void main(String[] args) { recurse
+                                                                    ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/60.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/60.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: class, interface, enum, or record expected
+Create a new, distinct program that follows these principles.
+^
+/tmp/temp1748441001.181924/Main.java:6: error: class, interface, enum, or record expected
+2. Runtime exceptions
+^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/61.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/61.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/62.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/62.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/63.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/63.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/64.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/64.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/65.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/65.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+,
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/66.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/66.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+ }
+ ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/67.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/67.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/68.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/68.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/69.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/69.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+ }
+ ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/70.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/70.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:4: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/71.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/71.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: illegal character: '`'
+```
+^
+/tmp/temp1748441001.181924/Main.java:2: error: illegal character: '`'
+```
+ ^
+/tmp/temp1748441001.181924/Main.java:2: error: illegal character: '`'
+```
+  ^
+/tmp/temp1748441001.181924/Main.java:3: error: reached end of file while parsing
+4 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/72.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/72.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+ }
+ ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/73.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/73.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: unclosed comment
+/*  
+^
+/tmp/temp1748441001.181924/Main.java:3: error: reached end of file while parsing
+NullPointerException, ArithmeticException, StackOverflowError, ClassCastException, InvalidSyntax, IllegalModifier. For each type, create a separate file that invokes
+                                                                                                                                                                     ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/74.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/74.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/75.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/75.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: unclosed comment
+/* Generate a unique Java program that compiles or runs to completion successfully. The compiler must allow compilation to stop if an error, runtime exception, or undefined behavior is detected. Here is an example:
+^
+/tmp/temp1748441001.181924/Main.java:4: error: reached end of file while parsing
+public class Main { public static void main(String[] args) { int x = 1 /
+                                                                        ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/76.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/76.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/77.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/77.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: duplicate class: Main
+ public class Main {
+        ^
+/tmp/temp1748441001.181924/Main.java:6: error: duplicate class: Main
+ public class Main {
+        ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/78.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/78.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/79.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/79.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/80.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/80.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+}  
+^
+/tmp/temp1748441001.181924/Main.java:4: error: reached end of file while parsing
+public class Main { public
+                          ^
+2 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/81.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/81.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/82.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/82.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+/tmp/temp1748441001.181924/Main.java:8: error: unclosed comment
+/**
+^
+/tmp/temp1748441001.181924/Main.java:10: error: reached end of file while parsing
+ * (10 points) An error is triggered by a variable that
+                                                       ^
+3 errors
+
+[TRACE] Validating outputs/fuzzing_outputs11/83.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/83.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:5: error: duplicate class: Main
+class Main {
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/84.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/84.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/85.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/85.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/86.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/86.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/87.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/87.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/88.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/88.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/89.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/89.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/90.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/90.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/91.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/91.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/92.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/92.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/93.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/93.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+ <p></p><fim_middle>
+ ^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/94.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/94.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/95.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/95.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/96.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/96.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/97.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/97.fuzz is safe
+[TRACE] Validating outputs/fuzzing_outputs11/98.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/98.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:2: error: class, interface, enum, or record expected
+*
+^
+1 error
+
+[TRACE] Validating outputs/fuzzing_outputs11/99.fuzz ...
+[VERBOSE] outputs/fuzzing_outputs11/99.fuzz failed validation with error message: /tmp/temp1748441001.181924/Main.java:3: error: illegal character: '#'
+#endregion
+^
+/tmp/temp1748441001.181924/Main.java:3: error: reached end of file while parsing
+#endregion
+          ^
+2 errors
+

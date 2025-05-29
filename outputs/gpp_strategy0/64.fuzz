@@ -1,0 +1,16 @@
+#include <iostream>
+int main() {
+	unsigned int arr[1] = {32};
+	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
+		int tmp;
+		std::cin >> tmp;
+		std::cout << "tmp is : " << tmp << '\t';
+	}
+
+    std::string name("Hello");
+	std::cout << &name << '\t' << name[0];
+	name[name.length() - 1] = 'z';
+	name.clear();
+
+    return 0;
+}

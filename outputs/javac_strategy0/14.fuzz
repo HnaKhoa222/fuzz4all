@@ -1,0 +1,3 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+/* Generate a unique Java program to test the javac compiler to detect the existence of null pointer exceptions while compiling and/or running an existing class in the run-time stack. To check whether a Java program runs into invalid types, use an external function that returns false if null is passed. Use

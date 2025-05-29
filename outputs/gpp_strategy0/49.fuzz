@@ -1,0 +1,6 @@
+#include <iostream>
+int main() {
+    enum class Color {Red, Green, Blue};
+std::cout << Color::Red << Color::Green << Color::Blue;
+return 0;
+}

@@ -1,0 +1,6 @@
+#include <iostream>
+int a = 23;
+inline std::ostream& operator<<(std::ostream& out, std::string x) {
+    out << a << "'" << x << '"';
+    return out;
+}

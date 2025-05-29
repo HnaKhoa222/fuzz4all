@@ -1,0 +1,9 @@
+#include <iostream>
+template <typename C>
+inline C f1(const char* s, const C& c1) { return c1+--s; }
+template <typename C>
+inline C f2(const C&  c2, const char* s) { return c2+s; }
+ 
+
+ 
+ 

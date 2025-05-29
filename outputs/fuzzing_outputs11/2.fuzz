@@ -1,0 +1,2 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+/ Generate a unique Java program to test the javac compiler by triggering compilation errors, runtime exceptions, or undefined behavior. Focus on issues like NullPointerException (e.g., dereferencing null objects), ArithmeticException (e.g., division by zero), StackOverflowError (e.g., infinite recursion

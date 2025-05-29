@@ -1,0 +1,10 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass()!= o.getClass()) return false;
+        Main that = (Main) o;
+        return Objects.equals(text, that.text) &&
+           

@@ -1,0 +1,10 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    std::cout << "new version" << std::endl;
+    return a+b;
+}
+int main()
+{
+    find_max_num(1,2);
+}

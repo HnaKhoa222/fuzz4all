@@ -1,0 +1,21 @@
+#include <iostream>
+#include <unordered_map>
+std::string operator+(const std::string& x, const std::string& y) {
+     
+     
+    std::unordered_map<std::string, std::string> map;
+    map["--x"] = y;
+     
+    if (map["x"].empty()) {  
+        return x + "--";   }
+      }
+    std::cout << x << " " << y << std::endl;
+    return 0;
+}
+int main() {
+    std::string string1("x"), string2("y");
+    std::cout << string1 + string2 << " "   << string1 + "--" << std::endl << std::endl;
+    char one_char('x');
+    int i {4};
+    std::cout << one_char + i << " " << one_char + "-" << std::endl;
+    return

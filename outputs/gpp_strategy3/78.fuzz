@@ -1,0 +1,32 @@
+#include <iostream>
+class A
+{
+public:
+    A() { std::cout << "A is constructed" << std::endl;}
+    A(int a) { std::cout << "A constructed with " << a << std::endl;}
+};
+class B : public A
+{
+public:
+    B() { std::cout << "B is constructed" << std::endl;}
+    B(int a) { std::cout << "B constructed with " << a << std::endl;}
+};
+
+int FindMax2(A a, A b) {
+   static  int  result = 0;
+   if(a > b)    result = a;
+   if(b > result)  result = b;
+   return result;
+}
+int main()
+{
+    B b1, b2;
+    A a1, a2;
+    
+    FindMax2(a1, a1);
+    FindMax2(a1, a2);
+    FindMax2(b1, b1);
+    FindMax2(a1, b1);
+    FindMax2(b1, b2);
+    return 0;    
+} 

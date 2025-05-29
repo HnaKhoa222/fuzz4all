@@ -1,0 +1,11 @@
+#include <iostream>
+int main() {
+    while (1) {
+        std::cout << "Hello";
+    };
+    return 0;
+}
+
+static inline char bogusExpression() {
+    return 'A';
+}

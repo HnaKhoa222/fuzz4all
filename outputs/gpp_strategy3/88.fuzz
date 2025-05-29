@@ -1,0 +1,13 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    int max = a+b;
+    max = max*10+100;
+    return max;
+}
+int main()
+{
+    int max=find_max_num(10, 100);
+    std::cerr << "max = " << max << std::endl;
+    return 0;
+}

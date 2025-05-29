@@ -1,0 +1,28 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    return 0;
+}
+int main()
+{
+    int num1(10), num2(7), num3(&num1);
+    std::cout<<"num1="<<num1<<",num2="<<num2<<",num3="<<num3<<std::endl;
+    find_max_num(num1, num3);
+    std::cout <<num1<<"+"<<num2<<":"<<find_max_num(num1, num2)<<"="<<num1+num2<<std::endl;
+    const int numMax(find_max_num(num3, num2));
+    std::cout<<numMax<<std::endl;
+    std::cout<<num3<<"=="<<numMax<<std::endl;
+    const unsigned __int64 numMaxULL(find_max_num(num3, numMax));
+    std::cout<<numMaxULL<<std::endl;
+    int a = 4326;
+    int arr[sizeof(a)];
+    arr[0] = a;
+    std::cout<<sizeof(a);
+    for(std::size_t i=1; i<sizeof(a); i++)
+        std::cout<<arr[i]<<std::endl;
+    const int b = 0;
+    std::cout<<sizeof(b);
+    std::cout<<sizeof(b);
+    std::cout<<sizeof(b);
+    return 0;
+}

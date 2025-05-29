@@ -1,0 +1,24 @@
+#include <iostream>
+std::string operator+(const std::string& x, int i) {
+    if (i) { throw std::invalid_argument("use [-x] to verify previous version"); }
+    return {x++}; }
+int main() {
+    std::cout << "Enter a string: " << std::flush;
+    std::string s;
+    std::cin >> s;
+    s += "---";
+    std::cout << s << std::endl;
+    return 0;
+}
+ 
+bool operator==(char const* s, std::pair<char, std::string_view> const& p) {
+    if (s && p.second() == std::string_view(s)) { return true; }
+    return p.first() == s;
+}
+int main() {
+    std::cout << "Enter a char: " << std::flush;
+    char s;
+    std::cin >> s;
+    std::pair<char, std::string> p(s, "foobar");
+    std::pair<char const*, std::string_view> pp("A");
+    std::pair<char const

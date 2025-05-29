@@ -1,0 +1,9 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+```
+
+<br>
+
+```{listings}
+javac --release 8 Main.java Main_Bad.java
+```

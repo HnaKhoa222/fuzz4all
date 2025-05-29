@@ -1,0 +1,28 @@
+#include <iostream>
+
+#include <algorithm>
+
+void safe_fail() {}
+
+int main()
+{
+    safe_fail();
+
+    constexpr auto n = 100;
+    void* p;
+
+    p = malloc(n);
+
+    try
+    {
+        strcpy(p, "asdf");
+    }
+    catch(... )
+    {
+        free(p);
+    }
+
+    free(p);
+
+    return 0;
+}

@@ -1,0 +1,59 @@
+#include <iostream>
+
+
+void func(int) {}
+
+ 
+ 
+
+ 
+class TestClass
+{
+    int i = 0;
+public:
+    TestClass(int)
+    {
+        i = 1;
+    }
+    TestClass(const TestClass& o)
+    {
+        i = o.i;
+    }
+};
+
+void func(const TestClass&) {}
+
+void func2(TestClass) {}
+
+void func3(int o, TestClass oo) {}
+
+void func4(int o1, int o2, TestClass o1oo, TestClass o2oo) {}
+
+void func5(int o1, TestClass o1o2, TestClass o1o2o3, TestClass o1o2o3o4, TestClass o1o2o3o4o5) {}
+
+void func6(int o1, TestClass o2, TestClass o3, TestClass o4, TestClass o5) {}
+
+void func7(int o2, TestClass o3, TestClass o4, TestClass o5) {}
+
+int main()
+{
+    int a = 2;
+    int b = 15;
+
+    func(a);
+    func(b);
+    func((b + a)/2);
+
+    func2(a);
+    func2(b);
+
+    TestClass t1(100);
+    TestClass t2 = t1;  
+
+    TestClass t3(100);  
+    t1 = t3;
+
+    func3(1, 2, t1, t2);
+    func3(a, b, t1, t3);
+
+    func4

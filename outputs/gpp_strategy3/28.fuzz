@@ -1,0 +1,50 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+class A
+{
+    public:
+    A() {};
+    A &operator=(const A &) {};
+};
+class B : public A   
+{
+    public:
+    B() {};
+    B()=delete;
+    B &operator=(const B &) {};
+    B &operator=(const B &) = default;
+     
+     
+};
+class C : public A, public B
+{
+    public:
+    C(B a = {});
+};
+class AA : public B
+{
+    public:
+    AA() {}
+    AA& operator=(const AA &);
+};
+class BB : public AA
+{
+    public:
+    BB() { m_aa; };
+    BB operator=(const BB& rhs);
+};
+class CC : public B, public A  
+{
+    public:
+    CC() {};
+    CC &operator=(const CC &) {};
+};
+class DD
+{
+    public:
+    DD() {};
+};
+int main()
+{
+}

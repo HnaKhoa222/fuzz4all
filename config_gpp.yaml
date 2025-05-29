@@ -28,7 +28,12 @@ fuzzing:
   output_folder: outputs/gpp/
   otf: true
   log_level: 2
-  prompt_strategy: 2  # Đổi để ưu tiên prompt cụ thể
+  # prompt strategy to generate obtain programs after the first one.
+  # 0: generate new code using separator
+  # 1: mutate existing code
+  # 2: semantically equivalent code generation
+  # 3: combine previous two code generations
+  prompt_strategy: 3  # Đổi để ưu tiên prompt cụ thể
   total_time: 10  # Tăng thời gian
   no_input_prompt: false  # Dùng input_hint và seed_inputs
   evaluate: false

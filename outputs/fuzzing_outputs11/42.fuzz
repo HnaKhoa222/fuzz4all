@@ -1,0 +1,8 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+
+/* Create a list of the following sentences, with spaces, newlines, and symbols at appropriate places between each one :
+
+a) "I am a teacher, I should write something to help you solve problems."
+
+b) "I am a developer, I should code something for

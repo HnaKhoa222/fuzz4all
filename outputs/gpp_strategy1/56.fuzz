@@ -1,0 +1,9 @@
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& x, const std::string&) {
+    return x;
+}
+ 
+#include <iostream>
+inline std::ostream& operator<<(std::ostream& x, const char*) {
+    return x;
+}

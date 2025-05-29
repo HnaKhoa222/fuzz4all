@@ -1,0 +1,21 @@
+#include <iostream>
+class A
+{
+    friend class B;
+    public:
+    A() {};
+} ;
+class B;
+class C : public A
+{
+    public:
+    C(B *p = {}) {};
+} ;
+class D : public A, public B
+{
+    public:
+    D(typename A::~A) {};
+} ;
+int main()
+{
+}

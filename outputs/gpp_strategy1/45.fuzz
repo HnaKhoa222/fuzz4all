@@ -1,0 +1,19 @@
+#include <iostream>
+inline std::string operator*(const std::string& x, int n) {
+    std::cout << x << "times " << n << " = " << x * n << std::endl;
+    return x + "__" + std::to_string(n);
+}
+ 
+void print(const std::string& s) {}
+#include <iostream>
+void print(const std::string& s) { if (s == "*2") s = s + "+3"; print(s); }
+#include <iostream>
+void print(const std::string& s) {
+    if (s == "*2") s = s + "+3";
+    print(s);
+}
+ 
+#include <iostream>
+void print(const std::string& s) { std::cout << s << std::endl; }
+
+int main() { return 0; }

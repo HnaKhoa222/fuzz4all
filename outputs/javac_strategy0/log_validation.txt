@@ -1,0 +1,569 @@
+[TRACE] Validating outputs/javac_strategy0/0.fuzz ...
+[VERBOSE] outputs/javac_strategy0/0.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: class, interface, enum, or record expected
+5. Pattern matching:
+^
+/tmp/temp1748534104.558892/Main.java:5: error: class, interface, enum, or record expected
+The program tests if you can write a program that:
+^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/1.fuzz ...
+[VERBOSE] outputs/javac_strategy0/1.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/2.fuzz ...
+[VERBOSE] outputs/javac_strategy0/2.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+ }
+ ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/3.fuzz ...
+[VERBOSE] outputs/javac_strategy0/3.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/4.fuzz ...
+[VERBOSE] outputs/javac_strategy0/4.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/5.fuzz ...
+[VERBOSE] outputs/javac_strategy0/5.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/6.fuzz ...
+[VERBOSE] outputs/javac_strategy0/6.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+ else { return Optional.ofNullable(s); } } 
+ ^
+/tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+ else { return Optional.ofNullable(s); } } 
+                                       ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/7.fuzz ...
+[VERBOSE] outputs/javac_strategy0/7.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:9: error: illegal start of type
+*/
+^
+/tmp/temp1748534104.558892/Main.java:9: error: reached end of file while parsing
+*/
+  ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/8.fuzz ...
+[VERBOSE] outputs/javac_strategy0/8.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/9.fuzz ...
+[VERBOSE] outputs/javac_strategy0/9.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/10.fuzz ...
+[VERBOSE] outputs/javac_strategy0/10.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+/tmp/temp1748534104.558892/Main.java:4: error: duplicate class: Main
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+       ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/11.fuzz ...
+[VERBOSE] outputs/javac_strategy0/11.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/12.fuzz ...
+[VERBOSE] outputs/javac_strategy0/12.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+ }
+ ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/13.fuzz ...
+[VERBOSE] outputs/javac_strategy0/13.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/14.fuzz ...
+[VERBOSE] outputs/javac_strategy0/14.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: unclosed comment
+/* Generate a unique Java program to test the javac compiler to detect the existence of null pointer exceptions while compiling and/or running an existing class in the run-time stack. To check whether a Java program runs into invalid types, use an external function that returns false if null is passed. Use
+^
+/tmp/temp1748534104.558892/Main.java:3: error: reached end of file while parsing
+/* Generate a unique Java program to test the javac compiler to detect the existence of null pointer exceptions while compiling and/or running an existing class in the run-time stack. To check whether a Java program runs into invalid types, use an external function that returns false if null is passed. Use
+                                                                                                                                                                                                                                                                                                                   ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/15.fuzz ...
+[VERBOSE] outputs/javac_strategy0/15.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: class, interface, enum, or record expected
+<commit_msg>Update 04-05.md (#4193)<commit_after>---
+^
+/tmp/temp1748534104.558892/Main.java:3: error: illegal character: '#'
+<commit_msg>Update 04-05.md (#4193)<commit_after>---
+                             ^
+/tmp/temp1748534104.558892/Main.java:7: error: illegal character: '\u2019'
+It’s better than nothing to think about how to program, especially when that program has already been written before. Each individual solution will
+  ^
+3 errors
+
+[TRACE] Validating outputs/javac_strategy0/16.fuzz ...
+[VERBOSE] outputs/javac_strategy0/16.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: unclosed comment
+/**
+^
+/tmp/temp1748534104.558892/Main.java:6: error: reached end of file while parsing
+* If the program has a main method, test your program on
+                                                        ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/17.fuzz ...
+[VERBOSE] outputs/javac_strategy0/17.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: duplicate class: Main
+class Main { public static void main(String[] args) { int x = 1 / 0; } }
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/18.fuzz ...
+[VERBOSE] outputs/javac_strategy0/18.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/19.fuzz ...
+[VERBOSE] outputs/javac_strategy0/19.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/20.fuzz ...
+[VERBOSE] outputs/javac_strategy0/20.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:4: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/21.fuzz ...
+[VERBOSE] outputs/javac_strategy0/21.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/22.fuzz ...
+[VERBOSE] outputs/javac_strategy0/22.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/23.fuzz ...
+[VERBOSE] outputs/javac_strategy0/23.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/24.fuzz ...
+[VERBOSE] outputs/javac_strategy0/24.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: class, interface, enum, or record expected
+Create a new, distinct program that
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/25.fuzz ...
+[VERBOSE] outputs/javac_strategy0/25.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: class, interface, enum, or record expected
+This exercise is too easy for you to pass - try it. But if you use multiple programming languages:
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/26.fuzz ...
+[VERBOSE] outputs/javac_strategy0/26.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+/tmp/temp1748534104.558892/Main.java:12: error: not a statement
+        for (int
+             ^
+/tmp/temp1748534104.558892/Main.java:12: error: reached end of file while parsing
+        for (int
+                ^
+3 errors
+
+[TRACE] Validating outputs/javac_strategy0/27.fuzz ...
+[VERBOSE] outputs/javac_strategy0/27.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:6: error: reached end of file while parsing
+public interface Runnable { public void
+                                       ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/28.fuzz ...
+[VERBOSE] outputs/javac_strategy0/28.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/29.fuzz ...
+[VERBOSE] outputs/javac_strategy0/29.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:4: error: reached end of file while parsing
+public class Main { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); }
+                                                                                                              ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/30.fuzz ...
+[VERBOSE] outputs/javac_strategy0/30.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/31.fuzz ...
+[VERBOSE] outputs/javac_strategy0/31.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:7: error: reached end of file while parsing
+    for
+       ^
+Note: /tmp/temp1748534104.558892/Main.java uses preview features of Java SE 22.
+Note: Recompile with -Xlint:preview for details.
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/32.fuzz ...
+[VERBOSE] outputs/javac_strategy0/32.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/33.fuzz ...
+[VERBOSE] outputs/javac_strategy0/33.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: class Main2 is public, should be declared in a file named Main2.java
+public class Main2 { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+/tmp/temp1748534104.558892/Main.java:4: error: class Main3 is public, should be declared in a file named Main3.java
+public class Main3 { public static void main(String[] args) { recurse(); } static void recurse() { recurse(); } }
+       ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/34.fuzz ...
+[VERBOSE] outputs/javac_strategy0/34.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/35.fuzz ...
+[VERBOSE] outputs/javac_strategy0/35.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/36.fuzz ...
+[VERBOSE] outputs/javac_strategy0/36.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:10: error: reached end of file while parsing
+           
+           ^
+Note: /tmp/temp1748534104.558892/Main.java uses preview features of Java SE 22.
+Note: Recompile with -Xlint:preview for details.
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/37.fuzz ...
+[VERBOSE] outputs/javac_strategy0/37.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/38.fuzz ...
+[VERBOSE] outputs/javac_strategy0/38.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: illegal character: '`'
+```
+^
+/tmp/temp1748534104.558892/Main.java:3: error: illegal character: '`'
+```
+ ^
+/tmp/temp1748534104.558892/Main.java:3: error: illegal character: '`'
+```
+  ^
+/tmp/temp1748534104.558892/Main.java:5: error: class, interface, enum, or record expected
+<br>
+ ^
+/tmp/temp1748534104.558892/Main.java:7: error: illegal character: '`'
+```{listings}
+^
+/tmp/temp1748534104.558892/Main.java:7: error: illegal character: '`'
+```{listings}
+ ^
+/tmp/temp1748534104.558892/Main.java:7: error: illegal character: '`'
+```{listings}
+  ^
+/tmp/temp1748534104.558892/Main.java:9: error: illegal character: '`'
+```
+^
+/tmp/temp1748534104.558892/Main.java:9: error: illegal character: '`'
+```
+ ^
+/tmp/temp1748534104.558892/Main.java:9: error: illegal character: '`'
+```
+  ^
+10 errors
+
+[TRACE] Validating outputs/javac_strategy0/39.fuzz ...
+[VERBOSE] outputs/javac_strategy0/39.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/40.fuzz ...
+[VERBOSE] outputs/javac_strategy0/40.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/41.fuzz ...
+[VERBOSE] outputs/javac_strategy0/41.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/42.fuzz ...
+[VERBOSE] outputs/javac_strategy0/42.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+  */ */ public class Example  {  
+  ^
+/tmp/temp1748534104.558892/Main.java:2: error: reached end of file while parsing
+  */ */ public class Example  {  
+                               ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/43.fuzz ...
+[VERBOSE] outputs/javac_strategy0/43.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+*/
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/44.fuzz ...
+[VERBOSE] outputs/javac_strategy0/44.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/45.fuzz ...
+[VERBOSE] outputs/javac_strategy0/45.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: reached end of file while parsing
+class Main { public static void main
+                                    ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/46.fuzz ...
+[VERBOSE] outputs/javac_strategy0/46.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+*/
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/47.fuzz ...
+[VERBOSE] outputs/javac_strategy0/47.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: class, interface, enum, or record expected
+3. Follow established best practices,
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/48.fuzz ...
+[VERBOSE] outputs/javac_strategy0/48.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:15: error: reached end of file while parsing
+  static void recurse() { recurse();
+                                    ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/49.fuzz ...
+[VERBOSE] outputs/javac_strategy0/49.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:4: error: class, interface, enum, or record expected
+Generate a unique Java program that triggers errors and exceptions, such as ArithmeticException and StackOverflowError, but not NullPointerExceptions, NullPointExceptions, and InfiniteRecursion. A program must generate an exception of whatever kind that it needs to cause a program's behavior. If it does not generate
+^
+/tmp/temp1748534104.558892/Main.java:4: error: unclosed character literal
+Generate a unique Java program that triggers errors and exceptions, such as ArithmeticException and StackOverflowError, but not NullPointerExceptions, NullPointExceptions, and InfiniteRecursion. A program must generate an exception of whatever kind that it needs to cause a program's behavior. If it does not generate
+                                                                                                                                                                                                                                                                                         ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/50.fuzz ...
+[VERBOSE] outputs/javac_strategy0/50.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:4: error: class, interface, enum, or record expected
+* 
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/51.fuzz ...
+[VERBOSE] outputs/javac_strategy0/51.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: illegal character: '`'
+```
+^
+/tmp/temp1748534104.558892/Main.java:5: error: illegal character: '`'
+```
+ ^
+/tmp/temp1748534104.558892/Main.java:5: error: illegal character: '`'
+```
+  ^
+/tmp/temp1748534104.558892/Main.java:6: error: reached end of file while parsing
+4 errors
+
+[TRACE] Validating outputs/javac_strategy0/52.fuzz ...
+[VERBOSE] outputs/javac_strategy0/52.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/53.fuzz ...
+[VERBOSE] outputs/javac_strategy0/53.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/54.fuzz ...
+[VERBOSE] outputs/javac_strategy0/54.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/55.fuzz ...
+[VERBOSE] outputs/javac_strategy0/55.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/56.fuzz ...
+[VERBOSE] outputs/javac_strategy0/56.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/57.fuzz ...
+[VERBOSE] outputs/javac_strategy0/57.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:4: error: class, interface, enum, or record expected
+ */
+ ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/58.fuzz ...
+[VERBOSE] outputs/javac_strategy0/58.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:6: error: reached end of file while parsing
+public class Main { public static void main(String[]
+                                                    ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/59.fuzz ...
+[VERBOSE] outputs/javac_strategy0/59.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: class, interface, enum, or record expected
+Output:
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/60.fuzz ...
+[VERBOSE] outputs/javac_strategy0/60.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/61.fuzz ...
+[VERBOSE] outputs/javac_strategy0/61.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/62.fuzz ...
+[VERBOSE] outputs/javac_strategy0/62.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: illegal character: '`'
+```
+^
+/tmp/temp1748534104.558892/Main.java:5: error: illegal character: '`'
+```
+ ^
+/tmp/temp1748534104.558892/Main.java:5: error: illegal character: '`'
+```
+  ^
+/tmp/temp1748534104.558892/Main.java:6: error: illegal character: '#'
+# Exercises
+^
+/tmp/temp1748534104.558892/Main.java:6: error: reached end of file while parsing
+# Exercises
+  ^
+5 errors
+
+[TRACE] Validating outputs/javac_strategy0/63.fuzz ...
+[VERBOSE] outputs/javac_strategy0/63.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: class, interface, enum, or record expected
+ 2. ArithmeticException:
+ ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/64.fuzz ...
+[VERBOSE] outputs/javac_strategy0/64.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/65.fuzz ...
+[VERBOSE] outputs/javac_strategy0/65.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/66.fuzz ...
+[VERBOSE] outputs/javac_strategy0/66.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+}
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/67.fuzz ...
+[VERBOSE] outputs/javac_strategy0/67.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+.
+^
+/tmp/temp1748534104.558892/Main.java:9: error: reached end of file while parsing
+  }
+   ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/68.fuzz ...
+[VERBOSE] outputs/javac_strategy0/68.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(int[] arr, int[] b, int m) { return; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/69.fuzz ...
+[VERBOSE] outputs/javac_strategy0/69.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+ }
+ ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/70.fuzz ...
+[VERBOSE] outputs/javac_strategy0/70.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/71.fuzz ...
+[VERBOSE] outputs/javac_strategy0/71.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/72.fuzz ...
+[VERBOSE] outputs/javac_strategy0/72.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/73.fuzz ...
+[VERBOSE] outputs/javac_strategy0/73.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/74.fuzz ...
+[VERBOSE] outputs/javac_strategy0/74.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/75.fuzz ...
+[VERBOSE] outputs/javac_strategy0/75.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/76.fuzz ...
+[VERBOSE] outputs/javac_strategy0/76.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/77.fuzz ...
+[VERBOSE] outputs/javac_strategy0/77.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/78.fuzz ...
+[VERBOSE] outputs/javac_strategy0/78.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/79.fuzz ...
+[VERBOSE] outputs/javac_strategy0/79.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+*/
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/80.fuzz ...
+[VERBOSE] outputs/javac_strategy0/80.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: unclosed text block
+    """
+    ^
+/tmp/temp1748534104.558892/Main.java:6: error: reached end of file while parsing
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/81.fuzz ...
+[VERBOSE] outputs/javac_strategy0/81.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/82.fuzz ...
+[VERBOSE] outputs/javac_strategy0/82.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/83.fuzz ...
+[VERBOSE] outputs/javac_strategy0/83.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/84.fuzz ...
+[VERBOSE] outputs/javac_strategy0/84.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>}
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/85.fuzz ...
+[VERBOSE] outputs/javac_strategy0/85.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:5: error: reached end of file while parsing
+public class Main { public static String
+                                        ^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/86.fuzz ...
+[VERBOSE] outputs/javac_strategy0/86.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/87.fuzz ...
+[VERBOSE] outputs/javac_strategy0/87.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/88.fuzz ...
+[VERBOSE] outputs/javac_strategy0/88.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/89.fuzz ...
+[VERBOSE] outputs/javac_strategy0/89.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+
+[TRACE] Validating outputs/javac_strategy0/90.fuzz ...
+[VERBOSE] outputs/javac_strategy0/90.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: class Main.Main is already defined in class Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+/tmp/temp1748534104.558892/Main.java:4: error: class Main.Main is already defined in class Main
+public class Main { public static void main(String[] args) { recurse(); } } static void recurse() { recurse(); }
+       ^
+/tmp/temp1748534104.558892/Main.java:1: error: implicitly declared class does not have main method in the form of void main() or void main(String[] args)
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+^
+Note: /tmp/temp1748534104.558892/Main.java uses preview features of Java SE 22.
+Note: Recompile with -Xlint:preview for details.
+3 errors
+
+[TRACE] Validating outputs/javac_strategy0/91.fuzz ...
+[VERBOSE] outputs/javac_strategy0/91.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/92.fuzz ...
+[VERBOSE] outputs/javac_strategy0/92.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: duplicate class: Main
+public class Main { public static void main(String[] args) { int x = 1 / 0; } }
+       ^
+/tmp/temp1748534104.558892/Main.java:4: error: duplicate class: Main
+public class Main { public static void main(String[] args) { recurse(); } private static void recurse() { recurse(); } }
+       ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/93.fuzz ...
+[VERBOSE] outputs/javac_strategy0/93.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/94.fuzz ...
+[VERBOSE] outputs/javac_strategy0/94.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+ } /*
+ ^
+/tmp/temp1748534104.558892/Main.java:2: error: unclosed comment
+ } /*
+   ^
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/95.fuzz ...
+[VERBOSE] outputs/javac_strategy0/95.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/96.fuzz ...
+[VERBOSE] outputs/javac_strategy0/96.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:3: error: class, interface, enum, or record expected
+1
+^
+/tmp/temp1748534104.558892/Main.java:4: error: illegal character: '`'
+```
+^
+/tmp/temp1748534104.558892/Main.java:4: error: illegal character: '`'
+```
+ ^
+/tmp/temp1748534104.558892/Main.java:4: error: illegal character: '`'
+```
+  ^
+4 errors
+
+[TRACE] Validating outputs/javac_strategy0/97.fuzz ...
+[VERBOSE] outputs/javac_strategy0/97.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:7: error: not a statement
+    for (int
+         ^
+/tmp/temp1748534104.558892/Main.java:7: error: reached end of file while parsing
+    for (int
+            ^
+Note: /tmp/temp1748534104.558892/Main.java uses preview features of Java SE 22.
+Note: Recompile with -Xlint:preview for details.
+2 errors
+
+[TRACE] Validating outputs/javac_strategy0/98.fuzz ...
+[VERBOSE] outputs/javac_strategy0/98.fuzz is safe
+[TRACE] Validating outputs/javac_strategy0/99.fuzz ...
+[VERBOSE] outputs/javac_strategy0/99.fuzz failed validation with error message: /tmp/temp1748534104.558892/Main.java:2: error: class, interface, enum, or record expected
+<fim_middle>
+^
+1 error
+

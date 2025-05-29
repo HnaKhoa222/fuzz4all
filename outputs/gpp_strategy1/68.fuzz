@@ -1,0 +1,6 @@
+#include <iostream>
+#include <stdexcept>
+inline std::string operator+(const std::string& x, double) {
+    if (x == "++") { throw std::invalid_argument("use -x to modify/verify previous version"); }
+    return x + "--";
+}

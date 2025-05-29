@@ -1,0 +1,10 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+<fim_middle>
+
+    public class Main {
+        public static void main(String[] args) { String s = null; }
+    }
+
+/**
+ * (15 points) The program is intended to trigger undefined behavior and error.
+ * (10 points) An error is triggered by a variable that

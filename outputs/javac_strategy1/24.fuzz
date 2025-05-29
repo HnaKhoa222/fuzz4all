@@ -1,0 +1,7 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+/ Generate a unique Java program to test the javac compiler
+<issue_comment>username_1: @username_2 
+/assign
+<issue_comment>username_0: Hey Jesse,
+
+Are you currently working on this? I am on it. Please let me know if you need any more information.

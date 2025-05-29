@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cstddef>
+#include <iterator>
+struct Node {
+    Node() {  
+    }
+    Node(int n) : data(n) {  
+        std::cout << "Constructor with one argument (value)\n";
+    }
+    Node(int n, Node* next) : data(n), next(next)
+    {
+        std::cout << "Constructor with two arguments (value and pointer)\n";
+    }
+    Node(int n, Node* next, Node* more) : data(n), next(next), more(more)
+    {
+        std::cout << "Constructor with three arguments (value, pointer and pointer)\n";
+    }
+    Node& operator++() {
+        std::cout << "Postfix increment\n";
+    }
+    Node operator++(int) {
+        std::cout << "Prefix increment\n";
+        return *this;
+    }
+    int& data;
+    Node* next;
+    Node* more;
+    bool operator==(const Node& n) {
+        return data == n.data;
+    }
+};
+int main()
+{
+    Node* node1 = new Node

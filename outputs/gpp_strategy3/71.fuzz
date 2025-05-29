@@ -1,0 +1,46 @@
+#include <iostream>
+void print (const char *p)
+{
+    std::cout << p << '\n';
+}
+
+class A0
+{
+public:
+    A0() {}
+    A0(int) {}
+    A0(int, int) {}
+
+    template<typename T>
+    friend class A;
+
+    template<typename T>
+    friend void print(const T&);
+};
+
+template<typename T>
+void print(const T& t)
+{
+    std::cout << t << '\n';
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 

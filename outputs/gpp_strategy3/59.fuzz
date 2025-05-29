@@ -1,0 +1,28 @@
+#include <iostream>
+struct A
+{
+    int a;
+    int b = 0;
+    A(int a, int b)
+        : a(a), b(b)
+    {
+    }
+    template <class A>
+    A& operator=(int b)
+    {
+        b == 1? ::b = b : ::b = b; return *this;
+    }
+};
+int find_max_num(int a, int b)
+{
+    A aa(a, b);
+ 
+ 
+    return find_max_num(b, b);
+}
+int main()
+{
+     
+    int i0 = find_max_num(1, 2);
+    int i1 = find_max_num(2, 3);
+}

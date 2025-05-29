@@ -1,0 +1,21 @@
+#include <iostream>
+int find_max_num(int a, int b)
+{
+    return max(a,b);  
+}
+int main(void)
+{
+#include <iostream> 
+    find_max_num(1, 6);  
+    return 0;
+}
+ 
+int greet_people (const std::string& to, const std::string& message) 
+{
+    std::cerr << "Hello, " << to;
+}
+int main() {
+    greet_people ("Milan", "C++");
+    return 0;
+}
+ 

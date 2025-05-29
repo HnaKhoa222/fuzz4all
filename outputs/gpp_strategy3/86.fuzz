@@ -1,0 +1,8 @@
+#include <iostream>
+int main()
+{
+    std::cout << "-- This program shows how the template metaprogramming language can be used to mutate the previous program.\n";
+    std::cout << "The program is allowed to modify data (like the max)" << "\n";
+    std::cout << "max_num = " << find_max_num(2,2) << '\n';
+    return 0;
+}

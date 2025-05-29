@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdexcept>
+static inline void die(const char* message) {
+    std::cerr << "*** FATAL ERROR: " << message << std::endl; }
+
+void foo() {
+    die("this() was not here!"); }
+
+int main() throw (std::exception) {
+    foo();
+    return 0; }
+
+ 
+#include <iostream>
+#include <stdexcept>
+ 
+extern "C" void* std_malloc(size_t size) {
+     
+    return std::malloc(size); }
+
+extern "C" void std_free(void* p) {
+     
+    std::free(p); }
+#endif
+
+void foo() {
+    foo();
+#ifdef _MSC_VER
+     
+    ::free(0);
+#else
+    void* p = malloc(sizeof(int));
+    if (p) { free(p); }
+#endif
+    std::string s;
+    foo

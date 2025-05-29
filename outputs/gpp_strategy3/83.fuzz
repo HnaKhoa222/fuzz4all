@@ -1,0 +1,9 @@
+#include <iostream>
+struct B {
+    void do_something();
+} ;
+int main()
+{
+    B a;
+    a.do_something();
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+std::string test() {
+    auto y = "a";
+    y = y.substr(1, 1) + y.substr(0, 1) + y;
+    return y;
+}
+
+ 
+#include "test_string"
+int main() {
+    return test_string<std::string>();
+}

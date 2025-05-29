@@ -1,0 +1,4 @@
+public class Main { public static void main(String[] args) { String s = null; System.out.println(s.length()); } }
+
+public class Main {<init>(s);</init>(s);}
+public class Main {<init>(s) {} public static String foo10(int n){ return foo10(n-1);} public static void main(String[] args) { System.out.println("foo:" +

@@ -1,0 +1,6 @@
+#include <iostream>
+void test(const std::string& a, const std::string& b) {
+    std::cout << "Hello " + a + b << '\n';
+}
+ 
+ 
